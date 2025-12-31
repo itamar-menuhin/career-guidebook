@@ -17,8 +17,14 @@ import CardsPage from "@/pages/CardsPage";
 import TemplatesPage from "@/pages/TemplatesPage";
 import NotFound from "@/pages/NotFound";
 import { ContentError } from "@/pages/ContentError";
+import { useScrollToHash } from "@/hooks/useScrollToHash";
 
 const queryClient = new QueryClient();
+
+const ScrollToHashHandler = () => {
+  useScrollToHash();
+  return null;
+};
 
 const AppShell = () => {
   const { error, refresh } = useContent();
@@ -35,6 +41,7 @@ const AppShell = () => {
         <div className="min-h-screen flex flex-col">
           <TopNav />
           <CommandPalette />
+          <ScrollToHashHandler />
           <main className="flex-1">
             <Routes>
               <Route path="/" element={<StartHere />} />

@@ -14,6 +14,7 @@ import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useContent } from '@/contexts/ContentContext';
+import { buildFlowAnchor } from '@/lib/anchors';
 
 const navItems = [
   { path: '/', label: 'Start Here', icon: BookOpen },
@@ -31,7 +32,7 @@ export function MobileNav() {
   const { flowSteps } = useContent();
 
   const handleFlowStepClick = (stepId: string) => {
-    navigate(`/flow#${stepId}`);
+    navigate(`/flow#${buildFlowAnchor(stepId)}`);
     setOpen(false);
   };
 
