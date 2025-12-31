@@ -1,0 +1,90 @@
+import { CommonPathway } from './types';
+
+export const commonPathways: CommonPathway[] = [
+  {
+    id: 'explore-then-commit',
+    name: 'Explore Before Committing',
+    description: 'When you\'re not sure which focus area fits best, systematically test multiple options before going deep on one.',
+    whenToSuggest: 'Early-stage exploration when someone has broad interests but hasn\'t narrowed down. They might say "I want to have impact but don\'t know where."',
+    fitTestPrompts: [
+      'Can you name 2-3 focus areas you\'re genuinely curious about?',
+      'Are you willing to spend 4-6 weeks exploring before committing?',
+      'Do you prefer breadth-first learning over going deep immediately?',
+    ],
+    defaultFirstSmallStep: 'Pick your top 2 candidate focus areas and spend 1 hour reading the "Quick Taste" materials for each. Notice which one pulls your attention more.',
+    relatedCardIds: ['informational-interviews', '80k-ai-safety-guide'],
+  },
+  {
+    id: 'skill-bridge',
+    name: 'Build a Skill Bridge',
+    description: 'When you have a clear target but a skill gap, create a focused learning plan to bridge the gap rather than trying to learn everything.',
+    whenToSuggest: 'When someone knows what they want but feels underqualified. They might say "I want to work in X but I don\'t have experience in Y."',
+    fitTestPrompts: [
+      'Can you clearly name the 2-3 most important skill gaps between you and your target role?',
+      'Are you willing to spend 3-6 months building skills before applying?',
+      'Do you have a track record of self-directed learning?',
+    ],
+    defaultFirstSmallStep: 'Find 3 job postings for your target role. List every required skill, then rate your current level (1-5) for each. Identify your top 2 gaps.',
+    relatedCardIds: ['skill-gap-analysis', 'side-project-test'],
+  },
+  {
+    id: 'test-with-project',
+    name: 'Test with a Side Project',
+    description: 'When you\'re unsure if you\'ll enjoy the day-to-day work, build something small to get a taste of the reality.',
+    whenToSuggest: 'When someone is attracted to an area conceptually but hasn\'t done the actual work. They might say "I think I\'d like research but I\'ve never done it."',
+    fitTestPrompts: [
+      'Have you ever done a substantial project in this area before?',
+      'Can you carve out 5-10 hours over the next 2 weeks?',
+      'Are you comfortable with learning-by-doing over learning-then-doing?',
+    ],
+    defaultFirstSmallStep: 'Define a 2-week mini-project that uses 2-3 core skills from your target role. Write down: what you\'ll build, what skills it tests, and how you\'ll know if you enjoyed it.',
+    relatedCardIds: ['side-project-test'],
+  },
+  {
+    id: 'network-first',
+    name: 'Network Before Applying',
+    description: 'When entering a new field, build relationships and get insider knowledge before formally applying to roles.',
+    whenToSuggest: 'When someone is ready to transition but doesn\'t have connections in the target field. They might say "I don\'t know anyone who works in this area."',
+    fitTestPrompts: [
+      'Are you comfortable reaching out to strangers for conversations?',
+      'Can you articulate what you\'d want to learn from people in this field?',
+      'Are you patient enough to invest in relationships before expecting job leads?',
+    ],
+    defaultFirstSmallStep: 'Identify 3 people currently in your target role (LinkedIn, Twitter, org team pages). Draft a short, specific outreach message asking for a 20-minute call.',
+    relatedCardIds: ['informational-interviews'],
+  },
+  {
+    id: 'leverage-transfer',
+    name: 'Leverage Your Transferable Skills',
+    description: 'When you have strong skills from another field, find roles that specifically value that combination rather than competing with specialists.',
+    whenToSuggest: 'When someone has deep expertise in one area and wants to apply it to a new field. They might say "I\'m an expert in X, how do I apply that to Y?"',
+    fitTestPrompts: [
+      'Can you name 3 skills from your current work that might be rare in your target field?',
+      'Have you found any roles that explicitly value cross-disciplinary backgrounds?',
+      'Are you comfortable positioning yourself as a bridge rather than a specialist?',
+    ],
+    defaultFirstSmallStep: 'Search for job titles that combine your expertise with your target field (e.g., "former [your field] now in [target field]" on LinkedIn). Note patterns in how they describe their transition.',
+    relatedCardIds: ['resume-positioning', 'informational-interviews'],
+  },
+  {
+    id: 'program-pathway',
+    name: 'Use Programs as On-Ramps',
+    description: 'When you learn better with structure and community, apply to structured programs designed to train people for your target field.',
+    whenToSuggest: 'When someone thrives in structured environments and there are good programs available. They might say "I need more accountability" or "I want to learn from experts."',
+    fitTestPrompts: [
+      'Do you have a track record of success in structured programs (school, bootcamps, etc.)?',
+      'Are you willing to commit the time and meet program requirements?',
+      'Are there well-regarded programs that feed into your target roles?',
+    ],
+    defaultFirstSmallStep: 'Research 2-3 programs in your target area. Compare: selection criteria, time commitment, alumni outcomes, and upcoming deadlines. Pick the best fit and note what you\'d need to prepare.',
+    relatedCardIds: ['aisf-fundamentals', 'mats-program', 'arena-program'],
+  },
+];
+
+export function getPathwayById(id: string): CommonPathway | undefined {
+  return commonPathways.find(pathway => pathway.id === id);
+}
+
+export function getAllPathways(): CommonPathway[] {
+  return commonPathways;
+}
