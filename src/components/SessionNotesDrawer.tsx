@@ -82,14 +82,23 @@ export function SessionNotesDrawer({ className }: SessionNotesDrawerProps) {
     toast({ title: 'Copied to clipboard' });
   };
 
-  const handleShare = () => {
-    const slug = shareSession(session);
-    const url = `${window.location.origin}/s/${slug}`;
-    copyToClipboard(url);
-    toast({ 
-      title: 'Share link created', 
-      description: 'Link copied to clipboard. Anyone with this link can view the session.',
-    });
+  const handleShare = async () => {
+    const result = await shareSession(session);
+    if (result.success) {
+      const url = `${window.location.origin}/s/${result.slug}`;
+      await copyToClipboard(url);
+      toast({ 
+        title: 'Share link created', 
+        description: 'Link copied to clipboard. Anyone with this link can view the session.',
+      });
+    } else {
+      const errorResult = result as { success: false; error: string };
+      toast({ 
+        title: 'Failed to share', 
+        description: errorResult.error,
+        variant: 'destructive',
+      });
+    }
   };
 
   const handleAddNextStep = () => {

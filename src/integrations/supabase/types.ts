@@ -14,7 +14,36 @@ export type Database = {
   }
   public: {
     Tables: {
-      [_ in never]: never
+      shared_sessions: {
+        Row: {
+          created_at: string
+          expires_at: string
+          id: string
+          session_json: Json
+          slug: string
+          updated_at: string
+          version: number
+        }
+        Insert: {
+          created_at?: string
+          expires_at?: string
+          id?: string
+          session_json: Json
+          slug: string
+          updated_at?: string
+          version?: number
+        }
+        Update: {
+          created_at?: string
+          expires_at?: string
+          id?: string
+          session_json?: Json
+          slug?: string
+          updated_at?: string
+          version?: number
+        }
+        Relationships: []
+      }
     }
     Views: {
       [_ in never]: never

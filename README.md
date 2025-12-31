@@ -1,73 +1,105 @@
-# Welcome to your Lovable project
+# 1:1 Career Counseling Guidebook
 
-## Project info
+A web-based guidebook for running live 1:1 career counseling sessions. Features a Session Workspace for guided calls with notes, plus a browseable Library of focus areas, recommendation cards, and templates.
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+## Features
 
-## How can I edit this code?
+- **Session Workspace**: Interactive guided flow for 60-90 min sessions with live note-taking
+- **Focus Areas**: Quick-start pages for different career tracks (AI Safety, etc.)
+- **Recommendation Cards**: Filterable database of resources, programs, and next steps
+- **Templates & Tools**: Session wrap summaries and focus area templates
+- **Session Sharing**: Share sessions via short links that work across devices
 
-There are several ways of editing your application.
+## Session Sharing
 
-**Use Lovable**
+Sessions can be shared via short links (`/s/<slug>`):
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+- **Share**: Click the Share button in Session Notes to create a shareable link
+- **View**: Anyone with the link can view the session in read-only mode
+- **Fork**: Viewers can fork to create their own editable copy
+- **Privacy**: Sessions are unlisted (not publicly discoverable) and expire after 30 days
+- **Warning**: A privacy banner reminds users not to share sensitive personal details
 
-Changes made via Lovable will be committed automatically to this repo.
+### How it works
 
-**Use your preferred IDE**
+1. Session data is stored remotely in Lovable Cloud (PostgreSQL database)
+2. Each shared session gets a unique 10-character slug
+3. Links work across browsers/devices without localStorage dependency
+4. Expired sessions show a clear message with instructions to re-share
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+### Security Notes (MVP)
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+- **No authentication required**: Anyone can create and view shared sessions
+- **Unlisted by default**: Sessions are only accessible by direct link
+- **30-day expiry**: Sessions automatically expire to limit exposure
+- **No PII safeguards**: Users are warned via banner, but no content filtering is applied
+- **Public table with RLS**: The `shared_sessions` table allows public read/write for anonymous access
 
-Follow these steps:
+For production use, consider:
+- Adding rate limiting to prevent abuse
+- Implementing session deletion by owners
+- Adding optional password protection
+- Content moderation for shared sessions
+
+## Tech Stack
+
+- **Frontend**: Vite, React, TypeScript, Tailwind CSS, shadcn/ui
+- **Backend**: Lovable Cloud (PostgreSQL, Edge Functions)
+- **State**: React Context for sessions, localStorage for local sessions
+
+## Development
 
 ```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+# Install dependencies
+npm install
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
+# Start development server
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+## Project Structure
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+```
+src/
+├── components/     # UI components
+├── contexts/       # React contexts (Session, Search)
+├── data/          # Content data (cards, focus areas, pathways)
+├── hooks/         # Custom React hooks
+├── lib/           # Utilities (sessionStore, utils)
+├── pages/         # Route pages
+└── integrations/  # Supabase client (auto-generated)
+```
 
-**Use GitHub Codespaces**
+## Adding Content
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+The system is designed for easy content extension:
 
-## What technologies are used for this project?
+### Adding a New Focus Area
 
-This project is built with:
+1. Add a new `FocusArea` object in `src/data/focusAreas.ts`
+2. Reference existing or new card IDs in the `curatedCardIds` array
+3. No UI code changes needed
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+### Adding New Cards
 
-## How can I deploy this project?
+1. Add `RecommendationCard` objects in `src/data/cards.ts`
+2. Use consistent tags for filtering (topic, type, commitment)
+3. Cards automatically appear in the catalog and search
 
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
+## Database Schema
 
-## Can I connect a custom domain to my Lovable project?
+The `shared_sessions` table:
 
-Yes, you can!
+| Column | Type | Description |
+|--------|------|-------------|
+| id | UUID | Primary key |
+| slug | TEXT | Unique short link identifier |
+| session_json | JSONB | Full session data |
+| created_at | TIMESTAMP | Creation time |
+| updated_at | TIMESTAMP | Last update time |
+| expires_at | TIMESTAMP | Expiry (default 30 days) |
+| version | INTEGER | Schema version |
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+## License
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+MIT

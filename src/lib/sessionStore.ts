@@ -1,8 +1,8 @@
 import { Session, SessionNotes, PromisingDirection } from '@/data/types';
+import { supabase } from '@/integrations/supabase/client';
 import { nanoid } from 'nanoid';
 
 const STORAGE_KEY = 'career-counseling-sessions';
-const SHARE_STORAGE_KEY = 'career-counseling-shared-sessions';
 
 export function createEmptySessionNotes(): SessionNotes {
   return {
@@ -75,54 +75,77 @@ export function deleteSession(id: string): void {
   localStorage.setItem(STORAGE_KEY, JSON.stringify(sessions));
 }
 
-// Shared sessions (short links)
+// Shared sessions (remote via Supabase)
 export function generateShareSlug(): string {
-  return nanoid(8);
+  return nanoid(10);
 }
 
-export function shareSession(session: Session): string {
+export type ShareResult = {
+  success: true;
+  slug: string;
+} | {
+  success: false;
+  error: string;
+};
+
+export async function shareSession(session: Session): Promise<ShareResult> {
   const slug = generateShareSlug();
-  const sharedSessions = getSharedSessions();
   
-  const sharedSession = {
-    ...session,
-    shareSlug: slug,
-    expiresAt: new Date(Date.now() + 30 * 24 * 60 * 60 * 1000).toISOString(), // 30 days
-  };
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  const { error } = await supabase
+    .from('shared_sessions')
+    .insert([{
+      slug,
+      session_json: session as any,
+    }]);
   
-  sharedSessions[slug] = sharedSession;
-  localStorage.setItem(SHARE_STORAGE_KEY, JSON.stringify(sharedSessions));
+  if (error) {
+    console.error('Error sharing session:', error);
+    return { success: false, error: error.message };
+  }
   
-  // Update original session with share slug
+  // Update local session with share slug
   session.shareSlug = slug;
   saveSession(session);
   
-  return slug;
+  return { success: true, slug };
 }
 
-export function getSharedSession(slug: string): Session | null {
-  const sharedSessions = getSharedSessions();
-  const session = sharedSessions[slug];
+export type SharedSessionResult = {
+  success: true;
+  session: Session;
+} | {
+  success: false;
+  error: 'not_found' | 'expired' | 'unknown';
+  message: string;
+};
+
+export async function getSharedSession(slug: string): Promise<SharedSessionResult> {
+  const { data, error } = await supabase
+    .from('shared_sessions')
+    .select('*')
+    .eq('slug', slug)
+    .maybeSingle();
   
-  if (!session) return null;
+  if (error) {
+    console.error('Error fetching shared session:', error);
+    return { success: false, error: 'unknown', message: 'Failed to load session' };
+  }
+  
+  if (!data) {
+    return { success: false, error: 'not_found', message: 'Session not found' };
+  }
   
   // Check expiry
-  if (session.expiresAt && new Date(session.expiresAt) < new Date()) {
-    delete sharedSessions[slug];
-    localStorage.setItem(SHARE_STORAGE_KEY, JSON.stringify(sharedSessions));
-    return null;
+  if (data.expires_at && new Date(data.expires_at) < new Date()) {
+    return { 
+      success: false, 
+      error: 'expired', 
+      message: 'This session link has expired. Ask the owner to share a new link.' 
+    };
   }
   
-  return session;
-}
-
-export function getSharedSessions(): Record<string, Session> {
-  try {
-    const data = localStorage.getItem(SHARE_STORAGE_KEY);
-    return data ? JSON.parse(data) : {};
-  } catch {
-    return {};
-  }
+  return { success: true, session: data.session_json as unknown as Session };
 }
 
 export function forkSession(session: Session): Session {
