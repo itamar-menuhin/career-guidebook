@@ -4,6 +4,7 @@ import { Button } from '@/components/ui/button';
 import { useToast } from '@/hooks/use-toast';
 import { useContent } from '@/contexts/ContentContext';
 import { Template } from '@/lib/contentTypes';
+import { MarkdownPage } from '@/components/MarkdownPage';
 
 export default function TemplatesPage() {
   const { toast } = useToast();
@@ -76,9 +77,7 @@ export default function TemplatesPage() {
                   </CardHeader>
                   <CardContent>
                     <div className="relative">
-                      <pre className="text-sm bg-muted/50 border border-border/50 p-5 rounded-xl overflow-x-auto whitespace-pre-wrap font-mono leading-relaxed">
-                        {template.content}
-                      </pre>
+                      <MarkdownPage content={template.content} />
                       <Button 
                         variant="outline" 
                         size="sm" 

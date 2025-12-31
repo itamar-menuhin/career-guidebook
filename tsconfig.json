@@ -4,7 +4,9 @@
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
-      "@/*": ["./src/*"]
+      "@/*": ["./src/*"],
+      "react-markdown": ["./src/vendor/react-markdown.tsx"],
+      "remark-gfm": ["./src/vendor/remark-gfm.ts"]
     },
     "noImplicitAny": false,
     "noUnusedParameters": false,

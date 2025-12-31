@@ -18,6 +18,7 @@ import {
 } from '@/components/ui/collapsible';
 import { useToast } from '@/hooks/use-toast';
 import { buildBucketAnchor } from '@/lib/anchors';
+import { MarkdownPage } from '@/components/MarkdownPage';
 
 export default function FocusAreaDetail() {
   const { id } = useParams<{ id: string }>();
@@ -134,7 +135,12 @@ export default function FocusAreaDetail() {
       </Button>
       
       <h1 className="font-display text-3xl font-bold mb-2">{area.name}</h1>
-      <p className="text-lg text-muted-foreground mb-8">{area.overview}</p>
+      <div className="mb-8">
+        <MarkdownPage 
+          content={area.overview} 
+          className="prose-p:text-muted-foreground prose-li:text-muted-foreground prose-strong:text-foreground"
+        />
+      </div>
 
       {/* Bucket Tiles - Sticky on scroll */}
       <section className="mb-8 sticky top-16 z-10 bg-background/95 backdrop-blur-sm py-4 -mx-4 px-4 border-b border-border/30">
@@ -173,11 +179,18 @@ export default function FocusAreaDetail() {
                   <div className="space-y-2">
                     <p className="text-xs uppercase text-muted-foreground tracking-wider">Bucket</p>
                     <h3 className="font-display text-lg font-semibold">{b.data.title}</h3>
-                    {b.data.inlineGuidance && (
+                    {b.data.inlineGuidanceMarkdown ? (
+                      <div className="p-3 bg-muted/50 rounded-lg">
+                        <MarkdownPage 
+                          content={b.data.inlineGuidanceMarkdown} 
+                          className="prose-p:text-muted-foreground prose-li:text-muted-foreground prose-ul:my-2 prose-p:my-2"
+                        />
+                      </div>
+                    ) : b.data.inlineGuidance ? (
                       <p className="text-sm text-muted-foreground p-3 bg-muted/50 rounded-lg">
                         {b.data.inlineGuidance}
                       </p>
-                    )}
+                    ) : null}
                   </div>
                   <div className="flex gap-1">
                     <Button
@@ -205,6 +218,12 @@ export default function FocusAreaDetail() {
                 </div>
 
                 <CollapsibleContent className="space-y-4 pt-1 animate-fade-in">
+                  {b.data.descriptionMarkdown && (
+                    <MarkdownPage 
+                      content={b.data.descriptionMarkdown}
+                      className="prose-p:text-muted-foreground prose-li:text-muted-foreground"
+                    />
+                  )}
                   <div className="space-y-4">
                     {b.data.cardIds.map(cardId => renderCard(cardId))}
                     {b.data.cardIds.length === 0 && (

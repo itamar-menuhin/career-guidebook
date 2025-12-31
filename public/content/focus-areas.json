@@ -2,7 +2,8 @@
   {
     "id": "ai-safety",
     "name": "AI Safety",
-    "overview": "AI safety research aims to ensure that advanced AI systems remain beneficial and aligned with human values. The field spans technical research (alignment, interpretability, robustness), governance (policy, coordination), and field-building (education, community).",
+    "overviewPath": "content/focus-areas/ai-safety/overview.md",
+    "overviewExcerpt": "AI safety research aims to ensure that advanced AI systems remain beneficial and aligned with human values.",
     "roleShapes": [
       "Technical Alignment Researcher - working on core alignment problems like reward modeling, scalable oversight, interpretability",
       "ML Engineer at Safety Lab - implementing and testing alignment techniques in large models",
@@ -25,7 +26,7 @@
           "alignment-forum-reading",
           "80k-ai-safety-guide"
         ],
-        "inlineGuidance": "Start with the 80K guide for the career lens, then read one Alignment Forum post to see the technical depth."
+        "inlineGuidancePath": "content/focus-areas/ai-safety/buckets/quick-taste.md"
       },
       "deeperDive": {
         "title": "Deeper dive (2–6 hours)",
@@ -33,46 +34,43 @@
         "cardIds": [
           "aisf-fundamentals"
         ],
-        "inlineGuidance": "The AI Safety Fundamentals course is the gold standard intro. You can self-study the materials even without joining a cohort."
+        "inlineGuidancePath": "content/focus-areas/ai-safety/buckets/deeper-dive.md"
       },
       "handsOn": {
         "title": "Hands-on trial",
         "description": "Test your fit with programs that involve doing actual research or engineering work.",
         "cardIds": [
-          "mats-program",
-          "arena-program",
-          "ai-safety-camp"
+          "arena",
+          "mats"
         ],
-        "inlineGuidance": "These programs have different levels of selectivity. ARENA is great for building engineering skills; MATS pairs you with a mentor for research."
+        "inlineGuidancePath": "content/focus-areas/ai-safety/buckets/hands-on.md"
       },
       "jobBoard": {
-        "title": "Job board scan (real roles)",
-        "description": "See what organizations are actually hiring for to understand what skills are in demand.",
+        "title": "Jobs to watch",
+        "description": "Stay on top of hiring for safety labs, research orgs, and governance roles.",
         "cardIds": [
-          "anthropic-jobs",
-          "redwood-jobs"
+          "apart-research-jobs",
+          "manifold",
+          "80k-jobs-board"
         ],
-        "inlineGuidance": "Look at senior and junior roles to understand the skill trajectory. Even if you're not ready to apply, this shows what to aim for."
+        "inlineGuidancePath": "content/focus-areas/ai-safety/buckets/job-board.md"
       }
     },
     "curatedCardIds": [
-      "aisf-fundamentals",
-      "mats-program",
-      "arena-program",
-      "alignment-forum-reading",
       "80k-ai-safety-guide",
-      "anthropic-jobs"
+      "aisf-fundamentals",
+      "alignment-forum-reading",
+      "arena",
+      "mats"
     ],
     "peopleToTalkToPrompts": [
-      "Reach out to AISF alumni in your city for casual coffee chats",
-      "Attend AI safety meetups or virtual events to meet researchers",
-      "Message researchers whose work you've read - many are surprisingly responsive",
-      "Connect with MATS/ARENA alumni for program-specific advice"
+      "Who is doing alignment work most similar to what you want to do?",
+      "Is there someone who recently transitioned into AI safety from a comparable background?",
+      "Who can give feedback on your first small steps?"
     ],
     "commonConfusions": [
-      "AI safety vs AI ethics - safety focuses on technical alignment and catastrophic risks; ethics is broader",
-      "You don't need to be a genius ML researcher - the field needs diverse skills including ops, comms, policy",
-      "Many paths in - career changers are common and valued for bringing fresh perspectives"
+      "Assuming all AI governance roles are DC-based policy jobs",
+      "Thinking you need a PhD before contributing to alignment research"
     ]
   }
 ]
