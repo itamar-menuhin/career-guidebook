@@ -102,13 +102,22 @@ Update these files to change or extend the guidebook—no UI code changes requir
 - Add or edit pathway entries in `public/content/pathways.json`.
 - Add or edit templates/tools in `public/content/templates.json`, pointing each entry to a Markdown file under `content/templates/`.
 
-### DOCX to Markdown authoring loop
+### DOCX ingestion pipeline
 
-1. Edit or drop DOCX drafts in `source_docs/`.
-2. Run the converter: `node scripts/convert-docx-to-md.js source_docs/<file>.docx content/<destination>.md` (requires `pandoc`).
-3. Review the generated Markdown in `content/`, commit, and ship.
+The repository includes a Python-based ingestion script that converts DOCX source files into the Markdown and JSON consumed by the site.
 
-If content fails schema validation in development, detailed errors are printed to the console and a friendly error page is shown in the UI. Refresh after fixing the JSON files.
+1. Install the DOCX dependency once: `pip install -r requirements.txt` (requires Python 3).
+2. Place the core guidebook DOCX in `source_docs/core/` and focus area DOCX files in `source_docs/focus_areas/`.
+3. Run the ingestion step: `npm run ingest`
+   - Generates/overwrites `content/flow/*.md`, `content/templates/*.md`, `content/focus-areas/<id>/**/*.md`
+   - Updates `public/content/flow.json`, `public/content/templates.json`, `public/content/focus-areas.json`, `public/content/cards.json`
+4. Optional: keep the pipeline running with `npm run ingest:watch` to re-run when DOCX files change.
+
+Notes:
+- StartHere marketing copy remains hardcoded; ingestion does not overwrite it.
+- Re-running ingestion keeps recommendation card IDs stable when titles match existing cards.
+
+If content fails schema validation in development, detailed errors are printed to the console and a friendly error page is shown in the UI. Refresh after fixing the JSON files or re-running ingestion.
 
 ## License
 
