@@ -8,7 +8,6 @@ import {
   LayoutGrid, 
   FileText,
   Menu,
-  X
 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
@@ -16,7 +15,7 @@ import { useState } from 'react';
 
 const navItems = [
   { path: '/', label: 'Start Here', icon: BookOpen },
-  { path: '/session', label: 'Run a Session', icon: PlayCircle },
+  { path: '/flow', label: 'Session Flow', icon: PlayCircle },
   { path: '/pathways', label: 'Common Pathways', icon: Map },
   { path: '/focus-areas', label: 'Focus Areas', icon: Target },
   { path: '/cards', label: 'Recommendation Cards', icon: LayoutGrid },

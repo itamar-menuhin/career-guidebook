@@ -6,7 +6,6 @@ import {
   Card,
   CardContent,
   CardDescription,
-  CardFooter,
   CardHeader,
   CardTitle,
 } from '@/components/ui/card';
@@ -16,7 +15,6 @@ import {
   CollapsibleTrigger,
 } from '@/components/ui/collapsible';
 import { 
-  Plus, 
   ExternalLink, 
   ChevronDown, 
   Zap, 
@@ -25,14 +23,13 @@ import {
   Briefcase,
   Check,
   Sparkles,
+  Copy,
 } from 'lucide-react';
 import { useState } from 'react';
-import { useSession } from '@/contexts/SessionContext';
 import { useToast } from '@/hooks/use-toast';
 
 interface RecommendationCardProps {
   card: CardType;
-  showActions?: boolean;
   compact?: boolean;
   className?: string;
 }
@@ -59,37 +56,13 @@ const commitmentColors = {
 
 export function RecommendationCard({ 
   card, 
-  showActions = true, 
   compact = false,
   className 
 }: RecommendationCardProps) {
   const [isExpanded, setIsExpanded] = useState(false);
-  const { isActive, addPromisingDirection } = useSession();
   const { toast } = useToast();
 
   const TypeIcon = typeIcons[card.tags.type];
-
-  const handleAddAsDirection = () => {
-    if (!isActive) {
-      toast({
-        title: 'No active session',
-        description: 'Start a session first to add directions.',
-        variant: 'destructive',
-      });
-      return;
-    }
-    addPromisingDirection({
-      title: card.title,
-      whyPromising: card.oneLiner,
-      firstSmallSteps: [card.firstSmallStep],
-      links: card.links,
-      peopleToTalkTo: card.peopleToTalkTo || [],
-    });
-    toast({
-      title: 'Added as promising direction',
-      description: card.title,
-    });
-  };
 
   const handleCopyFirstStep = () => {
     navigator.clipboard.writeText(card.firstSmallStep);
@@ -163,9 +136,15 @@ export function RecommendationCard({
 
         {/* First small step */}
         <div className="p-4 rounded-xl bg-primary/5 border border-primary/15">
-          <div className="flex items-center gap-2 mb-2">
-            <Sparkles className="h-4 w-4 text-primary" />
-            <p className="text-sm font-medium text-primary">First Small Step (≤60 min)</p>
+          <div className="flex items-center justify-between mb-2">
+            <div className="flex items-center gap-2">
+              <Sparkles className="h-4 w-4 text-primary" />
+              <p className="text-sm font-medium text-primary">First Small Step (≤60 min)</p>
+            </div>
+            <Button size="sm" variant="ghost" onClick={handleCopyFirstStep} className="h-7 px-2">
+              <Copy className="h-3.5 w-3.5 mr-1" />
+              Copy
+            </Button>
           </div>
           <p className="text-sm leading-relaxed">{card.firstSmallStep}</p>
         </div>
@@ -237,19 +216,6 @@ export function RecommendationCard({
           </CollapsibleContent>
         </Collapsible>
       </CardContent>
-
-      {showActions && (
-        <CardFooter className="flex flex-wrap gap-2 border-t border-border/50 pt-4">
-          <Button size="sm" onClick={handleAddAsDirection} disabled={!isActive} className="gradient-hero text-primary-foreground hover:opacity-90">
-            <Plus className="h-4 w-4 mr-1.5" />
-            Add as direction
-          </Button>
-          <Button size="sm" variant="outline" onClick={handleCopyFirstStep} className="border-border/60">
-            <Zap className="h-4 w-4 mr-1.5" />
-            Copy first step
-          </Button>
-        </CardFooter>
-      )}
     </Card>
   );
 }

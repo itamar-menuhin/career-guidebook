@@ -66,38 +66,3 @@ export interface SessionStep {
   prompts: string[];
   color: string;
 }
-
-export interface PromisingDirection {
-  id: string;
-  title: string;
-  whyPromising: string;
-  firstSmallSteps: string[];
-  links: { label: string; url: string }[];
-  peopleToTalkTo: string[];
-}
-
-export interface SessionSnapshot {
-  currentSituation: string;
-  aimingFor: string;
-  mustHaves: string[];
-  constraints: string[];
-}
-
-export interface SessionNotes {
-  snapshot: SessionSnapshot;
-  promisingDirections: PromisingDirection[];
-  closing: {
-    nextSteps: string[];
-    followUpPlan: string;
-  };
-}
-
-export interface Session {
-  id: string;
-  createdAt: string;
-  updatedAt: string;
-  currentStep: string;
-  notes: SessionNotes;
-  shareSlug?: string;
-  expiresAt?: string;
-}

@@ -16,7 +16,7 @@ import { useSearch } from '@/contexts/SearchContext';
 
 const navItems = [
   { path: '/', label: 'Start Here', icon: BookOpen },
-  { path: '/session', label: 'Run a Session', icon: PlayCircle },
+  { path: '/flow', label: 'Session Flow', icon: PlayCircle },
   { path: '/pathways', label: 'Pathways', icon: Map },
   { path: '/focus-areas', label: 'Focus Areas', icon: Target },
   { path: '/cards', label: 'Cards', icon: LayoutGrid },
