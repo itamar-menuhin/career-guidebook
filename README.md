@@ -45,8 +45,11 @@ Browse the library sections to find relevant resources:
 # Install dependencies
 npm install
 
-# Start development server
+# Start development server (runs DOCX ingestion once, then watches for changes)
 npm run dev
+
+# Production build (runs DOCX ingestion once, then Vite build)
+npm run build
 ```
 
 Markdown rendering uses a light in-repo renderer wired through the `react-markdown`/`remark-gfm` aliases (see `src/vendor/`) so the app stays buildable even in offline or proxied environments.
@@ -107,13 +110,21 @@ Update these files to change or extend the guidebook—no UI code changes requir
 The repository includes a Python-based ingestion script that converts DOCX source files into the Markdown and JSON consumed by the site.
 
 1. Install the DOCX dependency once: `pip install -r requirements.txt` (requires Python 3).
-2. Place the core guidebook DOCX in `source_docs/core/` and focus area DOCX files in `source_docs/focus_areas/`.
-3. Run the ingestion step: `npm run ingest`
+2. Place the core guidebook DOCX in `source_docs/core/` and focus area DOCX files in `source_docs/focus_areas/` **named as `<focus-area-slug>.docx`** (slug becomes the focus area ID).
+   - Example rename suggestions for the current files:
+     - `1_1_career_counselling_guidebook_AI_safety.docx` → `ai-safety.docx`
+     - `1_1_career_counselling_guidebook_AIxAnimals.docx` → `ai-x-animals.docx`
+     - `1_1_career_counselling_guidebook_animal_welfare.docx` → `animal-welfare.docx`
+     - `1_1_career_counselling_guidebook_biosecurity.docx` → `biosecurity.docx`
+     - `1_1_career_counselling_guidebook_climate.docx` → `climate.docx`
+     - `1_1_career_counselling_guidebook_global_health_development.docx` → `global-health-development.docx`
+3. Run the ingestion step once: `npm run ingest`
    - Clears `generated/` and rebuilds `generated/content/**/*` and `generated/data/*.json`
    - Copies generated JSON into `public/content/data/` and Markdown into `public/content/md/`
    - Adds a `# GENERATED FILE` header to every generated Markdown file
-4. Optional: keep the pipeline running with `npm run ingest:watch` to re-run when DOCX files change.
-5. Remove generated and public copies with `npm run ingest:clean`.
+4. For development, `npm run dev` will run ingestion once, keep the DOCX watcher alive, and start Vite in parallel.
+5. Optional: keep the pipeline running manually with `npm run ingest:watch` to re-run when DOCX files change.
+6. Remove generated and public copies with `npm run ingest:clean`.
 
 Notes:
 - StartHere marketing copy remains hardcoded; ingestion does not overwrite it.
