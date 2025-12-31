@@ -24,8 +24,7 @@ import {
   Wrench, 
   Briefcase,
   Check,
-  UserPlus,
-  Link as LinkIcon
+  Sparkles,
 } from 'lucide-react';
 import { useState } from 'react';
 import { useSession } from '@/contexts/SessionContext';
@@ -65,7 +64,7 @@ export function RecommendationCard({
   className 
 }: RecommendationCardProps) {
   const [isExpanded, setIsExpanded] = useState(false);
-  const { isActive, addPromisingDirection, addFirstSmallStep, addLinkToDirection } = useSession();
+  const { isActive, addPromisingDirection } = useSession();
   const { toast } = useToast();
 
   const TypeIcon = typeIcons[card.tags.type];
@@ -92,30 +91,21 @@ export function RecommendationCard({
     });
   };
 
-  const handleAddFirstStep = (directionId?: string) => {
-    if (!isActive) {
-      toast({
-        title: 'No active session',
-        description: 'Start a session first to add steps.',
-        variant: 'destructive',
-      });
-      return;
-    }
-    // If no specific direction, we'll add to the first one or create new
-    toast({
-      title: 'First step copied',
-      description: card.firstSmallStep.slice(0, 50) + '...',
-    });
+  const handleCopyFirstStep = () => {
     navigator.clipboard.writeText(card.firstSmallStep);
+    toast({
+      title: 'Copied to clipboard',
+      description: 'First step ready to paste',
+    });
   };
 
   if (compact) {
     return (
-      <Card className={cn('shadow-soft hover:shadow-card transition-shadow', className)} id={card.id}>
+      <Card className={cn('card-shine shadow-soft hover:shadow-card transition-all duration-300 border-border/50', className)} id={card.id}>
         <CardHeader className="pb-2">
           <div className="flex items-start justify-between gap-2">
-            <CardTitle className="text-base font-medium">{card.title}</CardTitle>
-            <Badge variant="outline" className={cn('shrink-0', typeColors[card.tags.type])}>
+            <CardTitle className="text-base font-display font-medium">{card.title}</CardTitle>
+            <Badge variant="outline" className={cn('shrink-0 text-xs', typeColors[card.tags.type])}>
               <TypeIcon className="h-3 w-3 mr-1" />
               {card.tags.type.replace('-', ' ')}
             </Badge>
@@ -129,42 +119,42 @@ export function RecommendationCard({
   }
 
   return (
-    <Card className={cn('shadow-soft hover:shadow-card transition-shadow', className)} id={card.id}>
-      <CardHeader>
+    <Card className={cn('card-shine shadow-soft hover:shadow-card transition-all duration-300 border-border/50', className)} id={card.id}>
+      <CardHeader className="pb-4">
         <div className="flex items-start justify-between gap-4 flex-wrap">
           <div className="flex flex-wrap gap-2">
-            <Badge variant="outline" className={cn(typeColors[card.tags.type])}>
+            <Badge variant="outline" className={cn('text-xs font-medium', typeColors[card.tags.type])}>
               <TypeIcon className="h-3 w-3 mr-1" />
               {card.tags.type.replace('-', ' ')}
             </Badge>
-            <Badge variant="outline" className="capitalize">
+            <Badge variant="outline" className="capitalize text-xs">
               {card.tags.topic.replace('-', ' ')}
             </Badge>
-            <Badge variant="outline" className={cn(commitmentColors[card.tags.commitment])}>
+            <Badge variant="outline" className={cn('text-xs', commitmentColors[card.tags.commitment])}>
               {card.tags.commitment} commitment
             </Badge>
           </div>
         </div>
-        <CardTitle className="text-lg mt-2">{card.title}</CardTitle>
-        <CardDescription className="text-base">{card.oneLiner}</CardDescription>
+        <CardTitle className="text-lg font-display font-medium mt-3">{card.title}</CardTitle>
+        <CardDescription className="text-[15px] leading-relaxed">{card.oneLiner}</CardDescription>
       </CardHeader>
 
-      <CardContent className="space-y-4">
+      <CardContent className="space-y-5">
         {/* When to suggest */}
-        <div className="space-y-1">
+        <div className="space-y-1.5">
           <p className="text-sm font-medium flex items-center gap-2">
             <Check className="h-4 w-4 text-commitment-low" />
             When to suggest
           </p>
-          <p className="text-sm text-muted-foreground pl-6">{card.whenToSuggest}</p>
+          <p className="text-sm text-muted-foreground pl-6 leading-relaxed">{card.whenToSuggest}</p>
         </div>
 
         {/* Good fit if */}
-        <div className="space-y-2">
+        <div className="space-y-2.5">
           <p className="text-sm font-medium">Good fit if:</p>
-          <div className="flex flex-wrap gap-1.5">
+          <div className="flex flex-wrap gap-2">
             {card.tags.goodFitIf.map((fit, i) => (
-              <Badge key={i} variant="secondary" className="text-xs font-normal">
+              <Badge key={i} variant="secondary" className="text-xs font-normal px-2.5 py-1">
                 {fit}
               </Badge>
             ))}
@@ -172,35 +162,38 @@ export function RecommendationCard({
         </div>
 
         {/* First small step */}
-        <div className="p-3 rounded-lg bg-primary/5 border border-primary/10">
-          <p className="text-sm font-medium text-primary mb-1">First Small Step (≤60 min)</p>
-          <p className="text-sm">{card.firstSmallStep}</p>
+        <div className="p-4 rounded-xl bg-primary/5 border border-primary/15">
+          <div className="flex items-center gap-2 mb-2">
+            <Sparkles className="h-4 w-4 text-primary" />
+            <p className="text-sm font-medium text-primary">First Small Step (≤60 min)</p>
+          </div>
+          <p className="text-sm leading-relaxed">{card.firstSmallStep}</p>
         </div>
 
         {/* Expandable details */}
         <Collapsible open={isExpanded} onOpenChange={setIsExpanded}>
           <CollapsibleTrigger asChild>
-            <Button variant="ghost" size="sm" className="w-full justify-between">
-              <span>{isExpanded ? 'Show less' : 'Show more'}</span>
-              <ChevronDown className={cn('h-4 w-4 transition-transform', isExpanded && 'rotate-180')} />
+            <Button variant="ghost" size="sm" className="w-full justify-between hover:bg-muted/50">
+              <span className="text-muted-foreground">{isExpanded ? 'Show less' : 'Show more details'}</span>
+              <ChevronDown className={cn('h-4 w-4 text-muted-foreground transition-transform duration-200', isExpanded && 'rotate-180')} />
             </Button>
           </CollapsibleTrigger>
-          <CollapsibleContent className="space-y-4 pt-4">
+          <CollapsibleContent className="space-y-5 pt-4 animate-fade-in">
             {/* When not to suggest */}
-            <div className="space-y-1">
+            <div className="space-y-1.5">
               <p className="text-sm font-medium text-destructive/80">When NOT to suggest</p>
-              <p className="text-sm text-muted-foreground">{card.whenNotToSuggest}</p>
+              <p className="text-sm text-muted-foreground leading-relaxed">{card.whenNotToSuggest}</p>
             </div>
 
             {/* Next step */}
-            <div className="space-y-1">
+            <div className="space-y-1.5">
               <p className="text-sm font-medium">Next Step</p>
-              <p className="text-sm text-muted-foreground">{card.nextStep}</p>
+              <p className="text-sm text-muted-foreground leading-relaxed">{card.nextStep}</p>
             </div>
 
             {/* Links */}
             {card.links.length > 0 && (
-              <div className="space-y-2">
+              <div className="space-y-2.5">
                 <p className="text-sm font-medium">Links</p>
                 <div className="flex flex-wrap gap-2">
                   {card.links.map((link, i) => (
@@ -209,9 +202,9 @@ export function RecommendationCard({
                       href={link.url}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-flex items-center gap-1 text-sm text-primary hover:underline"
+                      className="inline-flex items-center gap-1.5 text-sm text-primary hover:underline underline-offset-2"
                     >
-                      <ExternalLink className="h-3 w-3" />
+                      <ExternalLink className="h-3.5 w-3.5" />
                       {link.label}
                     </a>
                   ))}
@@ -221,11 +214,14 @@ export function RecommendationCard({
 
             {/* People to talk to */}
             {card.peopleToTalkTo && card.peopleToTalkTo.length > 0 && (
-              <div className="space-y-2">
+              <div className="space-y-2.5">
                 <p className="text-sm font-medium">People to talk to</p>
-                <ul className="text-sm text-muted-foreground space-y-1">
+                <ul className="text-sm text-muted-foreground space-y-1.5">
                   {card.peopleToTalkTo.map((person, i) => (
-                    <li key={i}>• {person}</li>
+                    <li key={i} className="flex items-start gap-2">
+                      <span className="text-primary mt-0.5">•</span>
+                      {person}
+                    </li>
                   ))}
                 </ul>
               </div>
@@ -233,9 +229,9 @@ export function RecommendationCard({
 
             {/* Internal notes */}
             {card.internalNotes && (
-              <div className="p-3 rounded-lg bg-muted/50 border border-border/50">
-                <p className="text-xs font-medium text-muted-foreground mb-1">Internal Notes</p>
-                <p className="text-sm text-muted-foreground">{card.internalNotes}</p>
+              <div className="p-4 rounded-xl bg-muted/40 border border-border/50">
+                <p className="text-xs font-medium text-muted-foreground mb-1.5 uppercase tracking-wider">Internal Notes</p>
+                <p className="text-sm text-muted-foreground leading-relaxed">{card.internalNotes}</p>
               </div>
             )}
           </CollapsibleContent>
@@ -243,13 +239,13 @@ export function RecommendationCard({
       </CardContent>
 
       {showActions && (
-        <CardFooter className="flex flex-wrap gap-2 border-t pt-4">
-          <Button size="sm" onClick={handleAddAsDirection} disabled={!isActive}>
-            <Plus className="h-4 w-4 mr-1" />
+        <CardFooter className="flex flex-wrap gap-2 border-t border-border/50 pt-4">
+          <Button size="sm" onClick={handleAddAsDirection} disabled={!isActive} className="gradient-hero text-primary-foreground hover:opacity-90">
+            <Plus className="h-4 w-4 mr-1.5" />
             Add as direction
           </Button>
-          <Button size="sm" variant="outline" onClick={() => handleAddFirstStep()}>
-            <Zap className="h-4 w-4 mr-1" />
+          <Button size="sm" variant="outline" onClick={handleCopyFirstStep} className="border-border/60">
+            <Zap className="h-4 w-4 mr-1.5" />
             Copy first step
           </Button>
         </CardFooter>
