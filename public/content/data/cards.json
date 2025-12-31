@@ -1,128 +1,29 @@
 [
   {
-    "id": "aisf-fundamentals",
-    "title": "AI Safety Fundamentals Course",
-    "oneLiner": "Structured 8-week intro covering core concepts, risks, and research directions in AI safety.",
-    "whenToSuggest": "Early exploration when someone wants a systematic foundation before diving deeper.",
-    "whenNotToSuggest": "If they prefer learning-by-doing or already have strong ML background and want technical depth.",
-    "tags": {
-      "topic": "course",
-      "type": "deeper-dive",
-      "commitment": "medium",
-      "goodFitIf": [
-        "Enjoys structured learning",
-        "Has 4-6 hours/week",
-        "Wants broad foundation before specializing"
-      ]
-    },
-    "firstSmallStep": "Read the curriculum overview and first week materials at aisafetyfundamentals.com/alignment (30 min)",
-    "nextStep": "Apply for the next cohort or start self-study with the reading list",
-    "links": [
-      {
-        "label": "AI Safety Fundamentals",
-        "url": "https://aisafetyfundamentals.com"
-      },
-      {
-        "label": "Curriculum Overview",
-        "url": "https://aisafetyfundamentals.com/alignment"
-      }
-    ],
-    "peopleToTalkTo": [
-      "AISF alumni in your city",
-      "Course facilitators"
-    ],
-    "focusAreaIds": [
-      "ai-safety"
-    ]
-  },
-  {
-    "id": "alignment-forum-reading",
-    "title": "Alignment Forum Deep Dives",
-    "oneLiner": "Read seminal posts on the Alignment Forum to understand current research debates.",
-    "whenToSuggest": "When they want to engage with cutting-edge thinking and have some technical background.",
-    "whenNotToSuggest": "If they need more foundational context first or prefer structured courses.",
+    "id": "80k-ai-safety-guide",
+    "title": "80,000 Hours AI Safety Guide",
+    "oneLiner": "Comprehensive career guide covering paths into AI safety work.",
+    "whenToSuggest": "When they need a broad overview of career options in the field.",
+    "whenNotToSuggest": "If they're past the overview stage and need specific depth.",
     "tags": {
       "topic": "reading",
       "type": "quick-taste",
       "commitment": "low",
       "goodFitIf": [
-        "Comfortable with technical writing",
-        "Self-directed learner",
-        "Curious about research debates"
+        "Early in exploration",
+        "Wants career-focused framing",
+        "Likes structured overviews"
       ]
     },
-    "firstSmallStep": "Read \"AGI Safety from First Principles\" by Richard Ngo (45 min)",
-    "nextStep": "Pick 3 posts from the recommended reading list and take notes on key disagreements",
+    "firstSmallStep": "Read the main AI safety problem profile page (30 min)",
+    "nextStep": "Complete the recommended self-assessment exercises",
     "links": [
       {
-        "label": "Alignment Forum",
-        "url": "https://alignmentforum.org"
-      },
-      {
-        "label": "AGI Safety from First Principles",
-        "url": "https://www.alignmentforum.org/s/mzgtmmTKKn5MuCzFJ"
+        "label": "https://80000hours.org/problem-profiles/artificial-intelligence/",
+        "url": "https://80000hours.org/problem-profiles/artificial-intelligence/"
       }
     ],
-    "focusAreaIds": [
-      "ai-safety"
-    ]
-  },
-  {
-    "id": "mats-program",
-    "title": "MATS (ML Alignment Theory Scholars)",
-    "oneLiner": "Intensive research mentorship program pairing scholars with leading alignment researchers.",
-    "whenToSuggest": "For people with strong ML skills ready to commit full-time to alignment research.",
-    "whenNotToSuggest": "If they're still exploring or don't have the ML prerequisites.",
-    "tags": {
-      "topic": "program",
-      "type": "hands-on",
-      "commitment": "high",
-      "goodFitIf": [
-        "Strong ML/math background",
-        "Ready for full-time commitment",
-        "Has research experience"
-      ]
-    },
-    "firstSmallStep": "Read the MATS application guide and scholar profiles to understand fit (30 min)",
-    "nextStep": "Identify 2-3 potential mentors whose work aligns with your interests and draft application",
-    "links": [
-      {
-        "label": "MATS Program",
-        "url": "https://www.matsprogram.org"
-      }
-    ],
-    "peopleToTalkTo": [
-      "MATS alumni",
-      "Current MATS scholars"
-    ],
-    "focusAreaIds": [
-      "ai-safety"
-    ]
-  },
-  {
-    "id": "arena-program",
-    "title": "ARENA (Alignment Research Engineer Accelerator)",
-    "oneLiner": "Intensive program building ML engineering skills specifically for alignment work.",
-    "whenToSuggest": "For engineers wanting to build technical skills specifically for alignment research.",
-    "whenNotToSuggest": "If they prefer theory over implementation or lack programming experience.",
-    "tags": {
-      "topic": "program",
-      "type": "hands-on",
-      "commitment": "high",
-      "goodFitIf": [
-        "Strong programming skills",
-        "Wants hands-on ML experience",
-        "Available for intensive program"
-      ]
-    },
-    "firstSmallStep": "Complete the first ARENA exercise notebook to gauge difficulty (1 hour)",
-    "nextStep": "Work through the prerequisite materials and apply for the next cohort",
-    "links": [
-      {
-        "label": "ARENA Program",
-        "url": "https://www.arena.education"
-      }
-    ],
+    "peopleToTalkTo": [],
     "focusAreaIds": [
       "ai-safety"
     ]
@@ -147,10 +48,77 @@
     "nextStep": "Join the AI Safety Camp community and apply for the next camp",
     "links": [
       {
-        "label": "AI Safety Camp",
+        "label": "https://aisafety.camp",
         "url": "https://aisafety.camp"
       }
     ],
+    "peopleToTalkTo": [],
+    "focusAreaIds": [
+      "ai-safety"
+    ]
+  },
+  {
+    "id": "aisf-fundamentals",
+    "title": "AI Safety Fundamentals Course",
+    "oneLiner": "Structured 8-week intro covering core concepts, risks, and research directions in AI safety.",
+    "whenToSuggest": "Early exploration when someone wants a systematic foundation before diving deeper.",
+    "whenNotToSuggest": "If they prefer learning-by-doing or already have strong ML background and want technical depth.",
+    "tags": {
+      "topic": "course",
+      "type": "deeper-dive",
+      "commitment": "medium",
+      "goodFitIf": [
+        "Enjoys structured learning",
+        "Has 4-6 hours/week",
+        "Wants broad foundation before specializing"
+      ]
+    },
+    "firstSmallStep": "Read the curriculum overview and first week materials at aisafetyfundamentals.com/alignment (30 min)",
+    "nextStep": "Apply for the next cohort or start self-study with the reading list",
+    "links": [
+      {
+        "label": "https://aisafetyfundamentals.com",
+        "url": "https://aisafetyfundamentals.com"
+      },
+      {
+        "label": "https://aisafetyfundamentals.com/alignment",
+        "url": "https://aisafetyfundamentals.com/alignment"
+      }
+    ],
+    "peopleToTalkTo": [],
+    "focusAreaIds": [
+      "ai-safety"
+    ]
+  },
+  {
+    "id": "alignment-forum-reading",
+    "title": "Alignment Forum Deep Dives",
+    "oneLiner": "Read seminal posts on the Alignment Forum to understand current research debates.",
+    "whenToSuggest": "When they want to engage with cutting-edge thinking and have some technical background.",
+    "whenNotToSuggest": "If they need more foundational context first or prefer structured courses.",
+    "tags": {
+      "topic": "reading",
+      "type": "quick-taste",
+      "commitment": "low",
+      "goodFitIf": [
+        "Comfortable with technical writing",
+        "Self-directed learner",
+        "Curious about research debates"
+      ]
+    },
+    "firstSmallStep": "Read \"AGI Safety from First Principles\" by Richard Ngo (45 min)",
+    "nextStep": "Pick 3 posts from the recommended reading list and take notes on key disagreements",
+    "links": [
+      {
+        "label": "https://alignmentforum.org",
+        "url": "https://alignmentforum.org"
+      },
+      {
+        "label": "https://www.alignmentforum.org/s/mzgtmmTKKn5MuCzFJ",
+        "url": "https://www.alignmentforum.org/s/mzgtmmTKKn5MuCzFJ"
+      }
+    ],
+    "peopleToTalkTo": [],
     "focusAreaIds": [
       "ai-safety"
     ]
@@ -175,14 +143,73 @@
     "nextStep": "Identify 1-2 roles that match your skills and prepare application materials",
     "links": [
       {
-        "label": "Anthropic Careers",
+        "label": "https://www.anthropic.com/careers",
         "url": "https://www.anthropic.com/careers"
       },
       {
-        "label": "Core Views on AI Safety",
+        "label": "https://www.anthropic.com/core-views-on-ai-safety",
         "url": "https://www.anthropic.com/core-views-on-ai-safety"
       }
     ],
+    "peopleToTalkTo": [],
+    "focusAreaIds": [
+      "ai-safety"
+    ]
+  },
+  {
+    "id": "arena-program",
+    "title": "ARENA (Alignment Research Engineer Accelerator)",
+    "oneLiner": "Intensive program building ML engineering skills specifically for alignment work.",
+    "whenToSuggest": "For engineers wanting to build technical skills specifically for alignment research.",
+    "whenNotToSuggest": "If they prefer theory over implementation or lack programming experience.",
+    "tags": {
+      "topic": "program",
+      "type": "hands-on",
+      "commitment": "high",
+      "goodFitIf": [
+        "Strong programming skills",
+        "Wants hands-on ML experience",
+        "Available for intensive program"
+      ]
+    },
+    "firstSmallStep": "Complete the first ARENA exercise notebook to gauge difficulty (1 hour)",
+    "nextStep": "Work through the prerequisite materials and apply for the next cohort",
+    "links": [
+      {
+        "label": "https://www.arena.education",
+        "url": "https://www.arena.education"
+      }
+    ],
+    "peopleToTalkTo": [],
+    "focusAreaIds": [
+      "ai-safety"
+    ]
+  },
+  {
+    "id": "mats-program",
+    "title": "MATS (ML Alignment Theory Scholars)",
+    "oneLiner": "Intensive research mentorship program pairing scholars with leading alignment researchers.",
+    "whenToSuggest": "For people with strong ML skills ready to commit full-time to alignment research.",
+    "whenNotToSuggest": "If they're still exploring or don't have the ML prerequisites.",
+    "tags": {
+      "topic": "program",
+      "type": "hands-on",
+      "commitment": "high",
+      "goodFitIf": [
+        "Strong ML/math background",
+        "Ready for full-time commitment",
+        "Has research experience"
+      ]
+    },
+    "firstSmallStep": "Read the MATS application guide and scholar profiles to understand fit (30 min)",
+    "nextStep": "Identify 2-3 potential mentors whose work aligns with your interests and draft application",
+    "links": [
+      {
+        "label": "https://www.matsprogram.org",
+        "url": "https://www.matsprogram.org"
+      }
+    ],
+    "peopleToTalkTo": [],
     "focusAreaIds": [
       "ai-safety"
     ]
@@ -207,38 +234,11 @@
     "nextStep": "Explore open positions and reach out to team members",
     "links": [
       {
-        "label": "Redwood Research",
+        "label": "https://www.redwoodresearch.org",
         "url": "https://www.redwoodresearch.org"
       }
     ],
-    "focusAreaIds": [
-      "ai-safety"
-    ]
-  },
-  {
-    "id": "80k-ai-safety-guide",
-    "title": "80,000 Hours AI Safety Guide",
-    "oneLiner": "Comprehensive career guide covering paths into AI safety work.",
-    "whenToSuggest": "When they need a broad overview of career options in the field.",
-    "whenNotToSuggest": "If they're past the overview stage and need specific depth.",
-    "tags": {
-      "topic": "reading",
-      "type": "quick-taste",
-      "commitment": "low",
-      "goodFitIf": [
-        "Early in exploration",
-        "Wants career-focused framing",
-        "Likes structured overviews"
-      ]
-    },
-    "firstSmallStep": "Read the main AI safety problem profile page (30 min)",
-    "nextStep": "Complete the recommended self-assessment exercises",
-    "links": [
-      {
-        "label": "80K AI Safety Guide",
-        "url": "https://80000hours.org/problem-profiles/artificial-intelligence/"
-      }
-    ],
+    "peopleToTalkTo": [],
     "focusAreaIds": [
       "ai-safety"
     ]
@@ -263,9 +263,61 @@
     "nextStep": "Send outreach messages and schedule your first conversation",
     "links": [
       {
-        "label": "80K Informational Interviews Guide",
+        "label": "https://80000hours.org/articles/informational-interviews/",
         "url": "https://80000hours.org/articles/informational-interviews/"
       }
+    ],
+    "peopleToTalkTo": [],
+    "focusAreaIds": [
+      "general"
+    ]
+  },
+  {
+    "id": "resume-positioning",
+    "title": "Resume Positioning Workshop",
+    "oneLiner": "Reframe your existing experience to highlight transferable skills for your target area.",
+    "whenToSuggest": "When transitioning between fields and worried about appearing unqualified.",
+    "whenNotToSuggest": "If already working in the target field.",
+    "tags": {
+      "topic": "tool",
+      "type": "quick-taste",
+      "commitment": "low",
+      "goodFitIf": [
+        "Career changer",
+        "Has relevant transferable skills",
+        "Ready to apply soon"
+      ]
+    },
+    "firstSmallStep": "List 5 accomplishments from past roles and identify transferable skills in each (30 min)",
+    "nextStep": "Rewrite your resume summary to lead with the most relevant transferable experience",
+    "links": [],
+    "peopleToTalkTo": [],
+    "focusAreaIds": [
+      "general"
+    ]
+  },
+  {
+    "id": "side-project-test",
+    "title": "Side Project Reality Test",
+    "oneLiner": "Build a small project in your target area to test skills and genuine interest.",
+    "whenToSuggest": "When someone is unsure if they'll enjoy the day-to-day work.",
+    "whenNotToSuggest": "If they're already very confident in their interest.",
+    "tags": {
+      "topic": "project",
+      "type": "hands-on",
+      "commitment": "medium",
+      "goodFitIf": [
+        "Learns by doing",
+        "Has time for exploration",
+        "Wants tangible evidence of fit"
+      ]
+    },
+    "firstSmallStep": "Define a 2-week project scope that uses core skills from your target role (30 min)",
+    "nextStep": "Block 5-10 hours in your calendar and start building",
+    "links": [],
+    "peopleToTalkTo": [],
+    "focusAreaIds": [
+      "general"
     ]
   },
   {
@@ -286,46 +338,10 @@
     },
     "firstSmallStep": "Find 3 job postings for your target role and list all required skills (45 min)",
     "nextStep": "Rate your proficiency in each skill and identify the 2-3 most critical gaps",
-    "links": []
-  },
-  {
-    "id": "side-project-test",
-    "title": "Side Project Reality Test",
-    "oneLiner": "Build a small project in your target area to test skills and genuine interest.",
-    "whenToSuggest": "When someone is unsure if they'll enjoy the day-to-day work.",
-    "whenNotToSuggest": "If they're already very confident in their interest.",
-    "tags": {
-      "topic": "project",
-      "type": "hands-on",
-      "commitment": "medium",
-      "goodFitIf": [
-        "Learns by doing",
-        "Has time for exploration",
-        "Wants tangible evidence of fit"
-      ]
-    },
-    "firstSmallStep": "Define a 2-week project scope that uses core skills from your target role (30 min)",
-    "nextStep": "Block 5-10 hours in your calendar and start building",
-    "links": []
-  },
-  {
-    "id": "resume-positioning",
-    "title": "Resume Positioning Workshop",
-    "oneLiner": "Reframe your existing experience to highlight transferable skills for your target area.",
-    "whenToSuggest": "When transitioning between fields and worried about appearing unqualified.",
-    "whenNotToSuggest": "If already working in the target field.",
-    "tags": {
-      "topic": "tool",
-      "type": "quick-taste",
-      "commitment": "low",
-      "goodFitIf": [
-        "Career changer",
-        "Has relevant transferable skills",
-        "Ready to apply soon"
-      ]
-    },
-    "firstSmallStep": "List 5 accomplishments from past roles and identify transferable skills in each (30 min)",
-    "nextStep": "Rewrite your resume summary to lead with the most relevant transferable experience",
-    "links": []
+    "links": [],
+    "peopleToTalkTo": [],
+    "focusAreaIds": [
+      "general"
+    ]
   }
 ]

@@ -20,48 +20,67 @@
     ],
     "buckets": {
       "quickTaste": {
-        "title": "Quick taste (\u22481 hour)",
-        "description": "Get oriented with foundational readings that explain why AI safety matters and what the field is trying to solve.",
+        "title": "Quick taste (≈1 hour)",
+        "description": "Start with the 80K guide for the career lens, then read one Alignment Forum post to see the technical depth.",
         "cardIds": [
+          "80k-ai-safety-guide",
+          "alignment-forum-reading"
+        ],
+        "inlineGuidancePath": "content/md/focus-areas/ai-safety/buckets/quick-taste.md",
+        "curatedCardIds": [
           "alignment-forum-reading",
           "80k-ai-safety-guide"
-        ],
-        "inlineGuidancePath": "content/md/focus-areas/ai-safety/buckets/quick-taste.md"
+        ]
       },
       "deeperDive": {
-        "title": "Deeper dive (2\u20136 hours)",
-        "description": "Commit a few hours to structured learning that builds conceptual foundations.",
+        "title": "Deeper dive (2–6 hours)",
+        "description": "The AI Safety Fundamentals course is the gold standard intro. You can self-study the materials even without joining a cohort.",
         "cardIds": [
           "aisf-fundamentals"
         ],
-        "inlineGuidancePath": "content/md/focus-areas/ai-safety/buckets/deeper-dive.md"
+        "inlineGuidancePath": "content/md/focus-areas/ai-safety/buckets/deeper-dive.md",
+        "curatedCardIds": [
+          "aisf-fundamentals"
+        ]
       },
       "handsOn": {
         "title": "Hands-on trial",
-        "description": "Test your fit with programs that involve doing actual research or engineering work.",
+        "description": "These programs have different levels of selectivity. ARENA is great for building engineering skills; MATS pairs you with a mentor for research.",
         "cardIds": [
-          "arena",
-          "mats"
+          "ai-safety-camp",
+          "arena-program",
+          "mats-program"
         ],
-        "inlineGuidancePath": "content/md/focus-areas/ai-safety/buckets/hands-on.md"
+        "inlineGuidancePath": "content/md/focus-areas/ai-safety/buckets/hands-on.md",
+        "curatedCardIds": [
+          "ai-safety-camp",
+          "arena-program",
+          "mats-program"
+        ]
       },
       "jobBoard": {
-        "title": "Jobs to watch",
-        "description": "Stay on top of hiring for safety labs, research orgs, and governance roles.",
+        "title": "Job board scan (real roles)",
+        "description": "Look at senior and junior roles to understand the skill trajectory. Even if you're not ready to apply, this shows what to aim for.",
         "cardIds": [
-          "apart-research-jobs",
-          "manifold",
-          "80k-jobs-board"
+          "anthropic-jobs",
+          "redwood-jobs"
         ],
-        "inlineGuidancePath": "content/md/focus-areas/ai-safety/buckets/job-board.md"
+        "inlineGuidancePath": "content/md/focus-areas/ai-safety/buckets/job-board.md",
+        "curatedCardIds": [
+          "anthropic-jobs",
+          "redwood-jobs"
+        ]
       }
     },
     "curatedCardIds": [
+      "alignment-forum-reading",
       "80k-ai-safety-guide",
       "aisf-fundamentals",
-      "alignment-forum-reading",
-      "arena",
-      "mats"
+      "ai-safety-camp",
+      "arena-program",
+      "mats-program",
+      "anthropic-jobs",
+      "redwood-jobs"
     ],
     "peopleToTalkToPrompts": [
       "Who is doing alignment work most similar to what you want to do?",

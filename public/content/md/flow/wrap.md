@@ -1,4 +1,4 @@
-# GENERATED FILE - DO NOT EDIT MANUALLY
+# GENERATED FROM VAULT — DO NOT EDIT. Source of truth: /vault
 
 Close the session with clarity on next steps and accountability.
 
