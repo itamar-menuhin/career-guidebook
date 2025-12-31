@@ -5,21 +5,35 @@ import { getCardById } from '@/data/cards';
 import { BucketTile, BucketTileGrid } from '@/components/BucketTile';
 import { RecommendationCard } from '@/components/RecommendationCard';
 import { Button } from '@/components/ui/button';
-import { ArrowLeft, Check, AlertTriangle } from 'lucide-react';
+import { 
+  ArrowLeft, 
+  Check, 
+  AlertTriangle,
+  ChevronDown,
+} from 'lucide-react';
+import {
+  Collapsible,
+  CollapsibleContent,
+  CollapsibleTrigger,
+} from '@/components/ui/collapsible';
 
 export default function FocusAreaDetail() {
   const { id } = useParams<{ id: string }>();
   const area = getFocusAreaById(id || '');
   const [activeBucket, setActiveBucket] = useState<string | null>(null);
+  const [expandedBuckets, setExpandedBuckets] = useState<Record<string, boolean>>({});
   const bucketSectionRefs = useRef<Record<string, HTMLElement | null>>({});
 
-  // Scroll to bucket section when activated
   useEffect(() => {
     if (activeBucket && bucketSectionRefs.current[activeBucket]) {
-      bucketSectionRefs.current[activeBucket]?.scrollIntoView({ 
-        behavior: 'smooth', 
-        block: 'start' 
-      });
+      const timeout = window.setTimeout(() => {
+        bucketSectionRefs.current[activeBucket]?.scrollIntoView({ 
+          behavior: 'smooth', 
+          block: 'start' 
+        });
+      }, 60);
+
+      return () => window.clearTimeout(timeout);
     }
   }, [activeBucket]);
 
@@ -40,9 +54,21 @@ export default function FocusAreaDetail() {
   ];
 
   const handleBucketClick = (bucketKey: string) => {
-    // If clicking same bucket, keep it open but scroll to it
-    // If clicking different bucket, switch and scroll
+    setExpandedBuckets(prev => ({ ...prev, [bucketKey]: true }));
     setActiveBucket(bucketKey);
+    requestAnimationFrame(() => {
+      bucketSectionRefs.current[bucketKey]?.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start',
+      });
+    });
+  };
+
+  const handleToggleBucket = (bucketKey: string, nextOpen: boolean) => {
+    setExpandedBuckets(prev => ({ ...prev, [bucketKey]: nextOpen }));
+    if (nextOpen) {
+      setActiveBucket(bucketKey);
+    }
   };
 
   return (
@@ -66,7 +92,7 @@ export default function FocusAreaDetail() {
               type={b.type} 
               title={b.data.title} 
               description={b.data.description} 
-              isActive={activeBucket === b.key} 
+              isActive={activeBucket === b.key || expandedBuckets[b.key]} 
               onClick={() => handleBucketClick(b.key)} 
             />
           ))}
@@ -76,30 +102,56 @@ export default function FocusAreaDetail() {
       {/* Bucket Content Sections */}
       <div className="space-y-12">
         {buckets.map(b => (
-          <section 
+          <Collapsible
             key={b.key}
-            id={`bucket-${b.key}`}
-            ref={(el) => { bucketSectionRefs.current[b.key] = el; }}
-            className={`scroll-mt-72 transition-all duration-300 ${
-              activeBucket === b.key ? 'opacity-100' : activeBucket ? 'opacity-40' : 'opacity-100'
-            }`}
+            open={!!expandedBuckets[b.key]}
+            onOpenChange={(open) => handleToggleBucket(b.key, open)}
           >
-            <h3 className="font-display text-lg font-semibold mb-4">{b.data.title}</h3>
-            {b.data.inlineGuidance && (
-              <p className="text-sm text-muted-foreground mb-4 p-3 bg-muted/50 rounded-lg">
-                {b.data.inlineGuidance}
-              </p>
-            )}
-            <div className="space-y-4">
-              {b.data.cardIds.map(cardId => {
-                const card = getCardById(cardId);
-                return card ? <RecommendationCard key={cardId} card={card} /> : null;
-              })}
-              {b.data.cardIds.length === 0 && (
-                <p className="text-sm text-muted-foreground italic">No cards in this bucket yet.</p>
-              )}
-            </div>
-          </section>
+            <section 
+              id={`bucket-${b.key}`}
+              ref={(el) => { bucketSectionRefs.current[b.key] = el; }}
+              className={`scroll-mt-72 transition-all duration-300 ${
+                activeBucket === b.key ? 'opacity-100' : activeBucket ? 'opacity-50' : 'opacity-100'
+              }`}
+            >
+              <div className="rounded-2xl border border-border/60 bg-card/60 p-5 md:p-6 shadow-soft space-y-4">
+                <div className="flex items-start justify-between gap-3">
+                  <div className="space-y-2">
+                    <p className="text-xs uppercase text-muted-foreground tracking-wider">Bucket</p>
+                    <h3 className="font-display text-lg font-semibold">{b.data.title}</h3>
+                    {b.data.inlineGuidance && (
+                      <p className="text-sm text-muted-foreground p-3 bg-muted/50 rounded-lg">
+                        {b.data.inlineGuidance}
+                      </p>
+                    )}
+                  </div>
+                  <CollapsibleTrigger asChild>
+                    <Button
+                      variant="ghost"
+                      size="sm"
+                      className="inline-flex items-center gap-2"
+                      onClick={() => setActiveBucket(b.key)}
+                    >
+                      {expandedBuckets[b.key] ? 'Collapse' : 'Expand'}
+                      <ChevronDown className={`h-4 w-4 transition-transform ${expandedBuckets[b.key] ? 'rotate-180' : ''}`} />
+                    </Button>
+                  </CollapsibleTrigger>
+                </div>
+
+                <CollapsibleContent className="space-y-4 pt-1 animate-fade-in">
+                  <div className="space-y-4">
+                    {b.data.cardIds.map(cardId => {
+                      const card = getCardById(cardId);
+                      return card ? <RecommendationCard key={cardId} card={card} /> : null;
+                    })}
+                    {b.data.cardIds.length === 0 && (
+                      <p className="text-sm text-muted-foreground italic">No cards in this bucket yet.</p>
+                    )}
+                  </div>
+                </CollapsibleContent>
+              </div>
+            </section>
+          </Collapsible>
         ))}
       </div>
 

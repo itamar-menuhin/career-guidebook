@@ -3,8 +3,8 @@ import { SessionStep } from './types';
 export const sessionSteps: SessionStep[] = [
   {
     id: 'opening',
-    title: 'Opening & Goal',
-    shortTitle: 'Opening',
+    title: 'Opening & goal',
+    shortTitle: 'Opening & goal',
     description: 'Set the frame for the session. What does the person hope to walk away with?',
     prompts: [
       'What would make this conversation feel like a success for you?',
@@ -15,8 +15,8 @@ export const sessionSteps: SessionStep[] = [
   },
   {
     id: 'background',
-    title: 'What They Bring',
-    shortTitle: 'Background',
+    title: 'What they bring',
+    shortTitle: 'What they bring',
     description: 'Understand their current situation, skills, and experience.',
     prompts: [
       'Walk me through your current situation — what are you doing now?',
@@ -27,8 +27,8 @@ export const sessionSteps: SessionStep[] = [
   },
   {
     id: 'happiness',
-    title: 'What Makes Them Happy',
-    shortTitle: 'Happiness',
+    title: 'What makes them happy',
+    shortTitle: 'What makes them happy',
     description: 'Explore what energizes them and what they want more of in their work.',
     prompts: [
       'Tell me about a time you felt most engaged and energized by your work.',
@@ -39,7 +39,7 @@ export const sessionSteps: SessionStep[] = [
   },
   {
     id: 'constraints',
-    title: 'Constraints & Non-Negotiables',
+    title: 'Constraints',
     shortTitle: 'Constraints',
     description: 'Surface the practical realities that will shape what\'s possible.',
     prompts: [
@@ -51,8 +51,8 @@ export const sessionSteps: SessionStep[] = [
   },
   {
     id: 'directions',
-    title: 'Iterative Direction Testing',
-    shortTitle: 'Directions',
+    title: 'Iterative direction testing',
+    shortTitle: 'Direction testing',
     description: 'Explore potential directions, test fit, and narrow down.',
     prompts: [
       'Based on what we\'ve discussed, here are a few directions that might fit... (propose 2-3)',
@@ -64,8 +64,8 @@ export const sessionSteps: SessionStep[] = [
   },
   {
     id: 'wrap',
-    title: 'Wrap & Follow-up',
-    shortTitle: 'Wrap Up',
+    title: 'Wrap & follow-up',
+    shortTitle: 'Wrap & follow-up',
     description: 'Synthesize key takeaways and set concrete next steps.',
     prompts: [
       'Let me summarize what we\'ve discussed...',

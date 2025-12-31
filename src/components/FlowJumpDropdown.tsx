@@ -44,12 +44,12 @@ export function FlowJumpDropdown() {
           className="h-9 px-3 gap-2 border-border/50 hover:border-border hover:bg-muted/50"
         >
           <Navigation className="h-4 w-4" />
-          <span className="hidden sm:inline">Jump to…</span>
+          <span className="hidden sm:inline">Jump to flow</span>
         </Button>
       </DropdownMenuTrigger>
       <DropdownMenuContent align="end" className="w-64 bg-popover border-border shadow-lg">
         <DropdownMenuLabel className="text-xs text-muted-foreground uppercase tracking-wider">
-          Session Flow Steps
+          Flow steps
         </DropdownMenuLabel>
         <DropdownMenuSeparator />
         {sessionSteps.map((step, index) => {
