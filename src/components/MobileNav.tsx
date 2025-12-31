@@ -12,6 +12,8 @@ import {
 import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
 import { useState } from 'react';
+import { sessionSteps } from '@/data/sessionSteps';
+import { useNavigate } from 'react-router-dom';
 
 const navItems = [
   { path: '/', label: 'Start Here', icon: BookOpen },
@@ -24,7 +26,13 @@ const navItems = [
 
 export function MobileNav() {
   const location = useLocation();
+  const navigate = useNavigate();
   const [open, setOpen] = useState(false);
+
+  const handleFlowStepClick = (stepId: string) => {
+    navigate(`/flow#${stepId}`);
+    setOpen(false);
+  };
 
   return (
     <Sheet open={open} onOpenChange={setOpen}>
@@ -34,7 +42,7 @@ export function MobileNav() {
           <span className="sr-only">Toggle menu</span>
         </Button>
       </SheetTrigger>
-      <SheetContent side="left" className="w-72 p-0">
+      <SheetContent side="left" className="w-72 p-0 bg-background">
         <div className="p-4 border-b">
           <Link to="/" className="flex items-center gap-2" onClick={() => setOpen(false)}>
             <div className="h-8 w-8 rounded-lg gradient-hero flex items-center justify-center">
@@ -64,6 +72,27 @@ export function MobileNav() {
             </Link>
           ))}
         </nav>
+
+        {/* Flow Steps Quick Jump */}
+        <div className="px-4 pt-2 pb-4 border-t mt-2">
+          <p className="text-xs font-medium text-muted-foreground uppercase tracking-wider mb-3 px-3">
+            Jump to Flow Step
+          </p>
+          <div className="space-y-1">
+            {sessionSteps.map((step, index) => (
+              <button
+                key={step.id}
+                onClick={() => handleFlowStepClick(step.id)}
+                className="w-full flex items-center gap-3 px-3 py-2 text-sm text-muted-foreground hover:text-foreground hover:bg-muted rounded-lg transition-colors"
+              >
+                <span className="flex items-center justify-center w-5 h-5 rounded-full bg-muted text-xs font-medium">
+                  {index + 1}
+                </span>
+                <span>{step.shortTitle}</span>
+              </button>
+            ))}
+          </div>
+        </div>
       </SheetContent>
     </Sheet>
   );

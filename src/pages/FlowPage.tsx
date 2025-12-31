@@ -4,7 +4,6 @@ import { sessionSteps } from '@/data/sessionSteps';
 import { cn } from '@/lib/utils';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
-import { ScrollArea } from '@/components/ui/scroll-area';
 import { 
   ChevronUp, 
   ChevronDown, 
@@ -15,7 +14,10 @@ import {
   Lock,
   Compass,
   CheckCircle,
+  Link as LinkIcon,
+  Check,
 } from 'lucide-react';
+import { useToast } from '@/hooks/use-toast';
 
 const stepIcons = {
   opening: Target,
@@ -29,6 +31,7 @@ const stepIcons = {
 export default function FlowPage() {
   const location = useLocation();
   const navigate = useNavigate();
+  const { toast } = useToast();
   const sectionRefs = useRef<Record<string, HTMLElement | null>>({});
 
   // Get current step from hash
@@ -59,47 +62,54 @@ export default function FlowPage() {
     }
   };
 
+  const copyStepLink = (stepId: string) => {
+    const url = `${window.location.origin}/flow#${stepId}`;
+    navigator.clipboard.writeText(url);
+    toast({
+      title: 'Link copied',
+      description: 'Step link copied to clipboard',
+    });
+  };
+
   return (
     <div className="flex min-h-[calc(100vh-64px)]">
-      {/* Left Sidebar - Step Navigation */}
-      <aside className="hidden md:flex w-64 border-r border-border/50 bg-card/30 flex-col">
+      {/* Left Sidebar - Step Navigation (Sticky) */}
+      <aside className="hidden md:flex w-64 border-r border-border/50 bg-card/30 flex-col sticky top-16 h-[calc(100vh-64px)]">
         <div className="p-4 border-b border-border/50">
           <h2 className="font-display font-medium text-sm text-muted-foreground uppercase tracking-wider">
             Session Flow
           </h2>
         </div>
-        <ScrollArea className="flex-1">
-          <nav className="p-3 space-y-1">
-            {sessionSteps.map((step, index) => {
-              const isActive = step.id === currentStepId;
-              const Icon = stepIcons[step.id as keyof typeof stepIcons] || Target;
-              
-              return (
-                <button
-                  key={step.id}
-                  onClick={() => navigateToStep(step.id)}
-                  className={cn(
-                    'w-full flex items-center gap-3 px-3 py-2.5 rounded-lg text-left transition-all duration-200',
-                    isActive
-                      ? 'bg-primary/10 text-primary'
-                      : 'text-muted-foreground hover:text-foreground hover:bg-muted/50'
-                  )}
-                >
-                  <span className={cn(
-                    'flex items-center justify-center w-6 h-6 rounded-full text-xs font-medium shrink-0',
-                    isActive ? 'bg-primary text-primary-foreground' : 'bg-muted'
-                  )}>
-                    {index + 1}
-                  </span>
-                  <div className="flex-1 min-w-0">
-                    <p className="text-sm font-medium truncate">{step.shortTitle}</p>
-                  </div>
-                  <Icon className={cn('h-4 w-4 shrink-0', isActive && 'text-primary')} />
-                </button>
-              );
-            })}
-          </nav>
-        </ScrollArea>
+        <nav className="flex-1 overflow-auto p-3 space-y-1">
+          {sessionSteps.map((step, index) => {
+            const isActive = step.id === currentStepId;
+            const Icon = stepIcons[step.id as keyof typeof stepIcons] || Target;
+            
+            return (
+              <button
+                key={step.id}
+                onClick={() => navigateToStep(step.id)}
+                className={cn(
+                  'w-full flex items-center gap-3 px-3 py-2.5 rounded-lg text-left transition-all duration-200',
+                  isActive
+                    ? 'bg-primary/10 text-primary'
+                    : 'text-muted-foreground hover:text-foreground hover:bg-muted/50'
+                )}
+              >
+                <span className={cn(
+                  'flex items-center justify-center w-6 h-6 rounded-full text-xs font-medium shrink-0',
+                  isActive ? 'bg-primary text-primary-foreground' : 'bg-muted'
+                )}>
+                  {index + 1}
+                </span>
+                <div className="flex-1 min-w-0">
+                  <p className="text-sm font-medium truncate">{step.shortTitle}</p>
+                </div>
+                <Icon className={cn('h-4 w-4 shrink-0', isActive && 'text-primary')} />
+              </button>
+            );
+          })}
+        </nav>
       </aside>
 
       {/* Main Content */}
@@ -163,10 +173,22 @@ export default function FlowPage() {
                     )}>
                       <Icon className="h-5 w-5" />
                     </div>
-                    <div>
-                      <p className="text-xs font-medium text-muted-foreground uppercase tracking-wider mb-1">
-                        Step {index + 1}
-                      </p>
+                    <div className="flex-1">
+                      <div className="flex items-center gap-2 mb-1">
+                        <p className="text-xs font-medium text-muted-foreground uppercase tracking-wider">
+                          Step {index + 1}
+                        </p>
+                        <Button
+                          variant="ghost"
+                          size="sm"
+                          className="h-6 px-2 text-muted-foreground hover:text-foreground"
+                          onClick={() => copyStepLink(step.id)}
+                          title="Copy link to this step"
+                        >
+                          <LinkIcon className="h-3 w-3 mr-1" />
+                          <span className="text-xs">Copy link</span>
+                        </Button>
+                      </div>
                       <h2 className="font-display text-xl font-medium">{step.title}</h2>
                       <p className="text-muted-foreground mt-1">{step.description}</p>
                     </div>
