@@ -1,5 +1,4 @@
 import { useNavigate } from 'react-router-dom';
-import { sessionSteps } from '@/data/sessionSteps';
 import { Button } from '@/components/ui/button';
 import {
   DropdownMenu,
@@ -18,6 +17,7 @@ import {
   CheckCircle,
   Navigation,
 } from 'lucide-react';
+import { useContent } from '@/contexts/ContentContext';
 
 const stepIcons = {
   opening: Target,
@@ -30,10 +30,25 @@ const stepIcons = {
 
 export function FlowJumpDropdown() {
   const navigate = useNavigate();
+  const { flowSteps } = useContent();
 
   const handleJump = (stepId: string) => {
     navigate(`/flow#${stepId}`);
   };
+
+  if (flowSteps.length === 0) {
+    return (
+      <Button
+        variant="outline"
+        size="sm"
+        disabled
+        className="h-9 px-3 gap-2 border-border/50"
+      >
+        <Navigation className="h-4 w-4" />
+        <span className="hidden sm:inline">Jump to flow</span>
+      </Button>
+    );
+  }
 
   return (
     <DropdownMenu>
@@ -52,7 +67,7 @@ export function FlowJumpDropdown() {
           Flow steps
         </DropdownMenuLabel>
         <DropdownMenuSeparator />
-        {sessionSteps.map((step, index) => {
+        {flowSteps.map((step, index) => {
           const Icon = stepIcons[step.id as keyof typeof stepIcons] || Target;
           return (
             <DropdownMenuItem

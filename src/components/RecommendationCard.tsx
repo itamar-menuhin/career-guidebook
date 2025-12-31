@@ -1,4 +1,4 @@
-import { RecommendationCard as CardType } from '@/data/types';
+import { RecommendationCard as CardType } from '@/lib/contentTypes';
 import { cn } from '@/lib/utils';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';

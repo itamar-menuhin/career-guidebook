@@ -1,48 +1,25 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
-import { FileText, Lock, Copy } from 'lucide-react';
+import { FileText, Lock, Copy, Target, Wrench, Sparkles } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { useToast } from '@/hooks/use-toast';
+import { useContent } from '@/contexts/ContentContext';
+import { Template } from '@/lib/contentTypes';
 
 export default function TemplatesPage() {
   const { toast } = useToast();
+  const { templates, loading } = useContent();
 
   const handleCopy = (text: string, name: string) => {
     navigator.clipboard.writeText(text);
     toast({ title: 'Copied to clipboard', description: name });
   };
 
-  const wrapTemplate = `## Snapshot
-- **Current situation:** [...]
-- **Aiming for:** [...]
-- **Must-haves:** [...]
-- **Constraints:** [...]
-
-## Promising Directions
-### 1. [Direction Title]
-- **Why promising:** [...]
-- **First small steps (≤60 min):** [...]
-- **Links:** [...]
-- **People to talk to:** [...]
-
-## Closing
-- **Next steps:** [...]
-- **Follow-up plan:** [...]`;
-
-  const focusTemplate = `{
-  id: "unique-id",
-  name: "Focus Area Name",
-  overview: "What this area is trying to achieve...",
-  roleShapes: ["Role 1", "Role 2"],
-  fitSignals: ["Signal 1", "Signal 2"],
-  buckets: {
-    quickTaste: { title: "...", cardIds: [...] },
-    deeperDive: { ... },
-    handsOn: { ... },
-    jobBoard: { ... }
-  },
-  curatedCardIds: [...],
-  peopleToTalkToPrompts: [...]
-}`;
+  const templateStyles: Record<Template['category'] | 'other', { icon: typeof FileText; bg: string; iconColor: string }> = {
+    wrap: { icon: FileText, bg: 'bg-primary/10', iconColor: 'text-primary' },
+    'focus-area': { icon: Target, bg: 'bg-bucket-deep/10', iconColor: 'text-bucket-deep' },
+    tool: { icon: Wrench, bg: 'bg-muted', iconColor: 'text-foreground' },
+    other: { icon: Sparkles, bg: 'bg-accent/10', iconColor: 'text-accent' },
+  };
 
   return (
     <div className="min-h-screen">
@@ -59,93 +36,62 @@ export default function TemplatesPage() {
       <section className="py-8 px-4 pb-20">
         <div className="container max-w-4xl">
           <div className="grid gap-6">
-            {/* Wrap Summary Template */}
-            <Card className="shadow-soft border-border/50 overflow-hidden">
-              <CardHeader className="pb-4">
-                <div className="flex items-center justify-between">
-                  <div className="flex items-center gap-3">
-                    <div className="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center">
-                      <FileText className="h-5 w-5 text-primary" />
-                    </div>
-                    <div>
-                      <div className="flex items-center gap-2">
-                        <CardTitle className="font-display text-lg">Wrap Summary Template</CardTitle>
-                        <Lock className="h-3.5 w-3.5 text-muted-foreground" />
-                      </div>
-                      <CardDescription className="mt-0.5">Standard format for session wrap-up notes</CardDescription>
-                    </div>
-                  </div>
-                  <Button 
-                    variant="outline" 
-                    size="sm" 
-                    onClick={() => handleCopy(wrapTemplate, 'Wrap Summary Template')}
-                    className="hidden sm:flex"
-                  >
-                    <Copy className="h-4 w-4 mr-2" />
-                    Copy
-                  </Button>
-                </div>
-              </CardHeader>
-              <CardContent>
-                <div className="relative">
-                  <pre className="text-sm bg-muted/50 border border-border/50 p-5 rounded-xl overflow-x-auto whitespace-pre-wrap font-mono leading-relaxed">
-                    {wrapTemplate}
-                  </pre>
-                  <Button 
-                    variant="outline" 
-                    size="sm" 
-                    onClick={() => handleCopy(wrapTemplate, 'Wrap Summary Template')}
-                    className="sm:hidden absolute top-3 right-3"
-                  >
-                    <Copy className="h-4 w-4" />
-                  </Button>
-                </div>
-              </CardContent>
-            </Card>
+            {loading && templates.length === 0 && (
+              <div className="text-muted-foreground text-center py-8">Loading templates...</div>
+            )}
 
-            {/* Focus Area Template */}
-            <Card className="shadow-soft border-border/50 overflow-hidden">
-              <CardHeader className="pb-4">
-                <div className="flex items-center justify-between">
-                  <div className="flex items-center gap-3">
-                    <div className="w-10 h-10 rounded-xl bg-bucket-deep/10 flex items-center justify-center">
-                      <FileText className="h-5 w-5 text-bucket-deep" />
-                    </div>
-                    <div>
-                      <div className="flex items-center gap-2">
-                        <CardTitle className="font-display text-lg">Focus Area Template</CardTitle>
-                        <Lock className="h-3.5 w-3.5 text-muted-foreground" />
+            {!loading && templates.length === 0 && (
+              <div className="text-muted-foreground text-center py-8">No templates available yet.</div>
+            )}
+
+            {templates.map(template => {
+              const style = templateStyles[template.category] || templateStyles.other;
+              const Icon = style.icon;
+              return (
+                <Card key={template.id} className="shadow-soft border-border/50 overflow-hidden">
+                  <CardHeader className="pb-4">
+                    <div className="flex items-center justify-between">
+                      <div className="flex items-center gap-3">
+                        <div className={`w-10 h-10 rounded-xl ${style.bg} flex items-center justify-center`}>
+                          <Icon className={`h-5 w-5 ${style.iconColor}`} />
+                        </div>
+                        <div>
+                          <div className="flex items-center gap-2">
+                            <CardTitle className="font-display text-lg">{template.name}</CardTitle>
+                            {template.locked && <Lock className="h-3.5 w-3.5 text-muted-foreground" />}
+                          </div>
+                          <CardDescription className="mt-0.5">{template.description}</CardDescription>
+                        </div>
                       </div>
-                      <CardDescription className="mt-0.5">Structure for adding new focus areas</CardDescription>
+                      <Button 
+                        variant="outline" 
+                        size="sm" 
+                        onClick={() => handleCopy(template.content, template.name)}
+                        className="hidden sm:flex"
+                      >
+                        <Copy className="h-4 w-4 mr-2" />
+                        Copy
+                      </Button>
                     </div>
-                  </div>
-                  <Button 
-                    variant="outline" 
-                    size="sm" 
-                    onClick={() => handleCopy(focusTemplate, 'Focus Area Template')}
-                    className="hidden sm:flex"
-                  >
-                    <Copy className="h-4 w-4 mr-2" />
-                    Copy
-                  </Button>
-                </div>
-              </CardHeader>
-              <CardContent>
-                <div className="relative">
-                  <pre className="text-sm bg-muted/50 border border-border/50 p-5 rounded-xl overflow-x-auto whitespace-pre-wrap font-mono leading-relaxed">
-                    {focusTemplate}
-                  </pre>
-                  <Button 
-                    variant="outline" 
-                    size="sm" 
-                    onClick={() => handleCopy(focusTemplate, 'Focus Area Template')}
-                    className="sm:hidden absolute top-3 right-3"
-                  >
-                    <Copy className="h-4 w-4" />
-                  </Button>
-                </div>
-              </CardContent>
-            </Card>
+                  </CardHeader>
+                  <CardContent>
+                    <div className="relative">
+                      <pre className="text-sm bg-muted/50 border border-border/50 p-5 rounded-xl overflow-x-auto whitespace-pre-wrap font-mono leading-relaxed">
+                        {template.content}
+                      </pre>
+                      <Button 
+                        variant="outline" 
+                        size="sm" 
+                        onClick={() => handleCopy(template.content, template.name)}
+                        className="sm:hidden absolute top-3 right-3"
+                      >
+                        <Copy className="h-4 w-4" />
+                      </Button>
+                    </div>
+                  </CardContent>
+                </Card>
+              );
+            })}
           </div>
         </div>
       </section>

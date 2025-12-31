@@ -54,32 +54,40 @@ npm run dev
 ```
 src/
 ├── components/     # UI components
-├── contexts/       # React contexts (Search)
-├── data/          # Content data (cards, focus areas, pathways, steps)
+├── contexts/       # React contexts (Search, Content loading)
 ├── hooks/         # Custom React hooks
-├── lib/           # Utilities
+├── lib/           # Utilities and content schemas/loaders
 └── pages/         # Route pages
+public/
+└── content/       # JSON content files loaded at runtime
 ```
 
 ## Adding Content
 
-The system is designed for easy content extension:
+All guidebook content lives in `public/content` as JSON files validated at startup. Update these files to change or extend the guidebook—no UI code changes required.
 
 ### Adding a New Focus Area
 
-1. Add a new `FocusArea` object in `src/data/focusAreas.ts`
-2. Reference existing or new card IDs in the `curatedCardIds` array
-3. No UI code changes needed
+1. Add an entry to `public/content/focus-areas.json` with `id`, `name`, `overview`, buckets, curated card IDs, and prompts.
+2. Reference card IDs from `public/content/cards.json` in `curatedCardIds` and the bucket `cardIds` arrays.
+3. The new focus area will appear automatically on the Focus Areas page.
 
 ### Adding New Cards
 
-1. Add `RecommendationCard` objects in `src/data/cards.ts`
-2. Use consistent tags for filtering (topic, type, commitment)
-3. Cards automatically appear in the catalog and search
+1. Add card entries to `public/content/cards.json` with tags (topic/type/commitment) for filtering.
+2. Reference the new card IDs from focus areas or pathways as needed.
+3. Cards automatically appear in the catalog, search, and command palette.
 
 ### Modifying Session Steps
 
-Edit `src/data/sessionSteps.ts` to change prompts, titles, or add new steps.
+Edit `public/content/flow.json` to change prompts, titles, or add new steps. The flow page and navbar jump menu update automatically.
+
+### Updating Pathways or Templates
+
+- Add or edit pathway entries in `public/content/pathways.json`.
+- Add or edit templates/tools in `public/content/templates.json` to update the Templates page and copy-to-clipboard content.
+
+If content fails schema validation in development, detailed errors are printed to the console and a friendly error page is shown in the UI. Refresh after fixing the JSON files.
 
 ## License
 

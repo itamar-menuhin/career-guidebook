@@ -5,6 +5,7 @@ import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { Search, X, LayoutGrid } from 'lucide-react';
 import { cn } from '@/lib/utils';
+import { useContent } from '@/contexts/ContentContext';
 
 const typeLabels: Record<string, string> = {
   'quick-taste': 'Quick taste (≈1 hour)',
@@ -17,6 +18,7 @@ const topicOptions = ['course', 'program', 'reading', 'job-board', 'project', 't
 const commitmentOptions = ['low', 'medium', 'high'];
 
 export default function CardsPage() {
+  const { loading } = useContent();
   const { query, setQuery, filters, setFilter, clearFilters, filteredCards } = useSearch();
   const hasFilters = filters.type || filters.topic || filters.commitment || query;
 
@@ -136,12 +138,17 @@ export default function CardsPage() {
                 <RecommendationCard card={card} />
               </div>
             ))}
-            {filteredCards.length === 0 && (
+            {filteredCards.length === 0 && !loading && (
               <div className="text-center py-16">
                 <p className="text-muted-foreground">No cards match your filters.</p>
                 <Button variant="link" onClick={() => { clearFilters(); setQuery(''); }}>
                   Clear filters
                 </Button>
+              </div>
+            )}
+            {filteredCards.length === 0 && loading && (
+              <div className="text-center py-16 text-muted-foreground">
+                Loading cards...
               </div>
             )}
           </div>
