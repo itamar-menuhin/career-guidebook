@@ -32,7 +32,7 @@ export function CommandPalette() {
   return (
     <CommandDialog open={isOpen} onOpenChange={(open) => !open && closeSearch()}>
       <CommandInput 
-        placeholder="Search cards, focus areas, pathways..." 
+        placeholder="Search cards, focus areas, pathways, flow steps..." 
         value={query}
         onValueChange={setQuery}
       />
@@ -81,6 +81,24 @@ export function CommandPalette() {
                 >
                   <Target className="mr-2 h-4 w-4 text-primary" />
                   <span>{area.name}</span>
+                  <ArrowRight className="ml-auto h-4 w-4 text-muted-foreground" />
+                </CommandItem>
+              ))}
+            </CommandGroup>
+          </>
+        )}
+
+        {query && results.flowSteps.length > 0 && (
+          <>
+            <CommandSeparator />
+            <CommandGroup heading="Flow steps">
+              {results.flowSteps.map(step => (
+                <CommandItem 
+                  key={step.id} 
+                  onSelect={() => handleSelect(`/flow#${step.id}`)}
+                >
+                  <PlayCircle className="mr-2 h-4 w-4 text-primary" />
+                  <span>{step.title}</span>
                   <ArrowRight className="ml-auto h-4 w-4 text-muted-foreground" />
                 </CommandItem>
               ))}

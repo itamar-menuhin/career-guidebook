@@ -1,6 +1,5 @@
-import { useEffect, useRef, useState } from 'react';
+import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { useLocation, useNavigate, Link } from 'react-router-dom';
-import { sessionSteps } from '@/data/sessionSteps';
 import { cn } from '@/lib/utils';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
@@ -16,8 +15,10 @@ import {
   CheckCircle,
   Link as LinkIcon,
   Check,
+  Loader2,
 } from 'lucide-react';
 import { useToast } from '@/hooks/use-toast';
+import { useContent } from '@/contexts/ContentContext';
 
 const stepIcons = {
   opening: Target,
@@ -31,31 +32,44 @@ const stepIcons = {
 export default function FlowPage() {
   const location = useLocation();
   const navigate = useNavigate();
+  const { flowSteps, loading, refresh } = useContent();
+  const steps = flowSteps;
+  const stepsAvailable = steps.length > 0;
   const { toast } = useToast();
   const sectionRefs = useRef<Record<string, HTMLElement | null>>({});
-  const getValidStepId = (hashValue: string) => {
-    const cleaned = hashValue.replace('#', '');
-    return sessionSteps.some(step => step.id === cleaned) ? cleaned : sessionSteps[0].id;
-  };
+  const getValidStepId = useCallback(
+    (hashValue: string) => {
+      if (!stepsAvailable) return null;
+      const cleaned = hashValue.replace('#', '');
+      const fallback = steps[0]?.id ?? null;
+      return steps.some(step => step.id === cleaned) ? cleaned : fallback;
+    },
+    [steps, stepsAvailable]
+  );
 
-  const [activeStepId, setActiveStepId] = useState<string>(getValidStepId(location.hash));
-  const activeStepRef = useRef(activeStepId);
+  const [activeStepId, setActiveStepId] = useState<string | null>(null);
+  const activeStepRef = useRef<string | null>(null);
 
   useEffect(() => {
-    activeStepRef.current = activeStepId;
-  }, [activeStepId]);
-
-  const currentStepIndex = sessionSteps.findIndex(s => s.id === activeStepId);
-
-  useEffect(() => {
-    if (!location.hash) {
-      navigate(`/flow#${sessionSteps[0].id}`, { replace: true });
+    if (!stepsAvailable) {
+      setActiveStepId(null);
+      activeStepRef.current = null;
+      return;
     }
-  }, [location.hash, navigate]);
+    const initialId = getValidStepId(location.hash) ?? steps[0].id;
+    setActiveStepId(initialId);
+    activeStepRef.current = initialId;
+    if (!location.hash) {
+      navigate(`/flow#${initialId}`, { replace: true });
+    }
+  }, [getValidStepId, location.hash, navigate, steps, stepsAvailable]);
 
   // Scroll to section on hash change
   useEffect(() => {
+    if (!stepsAvailable) return;
     const stepId = getValidStepId(location.hash);
+
+    if (!stepId) return;
 
     if (stepId !== activeStepRef.current) {
       setActiveStepId(stepId);
@@ -67,9 +81,15 @@ export default function FlowPage() {
         sectionRefs.current[stepId]?.scrollIntoView({ behavior: 'smooth', block: 'start' });
       });
     }
-  }, [location.hash]);
+  }, [getValidStepId, location.hash, stepsAvailable]);
+
+  const currentStepIndex = useMemo(
+    () => steps.findIndex(s => s.id === activeStepId),
+    [steps, activeStepId]
+  );
 
   useEffect(() => {
+    if (!stepsAvailable) return;
     const observer = new IntersectionObserver(
       entries => {
         const visible = entries
@@ -90,33 +110,37 @@ export default function FlowPage() {
       }
     );
 
-    sessionSteps.forEach(step => {
+    steps.forEach(step => {
       const node = sectionRefs.current[step.id];
       if (node) observer.observe(node);
     });
 
     return () => observer.disconnect();
-  }, [navigate]);
+  }, [navigate, steps, stepsAvailable]);
 
   const navigateToStep = (stepId: string) => {
+    if (!stepsAvailable) return;
     setActiveStepId(stepId);
     activeStepRef.current = stepId;
     navigate(`/flow#${stepId}`);
   };
 
   const goToPrevious = () => {
-    if (currentStepIndex > 0) {
-      navigateToStep(sessionSteps[currentStepIndex - 1].id);
+    if (!stepsAvailable || currentStepIndex <= 0) {
+      return;
     }
+    navigateToStep(steps[currentStepIndex - 1].id);
   };
 
   const goToNext = () => {
-    if (currentStepIndex < sessionSteps.length - 1) {
-      navigateToStep(sessionSteps[currentStepIndex + 1].id);
+    if (!stepsAvailable || currentStepIndex === -1 || currentStepIndex >= steps.length - 1) {
+      return;
     }
+    navigateToStep(steps[currentStepIndex + 1].id);
   };
 
   const copyStepLink = (stepId: string) => {
+    if (!stepId) return;
     const url = `${window.location.origin}/flow#${stepId}`;
     navigator.clipboard.writeText(url);
     toast({
@@ -124,6 +148,36 @@ export default function FlowPage() {
       description: 'Step link copied to clipboard',
     });
   };
+
+  if (loading && !stepsAvailable) {
+    return (
+      <div className="flex min-h-[calc(100vh-64px)] items-center justify-center px-4">
+        <div className="flex items-center gap-2 text-muted-foreground">
+          <Loader2 className="h-5 w-5 animate-spin" />
+          <span>Loading flow content...</span>
+        </div>
+      </div>
+    );
+  }
+
+  if (!loading && !stepsAvailable) {
+    return (
+      <div className="flex min-h-[calc(100vh-64px)] items-center justify-center px-4">
+        <div className="max-w-md text-center space-y-4">
+          <p className="text-lg font-medium">Flow content failed to load.</p>
+          <p className="text-muted-foreground">
+            Check that <code>/public/content/flow.json</code> exists and matches the expected schema.
+          </p>
+          <Button onClick={refresh} variant="outline">
+            Retry loading
+          </Button>
+        </div>
+      </div>
+    );
+  }
+
+  const effectiveStepIndex = currentStepIndex === -1 ? 0 : currentStepIndex;
+  const stepTotal = steps.length;
 
   return (
     <div className="flex min-h-[calc(100vh-64px)]">
@@ -135,7 +189,7 @@ export default function FlowPage() {
           </h2>
         </div>
         <nav className="flex-1 overflow-auto p-3 space-y-1">
-          {sessionSteps.map((step, index) => {
+          {steps.map((step, index) => {
             const isActive = step.id === activeStepId;
             const Icon = stepIcons[step.id as keyof typeof stepIcons] || Target;
             
@@ -190,12 +244,12 @@ export default function FlowPage() {
                 <ChevronUp className="h-4 w-4" />
               </Button>
               <span className="text-sm font-medium">
-                Step {currentStepIndex + 1} of {sessionSteps.length}
+                Step {effectiveStepIndex + 1} of {stepTotal}
               </span>
               <Button 
                 variant="ghost" 
                 size="sm" 
-                disabled={currentStepIndex === sessionSteps.length - 1}
+                disabled={effectiveStepIndex === stepTotal - 1}
                 onClick={goToNext}
               >
                 <ChevronDown className="h-4 w-4" />
@@ -205,7 +259,7 @@ export default function FlowPage() {
 
           {/* All Steps */}
           <div className="space-y-12">
-            {sessionSteps.map((step, index) => {
+            {steps.map((step, index) => {
               const Icon = stepIcons[step.id as keyof typeof stepIcons] || Target;
               const isActive = step.id === activeStepId;
               
@@ -312,7 +366,7 @@ export default function FlowPage() {
           <div className="flex justify-between mt-12 pt-6 border-t border-border/50">
             <Button 
               variant="outline" 
-              disabled={currentStepIndex === 0} 
+              disabled={effectiveStepIndex === 0} 
               onClick={goToPrevious}
               className="border-border/60"
             >
@@ -320,7 +374,7 @@ export default function FlowPage() {
               Previous
             </Button>
             <Button 
-              disabled={currentStepIndex === sessionSteps.length - 1} 
+              disabled={effectiveStepIndex === stepTotal - 1} 
               onClick={goToNext}
               className="gradient-hero text-primary-foreground hover:opacity-90"
             >

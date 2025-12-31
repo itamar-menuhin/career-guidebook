@@ -1,8 +1,6 @@
-import React, { createContext, useContext, useState, useCallback, useEffect, ReactNode } from 'react';
-import { RecommendationCard, FocusArea, CommonPathway } from '@/data/types';
-import { recommendationCards, searchCards } from '@/data/cards';
-import { focusAreas } from '@/data/focusAreas';
-import { commonPathways } from '@/data/pathways';
+import React, { createContext, useContext, useState, useCallback, useEffect, ReactNode, useMemo } from 'react';
+import { RecommendationCard, FocusArea, CommonPathway, FlowStep } from '@/lib/contentTypes';
+import { useContent } from '@/contexts/ContentContext';
 
 interface SearchContextType {
   query: string;
@@ -15,6 +13,7 @@ interface SearchContextType {
     cards: RecommendationCard[];
     focusAreas: FocusArea[];
     pathways: CommonPathway[];
+    flowSteps: FlowStep[];
   };
   filters: {
     type: string | null;
@@ -29,6 +28,7 @@ interface SearchContextType {
 const SearchContext = createContext<SearchContextType | undefined>(undefined);
 
 export function SearchProvider({ children }: { children: ReactNode }) {
+  const { cards, focusAreas, pathways, flowSteps } = useContent();
   const [query, setQuery] = useState('');
   const [isOpen, setIsOpen] = useState(false);
   const [filters, setFilters] = useState<{
@@ -72,31 +72,51 @@ export function SearchProvider({ children }: { children: ReactNode }) {
     setFilters({ type: null, topic: null, commitment: null });
   }, []);
 
-  // Search results
-  const results = {
-    cards: query ? searchCards(query) : [],
-    focusAreas: query
-      ? focusAreas.filter(fa =>
-          fa.name.toLowerCase().includes(query.toLowerCase()) ||
-          fa.overview.toLowerCase().includes(query.toLowerCase())
-        )
-      : [],
-    pathways: query
-      ? commonPathways.filter(p =>
-          p.name.toLowerCase().includes(query.toLowerCase()) ||
-          p.description.toLowerCase().includes(query.toLowerCase())
-        )
-      : [],
-  };
+  const searchCards = useCallback(
+    (term: string) => {
+      const lowerQuery = term.toLowerCase();
+      return cards.filter(card =>
+        card.title.toLowerCase().includes(lowerQuery) ||
+        card.oneLiner.toLowerCase().includes(lowerQuery) ||
+        card.tags.topic.toLowerCase().includes(lowerQuery) ||
+        card.tags.goodFitIf.some(fit => fit.toLowerCase().includes(lowerQuery))
+      );
+    },
+    [cards]
+  );
 
-  // Filtered cards (for the cards page)
-  const filteredCards = recommendationCards.filter(card => {
-    if (filters.type && card.tags.type !== filters.type) return false;
-    if (filters.topic && card.tags.topic !== filters.topic) return false;
-    if (filters.commitment && card.tags.commitment !== filters.commitment) return false;
-    if (query && !searchCards(query).find(c => c.id === card.id)) return false;
-    return true;
-  });
+  const results = useMemo(() => {
+    if (!query.trim()) {
+      return { cards: [] as RecommendationCard[], focusAreas: [] as FocusArea[], pathways: [] as CommonPathway[], flowSteps: [] as FlowStep[] };
+    }
+    const lowerQuery = query.toLowerCase();
+    return {
+      cards: searchCards(query),
+      focusAreas: focusAreas.filter(fa =>
+        fa.name.toLowerCase().includes(lowerQuery) ||
+        fa.overview.toLowerCase().includes(lowerQuery)
+      ),
+      pathways: pathways.filter(p =>
+        p.name.toLowerCase().includes(lowerQuery) ||
+        p.description.toLowerCase().includes(lowerQuery)
+      ),
+      flowSteps: flowSteps.filter(step =>
+        step.title.toLowerCase().includes(lowerQuery) ||
+        step.shortTitle.toLowerCase().includes(lowerQuery) ||
+        step.description.toLowerCase().includes(lowerQuery)
+      ),
+    };
+  }, [flowSteps, focusAreas, pathways, query, searchCards]);
+
+  const filteredCards = useMemo(() => {
+    const matchingCards = query ? searchCards(query) : cards;
+    return matchingCards.filter(card => {
+      if (filters.type && card.tags.type !== filters.type) return false;
+      if (filters.topic && card.tags.topic !== filters.topic) return false;
+      if (filters.commitment && card.tags.commitment !== filters.commitment) return false;
+      return true;
+    });
+  }, [cards, filters.commitment, filters.topic, filters.type, query, searchCards]);
 
   return (
     <SearchContext.Provider

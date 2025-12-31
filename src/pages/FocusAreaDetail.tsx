@@ -1,7 +1,6 @@
 import { useParams, Link } from 'react-router-dom';
-import { useRef, useEffect, useState } from 'react';
-import { getFocusAreaById } from '@/data/focusAreas';
-import { getCardById } from '@/data/cards';
+import { useRef, useEffect, useState, useMemo } from 'react';
+import { useContent, useCardLookup } from '@/contexts/ContentContext';
 import { BucketTile, BucketTileGrid } from '@/components/BucketTile';
 import { RecommendationCard } from '@/components/RecommendationCard';
 import { Button } from '@/components/ui/button';
@@ -19,7 +18,9 @@ import {
 
 export default function FocusAreaDetail() {
   const { id } = useParams<{ id: string }>();
-  const area = getFocusAreaById(id || '');
+  const { focusAreas, loading } = useContent();
+  const lookupCard = useCardLookup();
+  const area = useMemo(() => focusAreas.find(focusArea => focusArea.id === (id || '')), [focusAreas, id]);
   const [activeBucket, setActiveBucket] = useState<string | null>(null);
   const [expandedBuckets, setExpandedBuckets] = useState<Record<string, boolean>>({});
   const bucketSectionRefs = useRef<Record<string, HTMLElement | null>>({});
@@ -36,6 +37,14 @@ export default function FocusAreaDetail() {
       return () => window.clearTimeout(timeout);
     }
   }, [activeBucket]);
+
+  if (loading && !area) {
+    return (
+      <div className="container py-12 text-center text-muted-foreground">
+        Loading focus area...
+      </div>
+    );
+  }
 
   if (!area) {
     return (
@@ -69,6 +78,21 @@ export default function FocusAreaDetail() {
     if (nextOpen) {
       setActiveBucket(bucketKey);
     }
+  };
+
+  const renderCard = (cardId: string) => {
+    const card = lookupCard(cardId);
+    if (!card) {
+      return (
+        <div
+          key={cardId}
+          className="rounded-lg border border-dashed border-border/60 p-4 text-sm text-muted-foreground"
+        >
+          Card "{cardId}" is missing from the content library.
+        </div>
+      );
+    }
+    return <RecommendationCard key={cardId} card={card} />;
   };
 
   return (
@@ -140,10 +164,7 @@ export default function FocusAreaDetail() {
 
                 <CollapsibleContent className="space-y-4 pt-1 animate-fade-in">
                   <div className="space-y-4">
-                    {b.data.cardIds.map(cardId => {
-                      const card = getCardById(cardId);
-                      return card ? <RecommendationCard key={cardId} card={card} /> : null;
-                    })}
+                    {b.data.cardIds.map(cardId => renderCard(cardId))}
                     {b.data.cardIds.length === 0 && (
                       <p className="text-sm text-muted-foreground italic">No cards in this bucket yet.</p>
                     )}
