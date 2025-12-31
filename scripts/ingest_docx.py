@@ -297,21 +297,38 @@ EXPERIMENT_BUCKETS = {
     "d": "jobBoard",
 }
 
+BUCKET_HEADING_ALIASES = {
+    normalize("Quick taste (≈1 hour)"): "quickTaste",
+    normalize("Deeper dive (2–6 hours)"): "deeperDive",
+    normalize("Hands-on trial"): "handsOn",
+    normalize("Job board scan (real roles)"): "jobBoard",
+}
+
 TYPE_ALIASES = {
     "experiment a": "quick-taste",
     "quick taste": "quick-taste",
+    "quick taste 1 hour": "quick-taste",
+    "quick taste 1hour": "quick-taste",
+    "quick taste ≈1 hour": "quick-taste",
+    "quick taste 1h": "quick-taste",
     "quick-taste": "quick-taste",
     "a": "quick-taste",
     "experiment b": "deeper-dive",
     "deeper dive": "deeper-dive",
+    "deeper dive 2–6 hours": "deeper-dive",
+    "deeper dive 2-6 hours": "deeper-dive",
     "deeper-dive": "deeper-dive",
     "b": "deeper-dive",
     "experiment c": "hands-on",
     "hands on": "hands-on",
+    "hands-on trial": "hands-on",
     "hands-on": "hands-on",
     "c": "hands-on",
     "experiment d": "job-board",
     "job board": "job-board",
+    "job board scan real roles": "job-board",
+    "job board scan": "job-board",
+    "job board scan real jobs": "job-board",
     "job-board": "job-board",
     "d": "job-board",
 }
@@ -346,14 +363,31 @@ def match_experiment_marker(text: str) -> Optional[str]:
     return None
 
 
-def extract_focus_area_name(paragraphs: List[str]) -> tuple[str, List[str]]:
+def match_bucket_heading(text: str) -> Optional[str]:
+    normalized_text = normalize(text)
+    for heading, bucket in BUCKET_HEADING_ALIASES.items():
+        if heading in normalized_text:
+            return bucket
+    return None
+
+
+def detect_bucket_marker(text: str) -> Optional[str]:
+    experiment_key = match_experiment_marker(text)
+    if experiment_key:
+        return EXPERIMENT_BUCKETS.get(experiment_key)
+    return match_bucket_heading(text)
+
+
+def extract_focus_area_name(paragraphs: List[str], default_name: Optional[str] = None) -> tuple[str, List[str]]:
     for idx, para in enumerate(paragraphs):
-        match = re.search(r"cause\s+area\s*:\s*(.+)", para, flags=re.IGNORECASE)
+        match = re.search(r"(focus|cause)\s+area\s*:\s*(.+)", para, flags=re.IGNORECASE)
         if match:
-            name = match.group(1).strip().strip(":").strip()
+            name = match.group(2).strip().strip(":").strip()
             remaining = paragraphs[idx + 1 :]
             return name, remaining
-    raise ValueError("Unable to find 'Cause area:' line in focus area doc")
+    if default_name:
+        return default_name, paragraphs
+    raise ValueError("Unable to find 'Focus area:' or 'Cause area:' line in focus area doc")
 
 
 @dataclass
@@ -369,9 +403,10 @@ class FocusAreaContent:
     cards: List[dict]
 
 
-def split_focus_area_sections(paragraphs: List[str]) -> FocusAreaContent:
-    name, body = extract_focus_area_name(paragraphs)
-    slug = slugify(name)
+def split_focus_area_sections(paragraphs: List[str], filename_slug: str) -> FocusAreaContent:
+    fallback_name = re.sub(r"[-_]+", " ", filename_slug).strip().title()
+    name, body = extract_focus_area_name(paragraphs, default_name=fallback_name or filename_slug)
+    slug = slugify(filename_slug)
 
     overview: List[str] = []
     role_shapes: List[str] = []
@@ -396,9 +431,9 @@ def split_focus_area_sections(paragraphs: List[str]) -> FocusAreaContent:
     for para in body:
         normalized_para = normalize(para)
 
-        bucket_key = match_experiment_marker(para)
+        bucket_key = detect_bucket_marker(para)
         if bucket_key:
-            current_bucket = EXPERIMENT_BUCKETS[bucket_key]
+            current_bucket = bucket_key
             in_cards = False
             current_section = None
             continue
@@ -530,15 +565,20 @@ def parse_cards(lines: List[str], focus_area_id: str) -> List[dict]:
         when_to_suggest = " ".join(collected_lines.get("when to suggest", [])).strip()
         when_not_to = " ".join(collected_lines.get("when not to", [])).strip()
         topic = map_topic(" ".join(collected_lines.get("topic", [])))
-        type_tag = map_type(" ".join(collected_lines.get("type", [])))
+        bucket_value = " ".join(collected_lines.get("bucket", []))
+        type_value = bucket_value or " ".join(collected_lines.get("type", []))
+        type_tag = map_type(type_value)
         commitment = map_commitment(" ".join(collected_lines.get("commitment", [])))
         good_fit_raw = " ".join(collected_lines.get("fit gate", []))
         good_fit_if = [item.strip() for item in re.split(r"[;•\n]", good_fit_raw) if item.strip()] or [
             "Good fit details provided in focus area doc."
         ]
-        first_step = " ".join(
-            collected_lines.get("toe in the water", []) or collected_lines.get("best toe in the water step", [])
-        ).strip()
+        first_step_lines = (
+            collected_lines.get("toe in the water", [])
+            or collected_lines.get("best toe in the water step", [])
+            or collected_lines.get("first small step 60 min", [])
+        )
+        first_step = " ".join(first_step_lines).strip()
         next_step = " ".join(collected_lines.get("next step", [])).strip()
         resources_lines = collected_lines.get("resources / links", [])
         links = parse_links(resources_lines)
@@ -689,7 +729,7 @@ def ingest_focus_area_docs() -> List[dict]:
 
     for doc_path in focus_area_docs:
         paragraphs = paragraph_text(doc_path)
-        focus_content = split_focus_area_sections(paragraphs)
+        focus_content = split_focus_area_sections(paragraphs, filename_slug=doc_path.stem)
         focus_contents.append(focus_content)
         parsed_cards.extend(focus_content.cards)
 
