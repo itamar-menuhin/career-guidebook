@@ -94,7 +94,8 @@ export function SearchProvider({ children }: { children: ReactNode }) {
       cards: searchCards(query),
       focusAreas: focusAreas.filter(fa =>
         fa.name.toLowerCase().includes(lowerQuery) ||
-        fa.overview.toLowerCase().includes(lowerQuery)
+        fa.overviewPlainText.toLowerCase().includes(lowerQuery) ||
+        (fa.overviewExcerpt ?? '').toLowerCase().includes(lowerQuery)
       ),
       pathways: pathways.filter(p =>
         p.name.toLowerCase().includes(lowerQuery) ||
@@ -103,7 +104,8 @@ export function SearchProvider({ children }: { children: ReactNode }) {
       flowSteps: flowSteps.filter(step =>
         step.title.toLowerCase().includes(lowerQuery) ||
         step.shortTitle.toLowerCase().includes(lowerQuery) ||
-        step.description.toLowerCase().includes(lowerQuery)
+        (step.summary ?? '').toLowerCase().includes(lowerQuery) ||
+        step.contentPlainText.toLowerCase().includes(lowerQuery)
       ),
     };
   }, [flowSteps, focusAreas, pathways, query, searchCards]);

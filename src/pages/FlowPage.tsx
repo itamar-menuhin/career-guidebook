@@ -7,7 +7,6 @@ import { Button } from '@/components/ui/button';
 import { 
   ChevronUp, 
   ChevronDown, 
-  Sparkles,
   Target,
   User,
   Heart,
@@ -20,6 +19,7 @@ import {
 } from 'lucide-react';
 import { useToast } from '@/hooks/use-toast';
 import { useContent } from '@/contexts/ContentContext';
+import { MarkdownPage } from '@/components/MarkdownPage';
 
 const stepIcons = {
   opening: Target,
@@ -171,7 +171,8 @@ export default function FlowPage() {
         <div className="max-w-md text-center space-y-4">
           <p className="text-lg font-medium">Flow content failed to load.</p>
           <p className="text-muted-foreground">
-            Check that <code>/public/content/flow.json</code> exists and matches the expected schema.
+            Check that <code>/public/content/flow.json</code> and referenced markdown files exist
+            and match the expected schema.
           </p>
           <Button onClick={refresh} variant="outline">
             Retry loading
@@ -317,25 +318,13 @@ export default function FlowPage() {
                             </span>
                           )}
                         </div>
-                        <p className="text-muted-foreground mt-1">{step.description}</p>
+                        {step.summary && <p className="text-muted-foreground mt-1">{step.summary}</p>}
                       </div>
                     </div>
 
-                    {/* Prompts Card */}
                     <Card className="shadow-soft border-border/50">
                       <CardContent className="p-5">
-                        <div className="flex items-center gap-2 mb-4">
-                          <Sparkles className="h-4 w-4 text-primary" />
-                          <h3 className="font-medium text-sm">Suggested prompts</h3>
-                        </div>
-                        <ul className="space-y-3">
-                          {step.prompts.map((prompt, i) => (
-                            <li key={i} className="flex gap-3 text-[15px] leading-relaxed">
-                              <span className="text-primary font-medium shrink-0">{i + 1}.</span>
-                              <span>{prompt}</span>
-                            </li>
-                          ))}
-                        </ul>
+                        <MarkdownPage content={step.content} />
                       </CardContent>
                     </Card>
 

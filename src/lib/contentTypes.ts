@@ -43,14 +43,17 @@ export const RecommendationCardSchema = z.object({
 const FocusAreaBucketSchema = z.object({
   title: z.string().min(1),
   description: z.string().min(1),
+  descriptionPath: z.string().optional(),
   cardIds: z.array(z.string().min(1)).default([]),
   inlineGuidance: z.string().optional(),
+  inlineGuidancePath: z.string().optional(),
 });
 
 export const FocusAreaSchema = z.object({
   id: z.string().min(1),
   name: z.string().min(1),
-  overview: z.string().min(1),
+  overviewPath: z.string().min(1),
+  overviewExcerpt: z.string().optional(),
   roleShapes: z.array(z.string().min(1)),
   fitSignals: z.array(z.string().min(1)),
   buckets: z.object({
@@ -78,23 +81,44 @@ export const FlowStepSchema = z.object({
   id: z.string().min(1),
   title: z.string().min(1),
   shortTitle: z.string().min(1),
-  description: z.string().min(1),
-  prompts: z.array(z.string().min(1)),
+  summary: z.string().optional(),
   color: z.string().min(1),
+  contentPath: z.string().min(1),
 });
 
 export const TemplateSchema = z.object({
   id: z.string().min(1),
   name: z.string().min(1),
   description: z.string().min(1),
-  content: z.string().min(1),
   category: z.enum(['wrap', 'focus-area', 'tool', 'other']).default('other'),
   locked: z.boolean().optional().default(false),
+  contentPath: z.string().min(1),
 });
 
 export type RecommendationCard = z.infer<typeof RecommendationCardSchema>;
-export type FocusArea = z.infer<typeof FocusAreaSchema>;
 export type FocusAreaBucket = z.infer<typeof FocusAreaBucketSchema>;
+export type FocusAreaBucketWithContent = FocusAreaBucket & {
+  descriptionMarkdown?: string;
+  inlineGuidanceMarkdown?: string;
+};
+export type FocusAreaManifest = z.infer<typeof FocusAreaSchema>;
+export type FocusArea = FocusAreaManifest & {
+  overview: string;
+  overviewPlainText: string;
+  buckets: {
+    quickTaste: FocusAreaBucketWithContent;
+    deeperDive: FocusAreaBucketWithContent;
+    handsOn: FocusAreaBucketWithContent;
+    jobBoard: FocusAreaBucketWithContent;
+  };
+};
 export type CommonPathway = z.infer<typeof CommonPathwaySchema>;
-export type FlowStep = z.infer<typeof FlowStepSchema>;
-export type Template = z.infer<typeof TemplateSchema>;
+export type FlowStepManifest = z.infer<typeof FlowStepSchema>;
+export type FlowStep = FlowStepManifest & {
+  content: string;
+  contentPlainText: string;
+};
+export type TemplateManifest = z.infer<typeof TemplateSchema>;
+export type Template = TemplateManifest & {
+  content: string;
+};

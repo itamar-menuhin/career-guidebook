@@ -2,9 +2,12 @@ import { z } from 'zod';
 import {
   RecommendationCard,
   FocusArea,
+  FocusAreaManifest,
   CommonPathway,
   FlowStep,
+  FlowStepManifest,
   Template,
+  TemplateManifest,
   RecommendationCardSchema,
   FocusAreaSchema,
   CommonPathwaySchema,
@@ -34,7 +37,7 @@ const schemas: Record<ContentKey, z.ZodTypeAny> = {
   templates: z.array(TemplateSchema),
 };
 
-export type ContentErrorCode = 'missing-file' | 'invalid-json' | 'validation';
+export type ContentErrorCode = 'missing-file' | 'invalid-json' | 'validation' | 'missing-markdown';
 
 export class ContentLoadError extends Error {
   code: ContentErrorCode;
@@ -107,6 +110,51 @@ async function loadContentFile<T>(key: ContentKey): Promise<T> {
   return loader;
 }
 
+const markdownFiles = import.meta.glob('../../content/**/*.md', {
+  query: '?raw',
+  import: 'default',
+  eager: true,
+});
+
+const markdownMap = new Map<string, string>(
+  Object.entries(markdownFiles).map(([path, content]) => {
+    const normalized = path.replace(/\\/g, '/').replace(/^.*content\//, 'content/');
+    return [normalized, content as string];
+  })
+);
+
+const normalizeContentPath = (path: string) => {
+  const cleaned = path.replace(/\\/g, '/').replace(/^\.\//, '');
+  return cleaned.startsWith('content/') ? cleaned : `content/${cleaned}`;
+};
+
+function markdownToPlainText(markdown: string) {
+  return markdown
+    .replace(/```([\s\S]*?)```/g, '$1')
+    .replace(/`([^`]*)`/g, '$1')
+    .replace(/!\[[^\]]*]\([^)]+\)/g, ' ')
+    .replace(/\[([^\]]+)]\([^)]+\)/g, '$1')
+    .replace(/[#>*_~]/g, ' ')
+    .replace(/\n+/g, ' ')
+    .replace(/\s+/g, ' ')
+    .trim();
+}
+
+function getMarkdownContent(contentPath: string, context: ContentKey) {
+  const normalized = normalizeContentPath(contentPath);
+  const content = markdownMap.get(normalized);
+
+  if (!content) {
+    throw new ContentLoadError(
+      `Missing markdown content at path "${normalized}" for ${context}`,
+      'missing-markdown',
+      { path: normalized }
+    );
+  }
+
+  return content;
+}
+
 export function clearContentCache() {
   cache.clear();
 }
@@ -116,7 +164,36 @@ export function getRecommendationCards(): Promise<RecommendationCard[]> {
 }
 
 export function getFocusAreas(): Promise<FocusArea[]> {
-  return loadContentFile('focusAreas');
+  return loadContentFile<FocusAreaManifest[]>('focusAreas').then(manifests =>
+    manifests.map(focusArea => {
+      const overview = getMarkdownContent(focusArea.overviewPath, 'focusAreas');
+      const overviewPlainText = markdownToPlainText(overview);
+
+      const mapBucket = (
+        bucket: FocusAreaManifest['buckets'][keyof FocusAreaManifest['buckets']]
+      ) => ({
+        ...bucket,
+        descriptionMarkdown: bucket.descriptionPath
+          ? getMarkdownContent(bucket.descriptionPath, 'focusAreas')
+          : undefined,
+        inlineGuidanceMarkdown: bucket.inlineGuidancePath
+          ? getMarkdownContent(bucket.inlineGuidancePath, 'focusAreas')
+          : undefined,
+      });
+
+      return {
+        ...focusArea,
+        overview,
+        overviewPlainText,
+        buckets: {
+          quickTaste: mapBucket(focusArea.buckets.quickTaste),
+          deeperDive: mapBucket(focusArea.buckets.deeperDive),
+          handsOn: mapBucket(focusArea.buckets.handsOn),
+          jobBoard: mapBucket(focusArea.buckets.jobBoard),
+        },
+      };
+    })
+  );
 }
 
 export function getCommonPathways(): Promise<CommonPathway[]> {
@@ -124,11 +201,25 @@ export function getCommonPathways(): Promise<CommonPathway[]> {
 }
 
 export function getFlowSteps(): Promise<FlowStep[]> {
-  return loadContentFile('flow');
+  return loadContentFile<FlowStepManifest[]>('flow').then(steps =>
+    steps.map(step => {
+      const content = getMarkdownContent(step.contentPath, 'flow');
+      return {
+        ...step,
+        content,
+        contentPlainText: markdownToPlainText(content),
+      };
+    })
+  );
 }
 
 export function getTemplates(): Promise<Template[]> {
-  return loadContentFile('templates');
+  return loadContentFile<TemplateManifest[]>('templates').then(templates =>
+    templates.map(template => ({
+      ...template,
+      content: getMarkdownContent(template.contentPath, 'templates'),
+    }))
+  );
 }
 
 export async function loadAllContent() {

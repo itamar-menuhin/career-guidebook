@@ -36,7 +36,9 @@ export default function FocusAreasPage() {
                   </div>
                   <div className="flex-1 min-w-0">
                     <CardTitle className="text-xl mb-1">{area.name}</CardTitle>
-                    <CardDescription className="line-clamp-2">{area.overview}</CardDescription>
+                    <CardDescription className="line-clamp-2">
+                      {area.overviewExcerpt || area.overviewPlainText}
+                    </CardDescription>
                     <div className="flex gap-2 mt-2">
                       <Badge variant="secondary">{area.curatedCardIds.length} cards</Badge>
                       <Badge variant="outline">{area.roleShapes.length} role shapes</Badge>

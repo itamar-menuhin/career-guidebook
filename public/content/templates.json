@@ -3,16 +3,16 @@
     "id": "wrap-summary",
     "name": "Wrap Summary Template",
     "description": "Standard format for session wrap-up notes",
-    "content": "## Snapshot\n- **Current situation:** [...]\n- **Aiming for:** [...]\n- **Must-haves:** [...]\n- **Constraints:** [...]\n\n## Promising Directions\n### 1. [Direction Title]\n- **Why promising:** [...]\n- **First small steps (≤60 min):** [...]\n- **Links:** [...]\n- **People to talk to:** [...]\n\n## Closing\n- **Next steps:** [...]\n- **Follow-up plan:** [...]",
     "category": "wrap",
-    "locked": true
+    "locked": true,
+    "contentPath": "content/templates/wrap-summary.md"
   },
   {
     "id": "focus-area",
     "name": "Focus Area Template",
     "description": "Structure for adding new focus areas",
-    "content": "{\n  id: \"unique-id\",\n  name: \"Focus Area Name\",\n  overview: \"What this area is trying to achieve...\",\n  roleShapes: [\"Role 1\", \"Role 2\"],\n  fitSignals: [\"Signal 1\", \"Signal 2\"],\n  buckets: {\n    quickTaste: { title: \"...\", cardIds: [...] },\n    deeperDive: { ... },\n    handsOn: { ... },\n    jobBoard: { ... }\n  },\n  curatedCardIds: [...],\n  peopleToTalkToPrompts: [...]\n}",
     "category": "focus-area",
-    "locked": true
+    "locked": true,
+    "contentPath": "content/templates/focus-area.md"
   }
 ]
