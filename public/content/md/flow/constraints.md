@@ -1,3 +1,5 @@
+# GENERATED FILE - DO NOT EDIT MANUALLY
+
 Surface the practical realities that will shape what's possible.
 
 ## Suggested prompts

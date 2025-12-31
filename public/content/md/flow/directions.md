@@ -1,3 +1,5 @@
+# GENERATED FILE - DO NOT EDIT MANUALLY
+
 Explore potential directions, test fit, and narrow down.
 
 ## Suggested prompts

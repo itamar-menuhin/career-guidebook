@@ -2,7 +2,7 @@
   {
     "id": "ai-safety",
     "name": "AI Safety",
-    "overviewPath": "content/focus-areas/ai-safety/overview.md",
+    "overviewPath": "content/md/focus-areas/ai-safety/overview.md",
     "overviewExcerpt": "AI safety research aims to ensure that advanced AI systems remain beneficial and aligned with human values.",
     "roleShapes": [
       "Technical Alignment Researcher - working on core alignment problems like reward modeling, scalable oversight, interpretability",
@@ -20,21 +20,21 @@
     ],
     "buckets": {
       "quickTaste": {
-        "title": "Quick taste (≈1 hour)",
+        "title": "Quick taste (\u22481 hour)",
         "description": "Get oriented with foundational readings that explain why AI safety matters and what the field is trying to solve.",
         "cardIds": [
           "alignment-forum-reading",
           "80k-ai-safety-guide"
         ],
-        "inlineGuidancePath": "content/focus-areas/ai-safety/buckets/quick-taste.md"
+        "inlineGuidancePath": "content/md/focus-areas/ai-safety/buckets/quick-taste.md"
       },
       "deeperDive": {
-        "title": "Deeper dive (2–6 hours)",
+        "title": "Deeper dive (2\u20136 hours)",
         "description": "Commit a few hours to structured learning that builds conceptual foundations.",
         "cardIds": [
           "aisf-fundamentals"
         ],
-        "inlineGuidancePath": "content/focus-areas/ai-safety/buckets/deeper-dive.md"
+        "inlineGuidancePath": "content/md/focus-areas/ai-safety/buckets/deeper-dive.md"
       },
       "handsOn": {
         "title": "Hands-on trial",
@@ -43,7 +43,7 @@
           "arena",
           "mats"
         ],
-        "inlineGuidancePath": "content/focus-areas/ai-safety/buckets/hands-on.md"
+        "inlineGuidancePath": "content/md/focus-areas/ai-safety/buckets/hands-on.md"
       },
       "jobBoard": {
         "title": "Jobs to watch",
@@ -53,7 +53,7 @@
           "manifold",
           "80k-jobs-board"
         ],
-        "inlineGuidancePath": "content/focus-areas/ai-safety/buckets/job-board.md"
+        "inlineGuidancePath": "content/md/focus-areas/ai-safety/buckets/job-board.md"
       }
     },
     "curatedCardIds": [

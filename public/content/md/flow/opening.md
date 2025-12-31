@@ -1,3 +1,5 @@
+# GENERATED FILE - DO NOT EDIT MANUALLY
+
 Set the frame for the session. What does the person hope to walk away with?
 
 ## Suggested prompts

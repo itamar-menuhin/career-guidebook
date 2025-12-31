@@ -1,3 +1,5 @@
+# GENERATED FILE - DO NOT EDIT MANUALLY
+
 Understand their current situation, skills, and experience.
 
 ## Suggested prompts
