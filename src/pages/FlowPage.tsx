@@ -1,6 +1,7 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { useLocation, useNavigate, Link } from 'react-router-dom';
 import { cn } from '@/lib/utils';
+import { buildFlowAnchor, parseFlowStepIdFromHash } from '@/lib/anchors';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { 
@@ -40,7 +41,7 @@ export default function FlowPage() {
   const getValidStepId = useCallback(
     (hashValue: string) => {
       if (!stepsAvailable) return null;
-      const cleaned = hashValue.replace('#', '');
+      const cleaned = parseFlowStepIdFromHash(hashValue);
       const fallback = steps[0]?.id ?? null;
       return steps.some(step => step.id === cleaned) ? cleaned : fallback;
     },
@@ -59,8 +60,9 @@ export default function FlowPage() {
     const initialId = getValidStepId(location.hash) ?? steps[0].id;
     setActiveStepId(initialId);
     activeStepRef.current = initialId;
-    if (!location.hash) {
-      navigate(`/flow#${initialId}`, { replace: true });
+    const targetHash = `#${buildFlowAnchor(initialId)}`;
+    if (location.hash !== targetHash) {
+      navigate(`/flow${targetHash}`, { replace: true });
     }
   }, [getValidStepId, location.hash, navigate, steps, stepsAvailable]);
 
@@ -98,10 +100,13 @@ export default function FlowPage() {
 
         const nextActiveId = visible[0]?.target.getAttribute('id');
 
-        if (nextActiveId && nextActiveId !== activeStepRef.current) {
-          activeStepRef.current = nextActiveId;
-          setActiveStepId(nextActiveId);
-          navigate(`/flow#${nextActiveId}`, { replace: true });
+        if (nextActiveId) {
+          const nextStepId = parseFlowStepIdFromHash(nextActiveId);
+          if (nextStepId && nextStepId !== activeStepRef.current) {
+            activeStepRef.current = nextStepId;
+            setActiveStepId(nextStepId);
+            navigate(`/flow#${buildFlowAnchor(nextStepId)}`, { replace: true });
+          }
         }
       },
       {
@@ -122,7 +127,7 @@ export default function FlowPage() {
     if (!stepsAvailable) return;
     setActiveStepId(stepId);
     activeStepRef.current = stepId;
-    navigate(`/flow#${stepId}`);
+    navigate(`/flow#${buildFlowAnchor(stepId)}`);
   };
 
   const goToPrevious = () => {
@@ -141,7 +146,7 @@ export default function FlowPage() {
 
   const copyStepLink = (stepId: string) => {
     if (!stepId) return;
-    const url = `${window.location.origin}/flow#${stepId}`;
+    const url = `${window.location.origin}/flow#${buildFlowAnchor(stepId)}`;
     navigator.clipboard.writeText(url);
     toast({
       title: 'Link copied',
@@ -266,7 +271,7 @@ export default function FlowPage() {
               return (
                 <section
                   key={step.id}
-                  id={step.id}
+                  id={buildFlowAnchor(step.id)}
                   ref={(el) => { sectionRefs.current[step.id] = el; }}
                   className={cn(
                     'scroll-mt-28 transition-all duration-300',

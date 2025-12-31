@@ -18,6 +18,7 @@ import {
   Navigation,
 } from 'lucide-react';
 import { useContent } from '@/contexts/ContentContext';
+import { buildFlowAnchor } from '@/lib/anchors';
 
 const stepIcons = {
   opening: Target,
@@ -33,7 +34,7 @@ export function FlowJumpDropdown() {
   const { flowSteps } = useContent();
 
   const handleJump = (stepId: string) => {
-    navigate(`/flow#${stepId}`);
+    navigate(`/flow#${buildFlowAnchor(stepId)}`);
   };
 
   if (flowSteps.length === 0) {

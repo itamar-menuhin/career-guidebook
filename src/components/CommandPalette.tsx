@@ -19,6 +19,7 @@ import {
   ArrowRight 
 } from 'lucide-react';
 import { Badge } from '@/components/ui/badge';
+import { buildCardAnchor, buildFlowAnchor, buildPathwayAnchor } from '@/lib/anchors';
 
 export function CommandPalette() {
   const navigate = useNavigate();
@@ -95,7 +96,7 @@ export function CommandPalette() {
               {results.flowSteps.map(step => (
                 <CommandItem 
                   key={step.id} 
-                  onSelect={() => handleSelect(`/flow#${step.id}`)}
+                  onSelect={() => handleSelect(`/flow#${buildFlowAnchor(step.id)}`)}
                 >
                   <PlayCircle className="mr-2 h-4 w-4 text-primary" />
                   <span>{step.title}</span>
@@ -113,7 +114,7 @@ export function CommandPalette() {
               {results.pathways.map(pathway => (
                 <CommandItem 
                   key={pathway.id} 
-                  onSelect={() => handleSelect(`/pathways#${pathway.id}`)}
+                  onSelect={() => handleSelect(`/pathways#${buildPathwayAnchor(pathway.id)}`)}
                 >
                   <Map className="mr-2 h-4 w-4 text-bucket-deep" />
                   <span>{pathway.name}</span>
@@ -131,7 +132,7 @@ export function CommandPalette() {
               {results.cards.slice(0, 6).map(card => (
                 <CommandItem 
                   key={card.id} 
-                  onSelect={() => handleSelect(`/cards#${card.id}`)}
+                  onSelect={() => handleSelect(`/cards#${buildCardAnchor(card.id)}`)}
                   className="flex items-start gap-2"
                 >
                   <LayoutGrid className="mt-0.5 h-4 w-4 text-bucket-hands shrink-0" />

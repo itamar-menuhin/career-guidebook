@@ -1,4 +1,4 @@
-import { useParams, Link } from 'react-router-dom';
+import { useParams, Link, useLocation } from 'react-router-dom';
 import { useRef, useEffect, useState, useMemo } from 'react';
 import { useContent, useCardLookup } from '@/contexts/ContentContext';
 import { BucketTile, BucketTileGrid } from '@/components/BucketTile';
@@ -9,12 +9,15 @@ import {
   Check, 
   AlertTriangle,
   ChevronDown,
+  Link as LinkIcon,
 } from 'lucide-react';
 import {
   Collapsible,
   CollapsibleContent,
   CollapsibleTrigger,
 } from '@/components/ui/collapsible';
+import { useToast } from '@/hooks/use-toast';
+import { buildBucketAnchor } from '@/lib/anchors';
 
 export default function FocusAreaDetail() {
   const { id } = useParams<{ id: string }>();
@@ -24,6 +27,20 @@ export default function FocusAreaDetail() {
   const [activeBucket, setActiveBucket] = useState<string | null>(null);
   const [expandedBuckets, setExpandedBuckets] = useState<Record<string, boolean>>({});
   const bucketSectionRefs = useRef<Record<string, HTMLElement | null>>({});
+  const location = useLocation();
+  const { toast } = useToast();
+  const buckets = useMemo(
+    () =>
+      area
+        ? [
+            { key: 'quickTaste', type: 'quick-taste' as const, data: area.buckets.quickTaste },
+            { key: 'deeperDive', type: 'deeper-dive' as const, data: area.buckets.deeperDive },
+            { key: 'handsOn', type: 'hands-on' as const, data: area.buckets.handsOn },
+            { key: 'jobBoard', type: 'job-board' as const, data: area.buckets.jobBoard },
+          ]
+        : [],
+    [area]
+  );
 
   useEffect(() => {
     if (activeBucket && bucketSectionRefs.current[activeBucket]) {
@@ -37,6 +54,17 @@ export default function FocusAreaDetail() {
       return () => window.clearTimeout(timeout);
     }
   }, [activeBucket]);
+
+  useEffect(() => {
+    const targetId = decodeURIComponent(location.hash.replace('#', ''));
+    if (!targetId) return;
+
+    const matched = buckets.find(bucket => buildBucketAnchor(bucket.key) === targetId);
+    if (matched) {
+      setExpandedBuckets(prev => ({ ...prev, [matched.key]: true }));
+      setActiveBucket(matched.key);
+    }
+  }, [location.hash, buckets]);
 
   if (loading && !area) {
     return (
@@ -55,13 +83,6 @@ export default function FocusAreaDetail() {
     );
   }
 
-  const buckets = [
-    { key: 'quickTaste', type: 'quick-taste' as const, data: area.buckets.quickTaste },
-    { key: 'deeperDive', type: 'deeper-dive' as const, data: area.buckets.deeperDive },
-    { key: 'handsOn', type: 'hands-on' as const, data: area.buckets.handsOn },
-    { key: 'jobBoard', type: 'job-board' as const, data: area.buckets.jobBoard },
-  ];
-
   const handleBucketClick = (bucketKey: string) => {
     setExpandedBuckets(prev => ({ ...prev, [bucketKey]: true }));
     setActiveBucket(bucketKey);
@@ -78,6 +99,15 @@ export default function FocusAreaDetail() {
     if (nextOpen) {
       setActiveBucket(bucketKey);
     }
+  };
+
+  const copyBucketLink = (bucketKey: string) => {
+    const url = `${window.location.origin}/focus-areas/${area?.id ?? ''}#${buildBucketAnchor(bucketKey)}`;
+    navigator.clipboard.writeText(url);
+    toast({
+      title: 'Link copied',
+      description: 'Bucket link copied to clipboard',
+    });
   };
 
   const renderCard = (cardId: string) => {
@@ -132,7 +162,7 @@ export default function FocusAreaDetail() {
             onOpenChange={(open) => handleToggleBucket(b.key, open)}
           >
             <section 
-              id={`bucket-${b.key}`}
+              id={buildBucketAnchor(b.key)}
               ref={(el) => { bucketSectionRefs.current[b.key] = el; }}
               className={`scroll-mt-72 transition-all duration-300 ${
                 activeBucket === b.key ? 'opacity-100' : activeBucket ? 'opacity-50' : 'opacity-100'
@@ -149,17 +179,29 @@ export default function FocusAreaDetail() {
                       </p>
                     )}
                   </div>
-                  <CollapsibleTrigger asChild>
+                  <div className="flex gap-1">
                     <Button
                       variant="ghost"
                       size="sm"
                       className="inline-flex items-center gap-2"
-                      onClick={() => setActiveBucket(b.key)}
+                      onClick={() => copyBucketLink(b.key)}
+                      title="Copy link to this bucket"
                     >
-                      {expandedBuckets[b.key] ? 'Collapse' : 'Expand'}
-                      <ChevronDown className={`h-4 w-4 transition-transform ${expandedBuckets[b.key] ? 'rotate-180' : ''}`} />
+                      <LinkIcon className="h-3.5 w-3.5" />
+                      Copy link
                     </Button>
-                  </CollapsibleTrigger>
+                    <CollapsibleTrigger asChild>
+                      <Button
+                        variant="ghost"
+                        size="sm"
+                        className="inline-flex items-center gap-2"
+                        onClick={() => setActiveBucket(b.key)}
+                      >
+                        {expandedBuckets[b.key] ? 'Collapse' : 'Expand'}
+                        <ChevronDown className={`h-4 w-4 transition-transform ${expandedBuckets[b.key] ? 'rotate-180' : ''}`} />
+                      </Button>
+                    </CollapsibleTrigger>
+                  </div>
                 </div>
 
                 <CollapsibleContent className="space-y-4 pt-1 animate-fade-in">

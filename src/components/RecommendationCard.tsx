@@ -9,6 +9,7 @@ import {
   CardHeader,
   CardTitle,
 } from '@/components/ui/card';
+import { buildCardAnchor } from '@/lib/anchors';
 import {
   Collapsible,
   CollapsibleContent,
@@ -74,7 +75,10 @@ export function RecommendationCard({
 
   if (compact) {
     return (
-      <Card className={cn('card-shine shadow-soft hover:shadow-card transition-all duration-300 border-border/50', className)} id={card.id}>
+      <Card
+        className={cn('card-shine shadow-soft hover:shadow-card transition-all duration-300 border-border/50', className)}
+        id={buildCardAnchor(card.id)}
+      >
         <CardHeader className="pb-2">
           <div className="flex items-start justify-between gap-2">
             <CardTitle className="text-base font-display font-medium">{card.title}</CardTitle>
@@ -92,7 +96,10 @@ export function RecommendationCard({
   }
 
   return (
-    <Card className={cn('card-shine shadow-soft hover:shadow-card transition-all duration-300 border-border/50', className)} id={card.id}>
+    <Card
+      className={cn('card-shine shadow-soft hover:shadow-card transition-all duration-300 border-border/50', className)}
+      id={buildCardAnchor(card.id)}
+    >
       <CardHeader className="pb-4">
         <div className="flex items-start justify-between gap-4 flex-wrap">
           <div className="flex flex-wrap gap-2">

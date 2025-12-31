@@ -1,13 +1,26 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Collapsible, CollapsibleContent, CollapsibleTrigger } from '@/components/ui/collapsible';
 import { ChevronDown, Map, Zap } from 'lucide-react';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
+import { useLocation } from 'react-router-dom';
 import { cn } from '@/lib/utils';
 import { useContent } from '@/contexts/ContentContext';
+import { buildPathwayAnchor } from '@/lib/anchors';
 
 export default function PathwaysPage() {
   const [expanded, setExpanded] = useState<Record<string, boolean>>({});
   const { pathways, loading } = useContent();
+  const location = useLocation();
+
+  useEffect(() => {
+    const targetId = decodeURIComponent(location.hash.replace('#', ''));
+    if (!targetId) return;
+
+    const matched = pathways.find(pathway => buildPathwayAnchor(pathway.id) === targetId);
+    if (matched) {
+      setExpanded(prev => ({ ...prev, [matched.id]: true }));
+    }
+  }, [location.hash, pathways]);
 
   if (loading && pathways.length === 0) {
     return (
@@ -31,7 +44,7 @@ export default function PathwaysPage() {
         <div className="space-y-4">
           {pathways.map(pathway => (
             <Collapsible key={pathway.id} open={expanded[pathway.id]} onOpenChange={() => setExpanded(p => ({ ...p, [pathway.id]: !p[pathway.id] }))}>
-              <Card className="shadow-soft" id={pathway.id}>
+              <Card className="shadow-soft" id={buildPathwayAnchor(pathway.id)}>
                 <CollapsibleTrigger asChild>
                   <CardHeader className="cursor-pointer hover:bg-muted/50 transition-colors">
                     <div className="flex items-start justify-between">
