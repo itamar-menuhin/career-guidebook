@@ -1,75 +1,175 @@
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
-import { PlayCircle, Target, Map, LayoutGrid, BookOpen, Users, Lightbulb, ArrowRight } from 'lucide-react';
+import { PlayCircle, Target, Map, LayoutGrid, BookOpen, Users, Lightbulb, ArrowRight, Sparkles } from 'lucide-react';
 
 export default function StartHere() {
   return (
     <div className="min-h-screen">
-      {/* Hero */}
-      <section className="relative py-20 px-4 overflow-hidden">
-        <div className="absolute inset-0 gradient-hero opacity-5" />
+      {/* Hero Section */}
+      <section className="relative py-24 md:py-32 px-4 overflow-hidden">
+        {/* Background gradient */}
+        <div className="absolute inset-0 gradient-glow" />
+        <div className="absolute inset-0 pattern-dots opacity-50" />
+        
+        {/* Decorative elements */}
+        <div className="absolute top-20 right-10 w-64 h-64 rounded-full bg-primary/5 blur-3xl animate-float" />
+        <div className="absolute bottom-20 left-10 w-48 h-48 rounded-full bg-accent/5 blur-3xl animate-float" style={{ animationDelay: '1s' }} />
+        
         <div className="container max-w-4xl relative">
-          <h1 className="font-display text-4xl md:text-5xl font-bold tracking-tight mb-6">
-            1:1 Career Counseling Guidebook
+          <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-primary/10 text-primary text-sm font-medium mb-6 animate-fade-up">
+            <Sparkles className="h-4 w-4" />
+            <span>Your companion for impactful career conversations</span>
+          </div>
+          
+          <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-medium tracking-tight mb-6 animate-fade-up stagger-1">
+            <span className="text-gradient">1:1 Career Counseling</span>
+            <br />
+            <span className="text-foreground">Guidebook</span>
           </h1>
-          <p className="text-xl text-muted-foreground mb-8 max-w-2xl">
+          
+          <p className="text-lg md:text-xl text-muted-foreground mb-10 max-w-2xl leading-relaxed animate-fade-up stagger-2">
             A practical toolkit for running impactful career conversations. Structured flows, curated recommendations, and session notes — all in one place.
           </p>
-          <div className="flex flex-wrap gap-4">
-            <Button asChild size="lg" className="gradient-hero text-primary-foreground hover:opacity-90">
-              <Link to="/session"><PlayCircle className="h-5 w-5 mr-2" />Run a Session</Link>
+          
+          <div className="flex flex-wrap gap-4 animate-fade-up stagger-3">
+            <Button asChild size="lg" className="btn-glow gradient-hero text-primary-foreground shadow-glow hover:shadow-elevated transition-all duration-300 h-12 px-6">
+              <Link to="/session">
+                <PlayCircle className="h-5 w-5 mr-2" />
+                Run a Session
+              </Link>
             </Button>
-            <Button asChild variant="outline" size="lg">
-              <Link to="/focus-areas"><Target className="h-5 w-5 mr-2" />Browse Focus Areas</Link>
+            <Button asChild variant="outline" size="lg" className="hover-lift h-12 px-6 border-border/60">
+              <Link to="/focus-areas">
+                <Target className="h-5 w-5 mr-2" />
+                Browse Focus Areas
+              </Link>
             </Button>
           </div>
         </div>
       </section>
 
       {/* What Good Looks Like */}
-      <section className="py-16 px-4 bg-muted/30">
-        <div className="container max-w-4xl">
-          <h2 className="font-display text-2xl font-semibold mb-6">What Good Looks Like</h2>
+      <section className="py-20 px-4 relative">
+        <div className="absolute inset-0 gradient-subtle" />
+        <div className="container max-w-5xl relative">
+          <div className="text-center mb-12">
+            <h2 className="font-display text-2xl md:text-3xl font-medium mb-3">What Good Looks Like</h2>
+            <p className="text-muted-foreground">The principles behind effective career conversations</p>
+          </div>
+          
           <div className="grid md:grid-cols-3 gap-6">
-            <Card className="shadow-soft">
-              <CardHeader><Users className="h-8 w-8 text-primary mb-2" /><CardTitle className="text-lg">Mutual Think Tank</CardTitle></CardHeader>
-              <CardContent><CardDescription>You're collaborators, not advisor and advisee. Explore together with genuine curiosity.</CardDescription></CardContent>
-            </Card>
-            <Card className="shadow-soft">
-              <CardHeader><Lightbulb className="h-8 w-8 text-accent mb-2" /><CardTitle className="text-lg">Concrete Next Steps</CardTitle></CardHeader>
-              <CardContent><CardDescription>Every session ends with 2-3 specific, actionable steps the person can take in the next week.</CardDescription></CardContent>
-            </Card>
-            <Card className="shadow-soft">
-              <CardHeader><BookOpen className="h-8 w-8 text-bucket-deep mb-2" /><CardTitle className="text-lg">Tailored Resources</CardTitle></CardHeader>
-              <CardContent><CardDescription>Match recommendations to the person's situation, not a generic list.</CardDescription></CardContent>
-            </Card>
+            {[
+              {
+                icon: Users,
+                iconColor: 'text-primary',
+                bgColor: 'bg-primary/10',
+                title: 'Mutual Think Tank',
+                description: "You're collaborators, not advisor and advisee. Explore together with genuine curiosity.",
+              },
+              {
+                icon: Lightbulb,
+                iconColor: 'text-accent',
+                bgColor: 'bg-accent/10',
+                title: 'Concrete Next Steps',
+                description: 'Every session ends with 2-3 specific, actionable steps the person can take in the next week.',
+              },
+              {
+                icon: BookOpen,
+                iconColor: 'text-bucket-deep',
+                bgColor: 'bg-bucket-deep/10',
+                title: 'Tailored Resources',
+                description: "Match recommendations to the person's situation, not a generic list.",
+              },
+            ].map((item, index) => (
+              <Card 
+                key={item.title} 
+                className={`card-shine shadow-soft hover:shadow-card transition-all duration-300 border-border/50 animate-fade-up stagger-${index + 1}`}
+              >
+                <CardHeader className="pb-3">
+                  <div className={`w-12 h-12 rounded-xl ${item.bgColor} flex items-center justify-center mb-3`}>
+                    <item.icon className={`h-6 w-6 ${item.iconColor}`} />
+                  </div>
+                  <CardTitle className="text-lg font-display">{item.title}</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <CardDescription className="text-[15px] leading-relaxed">{item.description}</CardDescription>
+                </CardContent>
+              </Card>
+            ))}
           </div>
         </div>
       </section>
 
       {/* Quick Links */}
-      <section className="py-16 px-4">
+      <section className="py-20 px-4">
         <div className="container max-w-4xl">
-          <h2 className="font-display text-2xl font-semibold mb-6">Quick Links</h2>
+          <div className="text-center mb-12">
+            <h2 className="font-display text-2xl md:text-3xl font-medium mb-3">Quick Navigation</h2>
+            <p className="text-muted-foreground">Jump right into what you need</p>
+          </div>
+          
           <div className="grid md:grid-cols-2 gap-4">
             {[
-              { to: '/session', icon: PlayCircle, title: 'Run a Session', desc: 'Guided 60-90 min session flow with notes' },
-              { to: '/pathways', icon: Map, title: 'Common Pathways', desc: 'Focus-area-agnostic starting points' },
-              { to: '/focus-areas', icon: Target, title: 'Focus Areas', desc: 'Deep dives into specific career paths' },
-              { to: '/cards', icon: LayoutGrid, title: 'Recommendation Cards', desc: 'Filterable catalog of resources' },
-            ].map(item => (
-              <Link key={item.to} to={item.to} className="group">
-                <Card className="shadow-soft hover:shadow-card transition-shadow h-full">
-                  <CardContent className="p-4 flex items-center gap-4">
-                    <item.icon className="h-8 w-8 text-primary shrink-0" />
-                    <div className="flex-1"><p className="font-medium">{item.title}</p><p className="text-sm text-muted-foreground">{item.desc}</p></div>
-                    <ArrowRight className="h-5 w-5 text-muted-foreground group-hover:text-primary transition-colors" />
+              { 
+                to: '/session', 
+                icon: PlayCircle, 
+                title: 'Run a Session', 
+                desc: 'Guided 60-90 min session flow with notes',
+                accent: 'group-hover:bg-primary/10 group-hover:text-primary',
+              },
+              { 
+                to: '/pathways', 
+                icon: Map, 
+                title: 'Common Pathways', 
+                desc: 'Focus-area-agnostic starting points',
+                accent: 'group-hover:bg-bucket-hands/10 group-hover:text-bucket-hands',
+              },
+              { 
+                to: '/focus-areas', 
+                icon: Target, 
+                title: 'Focus Areas', 
+                desc: 'Deep dives into specific career paths',
+                accent: 'group-hover:bg-bucket-deep/10 group-hover:text-bucket-deep',
+              },
+              { 
+                to: '/cards', 
+                icon: LayoutGrid, 
+                title: 'Recommendation Cards', 
+                desc: 'Filterable catalog of resources',
+                accent: 'group-hover:bg-bucket-jobs/10 group-hover:text-bucket-jobs',
+              },
+            ].map((item, index) => (
+              <Link 
+                key={item.to} 
+                to={item.to} 
+                className={`group animate-fade-up stagger-${index + 1}`}
+              >
+                <Card className="hover-lift shadow-soft h-full border-border/50 overflow-hidden">
+                  <CardContent className="p-5 flex items-center gap-4">
+                    <div className={`w-12 h-12 rounded-xl bg-muted flex items-center justify-center shrink-0 transition-colors duration-300 ${item.accent}`}>
+                      <item.icon className="h-5 w-5" />
+                    </div>
+                    <div className="flex-1 min-w-0">
+                      <p className="font-medium font-display text-lg">{item.title}</p>
+                      <p className="text-sm text-muted-foreground mt-0.5">{item.desc}</p>
+                    </div>
+                    <ArrowRight className="h-5 w-5 text-muted-foreground/50 group-hover:text-primary group-hover:translate-x-1 transition-all duration-300" />
                   </CardContent>
                 </Card>
               </Link>
             ))}
           </div>
+        </div>
+      </section>
+      
+      {/* Footer hint */}
+      <section className="py-12 px-4">
+        <div className="container max-w-4xl">
+          <div className="section-divider mb-12" />
+          <p className="text-center text-sm text-muted-foreground">
+            Press <kbd className="px-1.5 py-0.5 rounded bg-muted text-xs font-mono">⌘K</kbd> to search anything
+          </p>
         </div>
       </section>
     </div>
