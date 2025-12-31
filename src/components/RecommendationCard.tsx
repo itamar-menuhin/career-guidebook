@@ -131,7 +131,7 @@ export function RecommendationCard({
 
         {/* Good fit if */}
         <div className="space-y-2.5">
-          <p className="text-sm font-medium">Good fit if:</p>
+          <p className="text-sm font-medium">Good fit if…</p>
           <div className="flex flex-wrap gap-2">
             {card.tags.goodFitIf.map((fit, i) => (
               <Badge key={i} variant="secondary" className="text-xs font-normal px-2.5 py-1">
@@ -146,7 +146,7 @@ export function RecommendationCard({
           <div className="flex items-center justify-between mb-2">
             <div className="flex items-center gap-2">
               <Sparkles className="h-4 w-4 text-primary" />
-              <p className="text-sm font-medium text-primary">First Small Step (≤60 min)</p>
+              <p className="text-sm font-medium text-primary">First small step (≤60 min)</p>
             </div>
             <Button size="sm" variant="ghost" onClick={handleCopyFirstStep} className="h-7 px-2">
               <Copy className="h-3.5 w-3.5 mr-1" />

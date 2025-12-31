@@ -64,7 +64,7 @@ export default function PathwaysPage() {
                     <div><p className="text-sm font-medium mb-1">When to Suggest</p><p className="text-sm text-muted-foreground">{pathway.whenToSuggest}</p></div>
                     <div><p className="text-sm font-medium mb-2">Fit Test Prompts</p><ul className="space-y-1">{pathway.fitTestPrompts.map((p, i) => <li key={i} className="text-sm text-muted-foreground">• {p}</li>)}</ul></div>
                     <div className="p-3 rounded-lg bg-primary/5 border border-primary/10">
-                      <p className="text-sm font-medium text-primary mb-1 flex items-center gap-1"><Zap className="h-4 w-4" />Default First Step</p>
+                      <p className="text-sm font-medium text-primary mb-1 flex items-center gap-1"><Zap className="h-4 w-4" />Default first small step (≤60 min)</p>
                       <p className="text-sm">{pathway.defaultFirstSmallStep}</p>
                     </div>
                   </CardContent>
