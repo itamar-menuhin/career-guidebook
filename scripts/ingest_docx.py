@@ -11,6 +11,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import shutil
 import re
 import sys
 import time
@@ -27,20 +28,67 @@ except ImportError:  # pragma: no cover - runtime guard for missing dependency
 
 
 ROOT = Path(__file__).resolve().parents[1]
-SOURCE_CORE = ROOT / "source_docs" / "core" / "1_1_career_counselling_guidebook.docx"
-SOURCE_FOCUS_ROOT = ROOT / "source_docs" / "focus_areas"
+SOURCE_DOCS = ROOT / "source_docs"
+SOURCE_CORE = SOURCE_DOCS / "core" / "1_1_career_counselling_guidebook.docx"
+SOURCE_FOCUS_ROOT = SOURCE_DOCS / "focus_areas"
+CONTENT_MANUAL_DIR = ROOT / "content_manual"
 
-CONTENT_ROOT = ROOT / "content"
-PUBLIC_CONTENT = ROOT / "public" / "content"
+GENERATED_ROOT = ROOT / "generated"
+GENERATED_CONTENT_ROOT = GENERATED_ROOT / "content"
+GENERATED_DATA_ROOT = GENERATED_ROOT / "data"
 
-FLOW_OUTPUT_DIR = CONTENT_ROOT / "flow"
-TEMPLATE_OUTPUT_DIR = CONTENT_ROOT / "templates"
-FOCUS_AREAS_OUTPUT_DIR = CONTENT_ROOT / "focus-areas"
+PUBLIC_CONTENT_ROOT = ROOT / "public" / "content"
+PUBLIC_DATA_DIR = PUBLIC_CONTENT_ROOT / "data"
+PUBLIC_MD_DIR = PUBLIC_CONTENT_ROOT / "md"
 
-FLOW_JSON_PATH = PUBLIC_CONTENT / "flow.json"
-TEMPLATES_JSON_PATH = PUBLIC_CONTENT / "templates.json"
-FOCUS_AREAS_JSON_PATH = PUBLIC_CONTENT / "focus-areas.json"
-CARDS_JSON_PATH = PUBLIC_CONTENT / "cards.json"
+FLOW_OUTPUT_DIR = GENERATED_CONTENT_ROOT / "flow"
+TEMPLATE_OUTPUT_DIR = GENERATED_CONTENT_ROOT / "templates"
+FOCUS_AREAS_OUTPUT_DIR = GENERATED_CONTENT_ROOT / "focus-areas"
+
+FLOW_JSON_PATH = GENERATED_DATA_ROOT / "flow.json"
+TEMPLATES_JSON_PATH = GENERATED_DATA_ROOT / "templates.json"
+FOCUS_AREAS_JSON_PATH = GENERATED_DATA_ROOT / "focus-areas.json"
+CARDS_JSON_PATH = GENERATED_DATA_ROOT / "cards.json"
+
+GENERATED_FILE_HEADER = "# GENERATED FILE - DO NOT EDIT MANUALLY\n\n"
+PUBLIC_MD_PREFIX = Path("content") / "md"
+PUBLIC_DATA_PREFIX = Path("content") / "data"
+
+
+def remove_dir_if_exists(path: Path):
+    if path.exists():
+        shutil.rmtree(path)
+
+
+def reset_generated_outputs():
+    remove_dir_if_exists(GENERATED_ROOT)
+    GENERATED_CONTENT_ROOT.mkdir(parents=True, exist_ok=True)
+    GENERATED_DATA_ROOT.mkdir(parents=True, exist_ok=True)
+
+
+def reset_public_content_dirs():
+    PUBLIC_CONTENT_ROOT.mkdir(parents=True, exist_ok=True)
+    for stray in PUBLIC_CONTENT_ROOT.glob("*.json"):
+        stray.unlink()
+    remove_dir_if_exists(PUBLIC_DATA_DIR)
+    remove_dir_if_exists(PUBLIC_MD_DIR)
+    PUBLIC_DATA_DIR.mkdir(parents=True, exist_ok=True)
+    PUBLIC_MD_DIR.mkdir(parents=True, exist_ok=True)
+
+
+def load_existing_json(*paths: Path) -> list:
+    for path in paths:
+        if path.exists():
+            return json.loads(path.read_text(encoding="utf-8"))
+    return []
+
+
+def sync_generated_to_public():
+    reset_public_content_dirs()
+    if GENERATED_DATA_ROOT.exists():
+        shutil.copytree(GENERATED_DATA_ROOT, PUBLIC_DATA_DIR, dirs_exist_ok=True)
+    if GENERATED_CONTENT_ROOT.exists():
+        shutil.copytree(GENERATED_CONTENT_ROOT, PUBLIC_MD_DIR, dirs_exist_ok=True)
 
 
 def slugify(value: str) -> str:
@@ -59,9 +107,10 @@ def paragraph_text(doc_path: Path) -> List[str]:
 
 def write_markdown(path: Path, paragraphs: Iterable[str]) -> str:
     path.parent.mkdir(parents=True, exist_ok=True)
-    content = "\n\n".join(p.strip() for p in paragraphs).strip() + "\n"
-    path.write_text(content, encoding="utf-8")
-    return content
+    body = "\n\n".join(p.strip() for p in paragraphs).strip()
+    body = f"{body}\n" if body else ""
+    path.write_text(GENERATED_FILE_HEADER + body, encoding="utf-8")
+    return body
 
 
 def summarize(text: str, max_length: int = 220) -> str:
@@ -170,21 +219,34 @@ def update_flow_content(flow_content: CoreGuidebookContent):
     for key, paragraphs in flow_content.flow_sections.items():
         write_markdown(flow_markdown_paths[key], paragraphs)
 
-    flow_manifest = json.loads(FLOW_JSON_PATH.read_text(encoding="utf-8"))
-    flow_manifest_by_id = {entry["id"]: entry for entry in flow_manifest}
+    existing_manifest = load_existing_json(PUBLIC_DATA_DIR / "flow.json", PUBLIC_CONTENT_ROOT / "flow.json")
+    flow_manifest_by_id = {entry["id"]: entry for entry in existing_manifest}
+
+    default_titles = {
+        "opening": "Opening & goal",
+        "background": "What they bring",
+        "happiness": "What would make them happy",
+        "constraints": "Constraints",
+        "directions": "Iterative direction testing",
+        "wrap": "Wrap & commitments",
+    }
+
+    flow_manifest = []
     for flow_id, path in flow_markdown_paths.items():
-        if flow_id not in flow_manifest_by_id:
-            flow_manifest.append(
-                {
-                    "id": flow_id,
-                    "title": flow_id.title(),
-                    "shortTitle": flow_id.title(),
-                    "color": f"step-{flow_id}",
-                    "contentPath": "",
-                }
-            )
-            flow_manifest_by_id = {entry["id"]: entry for entry in flow_manifest}
-        flow_manifest_by_id[flow_id]["contentPath"] = str(path.relative_to(CONTENT_ROOT.parent))
+        public_md_path = PUBLIC_MD_PREFIX / "flow" / path.name
+        existing = flow_manifest_by_id.get(flow_id, {})
+        content_text = (path.read_text(encoding="utf-8").replace(GENERATED_FILE_HEADER, "")).strip()
+        flow_manifest.append(
+            {
+                "id": flow_id,
+                "title": existing.get("title") or default_titles.get(flow_id, flow_id.title()),
+                "shortTitle": existing.get("shortTitle") or default_titles.get(flow_id, flow_id.title()),
+                "summary": existing.get("summary") or summarize(content_text),
+                "color": existing.get("color") or f"step-{flow_id}",
+                "contentPath": str(public_md_path),
+            }
+        )
+
     FLOW_JSON_PATH.write_text(json.dumps(flow_manifest, indent=2) + "\n", encoding="utf-8")
 
 
@@ -197,7 +259,7 @@ def update_templates_content(flow_content: CoreGuidebookContent):
     for template_id, paragraphs in flow_content.templates.items():
         write_markdown(template_paths[template_id], paragraphs)
 
-    template_manifest = json.loads(TEMPLATES_JSON_PATH.read_text(encoding="utf-8"))
+    template_manifest = load_existing_json(PUBLIC_DATA_DIR / "templates.json", PUBLIC_CONTENT_ROOT / "templates.json")
     manifest_by_id = {entry["id"]: entry for entry in template_manifest}
 
     defaults = {
@@ -215,13 +277,14 @@ def update_templates_content(flow_content: CoreGuidebookContent):
         },
     }
 
+    updated_manifest = []
     for template_id, path in template_paths.items():
+        public_md_path = PUBLIC_MD_PREFIX / "templates" / path.name
         if template_id not in manifest_by_id:
-            template_manifest.append({"id": template_id, **defaults[template_id], "contentPath": ""})
-            manifest_by_id = {entry["id"]: entry for entry in template_manifest}
-        manifest_by_id[template_id]["contentPath"] = str(path.relative_to(CONTENT_ROOT.parent))
+            manifest_by_id[template_id] = {"id": template_id, **defaults[template_id], "contentPath": ""}
+        updated_manifest.append({**manifest_by_id[template_id], "contentPath": str(public_md_path)})
 
-    TEMPLATES_JSON_PATH.write_text(json.dumps(template_manifest, indent=2) + "\n", encoding="utf-8")
+    TEMPLATES_JSON_PATH.write_text(json.dumps(updated_manifest, indent=2) + "\n", encoding="utf-8")
 
 
 # --- Focus area parsing -----------------------------------------------------
@@ -503,9 +566,7 @@ def parse_cards(lines: List[str], focus_area_id: str) -> List[dict]:
 
 
 def update_cards_json(parsed_cards: List[dict]):
-    existing_cards = []
-    if CARDS_JSON_PATH.exists():
-        existing_cards = json.loads(CARDS_JSON_PATH.read_text(encoding="utf-8"))
+    existing_cards = load_existing_json(PUBLIC_DATA_DIR / "cards.json", PUBLIC_CONTENT_ROOT / "cards.json")
 
     existing_by_title = {card["title"].lower(): card for card in existing_cards}
     parsed_focus_areas = {fa for card in parsed_cards for fa in card.get("focusAreaIds", []) if fa}
@@ -577,7 +638,7 @@ def build_focus_area_manifest(content: FocusAreaContent, cards: List[dict]) -> d
     return {
         "id": content.slug,
         "name": content.name,
-        "overviewPath": str(overview_md_path.relative_to(CONTENT_ROOT.parent)),
+        "overviewPath": str(PUBLIC_MD_PREFIX / "focus-areas" / content.slug / "overview.md"),
         "overviewExcerpt": overview_excerpt,
         "roleShapes": non_empty_list(content.role_shapes, "See overview for key role shapes."),
         "fitSignals": non_empty_list(content.fit_signals, "Use discovery questions in the overview."),
@@ -586,25 +647,33 @@ def build_focus_area_manifest(content: FocusAreaContent, cards: List[dict]) -> d
                 "title": bucket_titles["quickTaste"],
                 "description": bucket_summaries.get("quickTaste", "See inline guidance for quick taste ideas."),
                 "cardIds": bucket_card_ids["quickTaste"],
-                "inlineGuidancePath": str(bucket_inline_paths["quickTaste"].relative_to(CONTENT_ROOT.parent)),
+                "inlineGuidancePath": str(
+                    PUBLIC_MD_PREFIX / "focus-areas" / content.slug / "buckets" / bucket_filenames["quickTaste"]
+                ),
             },
             "deeperDive": {
                 "title": bucket_titles["deeperDive"],
                 "description": bucket_summaries.get("deeperDive", "See inline guidance for deeper dives."),
                 "cardIds": bucket_card_ids["deeperDive"],
-                "inlineGuidancePath": str(bucket_inline_paths["deeperDive"].relative_to(CONTENT_ROOT.parent)),
+                "inlineGuidancePath": str(
+                    PUBLIC_MD_PREFIX / "focus-areas" / content.slug / "buckets" / bucket_filenames["deeperDive"]
+                ),
             },
             "handsOn": {
                 "title": bucket_titles["handsOn"],
                 "description": bucket_summaries.get("handsOn", "See inline guidance for hands-on options."),
                 "cardIds": bucket_card_ids["handsOn"],
-                "inlineGuidancePath": str(bucket_inline_paths["handsOn"].relative_to(CONTENT_ROOT.parent)),
+                "inlineGuidancePath": str(
+                    PUBLIC_MD_PREFIX / "focus-areas" / content.slug / "buckets" / bucket_filenames["handsOn"]
+                ),
             },
             "jobBoard": {
                 "title": bucket_titles["jobBoard"],
                 "description": bucket_summaries.get("jobBoard", "See inline guidance for job-board scans."),
                 "cardIds": bucket_card_ids["jobBoard"],
-                "inlineGuidancePath": str(bucket_inline_paths["jobBoard"].relative_to(CONTENT_ROOT.parent)),
+                "inlineGuidancePath": str(
+                    PUBLIC_MD_PREFIX / "focus-areas" / content.slug / "buckets" / bucket_filenames["jobBoard"]
+                ),
             },
         },
         "curatedCardIds": sorted({cid for cids in bucket_card_ids.values() for cid in cids}),
@@ -625,6 +694,8 @@ def ingest_focus_area_docs() -> List[dict]:
         parsed_cards.extend(focus_content.cards)
 
     if not focus_contents:
+        CARDS_JSON_PATH.write_text("[]\n", encoding="utf-8")
+        FOCUS_AREAS_JSON_PATH.write_text("[]\n", encoding="utf-8")
         return []
 
     updated_cards = update_cards_json(parsed_cards)
@@ -634,10 +705,7 @@ def ingest_focus_area_docs() -> List[dict]:
         focus_cards = [card for card in updated_cards if focus_content.slug in card.get("focusAreaIds", [])]
         focus_manifest_entries.append(build_focus_area_manifest(focus_content, focus_cards))
 
-    existing_focus = []
-    if FOCUS_AREAS_JSON_PATH.exists():
-        existing_focus = json.loads(FOCUS_AREAS_JSON_PATH.read_text(encoding="utf-8"))
-
+    existing_focus = load_existing_json(PUBLIC_DATA_DIR / "focus-areas.json", PUBLIC_CONTENT_ROOT / "focus-areas.json")
     merged: dict[str, dict] = {entry["id"]: entry for entry in existing_focus}
     for entry in focus_manifest_entries:
         merged[entry["id"]] = entry
@@ -655,8 +723,10 @@ def ingest_core():
 
 
 def ingest_all():
+    reset_generated_outputs()
     ingest_core()
     ingest_focus_area_docs()
+    sync_generated_to_public()
 
 
 def watch_loop(poll_interval: float = 2.0):

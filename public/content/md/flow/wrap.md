@@ -1,3 +1,5 @@
+# GENERATED FILE - DO NOT EDIT MANUALLY
+
 Close the session with clarity on next steps and accountability.
 
 ## Suggested prompts

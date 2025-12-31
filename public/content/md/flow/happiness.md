@@ -1,3 +1,5 @@
+# GENERATED FILE - DO NOT EDIT MANUALLY
+
 Explore what energizes them and what they want more of in their work.
 
 ## Suggested prompts

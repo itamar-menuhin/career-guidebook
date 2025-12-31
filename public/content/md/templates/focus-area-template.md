@@ -1,3 +1,5 @@
+# GENERATED FILE - DO NOT EDIT MANUALLY
+
 # Focus Area Template
 
 Use this shape when adding a new focus area entry.

@@ -22,11 +22,11 @@ const basePath =
 const withBase = (path: string) => `${basePath.replace(/\/$/, '')}/${path.replace(/^\//, '')}`;
 
 const contentPaths: Record<ContentKey, string> = {
-  cards: withBase('content/cards.json'),
-  focusAreas: withBase('content/focus-areas.json'),
-  pathways: withBase('content/pathways.json'),
-  flow: withBase('content/flow.json'),
-  templates: withBase('content/templates.json'),
+  cards: withBase('content/data/cards.json'),
+  focusAreas: withBase('content/data/focus-areas.json'),
+  pathways: withBase('content/data/pathways.json'),
+  flow: withBase('content/data/flow.json'),
+  templates: withBase('content/data/templates.json'),
 };
 
 const schemas: Record<ContentKey, z.ZodTypeAny> = {
@@ -110,23 +110,46 @@ async function loadContentFile<T>(key: ContentKey): Promise<T> {
   return loader;
 }
 
-const markdownFiles = import.meta.glob('../../content/**/*.md', {
-  query: '?raw',
-  import: 'default',
-  eager: true,
-});
-
-const markdownMap = new Map<string, string>(
-  Object.entries(markdownFiles).map(([path, content]) => {
-    const normalized = path.replace(/\\/g, '/').replace(/^.*content\//, 'content/');
-    return [normalized, content as string];
-  })
-);
-
 const normalizeContentPath = (path: string) => {
   const cleaned = path.replace(/\\/g, '/').replace(/^\.\//, '');
   return cleaned.startsWith('content/') ? cleaned : `content/${cleaned}`;
 };
+
+const markdownCache = new Map<string, Promise<string>>();
+
+async function loadMarkdown(path: string, context: ContentKey) {
+  const normalized = normalizeContentPath(path);
+  if (markdownCache.has(normalized)) {
+    return markdownCache.get(normalized) as Promise<string>;
+  }
+
+  const stripGeneratedHeader = (content: string) =>
+    content.replace(/^# GENERATED FILE - DO NOT EDIT MANUALLY\s*\n+/i, '');
+
+  const loader = (async () => {
+    const response = await fetch(withBase(normalized));
+    if (!response.ok) {
+      const error = new ContentLoadError(
+        `Missing markdown content at path "${normalized}" for ${context}`,
+        'missing-markdown',
+        { path: normalized, status: response.status }
+      );
+      if (import.meta?.env?.DEV) {
+        console.error(error.message);
+      }
+      throw error;
+    }
+
+    const text = await response.text();
+    return stripGeneratedHeader(text);
+  })().catch(err => {
+    markdownCache.delete(normalized);
+    throw err;
+  });
+
+  markdownCache.set(normalized, loader);
+  return loader;
+}
 
 function markdownToPlainText(markdown: string) {
   return markdown
@@ -140,56 +163,51 @@ function markdownToPlainText(markdown: string) {
     .trim();
 }
 
-function getMarkdownContent(contentPath: string, context: ContentKey) {
-  const normalized = normalizeContentPath(contentPath);
-  const content = markdownMap.get(normalized);
-
-  if (!content) {
-    throw new ContentLoadError(
-      `Missing markdown content at path "${normalized}" for ${context}`,
-      'missing-markdown',
-      { path: normalized }
-    );
-  }
-
-  return content;
-}
-
 export function clearContentCache() {
   cache.clear();
+  markdownCache.clear();
 }
 
 export function getRecommendationCards(): Promise<RecommendationCard[]> {
   return loadContentFile('cards');
 }
 
-export function getFocusAreas(): Promise<FocusArea[]> {
-  return loadContentFile<FocusAreaManifest[]>('focusAreas').then(manifests =>
-    manifests.map(focusArea => {
-      const overview = getMarkdownContent(focusArea.overviewPath, 'focusAreas');
+export async function getFocusAreas(): Promise<FocusArea[]> {
+  const manifests = await loadContentFile<FocusAreaManifest[]>('focusAreas');
+
+  return Promise.all(
+    manifests.map(async focusArea => {
+      const overview = await loadMarkdown(focusArea.overviewPath, 'focusAreas');
       const overviewPlainText = markdownToPlainText(overview);
 
-      const mapBucket = (
+      const mapBucket = async (
         bucket: FocusAreaManifest['buckets'][keyof FocusAreaManifest['buckets']]
       ) => ({
         ...bucket,
         descriptionMarkdown: bucket.descriptionPath
-          ? getMarkdownContent(bucket.descriptionPath, 'focusAreas')
+          ? await loadMarkdown(bucket.descriptionPath, 'focusAreas')
           : undefined,
         inlineGuidanceMarkdown: bucket.inlineGuidancePath
-          ? getMarkdownContent(bucket.inlineGuidancePath, 'focusAreas')
+          ? await loadMarkdown(bucket.inlineGuidancePath, 'focusAreas')
           : undefined,
       });
+
+      const [quickTaste, deeperDive, handsOn, jobBoard] = await Promise.all([
+        mapBucket(focusArea.buckets.quickTaste),
+        mapBucket(focusArea.buckets.deeperDive),
+        mapBucket(focusArea.buckets.handsOn),
+        mapBucket(focusArea.buckets.jobBoard),
+      ]);
 
       return {
         ...focusArea,
         overview,
         overviewPlainText,
         buckets: {
-          quickTaste: mapBucket(focusArea.buckets.quickTaste),
-          deeperDive: mapBucket(focusArea.buckets.deeperDive),
-          handsOn: mapBucket(focusArea.buckets.handsOn),
-          jobBoard: mapBucket(focusArea.buckets.jobBoard),
+          quickTaste,
+          deeperDive,
+          handsOn,
+          jobBoard,
         },
       };
     })
@@ -200,10 +218,12 @@ export function getCommonPathways(): Promise<CommonPathway[]> {
   return loadContentFile('pathways');
 }
 
-export function getFlowSteps(): Promise<FlowStep[]> {
-  return loadContentFile<FlowStepManifest[]>('flow').then(steps =>
-    steps.map(step => {
-      const content = getMarkdownContent(step.contentPath, 'flow');
+export async function getFlowSteps(): Promise<FlowStep[]> {
+  const steps = await loadContentFile<FlowStepManifest[]>('flow');
+
+  return Promise.all(
+    steps.map(async step => {
+      const content = await loadMarkdown(step.contentPath, 'flow');
       return {
         ...step,
         content,
@@ -213,11 +233,13 @@ export function getFlowSteps(): Promise<FlowStep[]> {
   );
 }
 
-export function getTemplates(): Promise<Template[]> {
-  return loadContentFile<TemplateManifest[]>('templates').then(templates =>
-    templates.map(template => ({
+export async function getTemplates(): Promise<Template[]> {
+  const templates = await loadContentFile<TemplateManifest[]>('templates');
+
+  return Promise.all(
+    templates.map(async template => ({
       ...template,
-      content: getMarkdownContent(template.contentPath, 'templates'),
+      content: await loadMarkdown(template.contentPath, 'templates'),
     }))
   );
 }

@@ -80,27 +80,27 @@ Update these files to change or extend the guidebook—no UI code changes requir
 
 ### Adding a New Focus Area
 
-1. Add an entry to `public/content/focus-areas.json` with `id`, `name`, `overviewPath`, bucket metadata, curated card IDs, and prompts.
-2. Reference card IDs from `public/content/cards.json` in `curatedCardIds` and the bucket `cardIds` arrays.
-3. Create the overview Markdown at `content/focus-areas/<focusAreaId>/overview.md` (and optional per-bucket markdown in `content/focus-areas/<focusAreaId>/buckets/`).
+1. Add an entry to `public/content/data/focus-areas.json` with `id`, `name`, `overviewPath`, bucket metadata, curated card IDs, and prompts.
+2. Reference card IDs from `public/content/data/cards.json` in `curatedCardIds` and the bucket `cardIds` arrays.
+3. Create the overview Markdown at `public/content/md/focus-areas/<focusAreaId>/overview.md` (and optional per-bucket markdown in `public/content/md/focus-areas/<focusAreaId>/buckets/`).
 3. The new focus area will appear automatically on the Focus Areas page.
 
 ### Adding New Cards
 
-1. Add card entries to `public/content/cards.json` with tags (topic/type/commitment) for filtering.
+1. Add card entries to `public/content/data/cards.json` with tags (topic/type/commitment) for filtering.
 2. Reference the new card IDs from focus areas or pathways as needed.
 3. Cards automatically appear in the catalog, search, and command palette.
 
 ### Modifying Session Steps
 
-1. Edit `public/content/flow.json` to add/update step metadata (id, titles, colors, and `contentPath`).
-2. Add or edit the matching Markdown in `content/flow/<stepId>.md`.
+1. Edit `public/content/data/flow.json` to add/update step metadata (id, titles, colors, and `contentPath`).
+2. Add or edit the matching Markdown in `public/content/md/flow/<stepId>.md`.
 3. The flow page and navbar jump menu update automatically.
 
 ### Updating Pathways or Templates
 
-- Add or edit pathway entries in `public/content/pathways.json`.
-- Add or edit templates/tools in `public/content/templates.json`, pointing each entry to a Markdown file under `content/templates/`.
+- Add or edit pathway entries in `public/content/data/pathways.json`.
+- Add or edit templates/tools in `public/content/data/templates.json`, pointing each entry to a Markdown file under `public/content/md/templates/`.
 
 ### DOCX ingestion pipeline
 
@@ -109,9 +109,11 @@ The repository includes a Python-based ingestion script that converts DOCX sourc
 1. Install the DOCX dependency once: `pip install -r requirements.txt` (requires Python 3).
 2. Place the core guidebook DOCX in `source_docs/core/` and focus area DOCX files in `source_docs/focus_areas/`.
 3. Run the ingestion step: `npm run ingest`
-   - Generates/overwrites `content/flow/*.md`, `content/templates/*.md`, `content/focus-areas/<id>/**/*.md`
-   - Updates `public/content/flow.json`, `public/content/templates.json`, `public/content/focus-areas.json`, `public/content/cards.json`
+   - Clears `generated/` and rebuilds `generated/content/**/*` and `generated/data/*.json`
+   - Copies generated JSON into `public/content/data/` and Markdown into `public/content/md/`
+   - Adds a `# GENERATED FILE` header to every generated Markdown file
 4. Optional: keep the pipeline running with `npm run ingest:watch` to re-run when DOCX files change.
+5. Remove generated and public copies with `npm run ingest:clean`.
 
 Notes:
 - StartHere marketing copy remains hardcoded; ingestion does not overwrite it.

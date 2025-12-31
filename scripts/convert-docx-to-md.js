@@ -8,7 +8,9 @@ const [, , inputPath, outputPath] = process.argv;
 
 if (!inputPath || !outputPath) {
   console.error('Usage: node scripts/convert-docx-to-md.js <input.docx> <output.md>');
-  console.error('Example: node scripts/convert-docx-to-md.js source_docs/flow.docx content/flow/opening.md');
+  console.error(
+    'Example: node scripts/convert-docx-to-md.js source_docs/flow.docx public/content/md/flow/opening.md'
+  );
   process.exit(1);
 }
 

@@ -10,6 +10,7 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "ingest": "python3 scripts/ingest_docx.py",
+    "ingest:clean": "rm -rf generated public/content/data public/content/md",
     "ingest:watch": "python3 scripts/ingest_docx.py --watch"
   },
   "dependencies": {

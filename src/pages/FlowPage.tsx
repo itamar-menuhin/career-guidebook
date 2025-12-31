@@ -171,7 +171,7 @@ export default function FlowPage() {
         <div className="max-w-md text-center space-y-4">
           <p className="text-lg font-medium">Flow content failed to load.</p>
           <p className="text-muted-foreground">
-            Check that <code>/public/content/flow.json</code> and referenced markdown files exist
+            Check that <code>/public/content/data/flow.json</code> and referenced markdown files exist
             and match the expected schema.
           </p>
           <Button onClick={refresh} variant="outline">

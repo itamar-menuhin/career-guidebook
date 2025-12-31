@@ -1,3 +1,5 @@
+# GENERATED FILE - DO NOT EDIT MANUALLY
+
 # Wrap Summary Template
 
 ## Snapshot

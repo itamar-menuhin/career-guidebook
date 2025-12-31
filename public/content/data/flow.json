@@ -5,7 +5,7 @@
     "shortTitle": "Opening & goal",
     "summary": "Set the frame for the session. What does the person hope to walk away with?",
     "color": "step-opening",
-    "contentPath": "content/flow/opening.md"
+    "contentPath": "content/md/flow/opening.md"
   },
   {
     "id": "background",
@@ -13,7 +13,7 @@
     "shortTitle": "What they bring",
     "summary": "Understand their current situation, skills, and experience.",
     "color": "step-background",
-    "contentPath": "content/flow/background.md"
+    "contentPath": "content/md/flow/background.md"
   },
   {
     "id": "happiness",
@@ -21,7 +21,7 @@
     "shortTitle": "What makes them happy",
     "summary": "Explore what energizes them and what they want more of in their work.",
     "color": "step-happiness",
-    "contentPath": "content/flow/happiness.md"
+    "contentPath": "content/md/flow/happiness.md"
   },
   {
     "id": "constraints",
@@ -29,7 +29,7 @@
     "shortTitle": "Constraints",
     "summary": "Surface the practical realities that will shape what's possible.",
     "color": "step-constraints",
-    "contentPath": "content/flow/constraints.md"
+    "contentPath": "content/md/flow/constraints.md"
   },
   {
     "id": "directions",
@@ -37,7 +37,7 @@
     "shortTitle": "Direction testing",
     "summary": "Explore potential directions, test fit, and narrow down.",
     "color": "step-directions",
-    "contentPath": "content/flow/directions.md"
+    "contentPath": "content/md/flow/directions.md"
   },
   {
     "id": "wrap",
@@ -45,6 +45,6 @@
     "shortTitle": "Wrap",
     "summary": "Close the session with clarity on next steps and accountability.",
     "color": "step-wrap",
-    "contentPath": "content/flow/wrap.md"
+    "contentPath": "content/md/flow/wrap.md"
   }
 ]
