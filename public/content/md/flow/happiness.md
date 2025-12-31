@@ -1,4 +1,4 @@
-# GENERATED FILE - DO NOT EDIT MANUALLY
+# GENERATED FROM VAULT — DO NOT EDIT. Source of truth: /vault
 
 Explore what energizes them and what they want more of in their work.
 

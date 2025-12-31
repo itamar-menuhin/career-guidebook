@@ -84,6 +84,7 @@ export const FlowStepSchema = z.object({
   summary: z.string().optional(),
   color: z.string().min(1),
   contentPath: z.string().min(1),
+  order: z.number().optional(),
 });
 
 export const TemplateSchema = z.object({

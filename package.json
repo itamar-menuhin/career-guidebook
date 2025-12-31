@@ -6,13 +6,13 @@
   "scripts": {
     "dev": "node scripts/dev-runner.mjs",
     "dev:app": "vite",
-    "build": "npm run ingest && vite build",
-    "build:dev": "vite build --mode development",
+    "build": "npm run build:vault && vite build",
+    "build:dev": "npm run build:vault && vite build --mode development",
     "lint": "eslint .",
     "preview": "vite preview",
-    "ingest": "python3 scripts/ingest_docx.py",
-    "ingest:clean": "rm -rf generated public/content/data public/content/md",
-    "ingest:watch": "python3 scripts/ingest_docx.py --watch"
+    "build:vault": "node scripts/buildVaultIndex.mjs",
+    "watch:vault": "node scripts/watchVault.mjs",
+    "migrate:vault": "node scripts/migrateExistingContentToVault.mjs"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.10.0",
@@ -75,7 +75,9 @@
     "@types/react": "^18.3.23",
     "@types/react-dom": "^18.3.7",
     "@vitejs/plugin-react-swc": "^3.11.0",
+    "chokidar": "^4.0.3",
     "autoprefixer": "^10.4.21",
+    "js-yaml": "^4.1.0",
     "eslint": "^9.32.0",
     "eslint-plugin-react-hooks": "^5.2.0",
     "eslint-plugin-react-refresh": "^0.4.20",

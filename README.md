@@ -45,10 +45,10 @@ Browse the library sections to find relevant resources:
 # Install dependencies
 npm install
 
-# Start development server (runs DOCX ingestion once, then watches for changes)
+# Build content from the Obsidian vault, then start the dev server + vault watcher
 npm run dev
 
-# Production build (runs DOCX ingestion once, then Vite build)
+# Production build (rebuilds vault index, then Vite build)
 npm run build
 ```
 
@@ -63,74 +63,68 @@ src/
 ├── hooks/          # Custom React hooks
 ├── lib/            # Utilities and content schemas/loaders
 └── pages/          # Route pages
-content/
-├── flow/           # Markdown for each flow step
-├── templates/      # Markdown templates rendered in the UI
-└── focus-areas/    # Markdown overviews and optional bucket notes per focus area
-public/content/     # JSON manifests and structured metadata (cards, focus areas, flow manifest, templates manifest, pathways)
-source_docs/        # Optional DOCX source files for authoring
-scripts/            # Utility scripts (e.g., DOCX → Markdown)
+vault/              # Obsidian vault (source of truth)
+public/content/     # Generated JSON + Markdown mirrors, built from the vault
+scripts/            # Utility scripts (vault migration/build/watch)
 ```
 
 ## Adding Content
 
-Guidebook content is split between structured JSON and Markdown:
-
-- **JSON (public/content)**: structured metadata for cards, focus areas, pathways, and manifests pointing to Markdown files.
-- **Markdown (content/)**: all narrative copy for flow steps, templates, and focus area overviews (plus optional bucket guidance).
-
-Update these files to change or extend the guidebook—no UI code changes required.
+All content is authored in the **Obsidian vault** (`/vault`). The `scripts/buildVaultIndex.mjs` script parses YAML frontmatter + Markdown, validates required fields, and emits JSON + copied Markdown into `public/content/` for the web app.
 
 ### Adding a New Focus Area
 
-1. Add an entry to `public/content/data/focus-areas.json` with `id`, `name`, `overviewPath`, bucket metadata, curated card IDs, and prompts.
-2. Reference card IDs from `public/content/data/cards.json` in `curatedCardIds` and the bucket `cardIds` arrays.
-3. Create the overview Markdown at `public/content/md/focus-areas/<focusAreaId>/overview.md` (and optional per-bucket markdown in `public/content/md/focus-areas/<focusAreaId>/buckets/`).
-3. The new focus area will appear automatically on the Focus Areas page.
+1. In Obsidian, use `_Templates/FocusArea.template.md` and `_Templates/Pathway.template.md` as needed.
+2. Create `vault/02_Focus-Areas/<id>/overview.md` with frontmatter:
+   ```yaml
+   kind: focus_area
+   id: ai-safety
+   title: AI Safety
+   summary: Short summary for the cards page
+   role_shapes: [...]
+   fit_signals: [...]
+   people_to_talk_to: [...]
+   common_confusions: [...]
+   ```
+3. Add four bucket notes under `vault/02_Focus-Areas/<id>/buckets/` named `quick-taste.md`, `deeper-dive.md`, `hands-on.md`, and `job-board.md` using the `focus_area_bucket` schema in the frontmatter. Reference curated `card` IDs in `curated_cards`.
+4. Add the corresponding cards under `vault/03_Cards/<focus-area-id>/<card-id>.md` (see next section).
+5. Run `npm run build:vault` (or rely on `npm run dev` watcher) to regenerate the site.
 
 ### Adding New Cards
 
-1. Add card entries to `public/content/data/cards.json` with tags (topic/type/commitment) for filtering.
-2. Reference the new card IDs from focus areas or pathways as needed.
-3. Cards automatically appear in the catalog, search, and command palette.
+1. In Obsidian, start from `_Templates/Card.template.md`.
+2. Save to `vault/03_Cards/<focus-area-id>/<card-id>.md` with frontmatter:
+   ```yaml
+   kind: card
+   id: aisf-fundamentals
+   title: AI Safety Fundamentals Course
+   focus_area_id: ai-safety
+   bucket: deeper-dive
+   topic: course
+   commitment: medium
+   good_fit_if: [...]
+   one_liner: ...
+   first_small_step: ...
+   next_step: ...
+   links: [...]
+   when_to_suggest: ...
+   when_not_to_suggest: ...
+   ```
+3. The build script will pull `id`, tags, and steps into `public/content/data/cards.json` for filtering/search.
 
 ### Modifying Session Steps
 
-1. Edit `public/content/data/flow.json` to add/update step metadata (id, titles, colors, and `contentPath`).
-2. Add or edit the matching Markdown in `public/content/md/flow/<stepId>.md`.
-3. The flow page and navbar jump menu update automatically.
+1. Create/edit notes in `vault/01_Flow/` with `kind: flow_step` frontmatter and `order`.
+2. Rebuild (`npm run build:vault`) to refresh `public/content/data/flow.json` and the copied Markdown.
 
 ### Updating Pathways or Templates
 
-- Add or edit pathway entries in `public/content/data/pathways.json`.
-- Add or edit templates/tools in `public/content/data/templates.json`, pointing each entry to a Markdown file under `public/content/md/templates/`.
+- Add/edit pathway notes in `vault/04_Common-Pathways/` using the `pathway` frontmatter schema; rebuild to update `public/content/data/pathways.json`.
+- Add/edit template notes in `vault/05_Templates/` with `kind: template`; rebuild to update `public/content/data/templates.json`.
 
-### DOCX ingestion pipeline
+### Obsidian Templates
 
-The repository includes a Python-based ingestion script that converts DOCX source files into the Markdown and JSON consumed by the site.
-
-1. Install the DOCX dependency once: `pip install -r requirements.txt` (requires Python 3).
-2. Place the core guidebook DOCX in `source_docs/core/` and focus area DOCX files in `source_docs/focus_areas/` **named as `<focus-area-slug>.docx`** (slug becomes the focus area ID).
-   - Example rename suggestions for the current files:
-     - `1_1_career_counselling_guidebook_AI_safety.docx` → `ai-safety.docx`
-     - `1_1_career_counselling_guidebook_AIxAnimals.docx` → `ai-x-animals.docx`
-     - `1_1_career_counselling_guidebook_animal_welfare.docx` → `animal-welfare.docx`
-     - `1_1_career_counselling_guidebook_biosecurity.docx` → `biosecurity.docx`
-     - `1_1_career_counselling_guidebook_climate.docx` → `climate.docx`
-     - `1_1_career_counselling_guidebook_global_health_development.docx` → `global-health-development.docx`
-3. Run the ingestion step once: `npm run ingest`
-   - Clears `generated/` and rebuilds `generated/content/**/*` and `generated/data/*.json`
-   - Copies generated JSON into `public/content/data/` and Markdown into `public/content/md/`
-   - Adds a `# GENERATED FILE` header to every generated Markdown file
-4. For development, `npm run dev` will run ingestion once, keep the DOCX watcher alive, and start Vite in parallel.
-5. Optional: keep the pipeline running manually with `npm run ingest:watch` to re-run when DOCX files change.
-6. Remove generated and public copies with `npm run ingest:clean`.
-
-Notes:
-- StartHere marketing copy remains hardcoded; ingestion does not overwrite it.
-- Re-running ingestion keeps recommendation card IDs stable when titles match existing cards.
-
-If content fails schema validation in development, detailed errors are printed to the console and a friendly error page is shown in the UI. Refresh after fixing the JSON files or re-running ingestion.
+The vault includes `_Templates/*.template.md` files for Cards, Focus Areas, Flow Steps, Pathways, and general template pages. Obsidian is configured to use this folder via `vault/.obsidian/templates.json`.
 
 ## License
 

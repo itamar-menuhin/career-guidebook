@@ -1,4 +1,4 @@
-# GENERATED FILE - DO NOT EDIT MANUALLY
+# GENERATED FROM VAULT — DO NOT EDIT. Source of truth: /vault
 
 Explore potential directions, test fit, and narrow down.
 

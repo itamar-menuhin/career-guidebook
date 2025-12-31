@@ -3,48 +3,54 @@
     "id": "opening",
     "title": "Opening & goal",
     "shortTitle": "Opening & goal",
-    "summary": "Set the frame for the session. What does the person hope to walk away with?",
+    "summary": "Set the frame for the session. What does the person hope to walk away with? ## Suggested prompts - What would make this conversation feel like a success for you? - Is there a specific decision you're trying to make, or…",
     "color": "step-opening",
-    "contentPath": "content/md/flow/opening.md"
+    "contentPath": "content/md/flow/opening.md",
+    "order": 1
   },
   {
     "id": "background",
     "title": "What they bring",
     "shortTitle": "What they bring",
-    "summary": "Understand their current situation, skills, and experience.",
+    "summary": "Understand their current situation, skills, and experience. ## Suggested prompts - Walk me through your current situation — what are you doing now? - What skills or experiences do you feel most confident about? - What…",
     "color": "step-background",
-    "contentPath": "content/md/flow/background.md"
+    "contentPath": "content/md/flow/background.md",
+    "order": 2
   },
   {
     "id": "happiness",
     "title": "What makes them happy",
     "shortTitle": "What makes them happy",
-    "summary": "Explore what energizes them and what they want more of in their work.",
+    "summary": "Explore what energizes them and what they want more of in their work. ## Suggested prompts - Tell me about a time you felt most engaged and energized by your work. - What activities do you look forward to? What do you…",
     "color": "step-happiness",
-    "contentPath": "content/md/flow/happiness.md"
+    "contentPath": "content/md/flow/happiness.md",
+    "order": 3
   },
   {
     "id": "constraints",
     "title": "Constraints",
     "shortTitle": "Constraints",
-    "summary": "Surface the practical realities that will shape what's possible.",
+    "summary": "Surface the practical realities that will shape what's possible. ## Suggested prompts - What constraints are you working with? (geography, finances, visa, family, etc.) - Are there any non-negotiables — things you…",
     "color": "step-constraints",
-    "contentPath": "content/md/flow/constraints.md"
+    "contentPath": "content/md/flow/constraints.md",
+    "order": 4
   },
   {
     "id": "directions",
     "title": "Iterative direction testing",
-    "shortTitle": "Direction testing",
-    "summary": "Explore potential directions, test fit, and narrow down.",
+    "shortTitle": "Iterative direction testing",
+    "summary": "Explore potential directions, test fit, and narrow down. ## Suggested prompts - Based on what we've discussed, here are a few directions that might fit... (propose 2-3) - What resonates? What doesn't feel right? - Let's…",
     "color": "step-directions",
-    "contentPath": "content/md/flow/directions.md"
+    "contentPath": "content/md/flow/directions.md",
+    "order": 5
   },
   {
     "id": "wrap",
     "title": "Wrap & commitments",
-    "shortTitle": "Wrap",
-    "summary": "Close the session with clarity on next steps and accountability.",
+    "shortTitle": "Wrap & commitments",
+    "summary": "Close the session with clarity on next steps and accountability. ## Suggested prompts - Of the directions we discussed, which feel most promising to you? - What's the very first step you can take in the next 48 hours? -…",
     "color": "step-wrap",
-    "contentPath": "content/md/flow/wrap.md"
+    "contentPath": "content/md/flow/wrap.md",
+    "order": 6
   }
 ]
