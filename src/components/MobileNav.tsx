@@ -17,10 +17,10 @@ import { useNavigate } from 'react-router-dom';
 
 const navItems = [
   { path: '/', label: 'Start Here', icon: BookOpen },
-  { path: '/flow', label: 'Session Flow', icon: PlayCircle },
-  { path: '/pathways', label: 'Common Pathways', icon: Map },
+  { path: '/flow', label: 'Flow', icon: PlayCircle },
+  { path: '/pathways', label: 'Pathways', icon: Map },
   { path: '/focus-areas', label: 'Focus Areas', icon: Target },
-  { path: '/cards', label: 'Recommendation Cards', icon: LayoutGrid },
+  { path: '/cards', label: 'Cards', icon: LayoutGrid },
   { path: '/templates', label: 'Templates & Tools', icon: FileText },
 ];
 

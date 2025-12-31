@@ -46,13 +46,13 @@ export function CommandPalette() {
               <BookOpen className="mr-2 h-4 w-4" />
               Start Here
             </CommandItem>
-            <CommandItem onSelect={() => handleSelect('/session')}>
+            <CommandItem onSelect={() => handleSelect('/flow')}>
               <PlayCircle className="mr-2 h-4 w-4" />
-              Run a Session
+              Flow guide
             </CommandItem>
             <CommandItem onSelect={() => handleSelect('/pathways')}>
               <Map className="mr-2 h-4 w-4" />
-              Common Pathways
+              Pathways
             </CommandItem>
             <CommandItem onSelect={() => handleSelect('/focus-areas')}>
               <Target className="mr-2 h-4 w-4" />

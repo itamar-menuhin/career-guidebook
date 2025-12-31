@@ -21,25 +21,25 @@ export const focusAreas: FocusArea[] = [
     ],
     buckets: {
       quickTaste: {
-        title: 'Quick Taste (≈1 hour)',
+        title: 'Quick taste (≈1 hour)',
         description: 'Get oriented with foundational readings that explain why AI safety matters and what the field is trying to solve.',
         cardIds: ['alignment-forum-reading', '80k-ai-safety-guide'],
         inlineGuidance: 'Start with the 80K guide for the career lens, then read one Alignment Forum post to see the technical depth.',
       },
       deeperDive: {
-        title: 'Deeper Dive (2-6 hours)',
+        title: 'Deeper dive (2–6 hours)',
         description: 'Commit a few hours to structured learning that builds conceptual foundations.',
         cardIds: ['aisf-fundamentals'],
         inlineGuidance: 'The AI Safety Fundamentals course is the gold standard intro. You can self-study the materials even without joining a cohort.',
       },
       handsOn: {
-        title: 'Hands-on Trial',
+        title: 'Hands-on trial',
         description: 'Test your fit with programs that involve doing actual research or engineering work.',
         cardIds: ['mats-program', 'arena-program', 'ai-safety-camp'],
         inlineGuidance: 'These programs have different levels of selectivity. ARENA is great for building engineering skills; MATS pairs you with a mentor for research.',
       },
       jobBoard: {
-        title: 'Job Board Scan (Real Roles)',
+        title: 'Job board scan (real roles)',
         description: 'See what organizations are actually hiring for to understand what skills are in demand.',
         cardIds: ['anthropic-jobs', 'redwood-jobs'],
         inlineGuidance: 'Look at senior and junior roles to understand the skill trajectory. Even if you\'re not ready to apply, this shows what to aim for.',
