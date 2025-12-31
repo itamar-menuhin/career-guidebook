@@ -6,6 +6,12 @@ import { Badge } from '@/components/ui/badge';
 import { Search, X, LayoutGrid } from 'lucide-react';
 import { cn } from '@/lib/utils';
 
+const typeLabels: Record<string, string> = {
+  'quick-taste': 'Quick taste (≈1 hour)',
+  'deeper-dive': 'Deeper dive (2–6 hours)',
+  'hands-on': 'Hands-on trial',
+  'job-board': 'Job board scan (real roles)',
+};
 const typeOptions = ['quick-taste', 'deeper-dive', 'hands-on', 'job-board'];
 const topicOptions = ['course', 'program', 'reading', 'job-board', 'project', 'tool', 'person'];
 const commitmentOptions = ['low', 'medium', 'high'];
@@ -26,7 +32,7 @@ export default function CardsPage() {
             </div>
             <h1 className="font-display text-3xl md:text-4xl font-medium">Recommendation Cards</h1>
           </div>
-          <p className="text-lg text-muted-foreground max-w-2xl">Filterable catalog of all resources across focus areas. Add any card to your active session.</p>
+          <p className="text-lg text-muted-foreground max-w-2xl">Filterable catalog of all resources across focus areas. Browse and discuss during your sessions.</p>
         </div>
       </section>
 
@@ -54,12 +60,12 @@ export default function CardsPage() {
                     key={t} 
                     variant={filters.type === t ? 'default' : 'outline'} 
                     className={cn(
-                      'cursor-pointer capitalize text-xs transition-all duration-200',
+                      'cursor-pointer text-xs transition-all duration-200',
                       filters.type === t ? 'shadow-sm' : 'hover:bg-muted/60 border-border/50'
                     )}
                     onClick={() => setFilter('type', filters.type === t ? null : t)}
                   >
-                    {t.replace('-', ' ')}
+                    {typeLabels[t] || t.replace('-', ' ')}
                   </Badge>
                 ))}
               </div>

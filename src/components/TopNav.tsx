@@ -11,6 +11,7 @@ import {
   Command,
 } from 'lucide-react';
 import { MobileNav } from '@/components/MobileNav';
+import { FlowJumpDropdown } from '@/components/FlowJumpDropdown';
 import { Button } from '@/components/ui/button';
 import { useSearch } from '@/contexts/SearchContext';
 
@@ -66,6 +67,9 @@ export function TopNav() {
         </div>
 
         <div className="flex items-center gap-2">
+          {/* Global Flow Jump Dropdown */}
+          <FlowJumpDropdown />
+          
           <Button
             variant="outline"
             size="sm"

@@ -3,7 +3,7 @@ import { SessionStep } from './types';
 export const sessionSteps: SessionStep[] = [
   {
     id: 'opening',
-    title: 'Opening & Goals',
+    title: 'Opening & Goal',
     shortTitle: 'Opening',
     description: 'Set the frame for the session. What does the person hope to walk away with?',
     prompts: [
@@ -57,14 +57,14 @@ export const sessionSteps: SessionStep[] = [
     prompts: [
       'Based on what we\'ve discussed, here are a few directions that might fit... (propose 2-3)',
       'What resonates? What doesn\'t feel right?',
-      'Let\'s go deeper on [direction] — what would the first small step be?',
+      'Let\'s go deeper on [direction] — what would the first small step (≤60 min) be?',
       'Are there focus areas or recommendation cards that might help?',
     ],
     color: 'step-directions',
   },
   {
     id: 'wrap',
-    title: 'Wrap & Export',
+    title: 'Wrap & Follow-up',
     shortTitle: 'Wrap Up',
     description: 'Synthesize key takeaways and set concrete next steps.',
     prompts: [
