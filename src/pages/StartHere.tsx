@@ -29,14 +29,14 @@ export default function StartHere() {
           </h1>
           
           <p className="text-lg md:text-xl text-muted-foreground mb-10 max-w-2xl leading-relaxed animate-fade-up stagger-2">
-            A practical toolkit for running impactful career conversations. Structured flows, curated recommendations, and session notes — all in one place.
+            A practical toolkit for running impactful career conversations. Structured flows, curated recommendations, and expert guidance — all in one place.
           </p>
           
           <div className="flex flex-wrap gap-4 animate-fade-up stagger-3">
             <Button asChild size="lg" className="btn-glow gradient-hero text-primary-foreground shadow-glow hover:shadow-elevated transition-all duration-300 h-12 px-6">
-              <Link to="/session">
+              <Link to="/flow">
                 <PlayCircle className="h-5 w-5 mr-2" />
-                Run a Session
+                Session Flow Guide
               </Link>
             </Button>
             <Button asChild variant="outline" size="lg" className="hover-lift h-12 px-6 border-border/60">
@@ -112,10 +112,10 @@ export default function StartHere() {
           <div className="grid md:grid-cols-2 gap-4">
             {[
               { 
-                to: '/session', 
+                to: '/flow', 
                 icon: PlayCircle, 
-                title: 'Run a Session', 
-                desc: 'Guided 60-90 min session flow with notes',
+                title: 'Session Flow Guide', 
+                desc: 'Structured prompts for 60-90 min sessions',
                 accent: 'group-hover:bg-primary/10 group-hover:text-primary',
               },
               { 

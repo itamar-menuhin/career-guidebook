@@ -1,51 +1,43 @@
 # 1:1 Career Counseling Guidebook
 
-A web-based guidebook for running live 1:1 career counseling sessions. Features a Session Workspace for guided calls with notes, plus a browseable Library of focus areas, recommendation cards, and templates.
+A web-based read-only guidebook for running live 1:1 career counseling sessions. Features a structured Session Flow guide for mentors to use during calls, plus a browseable Library of focus areas, recommendation cards, and templates.
 
 ## Features
 
-- **Session Workspace**: Interactive guided flow for 60-90 min sessions with live note-taking
+- **Session Flow Guide**: Read-only interactive flow for 60-90 min sessions with prompts and guidance
 - **Focus Areas**: Quick-start pages for different career tracks (AI Safety, etc.)
 - **Recommendation Cards**: Filterable database of resources, programs, and next steps
+- **Common Pathways**: Focus-area-agnostic career transition patterns
 - **Templates & Tools**: Session wrap summaries and focus area templates
-- **Session Sharing**: Share sessions via short links that work across devices
 
-## Session Sharing
+## Using the Guidebook
 
-Sessions can be shared via short links (`/s/<slug>`):
+### Session Flow (`/flow`)
 
-- **Share**: Click the Share button in Session Notes to create a shareable link
-- **View**: Anyone with the link can view the session in read-only mode
-- **Fork**: Viewers can fork to create their own editable copy
-- **Privacy**: Sessions are unlisted (not publicly discoverable) and expire after 30 days
-- **Warning**: A privacy banner reminds users not to share sensitive personal details
+The Session Flow is a read-only guide with deep links to each step:
 
-### How it works
+- `/flow#opening` - Opening & Goals
+- `/flow#background` - What They Bring
+- `/flow#happiness` - What Makes Them Happy
+- `/flow#constraints` - Constraints & Non-Negotiables
+- `/flow#directions` - Iterative Direction Testing
+- `/flow#wrap` - Wrap & Export
 
-1. Session data is stored remotely in Lovable Cloud (PostgreSQL database)
-2. Each shared session gets a unique 10-character slug
-3. Links work across browsers/devices without localStorage dependency
-4. Expired sessions show a clear message with instructions to re-share
+Each step provides suggested prompts and contextual tips. Use this during live calls to stay on track.
 
-### Security Notes (MVP)
+### Library
 
-- **No authentication required**: Anyone can create and view shared sessions
-- **Unlisted by default**: Sessions are only accessible by direct link
-- **30-day expiry**: Sessions automatically expire to limit exposure
-- **No PII safeguards**: Users are warned via banner, but no content filtering is applied
-- **Public table with RLS**: The `shared_sessions` table allows public read/write for anonymous access
+Browse the library sections to find relevant resources:
 
-For production use, consider:
-- Adding rate limiting to prevent abuse
-- Implementing session deletion by owners
-- Adding optional password protection
-- Content moderation for shared sessions
+- **Focus Areas**: Deep dives into specific career tracks
+- **Cards**: Searchable database of recommendations with filters
+- **Pathways**: Common career transition patterns
+- **Templates**: Summary formats and planning tools
 
 ## Tech Stack
 
 - **Frontend**: Vite, React, TypeScript, Tailwind CSS, shadcn/ui
-- **Backend**: Lovable Cloud (PostgreSQL, Edge Functions)
-- **State**: React Context for sessions, localStorage for local sessions
+- **State**: React Context for search, URL hash for flow navigation
 
 ## Development
 
@@ -62,12 +54,11 @@ npm run dev
 ```
 src/
 ├── components/     # UI components
-├── contexts/       # React contexts (Session, Search)
-├── data/          # Content data (cards, focus areas, pathways)
+├── contexts/       # React contexts (Search)
+├── data/          # Content data (cards, focus areas, pathways, steps)
 ├── hooks/         # Custom React hooks
-├── lib/           # Utilities (sessionStore, utils)
-├── pages/         # Route pages
-└── integrations/  # Supabase client (auto-generated)
+├── lib/           # Utilities
+└── pages/         # Route pages
 ```
 
 ## Adding Content
@@ -86,19 +77,9 @@ The system is designed for easy content extension:
 2. Use consistent tags for filtering (topic, type, commitment)
 3. Cards automatically appear in the catalog and search
 
-## Database Schema
+### Modifying Session Steps
 
-The `shared_sessions` table:
-
-| Column | Type | Description |
-|--------|------|-------------|
-| id | UUID | Primary key |
-| slug | TEXT | Unique short link identifier |
-| session_json | JSONB | Full session data |
-| created_at | TIMESTAMP | Creation time |
-| updated_at | TIMESTAMP | Last update time |
-| expires_at | TIMESTAMP | Expiry (default 30 days) |
-| version | INTEGER | Schema version |
+Edit `src/data/sessionSteps.ts` to change prompts, titles, or add new steps.
 
 ## License
 
