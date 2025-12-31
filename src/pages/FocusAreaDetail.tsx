@@ -20,6 +20,13 @@ import { useToast } from '@/hooks/use-toast';
 import { buildBucketAnchor } from '@/lib/anchors';
 import { MarkdownPage } from '@/components/MarkdownPage';
 
+const bucketLabelMap = {
+  quickTaste: 'Quick taste (≈1 hour)',
+  deeperDive: 'Deeper dive (2–6 hours)',
+  handsOn: 'Hands-on trial',
+  jobBoard: 'Job board scan (real roles)',
+} as const;
+
 export default function FocusAreaDetail() {
   const { id } = useParams<{ id: string }>();
   const { focusAreas, loading } = useContent();
@@ -153,6 +160,7 @@ export default function FocusAreaDetail() {
               title={b.data.title} 
               description={b.data.description} 
               isActive={activeBucket === b.key || expandedBuckets[b.key]} 
+              onCopyLink={() => copyBucketLink(b.key)}
               onClick={() => handleBucketClick(b.key)} 
             />
           ))}
@@ -177,7 +185,9 @@ export default function FocusAreaDetail() {
               <div className="rounded-2xl border border-border/60 bg-card/60 p-5 md:p-6 shadow-soft space-y-4">
                 <div className="flex items-start justify-between gap-3">
                   <div className="space-y-2">
-                    <p className="text-xs uppercase text-muted-foreground tracking-wider">Bucket</p>
+                    <p className="text-xs uppercase text-muted-foreground tracking-wider">
+                      {bucketLabelMap[b.key as keyof typeof bucketLabelMap]}
+                    </p>
                     <h3 className="font-display text-lg font-semibold">{b.data.title}</h3>
                     {b.data.inlineGuidanceMarkdown ? (
                       <div className="p-3 bg-muted/50 rounded-lg">
@@ -195,13 +205,13 @@ export default function FocusAreaDetail() {
                   <div className="flex gap-1">
                     <Button
                       variant="ghost"
-                      size="sm"
-                      className="inline-flex items-center gap-2"
+                      size="icon"
+                      className="h-9 w-9"
                       onClick={() => copyBucketLink(b.key)}
                       title="Copy link to this bucket"
+                      aria-label="Copy link to this bucket"
                     >
-                      <LinkIcon className="h-3.5 w-3.5" />
-                      Copy link
+                      <LinkIcon className="h-4 w-4" />
                     </Button>
                     <CollapsibleTrigger asChild>
                       <Button
@@ -241,7 +251,7 @@ export default function FocusAreaDetail() {
       <section className="mt-12 mb-12">
         <h2 className="font-display text-xl font-semibold mb-4 flex items-center gap-2">
           <Check className="h-5 w-5 text-commitment-low" />
-          Good Fit If…
+          Good fit if…
         </h2>
         <ul className="space-y-2">
           {area.fitSignals.map((s, i) => (

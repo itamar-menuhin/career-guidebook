@@ -1,11 +1,12 @@
 import { cn } from '@/lib/utils';
-import { LucideIcon, Zap, Clock, Wrench, Briefcase, ChevronRight } from 'lucide-react';
+import { LucideIcon, Zap, Clock, Wrench, Briefcase, ChevronRight, Link as LinkIcon } from 'lucide-react';
 
 interface BucketTileProps {
   type: 'quick-taste' | 'deeper-dive' | 'hands-on' | 'job-board';
   title: string;
   description: string;
   onClick?: () => void;
+  onCopyLink?: () => void;
   isActive?: boolean;
   className?: string;
 }
@@ -37,7 +38,14 @@ const bucketConfig: Record<string, { icon: LucideIcon; colorClass: string; bgCla
   },
 };
 
-export function BucketTile({ type, title, description, onClick, isActive, className }: BucketTileProps) {
+const bucketTypeLabels: Record<BucketTileProps['type'], string> = {
+  'quick-taste': 'Quick taste (≈1 hour)',
+  'deeper-dive': 'Deeper dive (2–6 hours)',
+  'hands-on': 'Hands-on trial',
+  'job-board': 'Job board scan (real roles)',
+};
+
+export function BucketTile({ type, title, description, onClick, onCopyLink, isActive, className }: BucketTileProps) {
   const config = bucketConfig[type];
   const Icon = config.icon;
 
@@ -61,22 +69,51 @@ export function BucketTile({ type, title, description, onClick, isActive, classN
           <Icon className="h-5 w-5 md:h-6 md:w-6" />
         </div>
         <div className="flex-1 min-w-0">
-          <div className="flex items-center justify-between">
-            <h3 className={cn(
-              'font-display text-base md:text-lg font-medium mb-1.5 transition-colors',
-              config.colorClass
-            )}>
-              {title}
-            </h3>
-            <ChevronRight className={cn(
-              'h-4 w-4 transition-all duration-300',
-              config.colorClass,
-              isActive ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-2 group-hover:opacity-60 group-hover:translate-x-0'
-            )} />
+          <div className="flex items-center justify-between gap-2">
+            <div className="flex-1 min-w-0 space-y-1">
+              <p className={cn('text-xs font-semibold uppercase tracking-wide', config.colorClass)}>
+                {bucketTypeLabels[type]}
+              </p>
+              <h3
+                className={cn(
+                  'font-display text-base md:text-lg font-medium transition-colors',
+                  config.colorClass
+                )}
+              >
+                {title}
+              </h3>
+            </div>
+            <div className="flex items-center gap-1">
+              {onCopyLink && (
+                <button
+                  type="button"
+                  onClick={event => {
+                    event.stopPropagation();
+                    onCopyLink();
+                  }}
+                  className={cn(
+                    'inline-flex h-8 w-8 items-center justify-center rounded-md border border-transparent text-muted-foreground transition-colors',
+                    'hover:text-foreground hover:bg-background/70 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2'
+                  )}
+                  aria-label="Copy link to this bucket"
+                >
+                  <LinkIcon className="h-4 w-4" aria-hidden />
+                  <span className="sr-only">Copy link to this bucket</span>
+                </button>
+              )}
+              <ChevronRight
+                className={cn(
+                  'h-4 w-4 transition-all duration-300',
+                  config.colorClass,
+                  isActive
+                    ? 'opacity-100 translate-x-0'
+                    : 'opacity-0 -translate-x-2 group-hover:opacity-60 group-hover:translate-x-0'
+                )}
+                aria-hidden
+              />
+            </div>
           </div>
-          <p className="text-sm text-muted-foreground leading-relaxed">
-            {description}
-          </p>
+          <p className="text-sm text-muted-foreground leading-relaxed">{description}</p>
         </div>
       </div>
     </button>
