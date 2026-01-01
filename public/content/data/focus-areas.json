@@ -226,64 +226,43 @@
         "title": "Quick taste (≈1 hour)",
         "description": "Guidance for quick taste (≈1 hour) coming soon.",
         "cardIds": [
-          "80k-ai-safety-guide",
-          "alignment-forum-reading"
+          "80-000-hours-ai-safety-researcher-career-review",
+          "deepmind-agi-safety-course-playlist",
+          "robert-miles-intro-to-ai-safety-remastered"
         ],
         "inlineGuidancePath": "content/md/focus-areas/ai-safety/buckets/quick-taste.md",
         "curatedCardIds": [
-          "80k-ai-safety-guide",
-          "alignment-forum-reading"
+          "80-000-hours-ai-safety-researcher-career-review",
+          "deepmind-agi-safety-course-playlist",
+          "robert-miles-intro-to-ai-safety-remastered"
         ]
       },
       "deeperDive": {
         "title": "Deeper dive (2–6 hours)",
         "description": "Guidance for deeper dive (2–6 hours) coming soon.",
-        "cardIds": [
-          "aisf-fundamentals"
-        ],
+        "cardIds": [],
         "inlineGuidancePath": "content/md/focus-areas/ai-safety/buckets/deeper-dive.md",
-        "curatedCardIds": [
-          "aisf-fundamentals"
-        ]
+        "curatedCardIds": []
       },
       "handsOn": {
         "title": "Hands-on trial",
         "description": "Guidance for hands-on trial coming soon.",
-        "cardIds": [
-          "ai-safety-camp",
-          "arena-program",
-          "mats-program"
-        ],
+        "cardIds": [],
         "inlineGuidancePath": "content/md/focus-areas/ai-safety/buckets/hands-on.md",
-        "curatedCardIds": [
-          "ai-safety-camp",
-          "arena-program",
-          "mats-program"
-        ]
+        "curatedCardIds": []
       },
       "jobBoard": {
         "title": "Job board scan (real roles)",
         "description": "Guidance for job board scan (real roles) coming soon.",
-        "cardIds": [
-          "anthropic-jobs",
-          "redwood-jobs"
-        ],
+        "cardIds": [],
         "inlineGuidancePath": "content/md/focus-areas/ai-safety/buckets/job-board.md",
-        "curatedCardIds": [
-          "anthropic-jobs",
-          "redwood-jobs"
-        ]
+        "curatedCardIds": []
       }
     },
     "curatedCardIds": [
-      "80k-ai-safety-guide",
-      "alignment-forum-reading",
-      "aisf-fundamentals",
-      "ai-safety-camp",
-      "arena-program",
-      "mats-program",
-      "anthropic-jobs",
-      "redwood-jobs"
+      "80-000-hours-ai-safety-researcher-career-review",
+      "deepmind-agi-safety-course-playlist",
+      "robert-miles-intro-to-ai-safety-remastered"
     ],
     "peopleToTalkToPrompts": [],
     "commonConfusions": []
@@ -346,6 +325,97 @@
       "You’re motivated by measurable impact and are OK with “unsexy” operational realities (supply chains, compliance, systems)",
       "You like working with messy real-world constraints and still making steady progress",
       "You enjoy evidence and tradeoffs (not only “what’s morally urgent” but also “what works”) (80,000 Hours)",
+      "4) Experiments (A–D)",
+      "Experiment A — introductory resource (< 1 hour): wide overview + test interest",
+      "Choose 1:",
+      "80,000 Hours problem profile: Health in poor countries (Global health) (read/skim) (80,000 Hours)",
+      "YouTube: GiveWell finds highly cost-effective charities — here’s how (good for the “why evidence?” mindset) (YouTube)",
+      "Optional alt (more “why give effectively” than GH-specific): Peter Singer TED talk (via The Life You Can Save) (The Life You Can Save)",
+      "Entrepreneurship orientation video (<1h)",
+      "https://www.youtube.com/watch?v=rKmKLcYoixs",
+      "Experiment B — longer exposure: understand the field with more granularity",
+      "Choose 1:",
+      "(Non-EA but solid grounding) Coursera: An Introduction to Global Health (structured modules; builds vocabulary + systems map) (Coursera)",
+      "Crash Course playlist: Public Health (lighter but sticky; good for people who prefer video series) (YouTube)",
+      "Experiment C — pathway to doing a project (for proof-of-fit + momentum)",
+      "Best for: people who need action to stay motivated, want quick proof-of-fit, or need a push past impostor syndrome.",
+      "Here “measurable good” is often easiest via moving money effectively or creating a real-world mobilization, since many top orgs don’t offer easy small volunteer tasks.",
+      "Canonical pick",
+      "Run a small fundraising/donation drive for GiveWell Top Charities / Top Charities Fund",
+      "Measurable outcome: $ donated (or matched) + number of donors. GiveWell explicitly routes donations to its recommended opportunities. GiveWell+2GiveWell+2",
+      "Optional alt",
+      "GWWC Pledge Drive as a community action experiment (measurable: pledges taken + giving committed). Giving What We Can+1",
+      "Experiment D — explore specific job boards (intuition + bridge to action)",
+      "Pick 1–2:",
+      "80,000 Hours job board (good EA filter for high-impact roles) (80,000 Hours)",
+      "ReliefWeb jobs (humanitarian + development roles; good breadth) (ReliefWeb)",
+      "Devex job search (global development-focused job board) (Devex)",
+      "Impactpool (UN + international orgs; public health roles) (Impactpool)",
+      "Tiny scanning method (10–25 min): collect 8–12 roles → label role-types → circle 3 roles + 2 repeating skill gaps → turn into one “direction to test” + one next step.",
+      "5) Go-to recommendations (cards)",
+      "Card 1 — GiveWell top charities / Top Charities Fund",
+      "Topic: Global Health & Development",
+      "Type: Giving",
+      "Commitment: Tiny",
+      "Fit gate: Open",
+      "Toe in the water: read the top charities page; donate to Top Charities Fund or pick a charity. (GiveWell)",
+      "Card 2 — Giving What We Can: 10% Pledge",
+      "Topic: Global Health & Development",
+      "Type: Giving",
+      "Commitment: Tiny",
+      "Fit gate: Open",
+      "Toe in the water: take the pledge (or start with a smaller % if that’s what fits). (Giving What We Can)",
+      "Card 3 — Giving What We Can: Global Health & Wellbeing Fund",
+      "Topic: Global Health & Development",
+      "Type: Giving",
+      "Commitment: Tiny",
+      "Fit gate: Open",
+      "Toe in the water: donate once; it’s allocated periodically using evaluator input (incl. GiveWell). (Giving What We Can)",
+      "Card 4 — The Life You Can Save: recommended charities",
+      "Topic: Global Health & Development",
+      "Type: Giving",
+      "Commitment: Tiny",
+      "Fit gate: Open",
+      "Toe in the water: pick one recommended charity and read its “why recommended” page. (The Life You Can Save)",
+      "Card 5 — Charity Entrepreneurship Incubation Program",
+      "Topic: Global Health & Development",
+      "Type: Program / Project",
+      "Commitment: High",
+      "Fit gate: Selective + requires relocation (at least some in-person component)",
+      "Toe in the water: read the program flow + apply if it fits your timeline. (CE)",
+      "Copy-paste links (raw URLs)",
+      "80,000 Hours – Global health (health in poor countries) problem profile:",
+      "https://80000hours.org/problem-profiles/health-in-poor-countries/",
+      "GiveWell – Our Top Charities (updated Sep 2025):",
+      "https://www.givewell.org/charities/top-charities",
+      "GiveWell – Cost-effectiveness models:",
+      "https://www.givewell.org/how-we-work/our-criteria/cost-effectiveness/cost-effectiveness-models",
+      "YouTube – GiveWell explainer (“here’s how they do it”):",
+      "https://www.youtube.com/watch?v=_TqabsxdWmo",
+      "The Life You Can Save – Best charities:",
+      "https://www.thelifeyoucansave.org/best-charities/",
+      "Peter Singer TED talk (via TLCS):",
+      "https://www.thelifeyoucansave.org/peter-singers-ted-talk/",
+      "Giving What We Can – 10% Pledge:",
+      "https://www.givingwhatwecan.org/pledge",
+      "Giving What We Can – Global Health & Wellbeing Fund:",
+      "https://www.givingwhatwecan.org/charities/global-health-and-wellbeing-fund",
+      "Charity Entrepreneurship – Incubation program:",
+      "https://www.charityentrepreneurship.com/",
+      "Apply page:",
+      "https://www.charityentrepreneurship.com/apply",
+      "Coursera – An Introduction to Global Health:",
+      "https://www.coursera.org/learn/global-health-introduction",
+      "Crash Course – Public Health playlist:",
+      "https://www.youtube.com/playlist?list=PL8dPuuaLjXtPjQj_LcJ0Zvj-VI3sslJyF",
+      "Job boards:",
+      "ReliefWeb Jobs: https://reliefweb.int/jobs",
+      "Devex jobs: https://www.devex.com/jobs/search",
+      "Impactpool (public health filter): https://www.impactpool.org/search?jf%5B%5D=58",
+      "80,000 Hours jobs: https://jobs.80000hours.org/",
+      "Cause area: Climate quick-start (v1)",
+      "1) What it’s trying to achieve (plain language)",
+      "Rapidly reduce greenhouse gas emissions (and support adaptation where it’s most valuable) by pushing on the highest-leverage bottlenecks: policy, clean energy deployment, targeted innovation, and (in some cases) carbon removal. Both 80,000 Hours and Probably Good emphasize that career choice tends to matter more than personal footprint, and that some climate actions are much more effective than others. 80,000 Hours+1",
       "A useful “menu” (not a checklist):",
       "Policy / government / regulation (often very leveraged; hard to attribute impact, but can be huge). Probably Good+1",
       "Climate-focused engineering / tech (clean power, industrial decarbonization, storage, etc.). Probably Good+1",
@@ -417,39 +487,110 @@
     "fitSignals": [
       "You’re willing to be a bit strategic (choosing which slice of climate to push on, not just “anything climate”). Probably Good+1",
       "You can tolerate imperfect feedback loops (policy + systems change can be slow and hard to measure). Probably Good+1",
-      "You like high-leverage work: “one decision / one institution → very large downstream effects.”"
+      "You like high-leverage work: “one decision / one institution → very large downstream effects.”",
+      "4) Experiments (A–D)",
+      "Experiment A — introductory (< 1 hour): broad overview + test interest",
+      "Pick 1:",
+      "Probably Good — Climate Change: Impact-Focused Overview (EA-ish framing + “what to do about it”). Probably Good",
+      "80,000 Hours — Climate change problem profile (skim summary + “best ways of working” sections). 80,000 Hours",
+      "Optional YouTube (good-enough, non-EA but clear):",
+      "Project Drawdown — Climate Solutions 101 (watch 1 episode that matches their curiosity). YouTube",
+      "Experiment B — longer exposure (course/fellowship/series)",
+      "Pick 1:",
+      "Terra.do — “Climate Change: Learning for Action” (structured 12-week “map the space + find your role” style). Terra+1",
+      "Project Drawdown — Climate Solutions 101 playlist (self-paced series, broad but concrete). YouTube",
+      "Experiment C — pathway to doing a project (proof-of-fit + momentum)",
+      "Best for: people who need action early, want quick proof-of-fit, or need help bridging theory → concrete.",
+      "Canonical pick",
+      "Work on Climate volunteering — explicitly recruits volunteers across functions (incl. research/data analytics), with the goal of mobilizing professionals into climate work. Work on Climate+1",
+      "Optional alt",
+      "If the person is giving-inclined: a giving drive informed by Giving Green research (measurable: $ influenced / donated). Giving Green+1",
+      "Experiment D — job-board exploration (intuition + bridge to action)",
+      "Pick 1–2:",
+      "Probably Good job board (filtered to Climate Change) jobs.probablygood.org",
+      "Climatebase jobs Climatebase.org",
+      "80,000 Hours job board (fewer climate roles, but often higher “EA filter”). 80,000 Hours",
+      "5) Go-to recommendations (cards)",
+      "Card 1 — Probably Good: Climate careers guide",
+      "Topic: Climate",
+      "Type: Course",
+      "Commitment: Tiny",
+      "Fit gate: Open"
     ],
     "buckets": {
       "quickTaste": {
         "title": "Quick taste (≈1 hour)",
-        "description": "Choose 1: 80,000 Hours problem profile: Health in poor countries (Global health) (read/skim) (80,000 Hours) YouTube: GiveWell finds highly cost-effective charities — here’s how (good for the “why evidence?” mindset)…",
-        "cardIds": [],
+        "description": "Guidance for quick taste (≈1 hour) coming soon.",
+        "cardIds": [
+          "ace-the-impacts-of-ai-on-animal-advocacy",
+          "ai-animals-fellowship-8-week-remote",
+          "ea-opportunities-fellowships-programs-projects-that-aren-t-jobs",
+          "faunalytics-ai-and-animal-advocacy-survey-style",
+          "faunalytics-volunteering-ai-tooling-research-support-lane",
+          "futurekind-ai-fellowship-12-week",
+          "rethink-priorities-ai-for-human-wildlife-conflict-mitigations"
+        ],
         "inlineGuidancePath": "content/md/focus-areas/aixanimals/buckets/quick-taste.md",
-        "curatedCardIds": []
+        "curatedCardIds": [
+          "ace-the-impacts-of-ai-on-animal-advocacy",
+          "ai-animals-fellowship-8-week-remote",
+          "ea-opportunities-fellowships-programs-projects-that-aren-t-jobs",
+          "faunalytics-ai-and-animal-advocacy-survey-style",
+          "faunalytics-volunteering-ai-tooling-research-support-lane",
+          "futurekind-ai-fellowship-12-week",
+          "rethink-priorities-ai-for-human-wildlife-conflict-mitigations"
+        ]
       },
       "deeperDive": {
         "title": "Deeper dive (2–6 hours)",
-        "description": "Choose 1: (Non-EA but solid grounding) Coursera: An Introduction to Global Health (structured modules; builds vocabulary + systems map) (Coursera) Crash Course playlist: Public Health (lighter but sticky; good for people…",
-        "cardIds": [],
+        "description": "Guidance for deeper dive (2–6 hours) coming soon.",
+        "cardIds": [
+          "80-000-hours-job-board-adjacent-roles-lens",
+          "animal-advocacy-careers-job-board-data-tech-roles-org-landscape",
+          "rethink-priorities-how-ai-is-affecting-farmed-aquatic-animals-series"
+        ],
         "inlineGuidancePath": "content/md/focus-areas/aixanimals/buckets/deeper-dive.md",
-        "curatedCardIds": []
+        "curatedCardIds": [
+          "80-000-hours-job-board-adjacent-roles-lens",
+          "animal-advocacy-careers-job-board-data-tech-roles-org-landscape",
+          "rethink-priorities-how-ai-is-affecting-farmed-aquatic-animals-series"
+        ]
       },
       "handsOn": {
         "title": "Hands-on trial",
-        "description": "Best for: people who need action to stay motivated, want quick proof-of-fit, or need a push past impostor syndrome. Here “measurable good” is often easiest via moving money effectively or creating a real-world…",
-        "cardIds": [],
+        "description": "Guidance for hands-on trial coming soon.",
+        "cardIds": [
+          "felidae-conservation-fund-volunteer-ai-ml-specialist-camera-imagery",
+          "org-facing-scoping-note-using-an-rp-ai-for-animals-angle-externally-useful"
+        ],
         "inlineGuidancePath": "content/md/focus-areas/aixanimals/buckets/hands-on.md",
-        "curatedCardIds": []
+        "curatedCardIds": [
+          "felidae-conservation-fund-volunteer-ai-ml-specialist-camera-imagery",
+          "org-facing-scoping-note-using-an-rp-ai-for-animals-angle-externally-useful"
+        ]
       },
       "jobBoard": {
         "title": "Job board scan (real roles)",
-        "description": "Pick 1–2: ## 80,000 Hours job board (good EA filter for high-impact roles) (80,000 Hours) ## ReliefWeb jobs (humanitarian + development roles; good breadth) (ReliefWeb) ## Devex job search (global development-focused job…",
+        "description": "Guidance for job board scan (real roles) coming soon.",
         "cardIds": [],
         "inlineGuidancePath": "content/md/focus-areas/aixanimals/buckets/job-board.md",
         "curatedCardIds": []
       }
     },
-    "curatedCardIds": [],
+    "curatedCardIds": [
+      "ace-the-impacts-of-ai-on-animal-advocacy",
+      "ai-animals-fellowship-8-week-remote",
+      "ea-opportunities-fellowships-programs-projects-that-aren-t-jobs",
+      "faunalytics-ai-and-animal-advocacy-survey-style",
+      "faunalytics-volunteering-ai-tooling-research-support-lane",
+      "futurekind-ai-fellowship-12-week",
+      "rethink-priorities-ai-for-human-wildlife-conflict-mitigations",
+      "80-000-hours-job-board-adjacent-roles-lens",
+      "animal-advocacy-careers-job-board-data-tech-roles-org-landscape",
+      "rethink-priorities-how-ai-is-affecting-farmed-aquatic-animals-series",
+      "felidae-conservation-fund-volunteer-ai-ml-specialist-camera-imagery",
+      "org-facing-scoping-note-using-an-rp-ai-for-animals-angle-externally-useful"
+    ],
     "peopleToTalkToPrompts": [],
     "commonConfusions": []
   },
@@ -634,16 +775,97 @@
       "Search “animal welfare” and save 3 opportunities that match constraints/timeline.",
       "Resources / links to support the next steps:",
       "https://www.effectivealtruism.org/opportunities",
-      "Card 11 — Animal Advocacy Careers: Career advising"
+      "Card 11 — Animal Advocacy Careers: Career advising",
+      "Fits Experiment: (supports choosing A–D; accelerator)",
+      "Recommendation name: Animal Advocacy Careers — Career advising",
+      "One-line pitch: Tailored guidance for navigating roles/orgs; great when someone feels stuck or uncertain.",
+      "When to suggest (trigger criteria):",
+      "Candidate is motivated but confused about fit/path",
+      "Candidate wants personal guidance/accountability",
+      "When not to (contraindications):",
+      "Candidate is progressing well self-directed and doesn’t want advising",
+      "Topic: Animals",
+      "Type: Advising",
+      "Commitment: Tiny (≤1h)",
+      "Fit gate: Selective",
+      "Best “toe in the water” next step (≤60 min):",
+      "Apply for an advising call and share 2–3 directions you’re considering.",
+      "Resources / links to support the next steps:",
+      "https://animaladvocacycareers.org/career-advising/",
+      "Card 12 — Animal Charity Evaluators: Giving recommendations",
+      "Fits Experiment: (orthogonal module: Giving)",
+      "Recommendation name: Animal Charity Evaluators — Recommended charities / funds",
+      "One-line pitch: Evidence-informed giving recommendations for animal welfare.",
+      "When to suggest (trigger criteria):",
+      "Candidate can’t shift career soon but wants an “impact now” lever",
+      "Candidate wants giving alongside career exploration",
+      "When not to (contraindications):",
+      "Candidate is donation-averse or it feels like pressure (offer as an option)",
+      "Topic: Animals",
+      "Type: Giving",
+      "Commitment: Tiny (≤1h)",
+      "Fit gate: Open",
+      "Best “toe in the water” next step (≤60 min):",
+      "Read the recommended list and choose a default giving option (even one-off).",
+      "Resources / links to support the next steps:",
+      "https://animalcharityevaluators.org/",
+      "Card 13 — EA Funds: Animal Welfare Fund",
+      "Fits Experiment: (orthogonal module: Giving)",
+      "Recommendation name: EA Funds — Animal Welfare Fund",
+      "One-line pitch: Expert-managed grantmaking fund; simple default option for effective giving.",
+      "When to suggest (trigger criteria):",
+      "Candidate wants low-cognitive-load giving",
+      "Candidate wants giving as a complement to career work",
+      "When not to (contraindications):",
+      "Candidate wants direct control over where money goes (ACE may fit better)",
+      "Topic: Animals",
+      "Type: Giving",
+      "Commitment: Tiny (≤1h)",
+      "Fit gate: Open",
+      "Best “toe in the water” next step (≤60 min):",
+      "Skim the fund page and decide on a one-time or recurring donation (if giving fits).",
+      "Resources / links to support the next steps:",
+      "https://funds.effectivealtruism.org/funds/animal-welfare",
+      "Copy-paste links (raw URLs)",
+      "80,000 Hours – Factory farming problem profile:",
+      "https://80000hours.org/problem-profiles/factory-farming/",
+      "Jacy Reese – Intro to effective animal advocacy (YouTube):",
+      "https://www.youtube.com/watch?v=5NqphXm-ORw",
+      "80,000 Hours – Wild animal welfare problem profile:",
+      "https://80000hours.org/problem-profiles/wild-animal-welfare/",
+      "Animal Advocacy Careers – Intro to Animal Advocacy online course:",
+      "https://www.effectivealtruism.org/courses/introduction-to-animal-advocacy-online-course",
+      "Animal Advocacy Careers – Career advising:",
+      "https://animaladvocacycareers.org/career-advising/",
+      "Animal Advocacy Careers – Job board:",
+      "https://animaladvocacycareers.org/job-board/",
+      "80,000 Hours – Job board:",
+      "https://jobs.80000hours.org/",
+      "Lewis Bollard (80,000 Hours podcast episode):",
+      "https://80000hours.org/podcast/episodes/lewis-bollard-factory-farm-advocacy-gains/",
+      "Animal Charity Evaluators:",
+      "https://animalcharityevaluators.org/",
+      "EA Funds – Animal Welfare Fund:",
+      "https://funds.effectivealtruism.org/funds/animal-welfare",
+      "EA Opportunities board:",
+      "https://www.effectivealtruism.org/opportunities",
+      "Faunalytics:",
+      "https://faunalytics.org/"
     ],
     "fitSignals": [],
     "buckets": {
       "quickTaste": {
         "title": "Quick taste (≈1 hour)",
         "description": "Guidance for quick taste (≈1 hour) coming soon.",
-        "cardIds": [],
+        "cardIds": [
+          "80-000-hours-factory-farming-problem-profile",
+          "jacy-reese-intro-to-effective-animal-advocacy-youtube"
+        ],
         "inlineGuidancePath": "content/md/focus-areas/animal-welfare/buckets/quick-taste.md",
-        "curatedCardIds": []
+        "curatedCardIds": [
+          "80-000-hours-factory-farming-problem-profile",
+          "jacy-reese-intro-to-effective-animal-advocacy-youtube"
+        ]
       },
       "deeperDive": {
         "title": "Deeper dive (2–6 hours)",
@@ -667,7 +889,10 @@
         "curatedCardIds": []
       }
     },
-    "curatedCardIds": [],
+    "curatedCardIds": [
+      "80-000-hours-factory-farming-problem-profile",
+      "jacy-reese-intro-to-effective-animal-advocacy-youtube"
+    ],
     "peopleToTalkToPrompts": [],
     "commonConfusions": []
   },
@@ -728,15 +953,117 @@
       "When to suggest:",
       "Candidate is interested and wants structured exposure + peers",
       "Candidate doesn’t yet know which sub-area to focus on",
-      "When not to:"
+      "When not to:",
+      "Candidate has near-zero bandwidth right now (use Experiment A first)",
+      "Topic: Biosecurity",
+      "Type: Course",
+      "Commitment: Medium (5–15h/wk) (as a default; can be tuned)",
+      "Fit gate: Open",
+      "Best next step (≤60 min):",
+      "Open the course page, skim curriculum, and sanity-check timing vs bandwidth.",
+      "Resources / links:",
+      "https://bluedot.org/courses/biosecurity?from_site=bsf",
+      "Card 4 — 80,000 Hours: Biosecurity materials (topic archive / podcasts)",
+      "Fits Experiment: B (optional alt)",
+      "Recommendation name: 80,000 Hours — Biorisk strategy & policy topic archive (podcasts/resources)",
+      "One-line pitch: A curated list of deeper resources (often podcasts) for “field texture” and understanding real constraints/approaches. 80,000 Hours+1",
+      "When to suggest:",
+      "Candidate liked Experiment A and wants more texture without committing to a course",
+      "Candidate learns well via podcasts/interviews",
+      "When not to:",
+      "Candidate tends to get lost in content consumption (use BlueDot or OBG instead)",
+      "Topic: Biosecurity",
+      "Type: Course",
+      "Commitment: Light (1–5h/wk)",
+      "Fit gate: Open",
+      "Best next step (≤60 min):",
+      "Pick one episode from the archive and listen to the first 20–30 minutes; note 3 “real-world bottlenecks” that stood out.",
+      "Resources / links:",
+      "https://80000hours.org/topic/career-paths/biorisk-strategy-policy-career-paths/",
+      "Card 5 — Oxford Biosecurity Group (OBG): remote part-time projects",
+      "Fits Experiment: C",
+      "Recommendation name: Oxford Biosecurity Group — Projects",
+      "One-line pitch: Part-time remote research projects in biosecurity and AI×bio that aim to produce outputs with real downstream use (often with collaborating orgs/initiatives). My Site+2My Site+2",
+      "When to suggest:",
+      "Candidate wants a concrete, externally useful project (measurable-good Experiment C)",
+      "Candidate benefits from structure/mentorship and a defined project scope",
+      "Remote/part-time is important",
+      "When not to:",
+      "Candidate can’t sustain even part-time commitments or deadlines right now",
+      "Topic: Biosecurity",
+      "Type: Program",
+      "Commitment: Light–Medium",
+      "Fit gate: Selective",
+      "Best next step (≤60 min):",
+      "Browse the projects page; pick 2 projects that seem feasible/interesting; write 2 lines each (why it matters + why you could contribute).",
+      "Resources / links:",
+      "https://www.oxfordbiosecuritygroup.com/projects",
+      "(Context) https://www.oxfordbiosecuritygroup.com/",
+      "Card 6 — 80,000 Hours Job Board (filter to biosecurity & pandemic preparedness)",
+      "Fits Experiment: D",
+      "Recommendation name: 80,000 Hours Job Board",
+      "One-line pitch: High-signal job board for EA-aligned roles; useful both for job search and for building intuition about real orgs/roles in biosecurity. 80,000 Hours Job Board+1",
+      "When to suggest:",
+      "Candidate wants to make opportunities concrete or is motivated by real openings",
+      "Candidate is ready to start seeing org landscape / role patterns",
+      "When not to:",
+      "Candidate is very early and gets overwhelmed by job posts (use Experiment A first)",
+      "Topic: Biosecurity",
+      "Type: Move job",
+      "Commitment: Tiny (≤1h)",
+      "Fit gate: Open",
+      "Best next step (≤60 min):",
+      "Use the scan method: collect 8–12 roles → label role-types → circle 3 roles + 2 repeating skill gaps.",
+      "Resources / links:",
+      "https://jobs.80000hours.org/",
+      "Card 7 — EA Opportunities (biosecurity programs/events/fellowships)",
+      "Fits Experiment: D (optional alt)",
+      "Recommendation name: EA Opportunities — Biosecurity listings",
+      "One-line pitch: A broader opportunities surface (programs, fellowships, events) that often includes biosecurity-specific entry ramps beyond “jobs.” Effective Altruism+1",
+      "When to suggest:",
+      "Candidate is earlier-stage and wants programs/fellowships",
+      "Candidate benefits from short structured opportunities rather than open-ended job search",
+      "When not to:",
+      "Candidate gets overwhelmed by breadth (choose one concrete program card instead)",
+      "Topic: Biosecurity",
+      "Type: Community",
+      "Commitment: Tiny (≤1h)",
+      "Fit gate: Open",
+      "Best next step (≤60 min):",
+      "Search “biosecurity” and save 3 opportunities that match your constraints/timeline.",
+      "Resources / links:",
+      "https://www.effectivealtruism.org/opportunities",
+      "Copy-paste links (raw URLs)",
+      "80,000 Hours — biorisk research career review:",
+      "https://80000hours.org/career-reviews/biorisk-research/",
+      "Intro video (field picture / overview):",
+      "https://www.youtube.com/watch?v=l6yAylvzEXo",
+      "EA YouTube — Biosecurity playlist:",
+      "https://www.youtube.com/playlist?list=PLwp9xeoX5p8NnmxyXIY_lADJvorgMitVp",
+      "BlueDot — Biosecurity course:",
+      "https://bluedot.org/courses/biosecurity?from_site=bsf",
+      "80,000 Hours — biorisk strategy & policy career paths:",
+      "https://80000hours.org/topic/career-paths/biorisk-strategy-policy-career-paths/",
+      "Oxford Biosecurity Group — projects:",
+      "https://www.oxfordbiosecuritygroup.com/projects",
+      "Oxford Biosecurity Group — main site:",
+      "https://www.oxfordbiosecuritygroup.com/",
+      "80,000 Hours job board:",
+      "https://jobs.80000hours.org/",
+      "EA Opportunities board:",
+      "https://www.effectivealtruism.org/opportunities"
     ],
     "buckets": {
       "quickTaste": {
         "title": "Quick taste (≈1 hour)",
         "description": "Guidance for quick taste (≈1 hour) coming soon.",
-        "cardIds": [],
+        "cardIds": [
+          "80-000-hours-biorisk-research-strategy-and-policy-career-review"
+        ],
         "inlineGuidancePath": "content/md/focus-areas/biosecurity/buckets/quick-taste.md",
-        "curatedCardIds": []
+        "curatedCardIds": [
+          "80-000-hours-biorisk-research-strategy-and-policy-career-review"
+        ]
       },
       "deeperDive": {
         "title": "Deeper dive (2–6 hours)",
@@ -760,7 +1087,9 @@
         "curatedCardIds": []
       }
     },
-    "curatedCardIds": [],
+    "curatedCardIds": [
+      "80-000-hours-biorisk-research-strategy-and-policy-career-review"
+    ],
     "peopleToTalkToPrompts": [],
     "commonConfusions": []
   },
@@ -851,39 +1180,98 @@
     "fitSignals": [
       "You’re willing to be a bit strategic (choosing which slice of climate to push on, not just “anything climate”). Probably Good+1",
       "You can tolerate imperfect feedback loops (policy + systems change can be slow and hard to measure). Probably Good+1",
-      "You like high-leverage work: “one decision / one institution → very large downstream effects.”"
+      "You like high-leverage work: “one decision / one institution → very large downstream effects.”",
+      "4) Experiments (A–D)",
+      "Experiment A — introductory (< 1 hour): broad overview + test interest",
+      "Pick 1:",
+      "Probably Good — Climate Change: Impact-Focused Overview (EA-ish framing + “what to do about it”). Probably Good",
+      "80,000 Hours — Climate change problem profile (skim summary + “best ways of working” sections). 80,000 Hours",
+      "Optional YouTube (good-enough, non-EA but clear):",
+      "Project Drawdown — Climate Solutions 101 (watch 1 episode that matches their curiosity). YouTube",
+      "Experiment B — longer exposure (course/fellowship/series)",
+      "Pick 1:",
+      "Terra.do — “Climate Change: Learning for Action” (structured 12-week “map the space + find your role” style). Terra+1",
+      "Project Drawdown — Climate Solutions 101 playlist (self-paced series, broad but concrete). YouTube",
+      "Experiment C — pathway to doing a project (proof-of-fit + momentum)",
+      "Best for: people who need action early, want quick proof-of-fit, or need help bridging theory → concrete.",
+      "Canonical pick",
+      "Work on Climate volunteering — explicitly recruits volunteers across functions (incl. research/data analytics), with the goal of mobilizing professionals into climate work. Work on Climate+1",
+      "Optional alt",
+      "If the person is giving-inclined: a giving drive informed by Giving Green research (measurable: $ influenced / donated). Giving Green+1",
+      "Experiment D — job-board exploration (intuition + bridge to action)",
+      "Pick 1–2:",
+      "Probably Good job board (filtered to Climate Change) jobs.probablygood.org",
+      "Climatebase jobs Climatebase.org",
+      "80,000 Hours job board (fewer climate roles, but often higher “EA filter”). 80,000 Hours"
     ],
     "buckets": {
       "quickTaste": {
         "title": "Quick taste (≈1 hour)",
-        "description": "Pick 1: Probably Good — Climate Change: Impact-Focused Overview (EA-ish framing + “what to do about it”). Probably Good 80,000 Hours — Climate change problem profile (skim summary + “best ways of working” sections).…",
-        "cardIds": [],
+        "description": "Guidance for quick taste (≈1 hour) coming soon.",
+        "cardIds": [
+          "80-000-hours-climate-change-problem-profile",
+          "founders-pledge-climate-change-fund-via-gwwc-page",
+          "probably-good-climate-change-impact-focused-overview",
+          "probably-good-job-board-filtered-to-climate-change",
+          "project-drawdown-climate-solutions-101-playlist",
+          "project-giving-drive-informed-by-giving-green",
+          "terra-do-climate-change-learning-for-action-12-week",
+          "work-on-climate-volunteering"
+        ],
         "inlineGuidancePath": "content/md/focus-areas/climate/buckets/quick-taste.md",
-        "curatedCardIds": []
+        "curatedCardIds": [
+          "80-000-hours-climate-change-problem-profile",
+          "founders-pledge-climate-change-fund-via-gwwc-page",
+          "probably-good-climate-change-impact-focused-overview",
+          "probably-good-job-board-filtered-to-climate-change",
+          "project-drawdown-climate-solutions-101-playlist",
+          "project-giving-drive-informed-by-giving-green",
+          "terra-do-climate-change-learning-for-action-12-week",
+          "work-on-climate-volunteering"
+        ]
       },
       "deeperDive": {
         "title": "Deeper dive (2–6 hours)",
-        "description": "Pick 1: Terra.do — “Climate Change: Learning for Action” (structured 12-week “map the space + find your role” style). Terra+1 Project Drawdown — Climate Solutions 101 playlist (self-paced series, broad but concrete).…",
-        "cardIds": [],
+        "description": "Guidance for deeper dive (2–6 hours) coming soon.",
+        "cardIds": [
+          "work-on-climate-starter-packs-community"
+        ],
         "inlineGuidancePath": "content/md/focus-areas/climate/buckets/deeper-dive.md",
-        "curatedCardIds": []
+        "curatedCardIds": [
+          "work-on-climate-starter-packs-community"
+        ]
       },
       "handsOn": {
         "title": "Hands-on trial",
-        "description": "Best for: people who need action early, want quick proof-of-fit, or need help bridging theory → concrete. ## Canonical pick Work on Climate volunteering — explicitly recruits volunteers across functions (incl.…",
-        "cardIds": [],
+        "description": "Guidance for hands-on trial coming soon.",
+        "cardIds": [
+          "giving-green-effective-climate-giving"
+        ],
         "inlineGuidancePath": "content/md/focus-areas/climate/buckets/hands-on.md",
-        "curatedCardIds": []
+        "curatedCardIds": [
+          "giving-green-effective-climate-giving"
+        ]
       },
       "jobBoard": {
         "title": "Job board scan (real roles)",
-        "description": "Pick 1–2: ## Probably Good job board (filtered to Climate Change) jobs.probablygood.org ## Climatebase jobs Climatebase.org 80,000 Hours job board (fewer climate roles, but often higher “EA filter”). 80,000 Hours",
+        "description": "Guidance for job board scan (real roles) coming soon.",
         "cardIds": [],
         "inlineGuidancePath": "content/md/focus-areas/climate/buckets/job-board.md",
         "curatedCardIds": []
       }
     },
-    "curatedCardIds": [],
+    "curatedCardIds": [
+      "80-000-hours-climate-change-problem-profile",
+      "founders-pledge-climate-change-fund-via-gwwc-page",
+      "probably-good-climate-change-impact-focused-overview",
+      "probably-good-job-board-filtered-to-climate-change",
+      "project-drawdown-climate-solutions-101-playlist",
+      "project-giving-drive-informed-by-giving-green",
+      "terra-do-climate-change-learning-for-action-12-week",
+      "work-on-climate-volunteering",
+      "work-on-climate-starter-packs-community",
+      "giving-green-effective-climate-giving"
+    ],
     "peopleToTalkToPrompts": [],
     "commonConfusions": []
   },
@@ -901,40 +1289,111 @@
       "3) What a “good fit” often looks like (signals)",
       "You’re motivated by measurable impact and are OK with “unsexy” operational realities (supply chains, compliance, systems)",
       "You like working with messy real-world constraints and still making steady progress",
-      "You enjoy evidence and tradeoffs (not only “what’s morally urgent” but also “what works”) (80,000 Hours)"
+      "You enjoy evidence and tradeoffs (not only “what’s morally urgent” but also “what works”) (80,000 Hours)",
+      "4) Experiments (A–D)",
+      "Experiment A — introductory resource (< 1 hour): wide overview + test interest",
+      "Choose 1:",
+      "80,000 Hours problem profile: Health in poor countries (Global health) (read/skim) (80,000 Hours)",
+      "YouTube: GiveWell finds highly cost-effective charities — here’s how (good for the “why evidence?” mindset) (YouTube)",
+      "Optional alt (more “why give effectively” than GH-specific): Peter Singer TED talk (via The Life You Can Save) (The Life You Can Save)",
+      "Entrepreneurship orientation video (<1h)",
+      "https://www.youtube.com/watch?v=rKmKLcYoixs",
+      "Experiment B — longer exposure: understand the field with more granularity",
+      "Choose 1:",
+      "(Non-EA but solid grounding) Coursera: An Introduction to Global Health (structured modules; builds vocabulary + systems map) (Coursera)",
+      "Crash Course playlist: Public Health (lighter but sticky; good for people who prefer video series) (YouTube)",
+      "Experiment C — pathway to doing a project (for proof-of-fit + momentum)",
+      "Best for: people who need action to stay motivated, want quick proof-of-fit, or need a push past impostor syndrome.",
+      "Here “measurable good” is often easiest via moving money effectively or creating a real-world mobilization, since many top orgs don’t offer easy small volunteer tasks.",
+      "Canonical pick",
+      "Run a small fundraising/donation drive for GiveWell Top Charities / Top Charities Fund",
+      "Measurable outcome: $ donated (or matched) + number of donors. GiveWell explicitly routes donations to its recommended opportunities. GiveWell+2GiveWell+2",
+      "Optional alt",
+      "GWWC Pledge Drive as a community action experiment (measurable: pledges taken + giving committed). Giving What We Can+1",
+      "Experiment D — explore specific job boards (intuition + bridge to action)",
+      "Pick 1–2:",
+      "80,000 Hours job board (good EA filter for high-impact roles) (80,000 Hours)",
+      "ReliefWeb jobs (humanitarian + development roles; good breadth) (ReliefWeb)",
+      "Devex job search (global development-focused job board) (Devex)",
+      "Impactpool (UN + international orgs; public health roles) (Impactpool)",
+      "Tiny scanning method (10–25 min): collect 8–12 roles → label role-types → circle 3 roles + 2 repeating skill gaps → turn into one “direction to test” + one next step."
     ],
     "fitSignals": [],
     "buckets": {
       "quickTaste": {
         "title": "Quick taste (≈1 hour)",
-        "description": "Choose 1: 80,000 Hours problem profile: Health in poor countries (Global health) (read/skim) (80,000 Hours) YouTube: GiveWell finds highly cost-effective charities — here’s how (good for the “why evidence?” mindset)…",
-        "cardIds": [],
+        "description": "Guidance for quick taste (≈1 hour) coming soon.",
+        "cardIds": [
+          "80-000-hours-health-in-poor-countries-problem-profile",
+          "aim-entrepreneurship-orientation-video-1h",
+          "charity-entrepreneurship-incubation-program",
+          "givewell-gwwc-youtube-givewell-finds-highly-cost-effective-charities-here-s-how",
+          "givewell-top-charities-fund",
+          "givewell-top-charities",
+          "giving-what-we-can-10-pledge",
+          "giving-what-we-can-global-health-wellbeing-fund",
+          "peter-singer-ted-talk-via-the-life-you-can-save",
+          "project-givewell-mini-donation-drive-measurable-good",
+          "project-gwwc-pledge-drive",
+          "the-life-you-can-save-best-charities"
+        ],
         "inlineGuidancePath": "content/md/focus-areas/global-health-development/buckets/quick-taste.md",
-        "curatedCardIds": []
+        "curatedCardIds": [
+          "80-000-hours-health-in-poor-countries-problem-profile",
+          "aim-entrepreneurship-orientation-video-1h",
+          "charity-entrepreneurship-incubation-program",
+          "givewell-gwwc-youtube-givewell-finds-highly-cost-effective-charities-here-s-how",
+          "givewell-top-charities-fund",
+          "givewell-top-charities",
+          "giving-what-we-can-10-pledge",
+          "giving-what-we-can-global-health-wellbeing-fund",
+          "peter-singer-ted-talk-via-the-life-you-can-save",
+          "project-givewell-mini-donation-drive-measurable-good",
+          "project-gwwc-pledge-drive",
+          "the-life-you-can-save-best-charities"
+        ]
       },
       "deeperDive": {
         "title": "Deeper dive (2–6 hours)",
-        "description": "Choose 1: (Non-EA but solid grounding) Coursera: An Introduction to Global Health (structured modules; builds vocabulary + systems map) (Coursera) Crash Course playlist: Public Health (lighter but sticky; good for people…",
-        "cardIds": [],
+        "description": "Guidance for deeper dive (2–6 hours) coming soon.",
+        "cardIds": [
+          "80-000-hours-job-board"
+        ],
         "inlineGuidancePath": "content/md/focus-areas/global-health-development/buckets/deeper-dive.md",
-        "curatedCardIds": []
+        "curatedCardIds": [
+          "80-000-hours-job-board"
+        ]
       },
       "handsOn": {
         "title": "Hands-on trial",
-        "description": "Best for: people who need action to stay motivated, want quick proof-of-fit, or need a push past impostor syndrome. Here “measurable good” is often easiest via moving money effectively or creating a real-world…",
+        "description": "Guidance for hands-on trial coming soon.",
         "cardIds": [],
         "inlineGuidancePath": "content/md/focus-areas/global-health-development/buckets/hands-on.md",
         "curatedCardIds": []
       },
       "jobBoard": {
         "title": "Job board scan (real roles)",
-        "description": "Pick 1–2: ## 80,000 Hours job board (good EA filter for high-impact roles) (80,000 Hours) ## ReliefWeb jobs (humanitarian + development roles; good breadth) (ReliefWeb) ## Devex job search (global development-focused job…",
+        "description": "Guidance for job board scan (real roles) coming soon.",
         "cardIds": [],
         "inlineGuidancePath": "content/md/focus-areas/global-health-development/buckets/job-board.md",
         "curatedCardIds": []
       }
     },
-    "curatedCardIds": [],
+    "curatedCardIds": [
+      "80-000-hours-health-in-poor-countries-problem-profile",
+      "aim-entrepreneurship-orientation-video-1h",
+      "charity-entrepreneurship-incubation-program",
+      "givewell-gwwc-youtube-givewell-finds-highly-cost-effective-charities-here-s-how",
+      "givewell-top-charities-fund",
+      "givewell-top-charities",
+      "giving-what-we-can-10-pledge",
+      "giving-what-we-can-global-health-wellbeing-fund",
+      "peter-singer-ted-talk-via-the-life-you-can-save",
+      "project-givewell-mini-donation-drive-measurable-good",
+      "project-gwwc-pledge-drive",
+      "the-life-you-can-save-best-charities",
+      "80-000-hours-job-board"
+    ],
     "peopleToTalkToPrompts": [],
     "commonConfusions": []
   }

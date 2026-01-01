@@ -207,6 +207,83 @@ role_shapes:
 - 'Resources / links to support the next steps:'
 - https://www.effectivealtruism.org/opportunities
 - 'Card 11 — Animal Advocacy Careers: Career advising'
+- 'Fits Experiment: (supports choosing A–D; accelerator)'
+- 'Recommendation name: Animal Advocacy Careers — Career advising'
+- 'One-line pitch: Tailored guidance for navigating roles/orgs; great when someone
+  feels stuck or uncertain.'
+- 'When to suggest (trigger criteria):'
+- Candidate is motivated but confused about fit/path
+- Candidate wants personal guidance/accountability
+- 'When not to (contraindications):'
+- Candidate is progressing well self-directed and doesn’t want advising
+- 'Topic: Animals'
+- 'Type: Advising'
+- 'Commitment: Tiny (≤1h)'
+- 'Fit gate: Selective'
+- 'Best “toe in the water” next step (≤60 min):'
+- Apply for an advising call and share 2–3 directions you’re considering.
+- 'Resources / links to support the next steps:'
+- https://animaladvocacycareers.org/career-advising/
+- 'Card 12 — Animal Charity Evaluators: Giving recommendations'
+- 'Fits Experiment: (orthogonal module: Giving)'
+- 'Recommendation name: Animal Charity Evaluators — Recommended charities / funds'
+- 'One-line pitch: Evidence-informed giving recommendations for animal welfare.'
+- 'When to suggest (trigger criteria):'
+- Candidate can’t shift career soon but wants an “impact now” lever
+- Candidate wants giving alongside career exploration
+- 'When not to (contraindications):'
+- Candidate is donation-averse or it feels like pressure (offer as an option)
+- 'Topic: Animals'
+- 'Type: Giving'
+- 'Commitment: Tiny (≤1h)'
+- 'Fit gate: Open'
+- 'Best “toe in the water” next step (≤60 min):'
+- Read the recommended list and choose a default giving option (even one-off).
+- 'Resources / links to support the next steps:'
+- https://animalcharityevaluators.org/
+- 'Card 13 — EA Funds: Animal Welfare Fund'
+- 'Fits Experiment: (orthogonal module: Giving)'
+- 'Recommendation name: EA Funds — Animal Welfare Fund'
+- 'One-line pitch: Expert-managed grantmaking fund; simple default option for effective
+  giving.'
+- 'When to suggest (trigger criteria):'
+- Candidate wants low-cognitive-load giving
+- Candidate wants giving as a complement to career work
+- 'When not to (contraindications):'
+- Candidate wants direct control over where money goes (ACE may fit better)
+- 'Topic: Animals'
+- 'Type: Giving'
+- 'Commitment: Tiny (≤1h)'
+- 'Fit gate: Open'
+- 'Best “toe in the water” next step (≤60 min):'
+- Skim the fund page and decide on a one-time or recurring donation (if giving fits).
+- 'Resources / links to support the next steps:'
+- https://funds.effectivealtruism.org/funds/animal-welfare
+- Copy-paste links (raw URLs)
+- '80,000 Hours – Factory farming problem profile:'
+- https://80000hours.org/problem-profiles/factory-farming/
+- 'Jacy Reese – Intro to effective animal advocacy (YouTube):'
+- https://www.youtube.com/watch?v=5NqphXm-ORw
+- '80,000 Hours – Wild animal welfare problem profile:'
+- https://80000hours.org/problem-profiles/wild-animal-welfare/
+- 'Animal Advocacy Careers – Intro to Animal Advocacy online course:'
+- https://www.effectivealtruism.org/courses/introduction-to-animal-advocacy-online-course
+- 'Animal Advocacy Careers – Career advising:'
+- https://animaladvocacycareers.org/career-advising/
+- 'Animal Advocacy Careers – Job board:'
+- https://animaladvocacycareers.org/job-board/
+- '80,000 Hours – Job board:'
+- https://jobs.80000hours.org/
+- 'Lewis Bollard (80,000 Hours podcast episode):'
+- https://80000hours.org/podcast/episodes/lewis-bollard-factory-farm-advocacy-gains/
+- 'Animal Charity Evaluators:'
+- https://animalcharityevaluators.org/
+- 'EA Funds – Animal Welfare Fund:'
+- https://funds.effectivealtruism.org/funds/animal-welfare
+- 'EA Opportunities board:'
+- https://www.effectivealtruism.org/opportunities
+- 'Faunalytics:'
+- https://faunalytics.org/
 fit_signals: []
 people_to_talk_to: []
 common_confusions: []
