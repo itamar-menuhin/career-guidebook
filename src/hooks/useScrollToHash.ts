@@ -15,11 +15,11 @@ const scrollToElement = (id: string) => {
   return true;
 };
 
-export const useScrollToHash = () => {
+export const useScrollToHash = (disabled = false) => {
   const location = useLocation();
 
   useEffect(() => {
-    if (!location.hash) return;
+    if (disabled || !location.hash) return;
 
     const targetId = decodeURIComponent(location.hash.replace('#', ''));
     if (!targetId) return;
@@ -70,5 +70,5 @@ export const useScrollToHash = () => {
     rafId = requestAnimationFrame(tick);
 
     return stop;
-  }, [location.pathname, location.hash]);
+  }, [disabled, location.pathname, location.hash]);
 };

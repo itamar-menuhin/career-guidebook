@@ -67,7 +67,7 @@ async function loadContentFile<T>(key: ContentKey): Promise<T> {
         'missing-file',
         { status: response.status }
       );
-      if (import.meta?.env?.DEV) {
+      if (import.meta.env?.DEV) {
         console.error(error.message);
       }
       throw error;
@@ -82,7 +82,7 @@ async function loadContentFile<T>(key: ContentKey): Promise<T> {
         'invalid-json',
         err
       );
-      if (import.meta?.env?.DEV) {
+      if (import.meta.env?.DEV) {
         console.error(error.message, err);
       }
       throw error;
@@ -90,7 +90,7 @@ async function loadContentFile<T>(key: ContentKey): Promise<T> {
 
     const parsed = schemas[key].safeParse(jsonData);
     if (!parsed.success) {
-      if (import.meta?.env?.DEV) {
+      if (import.meta.env?.DEV) {
         console.error(`Content validation failed for ${key}:`, parsed.error.format());
       }
       throw new ContentLoadError(
@@ -123,8 +123,23 @@ async function loadMarkdown(path: string, context: ContentKey) {
     return markdownCache.get(normalized) as Promise<string>;
   }
 
-  const stripGeneratedHeader = (content: string) =>
-    content.replace(/^# GENERATED FILE - DO NOT EDIT MANUALLY\s*\n+/i, '');
+  const stripGeneratedHeader = (content: string) => {
+    const stripped = content
+      .replace(/^# GENERATED FILE - DO NOT EDIT MANUALLY\s*\n+/i, '')
+      .replace(/^# GENERATED FROM VAULT[^\n]*\n+/i, '');
+    
+    // Safety check in dev mode: verify headers were stripped
+    if (import.meta.env?.DEV) {
+      if (stripped.startsWith('# GENERATED')) {
+        console.warn(
+          `[contentLoader] Markdown content still starts with GENERATED header after stripping. Path: ${normalized}`,
+          stripped.substring(0, 100)
+        );
+      }
+    }
+    
+    return stripped;
+  };
 
   const loader = (async () => {
     const response = await fetch(withBase(normalized));
@@ -134,7 +149,7 @@ async function loadMarkdown(path: string, context: ContentKey) {
         'missing-markdown',
         { path: normalized, status: response.status }
       );
-      if (import.meta?.env?.DEV) {
+      if (import.meta.env?.DEV) {
         console.error(error.message);
       }
       throw error;
