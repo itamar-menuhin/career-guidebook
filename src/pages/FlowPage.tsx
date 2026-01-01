@@ -355,7 +355,6 @@ export default function FlowPage() {
                             </span>
                           )}
                         </div>
-                        {step.summary && <p className="text-muted-foreground mt-1">{step.summary}</p>}
                       </div>
                     </div>
 
