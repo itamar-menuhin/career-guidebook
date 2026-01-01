@@ -1,6 +1,4 @@
-# GENERATED FROM VAULT — DO NOT EDIT. Source of truth: /vault
-
-Experiment A — 1-hour overview (choose 1)
+## Experiment A — 1-hour overview (choose 1)
 Canonical picks
 80,000 Hours — Factory farming problem profile (skim; strong EA-style overview) 80,000 Hours
 “Intro to effective animal advocacy” — Jacy Reese (EAGxBerkeley talk, YouTube) YouTube

@@ -1,12 +1,4 @@
----
-kind: focus_area_bucket
-focus_area_id: climate
-bucket: hands-on
-title: Hands-on trial
-curated_cards: []
----
-
-Experiment C — pathway to doing a project (proof-of-fit + momentum)
+## Experiment C — pathway to doing a project (proof-of-fit + momentum)
 Best for: people who need action early, want quick proof-of-fit, or need help bridging theory → concrete.
 Canonical pick
 Work on Climate volunteering — explicitly recruits volunteers across functions (incl. research/data analytics), with the goal of mobilizing professionals into climate work. Work on Climate+1

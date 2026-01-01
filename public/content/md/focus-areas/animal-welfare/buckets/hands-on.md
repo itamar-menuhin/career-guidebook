@@ -1,6 +1,4 @@
-# GENERATED FROM VAULT — DO NOT EDIT. Source of truth: /vault
-
-Experiment C — project pathway (make it concrete)
+## Experiment C — project pathway (make it concrete)
 Canonical pick
 Faunalytics volunteering — volunteers work with staff on projects meant to support animal advocates (i.e., real external users). Faunalytics+1
 Optional alt

@@ -70,10 +70,14 @@ export const FocusAreaSchema = z.object({
 export const CommonPathwaySchema = z.object({
   id: z.string().min(1),
   name: z.string().min(1),
-  description: z.string().min(1),
-  whenToSuggest: z.string().min(1),
-  fitTestPrompts: z.array(z.string().min(1)),
-  defaultFirstSmallStep: z.string().min(1),
+  // These fields are optional because some pathway entries are maintained as markdown notes rather than fully structured cards.
+  description: z.string().optional(),
+  whenToSuggest: z.string().optional(),
+  fitTestPrompts: z.array(z.string().min(1)).optional().default([]),
+  defaultFirstSmallStep: z.string().optional(),
+  contentPath: z.string().optional(),
+  group: z.string().optional(),
+  order: z.number().optional(),
   relatedCardIds: z.array(z.string().min(1)).optional().default([]),
 });
 
@@ -113,7 +117,11 @@ export type FocusArea = FocusAreaManifest & {
     jobBoard: FocusAreaBucketWithContent;
   };
 };
-export type CommonPathway = z.infer<typeof CommonPathwaySchema>;
+export type CommonPathwayManifest = z.infer<typeof CommonPathwaySchema>;
+export type CommonPathway = CommonPathwayManifest & {
+  content?: string;
+  contentPlainText?: string;
+};
 export type FlowStepManifest = z.infer<typeof FlowStepSchema>;
 export type FlowStep = FlowStepManifest & {
   content: string;

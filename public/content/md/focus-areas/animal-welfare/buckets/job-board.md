@@ -1,6 +1,4 @@
-# GENERATED FROM VAULT — DO NOT EDIT. Source of truth: /vault
-
-Experiment D — job-board exploration (choose 1–2)
+## Experiment D — job-board exploration (choose 1–2)
 Canonical picks
 Animal Advocacy Careers job board (animal-advocacy specific) Animal Advocacy Careers
 80,000 Hours job board (filter toward animal welfare / relevant ops/policy roles) 80,000 Hours

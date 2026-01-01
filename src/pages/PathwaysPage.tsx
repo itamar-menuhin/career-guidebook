@@ -5,6 +5,7 @@ import { useEffect, useState } from 'react';
 import { useLocation } from 'react-router-dom';
 import { cn } from '@/lib/utils';
 import { useContent } from '@/contexts/ContentContext';
+import { MarkdownPage } from '@/components/MarkdownPage';
 import { buildPathwayAnchor } from '@/lib/anchors';
 
 export default function PathwaysPage() {
@@ -52,7 +53,7 @@ export default function PathwaysPage() {
                         <Map className="h-5 w-5 text-bucket-deep mt-0.5" />
                         <div>
                           <CardTitle className="text-lg">{pathway.name}</CardTitle>
-                          <CardDescription className="mt-1">{pathway.description}</CardDescription>
+                          {pathway.description ? (<CardDescription className="mt-1">{pathway.description}</CardDescription>) : null}
                         </div>
                       </div>
                       <ChevronDown className={cn('h-5 w-5 text-muted-foreground transition-transform', expanded[pathway.id] && 'rotate-180')} />
@@ -61,11 +62,14 @@ export default function PathwaysPage() {
                 </CollapsibleTrigger>
                 <CollapsibleContent>
                   <CardContent className="pt-0 space-y-4">
-                    <div><p className="text-sm font-medium mb-1">When to Suggest</p><p className="text-sm text-muted-foreground">{pathway.whenToSuggest}</p></div>
+                    {pathway.content ? (
+                      <MarkdownPage content={pathway.content} className="prose-sm" />
+                    ) : null}
+                    <div><p className="text-sm font-medium mb-1">When to Suggest</p><p className="text-sm text-muted-foreground">{pathway.whenToSuggest ?? ''}</p></div>
                     <div><p className="text-sm font-medium mb-2">Fit Test Prompts</p><ul className="space-y-1">{pathway.fitTestPrompts.map((p, i) => <li key={i} className="text-sm text-muted-foreground">• {p}</li>)}</ul></div>
                     <div className="p-3 rounded-lg bg-primary/5 border border-primary/10">
                       <p className="text-sm font-medium text-primary mb-1 flex items-center gap-1"><Zap className="h-4 w-4" />Default first small step (≤60 min)</p>
-                      <p className="text-sm">{pathway.defaultFirstSmallStep}</p>
+                      <p className="text-sm">{pathway.defaultFirstSmallStep ?? ''}</p>
                     </div>
                   </CardContent>
                 </CollapsibleContent>

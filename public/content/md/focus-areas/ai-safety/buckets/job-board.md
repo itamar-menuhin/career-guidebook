@@ -1,6 +1,4 @@
-# GENERATED FROM VAULT — DO NOT EDIT. Source of truth: /vault
-
-Job board scan (real roles) (choose 1–2)
+## Experiment D — job-board exploration (choose 1–2)
 80,000 Hours job board
 AISafety.com jobs
 Optional alt: EA Opportunities board

@@ -3,16 +3,16 @@
     "id": "opening",
     "title": "Opening & goal",
     "shortTitle": "Opening & goal",
-    "summary": "1) What “good” looks like (outcomes) By the end of the session, the person leaves with: Clarity on 2–4 plausible directions (not 1) Energy (felt sense: “this is doable”) Concrete next steps: 1–2 low-cost experiments per…",
+    "summary": "EA Israel – 1:1 Career Counselling Guidebook (v0.3) 1) What “good” looks like (outcomes) By the end of the session, the person leaves with: Clarity on 2–4 plausible directions (not",
     "color": "step-opening",
     "contentPath": "content/md/flow/opening.md",
     "order": 1
   },
   {
     "id": "background",
-    "title": "What they bring",
-    "shortTitle": "What they bring",
-    "summary": "Goal: a grounded snapshot of skills, credibility, preferences, and current trajectory + their current plan and next steps. High-yield prompts What’s your current role + what do you actually do week to week? What have you…",
+    "title": "What you bring",
+    "shortTitle": "What you bring",
+    "summary": "4) Chapter 1 — What they bring to the table Goal: a grounded snapshot of skills, credibility, preferences, and current trajectory + their current plan and next steps. High-yield pr",
     "color": "step-background",
     "contentPath": "content/md/flow/background.md",
     "order": 2
@@ -21,7 +21,7 @@
     "id": "happiness",
     "title": "What would make them happy",
     "shortTitle": "What would make them happy",
-    "summary": "Goal: understand what a “good life + good work” looks like for them: intrinsic qualities their plan must include, what is satisfying day-to-day, and what causes/problems they want to contribute to. Prompts Why are you…",
+    "summary": "5) Chapter 2 — What would make them happy Goal: understand what a “good life + good work” looks like for them: intrinsic qualities their plan must include, what is satisfying day-t",
     "color": "step-happiness",
     "contentPath": "content/md/flow/happiness.md",
     "order": 3
@@ -30,25 +30,25 @@
     "id": "constraints",
     "title": "Constraints & degrees of freedom",
     "shortTitle": "Constraints & degrees of freedom",
-    "summary": "Instructor-only purpose: map what’s realistic right now (and what might be realistic later) so ideas match their life situation. Candidate-facing one-liner (optional): “Quick logistics map so we aim at options that…",
+    "summary": "6) Chapter 3 — Constraints & degrees of freedom Instructor-only purpose: map what’s realistic right now (and what might be realistic later) so ideas match their life situation. Can",
     "color": "step-constraints",
     "contentPath": "content/md/flow/constraints.md",
     "order": 4
   },
   {
     "id": "directions",
-    "title": "Direction testing & direction library",
-    "shortTitle": "Direction testing & direction library",
-    "summary": "7–8) Iterative direction testing + direction library The loop (how directions get tested and narrowed) For each direction that comes up (yours or theirs): Name it simply (one sentence) Test fit quickly (strengths,…",
+    "title": "Direction testing + direction library",
+    "shortTitle": "Direction testing + direction library",
+    "summary": "7–8) Iterative direction testing + direction library The loop (how directions get tested and narrowed) For each direction that comes up (yours or theirs): Name it simply (one sente",
     "color": "step-directions",
     "contentPath": "content/md/flow/directions.md",
     "order": 5
   },
   {
     "id": "wrap",
-    "title": "Wrap & written summary",
-    "shortTitle": "Wrap & written summary",
-    "summary": "During the wrap (live) “Let me summarize what we have so far — stop me if I misrepresent anything.” Write it down together (you type while you talk). Written summary (shared live or sent after) Snapshot Current…",
+    "title": "Wrap + written summary",
+    "shortTitle": "Wrap + written summary",
+    "summary": "Wrap + written summary (5–10 min) recap the directions + next steps you locked in write it down together (live notes, or you type while summarizing) make sure the next steps feel c",
     "color": "step-wrap",
     "contentPath": "content/md/flow/wrap.md",
     "order": 6

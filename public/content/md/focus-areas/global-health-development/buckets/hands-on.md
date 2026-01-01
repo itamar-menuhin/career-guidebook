@@ -1,6 +1,4 @@
-# GENERATED FROM VAULT — DO NOT EDIT. Source of truth: /vault
-
-Experiment C — pathway to doing a project (for proof-of-fit + momentum)
+## Experiment C — pathway to doing a project (for proof-of-fit + momentum)
 Best for: people who need action to stay motivated, want quick proof-of-fit, or need a push past impostor syndrome.
 Here “measurable good” is often easiest via moving money effectively or creating a real-world mobilization, since many top orgs don’t offer easy small volunteer tasks.
 Canonical pick
