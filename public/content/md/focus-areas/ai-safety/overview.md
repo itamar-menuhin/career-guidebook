@@ -1,3 +1,5 @@
 # GENERATED FROM VAULT — DO NOT EDIT. Source of truth: /vault
 
-AI safety research aims to ensure that advanced AI systems remain beneficial and aligned with human values. The field spans technical research (alignment, interpretability, robustness), governance (policy, coordination), and field-building (education, community).
+## What it’s trying to achieve (plain language)
+
+Help ensure advanced AI systems don’t cause catastrophic harm, by improving how we build/evaluate/govern/deploy powerful AI (technical safety + governance/policy).

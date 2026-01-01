@@ -3,7 +3,7 @@
     "id": "opening",
     "title": "Opening & goal",
     "shortTitle": "Opening & goal",
-    "summary": "Set the frame for the session. What does the person hope to walk away with? ## Suggested prompts - What would make this conversation feel like a success for you? - Is there a specific decision you're trying to make, or…",
+    "summary": "## What you bring (15–20 min) ## What you want / what feels satisfying (5–10 min) Constraints + degrees of freedom (5–10 min) → Steps 1–4 together are usually ~30 minutes. Iterative direction testing (25–45 min)…",
     "color": "step-opening",
     "contentPath": "content/md/flow/opening.md",
     "order": 1
@@ -12,7 +12,7 @@
     "id": "background",
     "title": "What they bring",
     "shortTitle": "What they bring",
-    "summary": "Understand their current situation, skills, and experience. ## Suggested prompts - Walk me through your current situation — what are you doing now? - What skills or experiences do you feel most confident about? - What…",
+    "summary": "Goal: a grounded snapshot of skills, credibility, preferences, and current trajectory + their current plan and next steps. ## High-yield prompts What’s your current role + what do you actually do week to week? What have…",
     "color": "step-background",
     "contentPath": "content/md/flow/background.md",
     "order": 2
@@ -21,7 +21,7 @@
     "id": "happiness",
     "title": "What makes them happy",
     "shortTitle": "What makes them happy",
-    "summary": "Explore what energizes them and what they want more of in their work. ## Suggested prompts - Tell me about a time you felt most engaged and energized by your work. - What activities do you look forward to? What do you…",
+    "summary": "What makes them happy",
     "color": "step-happiness",
     "contentPath": "content/md/flow/happiness.md",
     "order": 3
@@ -30,7 +30,7 @@
     "id": "constraints",
     "title": "Constraints",
     "shortTitle": "Constraints",
-    "summary": "Surface the practical realities that will shape what's possible. ## Suggested prompts - What constraints are you working with? (geography, finances, visa, family, etc.) - Are there any non-negotiables — things you…",
+    "summary": "Constraints",
     "color": "step-constraints",
     "contentPath": "content/md/flow/constraints.md",
     "order": 4
@@ -39,7 +39,7 @@
     "id": "directions",
     "title": "Iterative direction testing",
     "shortTitle": "Iterative direction testing",
-    "summary": "Explore potential directions, test fit, and narrow down. ## Suggested prompts - Based on what we've discussed, here are a few directions that might fit... (propose 2-3) - What resonates? What doesn't feel right? - Let's…",
+    "summary": "## propose a direction (or they propose) ## test fit quickly (strengths, motivation, constraints) ## immediately find 1 low-cost “toe in the water” step ## read reaction (enthusiasm / resistance / confusion) ## adjust /…",
     "color": "step-directions",
     "contentPath": "content/md/flow/directions.md",
     "order": 5
@@ -48,7 +48,7 @@
     "id": "wrap",
     "title": "Wrap & commitments",
     "shortTitle": "Wrap & commitments",
-    "summary": "Close the session with clarity on next steps and accountability. ## Suggested prompts - Of the directions we discussed, which feel most promising to you? - What's the very first step you can take in the next 48 hours? -…",
+    "summary": "## During the wrap (live) “Let me summarize what we have so far — stop me if I misrepresent anything.” Write it down together (you type while you talk). ## Written summary (shared live or sent after) ## Snapshot Current…",
     "color": "step-wrap",
     "contentPath": "content/md/flow/wrap.md",
     "order": 6
