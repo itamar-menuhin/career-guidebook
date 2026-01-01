@@ -1,31 +1,18 @@
 # GENERATED FROM VAULT — DO NOT EDIT. Source of truth: /vault
 
-## Canonical picks (choose 1–2)
-
-80,000 Hours job board (filter for animal welfare, or AI/data roles in adjacent orgs).
-
-Animal Advocacy Careers job board (search for data/tech roles; also helps you learn org landscape). (Animal Advocacy Careers)
-
-## Optional alt
-
-EA Opportunities (often has fellowships/programs/projects that aren’t “jobs”). (Effective Altruism)
-
-Tiny scanning method (10–25 min)
-Collect 8–12 roles → label role type (ML / research / ops / policy) → circle 3 roles + 2 repeating skill gaps → turn that into a direction + next step.
-
 Pick 1–2:
 
-80,000 Hours job board (good EA filter for high-impact roles) (80,000 Hours)
+## 80,000 Hours job board (good EA filter for high-impact roles) (80,000 Hours)
 
-ReliefWeb jobs (humanitarian + development roles; good breadth) (ReliefWeb)
+## ReliefWeb jobs (humanitarian + development roles; good breadth) (ReliefWeb)
 
-Devex job search (global development-focused job board) (Devex)
+## Devex job search (global development-focused job board) (Devex)
 
-Impactpool (UN + international orgs; public health roles) (Impactpool)
+## Impactpool (UN + international orgs; public health roles) (Impactpool)
 
 Tiny scanning method (10–25 min): collect 8–12 roles → label role-types → circle 3 roles + 2 repeating skill gaps → turn into one “direction to test” + one next step.
 
-## 5) Go-to recommendations (cards)
+## Go-to recommendations (cards)
 
 ## Card 1 — GiveWell top charities / Top Charities Fund
 
@@ -83,15 +70,15 @@ Toe in the water: pick one recommended charity and read its “why recommended�
 
 ## Commitment: High
 
-Fit gate: Selective + requires relocation (at least some in-person component)
+## Fit gate: Selective + requires relocation (at least some in-person component)
 
-Toe in the water: read the program flow + apply if it fits your timeline. (CE)
+## Toe in the water: read the program flow + apply if it fits your timeline. (CE)
 
 ## Copy-paste links (raw URLs)
 
 80,000 Hours – Global health (health in poor countries) problem profile:
 
-https://80000hours.org/problem-profiles/health-in-poor-countries/
+## https://80000hours.org/problem-profiles/health-in-poor-countries/
 
 GiveWell – Our Top Charities (updated Sep 2025):
 
@@ -119,7 +106,7 @@ Giving What We Can – 10% Pledge:
 
 Giving What We Can – Global Health & Wellbeing Fund:
 
-https://www.givingwhatwecan.org/charities/global-health-and-wellbeing-fund
+## https://www.givingwhatwecan.org/charities/global-health-and-wellbeing-fund
 
 Charity Entrepreneurship – Incubation program:
 
@@ -135,7 +122,7 @@ Coursera – An Introduction to Global Health:
 
 Crash Course – Public Health playlist:
 
-https://www.youtube.com/playlist?list=PL8dPuuaLjXtPjQj_LcJ0Zvj-VI3sslJyF
+## https://www.youtube.com/playlist?list=PL8dPuuaLjXtPjQj_LcJ0Zvj-VI3sslJyF
 
 Job boards:
 
@@ -149,19 +136,19 @@ Impactpool (public health filter): https://www.impactpool.org/search?jf%5B%5D=58
 
 ## Cause area: Climate quick-start (v1)
 
-## 1) What it’s trying to achieve (plain language)
+## What it’s trying to achieve (plain language)
 
 Rapidly reduce greenhouse gas emissions (and support adaptation where it’s most valuable) by pushing on the highest-leverage bottlenecks: policy, clean energy deployment, targeted innovation, and (in some cases) carbon removal. Both 80,000 Hours and Probably Good emphasize that career choice tends to matter more than personal footprint, and that some climate actions are much more effective than others. 80,000 Hours+1
 
 Pick 1–2:
 
-Probably Good job board (filtered to Climate Change) jobs.probablygood.org
+## Probably Good job board (filtered to Climate Change) jobs.probablygood.org
 
 ## Climatebase jobs Climatebase.org
 
 80,000 Hours job board (fewer climate roles, but often higher “EA filter”). 80,000 Hours
 
-## 5) Go-to recommendations (cards)
+## Go-to recommendations (cards)
 
 ## Card 1 — Probably Good: Climate careers guide
 
