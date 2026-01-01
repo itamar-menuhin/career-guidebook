@@ -1,3 +1,7 @@
 # GENERATED FROM VAULT — DO NOT EDIT. Source of truth: /vault
 
-Start with the 80K guide for the career lens, then read one Alignment Forum post to see the technical depth.
+## Robert Miles — “Intro to AI Safety, Remastered” (video)
+
+## DeepMind — “AGI Safety Course” playlist (video course)
+
+Optional alt if they prefer reading: 80,000 Hours AI safety researcher career review

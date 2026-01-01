@@ -1,3 +1,8 @@
 # GENERATED FROM VAULT — DO NOT EDIT. Source of truth: /vault
 
-Look at senior and junior roles to understand the skill trajectory. Even if you're not ready to apply, this shows what to aim for.
+## 80,000 Hours job board
+
+## AISafety.com jobs
+
+Optional alt: EA Opportunities board
+Tiny scanning method (10–25 min): collect 8–12 interesting roles → label role-types → circle 3 roles + 2 repeating skill gaps.
