@@ -1,13 +1,5 @@
----
-kind: focus_area_bucket
-focus_area_id: ai-safety
-bucket: hands-on
-title: Hands-on trial
-curated_cards: []
----
-
-Hands-on trial
+## Experiment C — project pathway
 SPAR — a part-time remote program explicitly structured around impactful research projects with mentors in AI safety/policy.
 Optional alt (bigger commitment): MATS (intensive mentored research program)
 MATS: https://matsprogram.org/
-First small step (≤60 min) step: pick 2–3 projects you could imagine doing; write 2 lines each (interest + feasibility)
+Toe-in-the-water step: pick 2–3 projects you could imagine doing; write 2 lines each (interest + feasibility)

@@ -1,12 +1,4 @@
----
-kind: focus_area_bucket
-focus_area_id: animal-welfare
-bucket: job-board
-title: Job board scan (real roles)
-curated_cards: []
----
-
-Experiment D — job-board exploration (choose 1–2)
+## Experiment D — job-board exploration (choose 1–2)
 Canonical picks
 Animal Advocacy Careers job board (animal-advocacy specific) Animal Advocacy Careers
 80,000 Hours job board (filter toward animal welfare / relevant ops/policy roles) 80,000 Hours

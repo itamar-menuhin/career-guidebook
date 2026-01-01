@@ -253,17 +253,18 @@ async function build() {
   focusAreaManifest.sort((a, b) => a.name.localeCompare(b.name));
   await fs.writeFile(path.join(PUBLIC_DATA_DIR, 'focus-areas.json'), JSON.stringify(focusAreaManifest, null, 2) + '\n');
 
-  const pathwaysManifest = pathways
-    .sort((a, b) => (a.meta.order || 0) - (b.meta.order || 0) || a.meta.id.localeCompare(b.meta.id))
-    .map(p => ({
-      id: p.meta.id,
-      name: p.meta.title,
-      description: summarize(p.body || p.meta.title),
-      whenToSuggest: p.meta.when_to_suggest || p.body || p.meta.title,
-      fitTestPrompts: p.meta.fit_test_prompts || [],
-      defaultFirstSmallStep: p.meta.default_first_small_step || 'Define a concrete next step based on this pathway.',
-      relatedCardIds: p.meta.related_card_ids || [],
-    }));
+  const pathwaysManifest = [];
+  for (const pathway of pathways.sort((a, b) => (a.meta.order || 0) - (b.meta.order || 0) || a.meta.id.localeCompare(b.meta.id))) {
+    const dest = path.join(PUBLIC_MD_DIR, 'pathways', `${pathway.meta.id}.md`);
+    await writeMarkdown(dest, pathway.body);
+    pathwaysManifest.push({
+      id: pathway.meta.id,
+      name: pathway.meta.title,
+      contentPath: ensureRelativeMdPath(dest),
+      order: pathway.meta.order,
+      group: pathway.meta.group,
+    });
+  }
   await fs.writeFile(path.join(PUBLIC_DATA_DIR, 'pathways.json'), JSON.stringify(pathwaysManifest, null, 2) + '\n');
 
   const templatesManifest = [];

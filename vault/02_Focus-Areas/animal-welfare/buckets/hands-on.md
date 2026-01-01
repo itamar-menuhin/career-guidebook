@@ -1,12 +1,4 @@
----
-kind: focus_area_bucket
-focus_area_id: animal-welfare
-bucket: hands-on
-title: Hands-on trial
-curated_cards: []
----
-
-Experiment C — project pathway (make it concrete)
+## Experiment C — project pathway (make it concrete)
 Canonical pick
 Faunalytics volunteering — volunteers work with staff on projects meant to support animal advocates (i.e., real external users). Faunalytics+1
 Optional alt

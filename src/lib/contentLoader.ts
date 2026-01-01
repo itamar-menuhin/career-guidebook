@@ -229,8 +229,24 @@ export async function getFocusAreas(): Promise<FocusArea[]> {
   );
 }
 
-export function getCommonPathways(): Promise<CommonPathway[]> {
-  return loadContentFile('pathways');
+export async function getCommonPathways(): Promise<CommonPathway[]> {
+  const pathways = await loadContentFile<CommonPathway[]>('pathways');
+
+  const enriched = await Promise.all(
+    pathways.map(async pathway => {
+      const content = pathway.contentPath
+        ? await loadMarkdown(pathway.contentPath, 'pathways')
+        : '';
+      return {
+        ...pathway,
+        content,
+        contentPlainText: content ? markdownToPlainText(content) : '',
+      };
+    })
+  );
+
+  // Keep a stable order when provided (otherwise preserve file order).
+  return enriched.sort((a, b) => (a.order ?? 9999) - (b.order ?? 9999));
 }
 
 export async function getFlowSteps(): Promise<FlowStep[]> {
