@@ -11,7 +11,8 @@
       "commitment": "low",
       "goodFitIf": []
     },
-    "nextStep": "",
+    "firstSmallStep": "Review the linked resources.",
+    "nextStep": "Take the next action that feels most valuable.",
     "links": [],
     "peopleToTalkTo": [],
     "focusAreaIds": [
@@ -33,7 +34,7 @@
       ]
     },
     "firstSmallStep": "Watch the first chunk and note: “which track feels more like me: technical vs governance/policy?”",
-    "nextStep": "",
+    "nextStep": "Take the next action that feels most valuable.",
     "links": [
       {
         "label": "https://www.youtube.com/playlist?list=PLw9kjlF6lD5UqaZvMTbhJB8sV-yuXu5eW",
@@ -60,7 +61,7 @@
       ]
     },
     "firstSmallStep": "Watch the video and write 5 bullets: “what risks felt real / what felt off / what questions I have.”",
-    "nextStep": "",
+    "nextStep": "Take the next action that feels most valuable.",
     "links": [
       {
         "label": "https://www.youtube.com/watch?v=pYXy-A4siMw",
@@ -87,7 +88,8 @@
         "Open"
       ]
     },
-    "nextStep": "",
+    "firstSmallStep": "Review the linked resources.",
+    "nextStep": "Take the next action that feels most valuable.",
     "links": [
       {
         "label": "https://jobs.80000hours.org/",
@@ -113,7 +115,8 @@
         "Open"
       ]
     },
-    "nextStep": "",
+    "firstSmallStep": "Review the linked resources.",
+    "nextStep": "Take the next action that feels most valuable.",
     "links": [
       {
         "label": "https://animalcharityevaluators.org/blog/impacts-of-ai-on-animal-advocacy/",
@@ -139,7 +142,8 @@
         "Selective"
       ]
     },
-    "nextStep": "",
+    "firstSmallStep": "Review the linked resources.",
+    "nextStep": "Take the next action that feels most valuable.",
     "links": [
       {
         "label": "https://www.effectivealtruism.org/opportunities/recGlnvARNYCIWLxN",
@@ -165,7 +169,8 @@
         "Open"
       ]
     },
-    "nextStep": "",
+    "firstSmallStep": "Review the linked resources.",
+    "nextStep": "Take the next action that feels most valuable.",
     "links": [
       {
         "label": "https://animaladvocacycareers.org/job-board/",
@@ -191,7 +196,8 @@
         "Open"
       ]
     },
-    "nextStep": "",
+    "firstSmallStep": "Review the linked resources.",
+    "nextStep": "Take the next action that feels most valuable.",
     "links": [
       {
         "label": "https://www.effectivealtruism.org/opportunities",
@@ -217,7 +223,8 @@
         "Open"
       ]
     },
-    "nextStep": "",
+    "firstSmallStep": "Review the linked resources.",
+    "nextStep": "Take the next action that feels most valuable.",
     "links": [
       {
         "label": "https://faunalytics.org/ai-and-animal-advocacy/",
@@ -243,7 +250,8 @@
         "Selective"
       ]
     },
-    "nextStep": "",
+    "firstSmallStep": "Review the linked resources.",
+    "nextStep": "Take the next action that feels most valuable.",
     "links": [],
     "peopleToTalkTo": [],
     "focusAreaIds": [
@@ -264,7 +272,8 @@
         "Selective (strong experience expected)"
       ]
     },
-    "nextStep": "",
+    "firstSmallStep": "Review the linked resources.",
+    "nextStep": "Take the next action that feels most valuable.",
     "links": [
       {
         "label": "https://felidaefund.org/careers",
@@ -290,7 +299,8 @@
         "Selective"
       ]
     },
-    "nextStep": "",
+    "firstSmallStep": "Review the linked resources.",
+    "nextStep": "Take the next action that feels most valuable.",
     "links": [],
     "peopleToTalkTo": [],
     "focusAreaIds": [
@@ -311,7 +321,8 @@
         "Open"
       ]
     },
-    "nextStep": "",
+    "firstSmallStep": "Review the linked resources.",
+    "nextStep": "Take the next action that feels most valuable.",
     "links": [],
     "peopleToTalkTo": [],
     "focusAreaIds": [
@@ -332,7 +343,8 @@
         "Open"
       ]
     },
-    "nextStep": "",
+    "firstSmallStep": "Review the linked resources.",
+    "nextStep": "Take the next action that feels most valuable.",
     "links": [
       {
         "label": "https://rethinkpriorities.org/research-area/ai-for-human-wildlife-conflict-mitigations/",
@@ -358,7 +370,8 @@
         "Open"
       ]
     },
-    "nextStep": "",
+    "firstSmallStep": "Review the linked resources.",
+    "nextStep": "Take the next action that feels most valuable.",
     "links": [],
     "peopleToTalkTo": [],
     "focusAreaIds": [
@@ -380,7 +393,7 @@
       ]
     },
     "firstSmallStep": "Skim + write 5 bullets: “most compelling / most questionable / what I’d want to learn next.”",
-    "nextStep": "",
+    "nextStep": "Take the next action that feels most valuable.",
     "links": [
       {
         "label": "https://80000hours.org/problem-profiles/factory-farming/",
@@ -407,7 +420,8 @@
         "Open"
       ]
     },
-    "nextStep": "",
+    "firstSmallStep": "Review the linked resources.",
+    "nextStep": "Take the next action that feels most valuable.",
     "links": [],
     "peopleToTalkTo": [],
     "focusAreaIds": [
@@ -428,7 +442,8 @@
         "Open"
       ]
     },
-    "nextStep": "",
+    "firstSmallStep": "Review the linked resources.",
+    "nextStep": "Take the next action that feels most valuable.",
     "links": [],
     "peopleToTalkTo": [],
     "focusAreaIds": [
@@ -449,7 +464,8 @@
         "Open"
       ]
     },
-    "nextStep": "",
+    "firstSmallStep": "Review the linked resources.",
+    "nextStep": "Take the next action that feels most valuable.",
     "links": [
       {
         "label": "https://80000hours.org/problem-profiles/climate-change/",
@@ -475,7 +491,8 @@
         "Open"
       ]
     },
-    "nextStep": "",
+    "firstSmallStep": "Review the linked resources.",
+    "nextStep": "Take the next action that feels most valuable.",
     "links": [
       {
         "label": "https://www.givingwhatwecan.org/charities/founders-pledge-climate-change-fund",
@@ -505,7 +522,8 @@
         "Open"
       ]
     },
-    "nextStep": "",
+    "firstSmallStep": "Review the linked resources.",
+    "nextStep": "Take the next action that feels most valuable.",
     "links": [
       {
         "label": "https://www.givinggreen.earth/top-climate-nonprofits",
@@ -531,7 +549,8 @@
         "Open"
       ]
     },
-    "nextStep": "",
+    "firstSmallStep": "Review the linked resources.",
+    "nextStep": "Take the next action that feels most valuable.",
     "links": [],
     "peopleToTalkTo": [],
     "focusAreaIds": [
@@ -550,7 +569,8 @@
       "commitment": "low",
       "goodFitIf": []
     },
-    "nextStep": "",
+    "firstSmallStep": "Review the linked resources.",
+    "nextStep": "Take the next action that feels most valuable.",
     "links": [],
     "peopleToTalkTo": [],
     "focusAreaIds": [
@@ -571,7 +591,8 @@
         "Open"
       ]
     },
-    "nextStep": "",
+    "firstSmallStep": "Review the linked resources.",
+    "nextStep": "Take the next action that feels most valuable.",
     "links": [
       {
         "label": "https://www.youtube.com/playlist?list=PLwYnpej4pQF7sB5_ZmS2IjFae5M7MafiF",
@@ -597,7 +618,8 @@
         "Open"
       ]
     },
-    "nextStep": "",
+    "firstSmallStep": "Review the linked resources.",
+    "nextStep": "Take the next action that feels most valuable.",
     "links": [
       {
         "label": "https://www.givinggreen.earth/top-climate-nonprofits",
@@ -623,7 +645,8 @@
         "Open (time-consuming)"
       ]
     },
-    "nextStep": "",
+    "firstSmallStep": "Review the linked resources.",
+    "nextStep": "Take the next action that feels most valuable.",
     "links": [
       {
         "label": "https://www.terra.do/climate-fellowship-learning-for-action/",
@@ -649,7 +672,8 @@
         "Open"
       ]
     },
-    "nextStep": "",
+    "firstSmallStep": "Review the linked resources.",
+    "nextStep": "Take the next action that feels most valuable.",
     "links": [
       {
         "label": "https://workonclimate.org/starter-packs/",
@@ -675,7 +699,8 @@
         "Open"
       ]
     },
-    "nextStep": "",
+    "firstSmallStep": "Review the linked resources.",
+    "nextStep": "Take the next action that feels most valuable.",
     "links": [
       {
         "label": "https://workonclimate.org/careers/",
@@ -701,7 +726,8 @@
         "Open"
       ]
     },
-    "nextStep": "",
+    "firstSmallStep": "Review the linked resources.",
+    "nextStep": "Take the next action that feels most valuable.",
     "links": [
       {
         "label": "https://80000hours.org/problem-profiles/health-in-poor-countries/",
@@ -727,7 +753,8 @@
         "Open"
       ]
     },
-    "nextStep": "",
+    "firstSmallStep": "Review the linked resources.",
+    "nextStep": "Take the next action that feels most valuable.",
     "links": [
       {
         "label": "https://jobs.80000hours.org/",
@@ -753,7 +780,8 @@
         "Open"
       ]
     },
-    "nextStep": "",
+    "firstSmallStep": "Review the linked resources.",
+    "nextStep": "Take the next action that feels most valuable.",
     "links": [
       {
         "label": "https://www.youtube.com/watch?v=rKmKLcYoixs",
@@ -780,7 +808,8 @@
         "Selective + requires relocation (some in-person component) CE"
       ]
     },
-    "nextStep": "",
+    "firstSmallStep": "Review the linked resources.",
+    "nextStep": "Take the next action that feels most valuable.",
     "links": [
       {
         "label": "https://www.charityentrepreneurship.com/",
@@ -810,7 +839,8 @@
         "Open"
       ]
     },
-    "nextStep": "",
+    "firstSmallStep": "Review the linked resources.",
+    "nextStep": "Take the next action that feels most valuable.",
     "links": [
       {
         "label": "https://www.youtube.com/watch?v=_TqabsxdWmo",
@@ -836,7 +866,8 @@
         "Open"
       ]
     },
-    "nextStep": "",
+    "firstSmallStep": "Review the linked resources.",
+    "nextStep": "Take the next action that feels most valuable.",
     "links": [
       {
         "label": "https://www.givewell.org/top-charities-fund",
@@ -862,7 +893,8 @@
         "Open"
       ]
     },
-    "nextStep": "",
+    "firstSmallStep": "Review the linked resources.",
+    "nextStep": "Take the next action that feels most valuable.",
     "links": [
       {
         "label": "https://www.givewell.org/charities/top-charities",
@@ -888,7 +920,8 @@
         "Open"
       ]
     },
-    "nextStep": "",
+    "firstSmallStep": "Review the linked resources.",
+    "nextStep": "Take the next action that feels most valuable.",
     "links": [
       {
         "label": "https://www.givingwhatwecan.org/pledge",
@@ -914,7 +947,8 @@
         "Open"
       ]
     },
-    "nextStep": "",
+    "firstSmallStep": "Review the linked resources.",
+    "nextStep": "Take the next action that feels most valuable.",
     "links": [
       {
         "label": "https://www.givingwhatwecan.org/charities/global-health-and-wellbeing-fund",
@@ -940,7 +974,8 @@
         "Open"
       ]
     },
-    "nextStep": "",
+    "firstSmallStep": "Review the linked resources.",
+    "nextStep": "Take the next action that feels most valuable.",
     "links": [
       {
         "label": "https://www.thelifeyoucansave.org/peter-singers-ted-talk/",
@@ -966,7 +1001,8 @@
         "Open"
       ]
     },
-    "nextStep": "",
+    "firstSmallStep": "Review the linked resources.",
+    "nextStep": "Take the next action that feels most valuable.",
     "links": [
       {
         "label": "https://www.givewell.org/charities/top-charities",
@@ -996,7 +1032,8 @@
         "Open"
       ]
     },
-    "nextStep": "",
+    "firstSmallStep": "Review the linked resources.",
+    "nextStep": "Take the next action that feels most valuable.",
     "links": [
       {
         "label": "https://www.givingwhatwecan.org/events/pledge-drive",
@@ -1022,7 +1059,8 @@
         "Open"
       ]
     },
-    "nextStep": "",
+    "firstSmallStep": "Review the linked resources.",
+    "nextStep": "Take the next action that feels most valuable.",
     "links": [
       {
         "label": "https://www.thelifeyoucansave.org/best-charities/",
