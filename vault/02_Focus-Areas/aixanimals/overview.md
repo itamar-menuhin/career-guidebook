@@ -84,6 +84,118 @@ role_shapes:
 - You like working with messy real-world constraints and still making steady progress
 - You enjoy evidence and tradeoffs (not only “what’s morally urgent” but also “what
   works”) (80,000 Hours)
+- 4) Experiments (A–D)
+- 'Experiment A — introductory resource (< 1 hour): wide overview + test interest'
+- 'Choose 1:'
+- '80,000 Hours problem profile: Health in poor countries (Global health) (read/skim)
+  (80,000 Hours)'
+- 'YouTube: GiveWell finds highly cost-effective charities — here’s how (good for
+  the “why evidence?” mindset) (YouTube)'
+- 'Optional alt (more “why give effectively” than GH-specific): Peter Singer TED talk
+  (via The Life You Can Save) (The Life You Can Save)'
+- Entrepreneurship orientation video (<1h)
+- https://www.youtube.com/watch?v=rKmKLcYoixs
+- 'Experiment B — longer exposure: understand the field with more granularity'
+- 'Choose 1:'
+- '(Non-EA but solid grounding) Coursera: An Introduction to Global Health (structured
+  modules; builds vocabulary + systems map) (Coursera)'
+- 'Crash Course playlist: Public Health (lighter but sticky; good for people who prefer
+  video series) (YouTube)'
+- Experiment C — pathway to doing a project (for proof-of-fit + momentum)
+- 'Best for: people who need action to stay motivated, want quick proof-of-fit, or
+  need a push past impostor syndrome.'
+- Here “measurable good” is often easiest via moving money effectively or creating
+  a real-world mobilization, since many top orgs don’t offer easy small volunteer
+  tasks.
+- Canonical pick
+- Run a small fundraising/donation drive for GiveWell Top Charities / Top Charities
+  Fund
+- 'Measurable outcome: $ donated (or matched) + number of donors. GiveWell explicitly
+  routes donations to its recommended opportunities. GiveWell+2GiveWell+2'
+- Optional alt
+- 'GWWC Pledge Drive as a community action experiment (measurable: pledges taken +
+  giving committed). Giving What We Can+1'
+- Experiment D — explore specific job boards (intuition + bridge to action)
+- 'Pick 1–2:'
+- 80,000 Hours job board (good EA filter for high-impact roles) (80,000 Hours)
+- ReliefWeb jobs (humanitarian + development roles; good breadth) (ReliefWeb)
+- Devex job search (global development-focused job board) (Devex)
+- Impactpool (UN + international orgs; public health roles) (Impactpool)
+- 'Tiny scanning method (10–25 min): collect 8–12 roles → label role-types → circle
+  3 roles + 2 repeating skill gaps → turn into one “direction to test” + one next
+  step.'
+- 5) Go-to recommendations (cards)
+- Card 1 — GiveWell top charities / Top Charities Fund
+- 'Topic: Global Health & Development'
+- 'Type: Giving'
+- 'Commitment: Tiny'
+- 'Fit gate: Open'
+- 'Toe in the water: read the top charities page; donate to Top Charities Fund or
+  pick a charity. (GiveWell)'
+- 'Card 2 — Giving What We Can: 10% Pledge'
+- 'Topic: Global Health & Development'
+- 'Type: Giving'
+- 'Commitment: Tiny'
+- 'Fit gate: Open'
+- 'Toe in the water: take the pledge (or start with a smaller % if that’s what fits).
+  (Giving What We Can)'
+- 'Card 3 — Giving What We Can: Global Health & Wellbeing Fund'
+- 'Topic: Global Health & Development'
+- 'Type: Giving'
+- 'Commitment: Tiny'
+- 'Fit gate: Open'
+- 'Toe in the water: donate once; it’s allocated periodically using evaluator input
+  (incl. GiveWell). (Giving What We Can)'
+- 'Card 4 — The Life You Can Save: recommended charities'
+- 'Topic: Global Health & Development'
+- 'Type: Giving'
+- 'Commitment: Tiny'
+- 'Fit gate: Open'
+- 'Toe in the water: pick one recommended charity and read its “why recommended” page.
+  (The Life You Can Save)'
+- Card 5 — Charity Entrepreneurship Incubation Program
+- 'Topic: Global Health & Development'
+- 'Type: Program / Project'
+- 'Commitment: High'
+- 'Fit gate: Selective + requires relocation (at least some in-person component)'
+- 'Toe in the water: read the program flow + apply if it fits your timeline. (CE)'
+- Copy-paste links (raw URLs)
+- '80,000 Hours – Global health (health in poor countries) problem profile:'
+- https://80000hours.org/problem-profiles/health-in-poor-countries/
+- 'GiveWell – Our Top Charities (updated Sep 2025):'
+- https://www.givewell.org/charities/top-charities
+- 'GiveWell – Cost-effectiveness models:'
+- https://www.givewell.org/how-we-work/our-criteria/cost-effectiveness/cost-effectiveness-models
+- 'YouTube – GiveWell explainer (“here’s how they do it”):'
+- https://www.youtube.com/watch?v=_TqabsxdWmo
+- 'The Life You Can Save – Best charities:'
+- https://www.thelifeyoucansave.org/best-charities/
+- 'Peter Singer TED talk (via TLCS):'
+- https://www.thelifeyoucansave.org/peter-singers-ted-talk/
+- 'Giving What We Can – 10% Pledge:'
+- https://www.givingwhatwecan.org/pledge
+- 'Giving What We Can – Global Health & Wellbeing Fund:'
+- https://www.givingwhatwecan.org/charities/global-health-and-wellbeing-fund
+- 'Charity Entrepreneurship – Incubation program:'
+- https://www.charityentrepreneurship.com/
+- 'Apply page:'
+- https://www.charityentrepreneurship.com/apply
+- 'Coursera – An Introduction to Global Health:'
+- https://www.coursera.org/learn/global-health-introduction
+- 'Crash Course – Public Health playlist:'
+- https://www.youtube.com/playlist?list=PL8dPuuaLjXtPjQj_LcJ0Zvj-VI3sslJyF
+- 'Job boards:'
+- 'ReliefWeb Jobs: https://reliefweb.int/jobs'
+- 'Devex jobs: https://www.devex.com/jobs/search'
+- 'Impactpool (public health filter): https://www.impactpool.org/search?jf%5B%5D=58'
+- '80,000 Hours jobs: https://jobs.80000hours.org/'
+- 'Cause area: Climate quick-start (v1)'
+- 1) What it’s trying to achieve (plain language)
+- 'Rapidly reduce greenhouse gas emissions (and support adaptation where it’s most
+  valuable) by pushing on the highest-leverage bottlenecks: policy, clean energy deployment,
+  targeted innovation, and (in some cases) carbon removal. Both 80,000 Hours and Probably
+  Good emphasize that career choice tends to matter more than personal footprint,
+  and that some climate actions are much more effective than others. 80,000 Hours+1'
 - 'A useful “menu” (not a checklist):'
 - Policy / government / regulation (often very leveraged; hard to attribute impact,
   but can be huge). Probably Good+1
@@ -169,6 +281,44 @@ fit_signals:
   hard to measure). Probably Good+1
 - 'You like high-leverage work: “one decision / one institution → very large downstream
   effects.”'
+- 4) Experiments (A–D)
+- 'Experiment A — introductory (< 1 hour): broad overview + test interest'
+- 'Pick 1:'
+- 'Probably Good — Climate Change: Impact-Focused Overview (EA-ish framing + “what
+  to do about it”). Probably Good'
+- 80,000 Hours — Climate change problem profile (skim summary + “best ways of working”
+  sections). 80,000 Hours
+- 'Optional YouTube (good-enough, non-EA but clear):'
+- Project Drawdown — Climate Solutions 101 (watch 1 episode that matches their curiosity).
+  YouTube
+- Experiment B — longer exposure (course/fellowship/series)
+- 'Pick 1:'
+- 'Terra.do — “Climate Change: Learning for Action” (structured 12-week “map the space
+  + find your role” style). Terra+1'
+- Project Drawdown — Climate Solutions 101 playlist (self-paced series, broad but
+  concrete). YouTube
+- Experiment C — pathway to doing a project (proof-of-fit + momentum)
+- 'Best for: people who need action early, want quick proof-of-fit, or need help bridging
+  theory → concrete.'
+- Canonical pick
+- Work on Climate volunteering — explicitly recruits volunteers across functions (incl.
+  research/data analytics), with the goal of mobilizing professionals into climate
+  work. Work on Climate+1
+- Optional alt
+- 'If the person is giving-inclined: a giving drive informed by Giving Green research
+  (measurable: $ influenced / donated). Giving Green+1'
+- Experiment D — job-board exploration (intuition + bridge to action)
+- 'Pick 1–2:'
+- Probably Good job board (filtered to Climate Change) jobs.probablygood.org
+- Climatebase jobs Climatebase.org
+- 80,000 Hours job board (fewer climate roles, but often higher “EA filter”). 80,000
+  Hours
+- 5) Go-to recommendations (cards)
+- 'Card 1 — Probably Good: Climate careers guide'
+- 'Topic: Climate'
+- 'Type: Course'
+- 'Commitment: Tiny'
+- 'Fit gate: Open'
 people_to_talk_to: []
 common_confusions: []
 ---
