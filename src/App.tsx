@@ -2,7 +2,7 @@ import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
 import { SearchProvider } from "@/contexts/SearchContext";
 import { ContentProvider, useContent } from "@/contexts/ContentContext";
 import { TopNav } from "@/components/TopNav";
@@ -22,7 +22,18 @@ import { useScrollToHash } from "@/hooks/useScrollToHash";
 const queryClient = new QueryClient();
 
 const ScrollToHashHandler = () => {
-  useScrollToHash();
+  const location = useLocation();
+  
+  // Disable global scroll-to-hash for pages that manage their own scrolling
+  const hasCustomScrolling = ['/flow', '/focus-areas/', '/pathways'].some(
+    path => location.pathname.startsWith(path)
+  );
+  
+  // Only use the hook if the page doesn't have custom scrolling
+  if (!hasCustomScrolling) {
+    useScrollToHash();
+  }
+  
   return null;
 };
 

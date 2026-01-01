@@ -50,6 +50,8 @@ export default function FlowPage() {
 
   const [activeStepId, setActiveStepId] = useState<string | null>(null);
   const activeStepRef = useRef<string | null>(null);
+  const isProgrammaticScrollRef = useRef(false);
+  const scrollTimeoutRef = useRef<number | null>(null);
 
   useEffect(() => {
     if (!stepsAvailable) {
@@ -79,8 +81,21 @@ export default function FlowPage() {
     }
 
     if (sectionRefs.current[stepId]) {
+      // Mark that we're doing a programmatic scroll
+      isProgrammaticScrollRef.current = true;
+      
+      // Clear any existing timeout
+      if (scrollTimeoutRef.current !== null) {
+        window.clearTimeout(scrollTimeoutRef.current);
+      }
+      
       requestAnimationFrame(() => {
         sectionRefs.current[stepId]?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        
+        // Allow scrollspy to resume after smooth scroll completes (~1s for smooth scroll)
+        scrollTimeoutRef.current = window.setTimeout(() => {
+          isProgrammaticScrollRef.current = false;
+        }, 1000);
       });
     }
   }, [getValidStepId, location.hash, stepsAvailable]);
@@ -94,6 +109,11 @@ export default function FlowPage() {
     if (!stepsAvailable) return;
     const observer = new IntersectionObserver(
       entries => {
+        // Don't update hash if we're in the middle of a programmatic scroll
+        if (isProgrammaticScrollRef.current) {
+          return;
+        }
+
         const visible = entries
           .filter(entry => entry.isIntersecting)
           .sort((a, b) => b.intersectionRatio - a.intersectionRatio);
@@ -105,6 +125,7 @@ export default function FlowPage() {
           if (nextStepId && nextStepId !== activeStepRef.current) {
             activeStepRef.current = nextStepId;
             setActiveStepId(nextStepId);
+            // Use replaceState to avoid triggering scroll effect
             navigate(`/flow#${buildFlowAnchor(nextStepId)}`, { replace: true });
           }
         }
@@ -125,9 +146,23 @@ export default function FlowPage() {
 
   const navigateToStep = (stepId: string) => {
     if (!stepsAvailable) return;
+    
+    // Mark as programmatic scroll
+    isProgrammaticScrollRef.current = true;
+    
+    // Clear any existing timeout
+    if (scrollTimeoutRef.current !== null) {
+      window.clearTimeout(scrollTimeoutRef.current);
+    }
+    
     setActiveStepId(stepId);
     activeStepRef.current = stepId;
     navigate(`/flow#${buildFlowAnchor(stepId)}`);
+    
+    // Allow scrollspy to resume after navigation completes
+    scrollTimeoutRef.current = window.setTimeout(() => {
+      isProgrammaticScrollRef.current = false;
+    }, 1000);
   };
 
   const goToPrevious = () => {

@@ -124,7 +124,9 @@ async function loadMarkdown(path: string, context: ContentKey) {
   }
 
   const stripGeneratedHeader = (content: string) =>
-    content.replace(/^# GENERATED FILE - DO NOT EDIT MANUALLY\s*\n+/i, '');
+    content
+      .replace(/^# GENERATED FILE - DO NOT EDIT MANUALLY\s*\n+/i, '')
+      .replace(/^# GENERATED FROM VAULT[^\n]*\n+/i, '');
 
   const loader = (async () => {
     const response = await fetch(withBase(normalized));
