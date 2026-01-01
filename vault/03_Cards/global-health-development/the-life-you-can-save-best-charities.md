@@ -8,21 +8,6 @@ topic: reading
 commitment: low
 good_fit_if:
 - Open
-one_liner: EA-adjacent, evidence-backed recommended charity list with accessible explanations.
-  The Life You Can Save+1
-when_to_suggest: Candidate wants an approachable curated list and narratives
-links:
-- https://www.thelifeyoucansave.org/best-charities/
 ---
 
-## One-line pitch
 
-EA-adjacent, evidence-backed recommended charity list with accessible explanations. The Life You Can Save+1
-
-## When to suggest
-
-Candidate wants an approachable curated list and narratives
-
-## Resources / Links
-
-- https://www.thelifeyoucansave.org/best-charities/

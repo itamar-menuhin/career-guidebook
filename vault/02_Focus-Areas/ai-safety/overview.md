@@ -2,7 +2,8 @@
 kind: focus_area
 id: ai-safety
 title: AI Safety quick-start (v1)
-summary: What it’s trying to achieve (plain language)
+summary: Help ensure advanced AI systems don’t cause catastrophic harm, by improving
+  how we build/evaluate/govern/deploy powerful AI (technical safety + governance/policy).
 role_shapes:
 - Technical research (alignment, interpretability, evals, robustness)
 - Research engineering (tools, eval pipelines, infra for safety)
@@ -10,238 +11,47 @@ role_shapes:
 - Security / preparedness / model risk
 - Ops / programs / field-building
 - Communications / writing
-- What a good fit often looks like (signals)
+fit_signals:
 - Motivated by high-stakes downside risk + can tolerate uncertainty/debate
 - 'Drawn to either: technical challenge, governance complexity, or enabling infrastructure/community'
 - OK with long feedback loops (or choose Experiment C to make it concrete fast)
-- Experiments (canonical picks + optional alt)
-- Experiment A — 1-hour overview (choose 1)
-- Robert Miles — “Intro to AI Safety, Remastered” (video)
-- DeepMind — “AGI Safety Course” playlist (video course)
-- 'Optional alt if they prefer reading: 80,000 Hours AI safety researcher career review'
-- Experiment B — longer exposure (choose 1)
-- AGI Safety Fundamentals (reading group + discussion + project)
-- BlueDot Impact AI courses (technical safety / governance)
-- Experiment C — project pathway
-- SPAR — a part-time remote program explicitly structured around impactful research
-  projects with mentors in AI safety/policy.
-- 'Optional alt (bigger commitment): MATS (intensive mentored research program)'
-- 'MATS: https://matsprogram.org/'
-- 'Toe-in-the-water step: pick 2–3 projects you could imagine doing; write 2 lines
-  each (interest + feasibility)'
-- Experiment D — job-board exploration (choose 1–2)
-- 80,000 Hours job board
-- AISafety.com jobs
-- 'Optional alt: EA Opportunities board'
-- 'Tiny scanning method (10–25 min): collect 8–12 interesting roles → label role-types
-  → circle 3 roles + 2 repeating skill gaps.'
-- Candidate prefers reading
-- Candidate wants reality-checks on what the work looks like
-- 'When not to:'
-- Candidate is only looking for a quick interest test (use Robert Miles instead)
-- 'Topic: AI'
-- 'Type: Course'
-- 'Commitment: Tiny–Light'
-- 'Fit gate: Open'
-- 'Best next step (≤60 min):'
-- 'Skim sections: “what the work involves” + “who is a good fit” + write 3 bullets:
-  “what matches me / what doesn’t.”'
-- 'Resources / links:'
-- https://80000hours.org/career-reviews/ai-safety-researcher/
-- Card 4 — AGI Safety Fundamentals (AISF)
-- 'Fits Experiment: B'
-- 'Recommendation name: AGI Safety Fundamentals (AISF)'
-- 'One-line pitch: An 8-week reading-group-style on-ramp used widely in the community:
-  concepts, discussion, and a project component.'
-- 'When to suggest:'
-- Candidate is interested and wants deeper understanding + community discussion
-- Candidate benefits from external structure/accountability
-- 'When not to:'
-- Candidate has no bandwidth for weekly participation (use Experiment A instead)
-- 'Topic: AI'
-- 'Type: Course'
-- 'Commitment: Medium (5–15h/wk) (or set to Light if your cohorts are lighter; adjust
-  later)'
-- 'Fit gate: Selective'
-- 'Best next step (≤60 min):'
-- Read the curriculum/application page and see if week 1–2 feels exciting (not intimidating).
-- 'Resources / links:'
-- https://www.alignmentforum.org/posts/Zmwkz2BMvuFFR8bi3/agi-safety-fundamentals-curriculum-and-application
-- 'Card 5 — BlueDot Impact: AI Safety / AI Governance courses'
-- 'Fits Experiment: B'
-- 'Recommendation name: BlueDot Impact — AI courses (AI Safety / AI Governance tracks)'
-- 'One-line pitch: Cohort-based courses that help people understand the field and
-  meet peers; good default “structured exposure.”'
-- 'When to suggest:'
-- Candidate wants structured learning + peers; not ready for a research fellowship
-  yet
-- Candidate leans governance/policy OR wants a “less technical” entry option
-- 'When not to:'
-- Candidate is explicitly seeking a mentored project output now (use SPAR)
-- 'Topic: AI'
-- 'Type: Course'
-- 'Commitment: Medium'
-- 'Fit gate: Open'
-- 'Best next step (≤60 min):'
-- Pick one track (technical safety vs governance) and check cohort timing vs bandwidth.
-- 'Resources / links:'
-- https://bluedot.org/courses
-- Card 6 — SPAR (Supervised Program for Alignment Research)
-- 'Fits Experiment: C'
-- 'Recommendation name: SPAR — Supervised Program for Alignment Research'
-- 'One-line pitch: Part-time, remote, mentored projects designed to produce work that
-  contributes to AI alignment/safety—good “measurable-good” project pathway.'
-- 'When to suggest:'
-- Candidate wants to do something real (not just learn)
-- Candidate benefits from mentorship + defined projects
-- Candidate needs a push past impostor syndrome / “I’m not ready”
-- 'When not to:'
-- Candidate can’t realistically commit to the time window, even part-time
-- 'Topic: AI'
-- 'Type: Program'
-- 'Commitment: Light–Medium'
-- 'Fit gate: Selective'
-- 'Best next step (≤60 min):'
-- Browse the current/most recent projects; shortlist 2–3 you’d genuinely apply to
-  and write 2 lines each (interest + feasibility).
-- 'Resources / links:'
-- https://sparai.org/
-- 'Example projects page: https://sparai.org/projects/sp26/'
-- Card 7 — MATS (Mentored AI Safety Training)
-- 'Fits Experiment: C (optional alt)'
-- 'Recommendation name: MATS Program (Mentored AI Safety Training)'
-- 'One-line pitch: Intensive mentored research training; a serious step for people
-  aiming at research entry.'
-- 'When to suggest:'
-- Candidate is strongly research-leaning and wants a high-commitment path
-- Candidate is open to temporary relocation / intensive schedule
-- 'When not to:'
-- Candidate is unsure about the field (start with A/B or SPAR)
-- Relocation is a non-starter
-- 'Topic: AI'
-- 'Type: Program'
-- 'Commitment: Heavy (full-time / relocation)'
-- 'Fit gate: Requires relocation (if a given cohort is in-person; keep this conservative)'
-- 'Best next step (≤60 min):'
-- Check the apply page and cohort details; sanity-check dates/relocation feasibility.
-- 'Resources / links:'
-- https://matsprogram.org/
-- https://matsprogram.org/apply
-- Card 8 — 80,000 Hours Job Board
-- 'Fits Experiment: D'
-- 'Recommendation name: 80,000 Hours Job Board'
-- 'One-line pitch: A high-signal job board with many EA-aligned roles; good for building
-  intuition and spotting real orgs/roles.'
-- 'When to suggest:'
-- Candidate is ready to make roles concrete or is motivated by seeing real openings
-- Candidate wants a practical bridge from interest → action
-- 'When not to:'
-- Candidate is very early and gets overwhelmed by job posts (use Experiment A first)
-- 'Topic: AI'
-- 'Type: Move job'
-- 'Commitment: Tiny'
-- 'Fit gate: Open'
-- 'Best next step (≤60 min):'
-- 'Do the 10–25 min scan: collect 8–12 roles → label role-types → circle 3 roles +
-  2 repeating skill gaps.'
-- 'Resources / links:'
-- https://jobs.80000hours.org/
-- Card 9 — AISafety.com Jobs
-- 'Fits Experiment: D'
-- 'Recommendation name: AISafety.com Jobs'
-- 'One-line pitch: AI-safety-specific curated jobs list; great for quickly seeing
-  the org ecosystem.'
-- 'When to suggest:'
-- Candidate wants “AI safety only” without sifting broader EA jobs
-- Candidate wants to learn org landscape quickly
-- 'When not to:'
-- Candidate is not at job-search stage and would spiral into comparison
-- 'Topic: AI'
-- 'Type: Move job'
-- 'Commitment: Tiny'
-- 'Fit gate: Open'
-- 'Best next step (≤60 min):'
-- 'Same scan method: 8–12 roles → 3 interesting roles → 2 repeating skill gaps.'
-- 'Resources / links:'
-- https://www.aisafety.com/jobs
-- Card 10 — EA Opportunities Board
-- 'Fits Experiment: D (optional alt)'
-- 'Recommendation name: EA Opportunities Board'
-- 'One-line pitch: Broader than jobs: fellowships, programs, events, volunteering—useful
-  to find “entry ramps.”'
-- 'When to suggest:'
-- Candidate is earlier-stage and wants programs/projects not only jobs
-- Candidate is exploring multiple cause areas and wants a single “opportunities surface”
-- 'When not to:'
-- Candidate gets overwhelmed by breadth (use one concrete program card instead)
-- 'Topic: General'
-- 'Type: Community'
-- 'Commitment: Tiny'
-- 'Fit gate: Open'
-- 'Best next step (≤60 min):'
-- Search “AI safety” and save 3 opportunities that match your constraints/bandwidth.
-- 'Resources / links:'
-- https://www.effectivealtruism.org/opportunities
-- AI Safety
-- Funding & grantmaking
-- '[EA-canonical] EA Funds — Long-Term Future Fund: https://funds.effectivealtruism.org/funds/far-future
-  Effective Altruism Funds'
-- '[EA-adjacent] Coefficient Giving (formerly Open Philanthropy): https://www.openphilanthropy.org/
-  AP News+1'
-- '[EA-adjacent] Longview Philanthropy: https://www.longview.org/ Longview Philanthropy'
-- Research orgs (technical safety / evals / forecasting)
-- '[EA-adjacent] Alignment Research Center (ARC): https://alignment.org/ Alignment
-  Research Center'
-- '[EA-adjacent] Redwood Research: https://www.redwoodresearch.org/ Redwood Research'
-- '[EA-adjacent] METR: https://metr.org/ Metr'
-- '[EA-adjacent] Apollo Research: https://www.apolloresearch.ai/ Apollo Research'
-- '[EA-adjacent] Machine Intelligence Research Institute (MIRI): https://intelligence.org/
-  MIRI'
-- '[EA-adjacent] Epoch AI: https://epoch.ai/ Epoch AI'
-- Governance / policy research
-- '[EA-adjacent] GovAI: https://www.governance.ai/ GovAI'
-- Training / talent programs
-- '[EA-adjacent] MATS Program: https://matsprogram.org/ MATS Program'
-- '[EA-adjacent] AI Safety Camp: https://www.aisafety.camp/ AI Safety Camp'
-- '[EA-adjacent] BlueDot Impact: https://bluedot.org/ BlueDot'
-- '[EA-adjacent] SPAR: https://sparai.org/ SPAR'
-- Government safety institutes / standards
-- '[Field] UK AI Security Institute (AISI): https://www.aisi.gov.uk/ AI Security Institute'
-- '[Field] NIST CAISI (US): https://www.nist.gov/caisi NIST'
-- Frontier labs (for “where the action is”)
-- '[Field] Anthropic: https://www.anthropic.com/ Anthropic'
-- '[Field] OpenAI: https://openai.com/'
-- '[Field] Google DeepMind: https://deepmind.google/'
-- Copy-paste links (raw URLs)
-- 'Robert Miles — “Intro to AI Safety, Remastered” (video):'
-- https://www.youtube.com/watch?v=pYXy-A4siMw
-- 'Robert Miles — AI safety playlist:'
-- https://www.youtube.com/playlist?list=PLw9kjlF6lD5UqaZvMTbhJB8sV-yuXu5eW
-- '80,000 Hours — AI safety researcher career review:'
-- https://80000hours.org/career-reviews/ai-safety-researcher/
-- 'AGI Safety Fundamentals — curriculum & application (Alignment Forum):'
-- https://www.alignmentforum.org/posts/Zmwkz2BMvuFFR8bi3/agi-safety-fundamentals-curriculum-and-application
-- 'BlueDot courses (AI safety + more):'
-- https://bluedot.org/courses
-- 'SPAR — main site:'
-- https://sparai.org/
-- 'SPAR — example projects page:'
-- https://sparai.org/projects/sp26/
-- 'MATS — main site:'
-- https://matsprogram.org/
-- 'MATS — apply:'
-- https://matsprogram.org/apply
-- '80,000 Hours job board:'
-- https://jobs.80000hours.org/
-- 'AISafety.com jobs:'
-- https://www.aisafety.com/jobs
-- 'EA Opportunities board:'
-- https://www.effectivealtruism.org/opportunities
-fit_signals: []
 people_to_talk_to: []
 common_confusions: []
 ---
 
 ## What it’s trying to achieve (plain language)
-
 Help ensure advanced AI systems don’t cause catastrophic harm, by improving how we build/evaluate/govern/deploy powerful AI (technical safety + governance/policy).
+
+## What kinds of work exist here (role shapes)
+- Technical research (alignment, interpretability, evals, robustness)
+- Research engineering (tools, eval pipelines, infra for safety)
+- Governance / policy / strategy
+- Security / preparedness / model risk
+- Ops / programs / field-building
+- Communications / writing
+
+## What a good fit often looks like (signals)
+- Motivated by high-stakes downside risk + can tolerate uncertainty/debate
+- Drawn to either: technical challenge, governance complexity, or enabling infrastructure/community
+- OK with long feedback loops (or choose Experiment C to make it concrete fast)
+
+## Experiments (A–D)
+Quick taste (≈1 hour) (choose 1)
+Robert Miles — “Intro to AI Safety, Remastered” (video)
+DeepMind — “AGI Safety Course” playlist (video course)
+Optional alt if they prefer reading: 80,000 Hours AI safety researcher career review
+Deeper dive (2–6 hours) (choose 1)
+AGI Safety Fundamentals (reading group + discussion + project)
+BlueDot Impact AI courses (technical safety / governance)
+Hands-on trial
+SPAR — a part-time remote program explicitly structured around impactful research projects with mentors in AI safety/policy.
+Optional alt (bigger commitment): MATS (intensive mentored research program)
+MATS: https://matsprogram.org/
+First small step (≤60 min) step: pick 2–3 projects you could imagine doing; write 2 lines each (interest + feasibility)
+Job board scan (real roles) (choose 1–2)
+80,000 Hours job board
+AISafety.com jobs
+Optional alt: EA Opportunities board
+Tiny scanning method (10–25 min): collect 8–12 interesting roles → label role-types → circle 3 roles + 2 repeating skill gaps.
+
+_See the bucket pages for a cleaner A/B/C/D layout, and the Cards section for curated resources._
