@@ -1,3 +1,10 @@
+---
+kind: pathway
+id: experiment-a
+title: Experiment A
+group: Experiments
+---
+
 # Experiment A
 
 Experiments A–D (overview → longer exposure → project pathway → job-board exploration)

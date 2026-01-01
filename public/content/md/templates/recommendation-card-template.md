@@ -1,3 +1,5 @@
+# GENERATED FROM VAULT — DO NOT EDIT. Source of truth: /vault
+
 ## Recommendation Card template (locked)
 **Recommendation name:**
 **One-line pitch:**

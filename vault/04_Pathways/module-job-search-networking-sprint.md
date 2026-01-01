@@ -1,3 +1,10 @@
+---
+kind: pathway
+id: module-job-search-networking-sprint
+title: Job search / networking sprint
+group: Orthogonal modules
+---
+
 # Job search / networking sprint
 
 Orthogonal modules (cross-cutting, not cause-specific)

@@ -1,3 +1,5 @@
+# GENERATED FROM VAULT — DO NOT EDIT. Source of truth: /vault
+
 # Volunteering/community building
 
 Orthogonal modules (cross-cutting, not cause-specific)

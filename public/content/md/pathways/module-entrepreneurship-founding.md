@@ -1,3 +1,5 @@
+# GENERATED FROM VAULT — DO NOT EDIT. Source of truth: /vault
+
 # Entrepreneurship / founding
 
 Orthogonal modules (cross-cutting, not cause-specific)

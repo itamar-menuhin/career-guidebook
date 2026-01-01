@@ -1,3 +1,12 @@
+---
+kind: template
+id: cause-area-quick-start-template
+title: Cause-area quick-start page template
+description: Cause-area quick-start page template (locked)
+category: focus-area
+locked: true
+---
+
 ## Cause-area quick-start page template (locked)
 **Cause area name:**
 - What this area is trying to achieve (2–4 lines, plain language)

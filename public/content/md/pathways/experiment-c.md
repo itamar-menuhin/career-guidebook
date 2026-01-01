@@ -1,3 +1,5 @@
+# GENERATED FROM VAULT — DO NOT EDIT. Source of truth: /vault
+
 # Experiment C
 
 Experiments A–D (overview → longer exposure → project pathway → job-board exploration)

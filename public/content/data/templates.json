@@ -1,5 +1,13 @@
 [
   {
+    "id": "cause-area-quick-start-template",
+    "name": "Cause-area quick-start page template",
+    "description": "Cause-area quick-start page template (locked)",
+    "category": "focus-area",
+    "locked": true,
+    "contentPath": "content/md/templates/cause-area-quick-start-template.md"
+  },
+  {
     "id": "recommendation-card-template",
     "name": "Recommendation Card template",
     "description": "Recommendation Card template (locked)",
@@ -14,13 +22,5 @@
     "category": "wrap",
     "locked": true,
     "contentPath": "content/md/templates/wrap-written-summary-template.md"
-  },
-  {
-    "id": "cause-area-quick-start-template",
-    "name": "Cause-area quick-start page template",
-    "description": "Cause-area quick-start page template (locked)",
-    "category": "focus-area",
-    "locked": true,
-    "contentPath": "content/md/templates/cause-area-quick-start-template.md"
   }
 ]

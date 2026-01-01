@@ -1,3 +1,5 @@
+# GENERATED FROM VAULT — DO NOT EDIT. Source of truth: /vault
+
 ## Wrap + written summary template (locked)
 During the wrap (live)
 “Let me summarize what we have so far — stop me if I misrepresent anything.”

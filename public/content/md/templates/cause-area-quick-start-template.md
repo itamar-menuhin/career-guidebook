@@ -1,3 +1,5 @@
+# GENERATED FROM VAULT — DO NOT EDIT. Source of truth: /vault
+
 ## Cause-area quick-start page template (locked)
 **Cause area name:**
 - What this area is trying to achieve (2–4 lines, plain language)

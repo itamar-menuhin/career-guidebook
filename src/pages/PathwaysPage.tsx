@@ -64,13 +64,21 @@ export default function PathwaysPage() {
                   <CardContent className="pt-0 space-y-4">
                     {pathway.content ? (
                       <MarkdownPage content={pathway.content} className="prose-sm" />
-                    ) : null}
-                    <div><p className="text-sm font-medium mb-1">When to Suggest</p><p className="text-sm text-muted-foreground">{pathway.whenToSuggest ?? ''}</p></div>
-                    <div><p className="text-sm font-medium mb-2">Fit Test Prompts</p><ul className="space-y-1">{pathway.fitTestPrompts.map((p, i) => <li key={i} className="text-sm text-muted-foreground">• {p}</li>)}</ul></div>
-                    <div className="p-3 rounded-lg bg-primary/5 border border-primary/10">
-                      <p className="text-sm font-medium text-primary mb-1 flex items-center gap-1"><Zap className="h-4 w-4" />Default first small step (≤60 min)</p>
-                      <p className="text-sm">{pathway.defaultFirstSmallStep ?? ''}</p>
-                    </div>
+                    ) : (
+                      <p className="text-sm text-muted-foreground">No content available for this pathway.</p>
+                    )}
+                    {pathway.whenToSuggest && (
+                      <div><p className="text-sm font-medium mb-1">When to Suggest</p><p className="text-sm text-muted-foreground">{pathway.whenToSuggest}</p></div>
+                    )}
+                    {pathway.fitTestPrompts && pathway.fitTestPrompts.length > 0 && (
+                      <div><p className="text-sm font-medium mb-2">Fit Test Prompts</p><ul className="space-y-1">{pathway.fitTestPrompts.map((p, i) => <li key={i} className="text-sm text-muted-foreground">• {p}</li>)}</ul></div>
+                    )}
+                    {pathway.defaultFirstSmallStep && (
+                      <div className="p-3 rounded-lg bg-primary/5 border border-primary/10">
+                        <p className="text-sm font-medium text-primary mb-1 flex items-center gap-1"><Zap className="h-4 w-4" />Default first small step (≤60 min)</p>
+                        <p className="text-sm">{pathway.defaultFirstSmallStep}</p>
+                      </div>
+                    )}
                   </CardContent>
                 </CollapsibleContent>
               </Card>

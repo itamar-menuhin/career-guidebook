@@ -1,3 +1,12 @@
+---
+kind: template
+id: wrap-written-summary-template
+title: Wrap + written summary template
+description: Wrap + written summary template (locked)
+category: wrap
+locked: true
+---
+
 ## Wrap + written summary template (locked)
 During the wrap (live)
 “Let me summarize what we have so far — stop me if I misrepresent anything.”

@@ -1,3 +1,5 @@
+# GENERATED FROM VAULT — DO NOT EDIT. Source of truth: /vault
+
 # Effective giving
 
 Orthogonal modules (cross-cutting, not cause-specific)

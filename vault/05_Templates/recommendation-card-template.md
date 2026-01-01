@@ -1,3 +1,12 @@
+---
+kind: template
+id: recommendation-card-template
+title: Recommendation Card template
+description: Recommendation Card template (locked)
+category: focus-area
+locked: true
+---
+
 ## Recommendation Card template (locked)
 **Recommendation name:**
 **One-line pitch:**
