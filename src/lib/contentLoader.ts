@@ -67,7 +67,7 @@ async function loadContentFile<T>(key: ContentKey): Promise<T> {
         'missing-file',
         { status: response.status }
       );
-      if (import.meta?.env?.DEV) {
+      if (import.meta.env?.DEV) {
         console.error(error.message);
       }
       throw error;
@@ -82,7 +82,7 @@ async function loadContentFile<T>(key: ContentKey): Promise<T> {
         'invalid-json',
         err
       );
-      if (import.meta?.env?.DEV) {
+      if (import.meta.env?.DEV) {
         console.error(error.message, err);
       }
       throw error;
@@ -90,7 +90,7 @@ async function loadContentFile<T>(key: ContentKey): Promise<T> {
 
     const parsed = schemas[key].safeParse(jsonData);
     if (!parsed.success) {
-      if (import.meta?.env?.DEV) {
+      if (import.meta.env?.DEV) {
         console.error(`Content validation failed for ${key}:`, parsed.error.format());
       }
       throw new ContentLoadError(
@@ -129,7 +129,7 @@ async function loadMarkdown(path: string, context: ContentKey) {
       .replace(/^# GENERATED FROM VAULT[^\n]*\n+/i, '');
     
     // Safety check in dev mode: verify headers were stripped
-    if (import.meta?.env?.DEV) {
+    if (import.meta.env?.DEV) {
       if (stripped.startsWith('# GENERATED')) {
         console.warn(
           `[contentLoader] Markdown content still starts with GENERATED header after stripping. Path: ${normalized}`,
@@ -149,7 +149,7 @@ async function loadMarkdown(path: string, context: ContentKey) {
         'missing-markdown',
         { path: normalized, status: response.status }
       );
-      if (import.meta?.env?.DEV) {
+      if (import.meta.env?.DEV) {
         console.error(error.message);
       }
       throw error;
