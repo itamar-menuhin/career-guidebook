@@ -1,18 +1,1 @@
-[
-  {
-    "id": "focus-area-template",
-    "name": "Focus Area Template",
-    "description": "Structure for adding new focus areas",
-    "category": "focus-area",
-    "locked": true,
-    "contentPath": "content/md/templates/focus-area-template.md"
-  },
-  {
-    "id": "wrap-summary",
-    "name": "Wrap Summary Template",
-    "description": "Standard format for session wrap-up notes",
-    "category": "wrap",
-    "locked": true,
-    "contentPath": "content/md/templates/wrap-summary.md"
-  }
-]
+[]

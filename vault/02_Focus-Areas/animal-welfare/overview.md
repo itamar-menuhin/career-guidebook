@@ -2,7 +2,10 @@
 kind: focus_area
 id: animal-welfare
 title: Animal Welfare quick-start (v1)
-summary: 1) What it’s trying to achieve (plain language)
+summary: Reduce large-scale animal suffering — especially in areas where many animals
+  are affected (e.g., factory farming), by changing policies, corporate practices,
+  consumer behavior, and the systems that determine how animals are treated. 80,000
+  Hours+1
 role_shapes:
 - Campaigns & corporate outreach (commitments, implementation, accountability)
 - Policy / legal / government relations
@@ -11,284 +14,58 @@ role_shapes:
 - Operations / management / fundraising (often a major bottleneck)
 - Science/alt-protein/food systems (depending on the person)
 - Animal x AI – different cause area
-- 3) What a good fit often looks like (signals)
+fit_signals:
 - Strong “moral pull” toward animals + willingness to engage practical levers (institutions,
   corporations, policy)
 - Comfort with advocacy, persuasion, and coordination (many roles are people-facing)
 - 'Or: strong “evidence-minded” instinct (measurement, research, strategy) Faunalytics+1'
-- 4) Experiments (canonical picks + optional alt)
-- Experiment A — 1-hour overview (choose 1)
-- Canonical picks
-- 80,000 Hours — Factory farming problem profile (skim; strong EA-style overview)
-  80,000 Hours
-- “Intro to effective animal advocacy” — Jacy Reese (EAGxBerkeley talk, YouTube) YouTube
-- Optional alt (if they’re more curious about wild animals specifically)
-- 80,000 Hours — Wild animal welfare problem profile 80,000 Hours
-- Experiment B — longer exposure (choose 1)
-- Canonical pick
-- Animal Advocacy Careers — Introduction to Animal Advocacy Online Course (structured,
-  field-level map + careers) Effective Altruism+1
-- Optional alt (if they want “real field texture” through conversations)
-- 80,000 Hours podcast episode with Lewis Bollard on factory farming advocacy 80,000
-  Hours
-- Experiment C — project pathway (make it concrete)
-- Canonical pick
-- Faunalytics volunteering — volunteers work with staff on projects meant to support
-  animal advocates (i.e., real external users). Faunalytics+1
-- Optional alt
-- Use Animal Advocacy Careers volunteer opportunities to find an org + role where
-  your contribution is directly used (campaign support, research support, ops, comms,
-  etc.). Animal Advocacy Careers+1
-- Toe-in-the-water next step (≤60 min)
-- 'Pick one org type you’d be excited to support (campaign org / policy org / research
-  org / ops-heavy nonprofit). Find 2–3 relevant roles on the job board and write 2
-  lines each: “why I could do this” + “what I’d need to learn.”'
-- Experiment D — job-board exploration (choose 1–2)
-- Canonical picks
-- Animal Advocacy Careers job board (animal-advocacy specific) Animal Advocacy Careers
-- 80,000 Hours job board (filter toward animal welfare / relevant ops/policy roles)
-  80,000 Hours
-- Optional alt
-- 'EA Opportunities board (broader: fellowships, events, short programs, etc.) Effective
-  Altruism'
-- Tiny scanning method (10–25 min)
-- 'Same as AI safety: collect 8–12 roles → label role-types → circle 3 roles + 2 repeating
-  skill gaps.'
-- 'Resources / links to support the next steps:'
-- https://www.youtube.com/watch?v=5NqphXm-ORw
-- 'Card 3 — 80,000 Hours: Wild animal welfare problem profile'
-- 'Fits Experiment: A (optional alt)'
-- 'Recommendation name: 80,000 Hours — Wild animal welfare problem profile'
-- 'One-line pitch: Canonical EA overview for people pulled toward wild-animal suffering
-  specifically.'
-- 'When to suggest (trigger criteria):'
-- Candidate is more interested in wild animals than farmed animals
-- Candidate is curious about “less intuitive” intervention space
-- 'When not to (contraindications):'
-- Candidate is overwhelmed; start with factory farming or the video first
-- 'Topic: Animals'
-- 'Type: Course'
-- 'Commitment: Tiny (≤1h)'
-- 'Fit gate: Open'
-- 'Best “toe in the water” next step (≤60 min):'
-- Skim + note 3 intervention angles and whether each feels motivating or alienating.
-- 'Resources / links to support the next steps:'
-- https://80000hours.org/problem-profiles/wild-animal-welfare/
-- 'Card 4 — Animal Advocacy Careers: Intro to Animal Advocacy Online Course'
-- 'Fits Experiment: B'
-- 'Recommendation name: Animal Advocacy Careers — Introduction to Animal Advocacy
-  Online Course'
-- 'One-line pitch: A structured course that maps the field and career options with
-  more granularity.'
-- 'When to suggest (trigger criteria):'
-- Candidate wants structured learning and a map of roles/orgs
-- Candidate is interested but still fuzzy on “where I fit”
-- 'When not to (contraindications):'
-- Candidate has near-zero bandwidth right now (start with Experiment A)
-- 'Topic: Animals'
-- 'Type: Course'
-- 'Commitment: Medium (5–15h/wk)'
-- 'Fit gate: Open'
-- 'Best “toe in the water” next step (≤60 min):'
-- Read the course page + confirm it fits your bandwidth this month.
-- 'Resources / links to support the next steps:'
-- https://www.effectivealtruism.org/courses/introduction-to-animal-advocacy-online-course
-- 'Card 5 — 80,000 Hours podcast: Lewis Bollard on factory farming advocacy'
-- 'Fits Experiment: B (optional alt)'
-- 'Recommendation name: 80,000 Hours Podcast — Lewis Bollard on factory farm advocacy
-  gains'
-- 'One-line pitch: Practitioner “field texture” for understanding what progress looks
-  like and why tactics work.'
-- 'When to suggest (trigger criteria):'
-- Candidate learns best from interviews
-- Candidate wants realism about advocacy and strategy
-- 'When not to (contraindications):'
-- Candidate tends to over-consume content instead of acting (use C or D)
-- 'Topic: Animals'
-- 'Type: Course'
-- 'Commitment: Light (1–5h/wk)'
-- 'Fit gate: Open'
-- 'Best “toe in the water” next step (≤60 min):'
-- Listen to the first ~30 minutes and extract 3 real-world constraints + 2 high-leverage
-  roles.
-- 'Resources / links to support the next steps:'
-- https://80000hours.org/podcast/episodes/lewis-bollard-factory-farm-advocacy-gains/
-- Card 6 — Faunalytics volunteering
-- 'Fits Experiment: C'
-- 'Recommendation name: Faunalytics — Volunteer'
-- 'One-line pitch: Do externally useful work that animal advocates use (measurable
-  good; not a portfolio exercise).'
-- 'When to suggest (trigger criteria):'
-- Candidate wants a concrete project with real beneficiaries
-- Candidate likes research/analysis/writing/data/ops support
-- 'When not to (contraindications):'
-- Candidate can’t commit to any deadlines at all right now
-- 'Topic: Animals'
-- 'Type: Project'
-- 'Commitment: Light–Medium'
-- 'Fit gate: Selective'
-- 'Best “toe in the water” next step (≤60 min):'
-- 'Review volunteer options and draft a 3–5 sentence pitch: skills + a deliverable
-  you can finish in 2–4 weeks.'
-- 'Resources / links to support the next steps:'
-- https://faunalytics.org/volunteer/
-- 'Card 7 — Animal Advocacy Careers: Volunteer opportunities'
-- 'Fits Experiment: C (optional alt)'
-- 'Recommendation name: Animal Advocacy Careers — Animal volunteer opportunities'
-- 'One-line pitch: A curated way to find volunteer roles where your work is directly
-  used by real orgs.'
-- 'When to suggest (trigger criteria):'
-- Candidate wants hands-on impact now but doesn’t know which orgs exist
-- Candidate needs a push from “theory” to “concrete help”
-- 'When not to (contraindications):'
-- Candidate isn’t ready to commit to anything ongoing (start with A/D)
-- 'Topic: Animals'
-- 'Type: Project'
-- 'Commitment: Light'
-- 'Fit gate: Open'
-- 'Best “toe in the water” next step (≤60 min):'
-- Pick 1 opportunity and send an application/message today (small + specific).
-- 'Resources / links to support the next steps:'
-- https://animaladvocacycareers.org/animal-volunteer-opportunities/
-- 'Card 8 — Animal Advocacy Careers: Job board'
-- 'Fits Experiment: D'
-- 'Recommendation name: Animal Advocacy Careers — Job board'
-- 'One-line pitch: The most field-specific way to see orgs/roles in animal advocacy
-  and bridge interest → action.'
-- 'When to suggest (trigger criteria):'
-- Candidate wants to explore roles/orgs without committing yet
-- Candidate is motivated by concrete job examples
-- 'When not to (contraindications):'
-- Candidate gets overwhelmed browsing listings (use advising or course instead)
-- 'Topic: Animals'
-- 'Type: Move job'
-- 'Commitment: Tiny (≤1h)'
-- 'Fit gate: Open'
-- 'Best “toe in the water” next step (≤60 min):'
-- '10–25 min scan: collect 8–12 roles → label role types → circle 3 roles + 2 recurring
-  skill gaps.'
-- 'Resources / links to support the next steps:'
-- https://animaladvocacycareers.org/job-board/
-- 'Card 9 — 80,000 Hours: Job board'
-- 'Fits Experiment: D'
-- 'Recommendation name: 80,000 Hours — Job board'
-- 'One-line pitch: EA-filtered job board; good second lens for ops/policy/management
-  roles relevant to animal orgs.'
-- 'When to suggest (trigger criteria):'
-- Candidate wants broader EA options, or is considering adjacent roles supporting
-  animals
-- Candidate wants a second job-board lens
-- 'When not to (contraindications):'
-- Candidate is early and would spiral from job listings
-- 'Topic: Animals'
-- 'Type: Move job'
-- 'Commitment: Tiny (≤1h)'
-- 'Fit gate: Open'
-- 'Best “toe in the water” next step (≤60 min):'
-- Same scan method; then pick 1 role type to test via a conversation or volunteer
-  task.
-- 'Resources / links to support the next steps:'
-- https://jobs.80000hours.org/
-- Card 10 — EA Opportunities board
-- 'Fits Experiment: D (optional alt)'
-- 'Recommendation name: EA Opportunities — listings'
-- 'One-line pitch: Broader than jobs: fellowships/events/short programs; useful as
-  an “entry ramp.”'
-- 'When to suggest (trigger criteria):'
-- Candidate wants programs/fellowships more than job listings
-- 'When not to (contraindications):'
-- Candidate gets overwhelmed by broad lists (pick one specific program instead)
-- 'Topic: Animals'
-- 'Type: Community'
-- 'Commitment: Tiny (≤1h)'
-- 'Fit gate: Open'
-- 'Best “toe in the water” next step (≤60 min):'
-- Search “animal welfare” and save 3 opportunities that match constraints/timeline.
-- 'Resources / links to support the next steps:'
-- https://www.effectivealtruism.org/opportunities
-- 'Card 11 — Animal Advocacy Careers: Career advising'
-- 'Fits Experiment: (supports choosing A–D; accelerator)'
-- 'Recommendation name: Animal Advocacy Careers — Career advising'
-- 'One-line pitch: Tailored guidance for navigating roles/orgs; great when someone
-  feels stuck or uncertain.'
-- 'When to suggest (trigger criteria):'
-- Candidate is motivated but confused about fit/path
-- Candidate wants personal guidance/accountability
-- 'When not to (contraindications):'
-- Candidate is progressing well self-directed and doesn’t want advising
-- 'Topic: Animals'
-- 'Type: Advising'
-- 'Commitment: Tiny (≤1h)'
-- 'Fit gate: Selective'
-- 'Best “toe in the water” next step (≤60 min):'
-- Apply for an advising call and share 2–3 directions you’re considering.
-- 'Resources / links to support the next steps:'
-- https://animaladvocacycareers.org/career-advising/
-- 'Card 12 — Animal Charity Evaluators: Giving recommendations'
-- 'Fits Experiment: (orthogonal module: Giving)'
-- 'Recommendation name: Animal Charity Evaluators — Recommended charities / funds'
-- 'One-line pitch: Evidence-informed giving recommendations for animal welfare.'
-- 'When to suggest (trigger criteria):'
-- Candidate can’t shift career soon but wants an “impact now” lever
-- Candidate wants giving alongside career exploration
-- 'When not to (contraindications):'
-- Candidate is donation-averse or it feels like pressure (offer as an option)
-- 'Topic: Animals'
-- 'Type: Giving'
-- 'Commitment: Tiny (≤1h)'
-- 'Fit gate: Open'
-- 'Best “toe in the water” next step (≤60 min):'
-- Read the recommended list and choose a default giving option (even one-off).
-- 'Resources / links to support the next steps:'
-- https://animalcharityevaluators.org/
-- 'Card 13 — EA Funds: Animal Welfare Fund'
-- 'Fits Experiment: (orthogonal module: Giving)'
-- 'Recommendation name: EA Funds — Animal Welfare Fund'
-- 'One-line pitch: Expert-managed grantmaking fund; simple default option for effective
-  giving.'
-- 'When to suggest (trigger criteria):'
-- Candidate wants low-cognitive-load giving
-- Candidate wants giving as a complement to career work
-- 'When not to (contraindications):'
-- Candidate wants direct control over where money goes (ACE may fit better)
-- 'Topic: Animals'
-- 'Type: Giving'
-- 'Commitment: Tiny (≤1h)'
-- 'Fit gate: Open'
-- 'Best “toe in the water” next step (≤60 min):'
-- Skim the fund page and decide on a one-time or recurring donation (if giving fits).
-- 'Resources / links to support the next steps:'
-- https://funds.effectivealtruism.org/funds/animal-welfare
-- Copy-paste links (raw URLs)
-- '80,000 Hours – Factory farming problem profile:'
-- https://80000hours.org/problem-profiles/factory-farming/
-- 'Jacy Reese – Intro to effective animal advocacy (YouTube):'
-- https://www.youtube.com/watch?v=5NqphXm-ORw
-- '80,000 Hours – Wild animal welfare problem profile:'
-- https://80000hours.org/problem-profiles/wild-animal-welfare/
-- 'Animal Advocacy Careers – Intro to Animal Advocacy online course:'
-- https://www.effectivealtruism.org/courses/introduction-to-animal-advocacy-online-course
-- 'Animal Advocacy Careers – Career advising:'
-- https://animaladvocacycareers.org/career-advising/
-- 'Animal Advocacy Careers – Job board:'
-- https://animaladvocacycareers.org/job-board/
-- '80,000 Hours – Job board:'
-- https://jobs.80000hours.org/
-- 'Lewis Bollard (80,000 Hours podcast episode):'
-- https://80000hours.org/podcast/episodes/lewis-bollard-factory-farm-advocacy-gains/
-- 'Animal Charity Evaluators:'
-- https://animalcharityevaluators.org/
-- 'EA Funds – Animal Welfare Fund:'
-- https://funds.effectivealtruism.org/funds/animal-welfare
-- 'EA Opportunities board:'
-- https://www.effectivealtruism.org/opportunities
-- 'Faunalytics:'
-- https://faunalytics.org/
-fit_signals: []
 people_to_talk_to: []
 common_confusions: []
 ---
 
 ## What it’s trying to achieve (plain language)
-
 Reduce large-scale animal suffering — especially in areas where many animals are affected (e.g., factory farming), by changing policies, corporate practices, consumer behavior, and the systems that determine how animals are treated. 80,000 Hours+1
+
+## What kinds of work exist here (role shapes)
+- Campaigns & corporate outreach (commitments, implementation, accountability)
+- Policy / legal / government relations
+- Research & analysis (what works, which tactics, which species/interventions)
+- Communications / storytelling / movement building
+- Operations / management / fundraising (often a major bottleneck)
+- Science/alt-protein/food systems (depending on the person)
+- Animal x AI – different cause area
+
+## What a good fit often looks like (signals)
+- Strong “moral pull” toward animals + willingness to engage practical levers (institutions, corporations, policy)
+- Comfort with advocacy, persuasion, and coordination (many roles are people-facing)
+- Or: strong “evidence-minded” instinct (measurement, research, strategy) Faunalytics+1
+
+## Experiments (A–D)
+Experiment A — 1-hour overview (choose 1)
+Canonical picks
+80,000 Hours — Factory farming problem profile (skim; strong EA-style overview) 80,000 Hours
+“Intro to effective animal advocacy” — Jacy Reese (EAGxBerkeley talk, YouTube) YouTube
+Optional alt (if they’re more curious about wild animals specifically)
+80,000 Hours — Wild animal welfare problem profile 80,000 Hours
+Experiment B — longer exposure (choose 1)
+Canonical pick
+Animal Advocacy Careers — Introduction to Animal Advocacy Online Course (structured, field-level map + careers) Effective Altruism+1
+Optional alt (if they want “real field texture” through conversations)
+80,000 Hours podcast episode with Lewis Bollard on factory farming advocacy 80,000 Hours
+Experiment C — project pathway (make it concrete)
+Canonical pick
+Faunalytics volunteering — volunteers work with staff on projects meant to support animal advocates (i.e., real external users). Faunalytics+1
+Optional alt
+Use Animal Advocacy Careers volunteer opportunities to find an org + role where your contribution is directly used (campaign support, research support, ops, comms, etc.). Animal Advocacy Careers+1
+Toe-in-the-water next step (≤60 min)
+Pick one org type you’d be excited to support (campaign org / policy org / research org / ops-heavy nonprofit). Find 2–3 relevant roles on the job board and write 2 lines each: “why I could do this” + “what I’d need to learn.”
+Experiment D — job-board exploration (choose 1–2)
+Canonical picks
+Animal Advocacy Careers job board (animal-advocacy specific) Animal Advocacy Careers
+80,000 Hours job board (filter toward animal welfare / relevant ops/policy roles) 80,000 Hours
+Optional alt
+EA Opportunities board (broader: fellowships, events, short programs, etc.) Effective Altruism
+Tiny scanning method (10–25 min)
+Same as AI safety: collect 8–12 roles → label role-types → circle 3 roles + 2 repeating skill gaps.
+
+_See the bucket pages for a cleaner A/B/C/D layout, and the Cards section for curated resources._

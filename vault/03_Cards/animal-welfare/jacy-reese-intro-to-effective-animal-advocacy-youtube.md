@@ -8,16 +8,6 @@ topic: reading
 commitment: low
 good_fit_if:
 - Open
-one_liner: A fast, approachable “field picture” overview that tests interest and gives
-  a first map.
-when_to_suggest: Candidate prefers video and wants a wide intro quickly Candidate
-  is motivated but needs a clearer strategy map
 ---
 
-## One-line pitch
 
-A fast, approachable “field picture” overview that tests interest and gives a first map.
-
-## When to suggest
-
-Candidate prefers video and wants a wide intro quickly Candidate is motivated but needs a clearer strategy map
