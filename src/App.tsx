@@ -29,10 +29,7 @@ const ScrollToHashHandler = () => {
     path => location.pathname.startsWith(path)
   );
   
-  // Only use the hook if the page doesn't have custom scrolling
-  if (!hasCustomScrolling) {
-    useScrollToHash();
-  }
+  useScrollToHash(hasCustomScrolling);
   
   return null;
 };

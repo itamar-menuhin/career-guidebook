@@ -50,6 +50,8 @@ export default function FlowPage() {
 
   const [activeStepId, setActiveStepId] = useState<string | null>(null);
   const activeStepRef = useRef<string | null>(null);
+  // Prevent scroll thrashing: track when we're programmatically scrolling
+  // to prevent IntersectionObserver from triggering during navigation
   const isProgrammaticScrollRef = useRef(false);
   const scrollTimeoutRef = useRef<number | null>(null);
 

@@ -123,10 +123,23 @@ async function loadMarkdown(path: string, context: ContentKey) {
     return markdownCache.get(normalized) as Promise<string>;
   }
 
-  const stripGeneratedHeader = (content: string) =>
-    content
+  const stripGeneratedHeader = (content: string) => {
+    const stripped = content
       .replace(/^# GENERATED FILE - DO NOT EDIT MANUALLY\s*\n+/i, '')
       .replace(/^# GENERATED FROM VAULT[^\n]*\n+/i, '');
+    
+    // Safety check in dev mode: verify headers were stripped
+    if (import.meta?.env?.DEV) {
+      if (stripped.startsWith('# GENERATED')) {
+        console.warn(
+          `[contentLoader] Markdown content still starts with GENERATED header after stripping. Path: ${normalized}`,
+          stripped.substring(0, 100)
+        );
+      }
+    }
+    
+    return stripped;
+  };
 
   const loader = (async () => {
     const response = await fetch(withBase(normalized));
