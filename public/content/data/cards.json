@@ -8,7 +8,7 @@
     "tags": {
       "topic": "course",
       "type": "quick-taste",
-      "commitment": "Tiny–Light",
+      "commitment": "low",
       "goodFitIf": []
     },
     "firstSmallStep": "Review the linked resources.",
@@ -33,7 +33,7 @@
     "tags": {
       "topic": "reading",
       "type": "job-board",
-      "commitment": "Tiny",
+      "commitment": "low",
       "goodFitIf": []
     },
     "firstSmallStep": "Review the linked resources.",
@@ -58,7 +58,7 @@
     "tags": {
       "topic": "course",
       "type": "deeper-dive",
-      "commitment": "Medium (5–15h/wk) (or set to Light if your cohorts are lighter; adjust later)",
+      "commitment": "low",
       "goodFitIf": []
     },
     "firstSmallStep": "Review the linked resources.",
@@ -83,7 +83,7 @@
     "tags": {
       "topic": "reading",
       "type": "job-board",
-      "commitment": "Tiny",
+      "commitment": "low",
       "goodFitIf": []
     },
     "firstSmallStep": "Review the linked resources.",
@@ -108,7 +108,7 @@
     "tags": {
       "topic": "course",
       "type": "deeper-dive",
-      "commitment": "Medium",
+      "commitment": "medium",
       "goodFitIf": []
     },
     "firstSmallStep": "Review the linked resources.",
@@ -133,7 +133,7 @@
     "tags": {
       "topic": "course",
       "type": "quick-taste",
-      "commitment": "Tiny (≤1h)",
+      "commitment": "low",
       "goodFitIf": []
     },
     "firstSmallStep": "Review the linked resources.",
@@ -158,7 +158,7 @@
     "tags": {
       "topic": "community",
       "type": "job-board",
-      "commitment": "Tiny",
+      "commitment": "low",
       "goodFitIf": []
     },
     "firstSmallStep": "Review the linked resources.",
@@ -227,7 +227,7 @@
     "tags": {
       "topic": "program",
       "type": "hands-on",
-      "commitment": "Heavy (full-time / relocation)",
+      "commitment": "high",
       "goodFitIf": []
     },
     "firstSmallStep": "Review the linked resources.",
@@ -256,7 +256,7 @@
     "tags": {
       "topic": "course",
       "type": "quick-taste",
-      "commitment": "Tiny (≤1h)",
+      "commitment": "low",
       "goodFitIf": []
     },
     "firstSmallStep": "Review the linked resources.",
@@ -281,7 +281,7 @@
     "tags": {
       "topic": "program",
       "type": "hands-on",
-      "commitment": "Light–Medium",
+      "commitment": "low",
       "goodFitIf": []
     },
     "firstSmallStep": "Review the linked resources.",
@@ -306,7 +306,7 @@
     "tags": {
       "topic": "course",
       "type": "quick-taste",
-      "commitment": "Tiny–Light",
+      "commitment": "low",
       "goodFitIf": []
     },
     "firstSmallStep": "Review the linked resources.",
@@ -326,7 +326,7 @@
     "tags": {
       "topic": "reading",
       "type": "job-board",
-      "commitment": "Tiny",
+      "commitment": "low",
       "goodFitIf": []
     },
     "firstSmallStep": "Review the linked resources.",
@@ -351,7 +351,7 @@
     "tags": {
       "topic": "program",
       "type": "deeper-dive",
-      "commitment": "Medium",
+      "commitment": "medium",
       "goodFitIf": []
     },
     "firstSmallStep": "Review the linked resources.",
@@ -376,7 +376,7 @@
     "tags": {
       "topic": "reading",
       "type": "job-board",
-      "commitment": "Tiny",
+      "commitment": "low",
       "goodFitIf": []
     },
     "firstSmallStep": "Review the linked resources.",
@@ -401,7 +401,7 @@
     "tags": {
       "topic": "course",
       "type": "quick-taste",
-      "commitment": "Tiny",
+      "commitment": "low",
       "goodFitIf": []
     },
     "firstSmallStep": "Review the linked resources.",
@@ -426,7 +426,7 @@
     "tags": {
       "topic": "program",
       "type": "quick-taste",
-      "commitment": "High",
+      "commitment": "medium",
       "goodFitIf": []
     },
     "firstSmallStep": "Review the linked resources.",
@@ -495,7 +495,7 @@
     "tags": {
       "topic": "community",
       "type": "job-board",
-      "commitment": "Tiny",
+      "commitment": "low",
       "goodFitIf": []
     },
     "firstSmallStep": "Review the linked resources.",
@@ -560,7 +560,7 @@
     "tags": {
       "topic": "course",
       "type": "quick-taste",
-      "commitment": "Tiny",
+      "commitment": "low",
       "goodFitIf": []
     },
     "firstSmallStep": "Review the linked resources.",
@@ -585,7 +585,7 @@
     "tags": {
       "topic": "project",
       "type": "hands-on",
-      "commitment": "Light–Medium",
+      "commitment": "low",
       "goodFitIf": []
     },
     "firstSmallStep": "Review the linked resources.",
@@ -605,7 +605,7 @@
     "tags": {
       "topic": "project",
       "type": "hands-on",
-      "commitment": "Light–Medium",
+      "commitment": "low",
       "goodFitIf": []
     },
     "firstSmallStep": "Review the linked resources.",
@@ -630,7 +630,7 @@
     "tags": {
       "topic": "reading",
       "type": "quick-taste",
-      "commitment": "Tiny",
+      "commitment": "low",
       "goodFitIf": []
     },
     "firstSmallStep": "Review the linked resources.",
@@ -650,7 +650,7 @@
     "tags": {
       "topic": "program",
       "type": "deeper-dive",
-      "commitment": "Medium",
+      "commitment": "medium",
       "goodFitIf": []
     },
     "firstSmallStep": "Review the linked resources.",
@@ -670,7 +670,7 @@
     "tags": {
       "topic": "reading",
       "type": "quick-taste",
-      "commitment": "Tiny",
+      "commitment": "low",
       "goodFitIf": []
     },
     "firstSmallStep": "Review the linked resources.",
@@ -690,7 +690,7 @@
     "tags": {
       "topic": "reading",
       "type": "quick-taste",
-      "commitment": "Tiny",
+      "commitment": "low",
       "goodFitIf": []
     },
     "firstSmallStep": "Review the linked resources.",
@@ -710,7 +710,7 @@
     "tags": {
       "topic": "reading",
       "type": "quick-taste",
-      "commitment": "Tiny",
+      "commitment": "low",
       "goodFitIf": []
     },
     "firstSmallStep": "Review the linked resources.",
@@ -730,7 +730,7 @@
     "tags": {
       "topic": "reading",
       "type": "quick-taste",
-      "commitment": "Tiny",
+      "commitment": "low",
       "goodFitIf": []
     },
     "firstSmallStep": "Review the linked resources.",
@@ -750,7 +750,7 @@
     "tags": {
       "topic": "project",
       "type": "hands-on",
-      "commitment": "Light",
+      "commitment": "low",
       "goodFitIf": []
     },
     "firstSmallStep": "Review the linked resources.",
@@ -770,7 +770,7 @@
     "tags": {
       "topic": "course",
       "type": "quick-taste",
-      "commitment": "Tiny",
+      "commitment": "low",
       "goodFitIf": []
     },
     "firstSmallStep": "Review the linked resources.",
@@ -790,7 +790,7 @@
     "tags": {
       "topic": "course",
       "type": "quick-taste",
-      "commitment": "Tiny–Light",
+      "commitment": "low",
       "goodFitIf": []
     },
     "firstSmallStep": "Review the linked resources.",
@@ -815,7 +815,7 @@
     "tags": {
       "topic": "course",
       "type": "deeper-dive",
-      "commitment": "Medium",
+      "commitment": "medium",
       "goodFitIf": []
     },
     "firstSmallStep": "Review the linked resources.",
@@ -835,7 +835,7 @@
     "tags": {
       "topic": "program",
       "type": "quick-taste",
-      "commitment": "Medium",
+      "commitment": "medium",
       "goodFitIf": []
     },
     "firstSmallStep": "Review the linked resources.",
@@ -912,7 +912,7 @@
     "tags": {
       "topic": "reading",
       "type": "quick-taste",
-      "commitment": "Tiny",
+      "commitment": "low",
       "goodFitIf": []
     },
     "firstSmallStep": "Review the linked resources.",
@@ -932,7 +932,7 @@
     "tags": {
       "topic": "community",
       "type": "quick-taste",
-      "commitment": "Tiny",
+      "commitment": "low",
       "goodFitIf": []
     },
     "firstSmallStep": "Review the linked resources.",
@@ -952,7 +952,7 @@
     "tags": {
       "topic": "course",
       "type": "quick-taste",
-      "commitment": "Tiny (≤1h)",
+      "commitment": "low",
       "goodFitIf": []
     },
     "firstSmallStep": "Review the linked resources.",
@@ -977,7 +977,7 @@
     "tags": {
       "topic": "reading",
       "type": "job-board",
-      "commitment": "Tiny (≤1h)",
+      "commitment": "low",
       "goodFitIf": []
     },
     "firstSmallStep": "Review the linked resources.",
@@ -1002,7 +1002,7 @@
     "tags": {
       "topic": "course",
       "type": "deeper-dive",
-      "commitment": "Light (1–5h/wk)",
+      "commitment": "low",
       "goodFitIf": []
     },
     "firstSmallStep": "Review the linked resources.",
@@ -1027,7 +1027,7 @@
     "tags": {
       "topic": "course",
       "type": "quick-taste",
-      "commitment": "Tiny (≤1h)",
+      "commitment": "low",
       "goodFitIf": []
     },
     "firstSmallStep": "Review the linked resources.",
@@ -1052,7 +1052,7 @@
     "tags": {
       "topic": "project",
       "type": "hands-on",
-      "commitment": "Light",
+      "commitment": "low",
       "goodFitIf": []
     },
     "firstSmallStep": "Review the linked resources.",
@@ -1077,7 +1077,7 @@
     "tags": {
       "topic": "reading",
       "type": "quick-taste",
-      "commitment": "Tiny (≤1h)",
+      "commitment": "low",
       "goodFitIf": []
     },
     "firstSmallStep": "Review the linked resources.",
@@ -1102,7 +1102,7 @@
     "tags": {
       "topic": "course",
       "type": "deeper-dive",
-      "commitment": "Medium (5–15h/wk)",
+      "commitment": "medium",
       "goodFitIf": []
     },
     "firstSmallStep": "Review the linked resources.",
@@ -1127,7 +1127,7 @@
     "tags": {
       "topic": "reading",
       "type": "job-board",
-      "commitment": "Tiny (≤1h)",
+      "commitment": "low",
       "goodFitIf": []
     },
     "firstSmallStep": "Review the linked resources.",
@@ -1152,7 +1152,7 @@
     "tags": {
       "topic": "reading",
       "type": "quick-taste",
-      "commitment": "Tiny (≤1h)",
+      "commitment": "low",
       "goodFitIf": []
     },
     "firstSmallStep": "Review the linked resources.",
@@ -1177,7 +1177,7 @@
     "tags": {
       "topic": "reading",
       "type": "quick-taste",
-      "commitment": "Tiny (≤1h)",
+      "commitment": "low",
       "goodFitIf": []
     },
     "firstSmallStep": "Review the linked resources.",
@@ -1246,7 +1246,7 @@
     "tags": {
       "topic": "community",
       "type": "job-board",
-      "commitment": "Tiny (≤1h)",
+      "commitment": "low",
       "goodFitIf": []
     },
     "firstSmallStep": "Review the linked resources.",
@@ -1271,7 +1271,7 @@
     "tags": {
       "topic": "project",
       "type": "hands-on",
-      "commitment": "Light–Medium",
+      "commitment": "low",
       "goodFitIf": []
     },
     "firstSmallStep": "Review the linked resources.",
@@ -1296,7 +1296,7 @@
     "tags": {
       "topic": "course",
       "type": "quick-taste",
-      "commitment": "Tiny (≤1h)",
+      "commitment": "low",
       "goodFitIf": []
     },
     "firstSmallStep": "Review the linked resources.",
@@ -1321,7 +1321,7 @@
     "tags": {
       "topic": "course",
       "type": "quick-taste",
-      "commitment": "Tiny (≤1h)",
+      "commitment": "low",
       "goodFitIf": []
     },
     "firstSmallStep": "Review the linked resources.",
@@ -1346,7 +1346,7 @@
     "tags": {
       "topic": "course",
       "type": "deeper-dive",
-      "commitment": "Light (1–5h/wk)",
+      "commitment": "low",
       "goodFitIf": []
     },
     "firstSmallStep": "Review the linked resources.",
@@ -1371,7 +1371,7 @@
     "tags": {
       "topic": "reading",
       "type": "job-board",
-      "commitment": "Tiny (≤1h)",
+      "commitment": "low",
       "goodFitIf": []
     },
     "firstSmallStep": "Review the linked resources.",
@@ -1396,7 +1396,7 @@
     "tags": {
       "topic": "course",
       "type": "deeper-dive",
-      "commitment": "Medium (5–15h/wk) (as a default; can be tuned)",
+      "commitment": "medium",
       "goodFitIf": []
     },
     "firstSmallStep": "Review the linked resources.",
@@ -1421,7 +1421,7 @@
     "tags": {
       "topic": "community",
       "type": "job-board",
-      "commitment": "Tiny (≤1h)",
+      "commitment": "low",
       "goodFitIf": []
     },
     "firstSmallStep": "Review the linked resources.",
@@ -1478,7 +1478,7 @@
     "tags": {
       "topic": "course",
       "type": "quick-taste",
-      "commitment": "Tiny (≤1h)",
+      "commitment": "low",
       "goodFitIf": []
     },
     "firstSmallStep": "Review the linked resources.",
@@ -1503,7 +1503,7 @@
     "tags": {
       "topic": "program",
       "type": "hands-on",
-      "commitment": "Light–Medium",
+      "commitment": "low",
       "goodFitIf": []
     },
     "firstSmallStep": "Review the linked resources.",
@@ -1528,7 +1528,7 @@
     "tags": {
       "topic": "course",
       "type": "quick-taste",
-      "commitment": "Tiny–Light",
+      "commitment": "low",
       "goodFitIf": []
     },
     "firstSmallStep": "Review the linked resources.",
@@ -1553,7 +1553,7 @@
     "tags": {
       "topic": "reading",
       "type": "job-board",
-      "commitment": "Tiny",
+      "commitment": "low",
       "goodFitIf": []
     },
     "firstSmallStep": "Review the linked resources.",
@@ -1630,7 +1630,7 @@
     "tags": {
       "topic": "reading",
       "type": "job-board",
-      "commitment": "Tiny",
+      "commitment": "low",
       "goodFitIf": []
     },
     "firstSmallStep": "Review the linked resources.",
@@ -1655,7 +1655,7 @@
     "tags": {
       "topic": "reading",
       "type": "quick-taste",
-      "commitment": "Tiny",
+      "commitment": "low",
       "goodFitIf": []
     },
     "firstSmallStep": "Review the linked resources.",
@@ -1684,7 +1684,7 @@
     "tags": {
       "topic": "reading",
       "type": "hands-on",
-      "commitment": "Tiny",
+      "commitment": "low",
       "goodFitIf": []
     },
     "firstSmallStep": "Review the linked resources.",
@@ -1709,7 +1709,7 @@
     "tags": {
       "topic": "course",
       "type": "quick-taste",
-      "commitment": "Tiny",
+      "commitment": "low",
       "goodFitIf": []
     },
     "firstSmallStep": "Review the linked resources.",
@@ -1734,7 +1734,7 @@
     "tags": {
       "topic": "reading",
       "type": "job-board",
-      "commitment": "Tiny",
+      "commitment": "low",
       "goodFitIf": []
     },
     "firstSmallStep": "Review the linked resources.",
@@ -1759,7 +1759,7 @@
     "tags": {
       "topic": "course",
       "type": "quick-taste",
-      "commitment": "Tiny (A) or Medium (B)",
+      "commitment": "low",
       "goodFitIf": []
     },
     "firstSmallStep": "Review the linked resources.",
@@ -1784,7 +1784,7 @@
     "tags": {
       "topic": "project",
       "type": "hands-on",
-      "commitment": "Light",
+      "commitment": "low",
       "goodFitIf": []
     },
     "firstSmallStep": "Review the linked resources.",
@@ -1809,7 +1809,7 @@
     "tags": {
       "topic": "program",
       "type": "deeper-dive",
-      "commitment": "Medium",
+      "commitment": "medium",
       "goodFitIf": []
     },
     "firstSmallStep": "Review the linked resources.",
@@ -1834,7 +1834,7 @@
     "tags": {
       "topic": "community",
       "type": "deeper-dive",
-      "commitment": "Tiny",
+      "commitment": "low",
       "goodFitIf": []
     },
     "firstSmallStep": "Review the linked resources.",
@@ -1859,7 +1859,7 @@
     "tags": {
       "topic": "project",
       "type": "hands-on",
-      "commitment": "Light–Medium",
+      "commitment": "low",
       "goodFitIf": []
     },
     "firstSmallStep": "Review the linked resources.",
@@ -1884,7 +1884,7 @@
     "tags": {
       "topic": "course",
       "type": "quick-taste",
-      "commitment": "Tiny (≤1h)",
+      "commitment": "low",
       "goodFitIf": []
     },
     "firstSmallStep": "Review the linked resources.",
@@ -1909,7 +1909,7 @@
     "tags": {
       "topic": "reading",
       "type": "job-board",
-      "commitment": "Tiny",
+      "commitment": "low",
       "goodFitIf": []
     },
     "firstSmallStep": "Review the linked resources.",
@@ -1982,7 +1982,7 @@
     "tags": {
       "topic": "course",
       "type": "quick-taste",
-      "commitment": "Tiny (≤1h)",
+      "commitment": "low",
       "goodFitIf": []
     },
     "firstSmallStep": "Review the linked resources.",
@@ -2007,7 +2007,7 @@
     "tags": {
       "topic": "program",
       "type": "quick-taste",
-      "commitment": "High",
+      "commitment": "medium",
       "goodFitIf": []
     },
     "firstSmallStep": "Review the linked resources.",
@@ -2036,7 +2036,7 @@
     "tags": {
       "topic": "reading",
       "type": "quick-taste",
-      "commitment": "Tiny",
+      "commitment": "low",
       "goodFitIf": []
     },
     "firstSmallStep": "Review the linked resources.",
@@ -2061,7 +2061,7 @@
     "tags": {
       "topic": "reading",
       "type": "quick-taste",
-      "commitment": "Tiny",
+      "commitment": "low",
       "goodFitIf": []
     },
     "firstSmallStep": "Review the linked resources.",
@@ -2086,7 +2086,7 @@
     "tags": {
       "topic": "project",
       "type": "hands-on",
-      "commitment": "Light",
+      "commitment": "low",
       "goodFitIf": []
     },
     "firstSmallStep": "Review the linked resources.",
@@ -2111,7 +2111,7 @@
     "tags": {
       "topic": "reading",
       "type": "quick-taste",
-      "commitment": "Tiny",
+      "commitment": "low",
       "goodFitIf": []
     },
     "firstSmallStep": "Review the linked resources.",
@@ -2136,7 +2136,7 @@
     "tags": {
       "topic": "course",
       "type": "quick-taste",
-      "commitment": "Tiny (≤1h)",
+      "commitment": "low",
       "goodFitIf": []
     },
     "firstSmallStep": "Review the linked resources.",
@@ -2161,7 +2161,7 @@
     "tags": {
       "topic": "reading",
       "type": "quick-taste",
-      "commitment": "Tiny",
+      "commitment": "low",
       "goodFitIf": []
     },
     "firstSmallStep": "Review the linked resources.",
@@ -2186,7 +2186,7 @@
     "tags": {
       "topic": "project",
       "type": "hands-on",
-      "commitment": "Light",
+      "commitment": "low",
       "goodFitIf": []
     },
     "firstSmallStep": "Review the linked resources.",
@@ -2215,7 +2215,7 @@
     "tags": {
       "topic": "reading",
       "type": "quick-taste",
-      "commitment": "Tiny",
+      "commitment": "low",
       "goodFitIf": []
     },
     "firstSmallStep": "Review the linked resources.",
@@ -2240,7 +2240,7 @@
     "tags": {
       "topic": "course",
       "type": "quick-taste",
-      "commitment": "Tiny (≤1h)",
+      "commitment": "low",
       "goodFitIf": []
     },
     "firstSmallStep": "Review the linked resources.",

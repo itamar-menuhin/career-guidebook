@@ -40,6 +40,20 @@ function toSlug(input) {
   return input.trim().toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '').replace(/--+/g, '-');
 }
 
+function normalizeCommitment(commitment) {
+  if (!commitment) return 'low';
+  const lower = commitment.toLowerCase();
+  // Map various commitment descriptions to low/medium/high
+  if (lower.includes('tiny') || lower.includes('light') || lower.includes('quick') || lower.includes('1 hour') || lower.includes('1h')) {
+    return 'low';
+  }
+  if (lower.includes('heavy') || lower.includes('full-time') || lower.includes('intensive') || lower.includes('long')) {
+    return 'high';
+  }
+  // Default to medium for anything else
+  return 'medium';
+}
+
 async function exists(p) {
   try {
     await fs.access(p);
@@ -185,7 +199,7 @@ async function build() {
       tags: {
         topic,
         type: bucket,
-        commitment: card.meta.commitment,
+        commitment: normalizeCommitment(card.meta.commitment),
         goodFitIf: card.meta.good_fit_if || [],
       },
       firstSmallStep: card.meta.first_small_step || 'Review the linked resources.',
@@ -284,7 +298,19 @@ async function build() {
 
   await fs.writeFile(path.join(PUBLIC_DATA_DIR, 'cards.json'), JSON.stringify(cardManifest, null, 2) + '\n');
 
+  // Log warnings for zero counts
+  if (flowSteps.length === 0) console.warn('⚠️  Loaded 0 flow steps – check vault frontmatter/kind');
+  if (templates.length === 0) console.warn('⚠️  Loaded 0 templates – check vault frontmatter/kind');
+  if (pathways.length === 0) console.warn('⚠️  Loaded 0 pathways – check vault frontmatter/kind');
+  if (focusAreas.size === 0) console.warn('⚠️  Loaded 0 focus areas – check vault frontmatter/kind');
+  if (cards.length === 0) console.warn('⚠️  Loaded 0 cards – check vault frontmatter/kind');
+
   console.log('Vault index built.');
+  console.log(`  Flow steps: ${flowSteps.length}`);
+  console.log(`  Templates: ${templates.length}`);
+  console.log(`  Pathways: ${pathways.length}`);
+  console.log(`  Focus areas: ${focusAreas.size}`);
+  console.log(`  Cards: ${cards.length}`);
 }
 
 build().catch(err => {
