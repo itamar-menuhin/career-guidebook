@@ -1,5 +1,5 @@
 ---
-kind: card
+kind: archived
 id: giving-what-we-can-10-pledge
 title: 'Giving What We Can: 10% Pledge'
 focus_area_id: aixanimals

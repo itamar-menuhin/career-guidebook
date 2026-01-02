@@ -1,5 +1,5 @@
 ---
-kind: card
+kind: archived
 id: ai-animals-fellowship-8-week-remote
 title: AI×Animals Fellowship (8-week, remote)
 focus_area_id: aixanimals

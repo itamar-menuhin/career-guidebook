@@ -1,5 +1,5 @@
 ---
-kind: card
+kind: archived
 id: deepmind-agi-safety-course-playlist
 title: 'DeepMind: “AGI Safety Course” (playlist)'
 focus_area_id: ai-safety

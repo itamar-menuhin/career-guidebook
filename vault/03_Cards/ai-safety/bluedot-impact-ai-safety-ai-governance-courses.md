@@ -1,5 +1,5 @@
 ---
-kind: card
+kind: archived
 id: bluedot-impact-ai-safety-ai-governance-courses
 title: 'BlueDot Impact: AI Safety / AI Governance courses'
 focus_area_id: ai-safety

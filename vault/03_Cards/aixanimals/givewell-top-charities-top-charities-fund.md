@@ -1,5 +1,5 @@
 ---
-kind: card
+kind: archived
 id: givewell-top-charities-top-charities-fund
 title: GiveWell top charities / Top Charities Fund
 focus_area_id: aixanimals

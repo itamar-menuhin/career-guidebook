@@ -1,5 +1,5 @@
 ---
-kind: card
+kind: archived
 id: giving-green-effective-climate-giving
 title: Giving Green (effective climate giving)
 focus_area_id: aixanimals

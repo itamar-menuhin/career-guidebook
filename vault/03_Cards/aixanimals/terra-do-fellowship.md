@@ -1,5 +1,5 @@
 ---
-kind: card
+kind: archived
 id: terra-do-fellowship
 title: Terra.do fellowship
 focus_area_id: aixanimals

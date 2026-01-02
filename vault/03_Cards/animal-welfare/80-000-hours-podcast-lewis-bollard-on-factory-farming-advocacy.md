@@ -1,5 +1,5 @@
 ---
-kind: card
+kind: archived
 id: 80-000-hours-podcast-lewis-bollard-on-factory-farming-advocacy
 title: '80,000 Hours podcast: Lewis Bollard on factory farming advocacy'
 focus_area_id: animal-welfare

@@ -1,5 +1,5 @@
 ---
-kind: pathway
+kind: archived
 id: module-skill-building-career-capital
 title: Skill-building / career capital
 group: Orthogonal modules

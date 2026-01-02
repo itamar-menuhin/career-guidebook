@@ -2,10 +2,8 @@
 kind: pathway
 id: path-pattern-credentials-pipeline-plan
 title: Credentials/pipeline plan
-order: 7
 group: Path patterns
+order: 7
 ---
 
-# Credentials/pipeline plan
-
-Use these when you don’t have deep domain answers, or cause area isn’t clear yet:
+Use a formal program, fellowship, or credential as a structured on-ramp into a new area.

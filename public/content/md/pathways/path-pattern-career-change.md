@@ -1,5 +1,3 @@
 # GENERATED FROM VAULT — DO NOT EDIT. Source of truth: /vault
 
-# Career change
-
-Use these when you don’t have deep domain answers, or cause area isn’t clear yet:
+A bigger pivot into a new field or role family, usually via deliberate exploration and skill-building steps.

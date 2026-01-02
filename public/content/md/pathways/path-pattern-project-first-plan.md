@@ -1,5 +1,3 @@
 # GENERATED FROM VAULT — DO NOT EDIT. Source of truth: /vault
 
-# Project-first plan
-
-Use these when you don’t have deep domain answers, or cause area isn’t clear yet:
+Start with a concrete project to learn fast, build proof of fit, and create a portfolio artifact.

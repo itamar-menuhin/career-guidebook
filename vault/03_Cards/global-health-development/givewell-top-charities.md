@@ -1,5 +1,5 @@
 ---
-kind: card
+kind: archived
 id: givewell-top-charities
 title: 'GiveWell: Top Charities'
 focus_area_id: global-health-development

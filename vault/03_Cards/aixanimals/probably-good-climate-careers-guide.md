@@ -1,5 +1,5 @@
 ---
-kind: card
+kind: archived
 id: probably-good-climate-careers-guide
 title: 'Probably Good: Climate careers guide'
 focus_area_id: aixanimals

@@ -1,5 +1,5 @@
 ---
-kind: card
+kind: archived
 id: robert-miles-intro-to-ai-safety-remastered
 title: 'Robert Miles: “Intro to AI Safety, Remastered”'
 focus_area_id: ai-safety

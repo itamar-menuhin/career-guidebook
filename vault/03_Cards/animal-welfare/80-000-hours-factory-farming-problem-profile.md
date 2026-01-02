@@ -1,13 +1,28 @@
 ---
 kind: card
-id: 80-000-hours-factory-farming-problem-profile
-title: '80,000 Hours: Factory farming problem profile'
+id: animal-welfare-card-01
+title: 80,000 Hours — Factory farming problem profile
 focus_area_id: animal-welfare
 bucket: quick-taste
-topic: reading
-commitment: low
-good_fit_if:
-- Open
+topic: course
+commitment: Tiny (≤1h)
+one_liner: Canonical EA-style overview of why farmed animal welfare matters and what
+  levers exist.
+links:
+- https://80000hours.org/problem-profiles/factory-farming/
 ---
 
+Canonical EA-style overview of why farmed animal welfare matters and what levers exist.
 
+## When to suggest
+- Candidate wants a rigorous overview and “why this matters”
+- Candidate likes reading and structured argumentation
+
+## When not to
+- Candidate already knows the basics and wants concrete next steps (use C/D)
+
+## Resources / links
+- https://80000hours.org/problem-profiles/factory-farming/
+
+## Notes (internal)
+Good “anchor reading” if they want the EA framing.

@@ -1,5 +1,5 @@
 ---
-kind: pathway
+kind: archived
 id: module-effective-giving
 title: Effective giving
 group: Orthogonal modules

@@ -1,5 +1,3 @@
 # GENERATED FROM VAULT — DO NOT EDIT. Source of truth: /vault
 
-# Entrepreneurship plan
-
-Use these when you don’t have deep domain answers, or cause area isn’t clear yet:
+Explore founding or building something new, starting with small experiments before big commitment.

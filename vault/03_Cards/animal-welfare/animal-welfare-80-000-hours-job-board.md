@@ -1,5 +1,5 @@
 ---
-kind: card
+kind: archived
 id: animal-welfare-80-000-hours-job-board
 title: '80,000 Hours: Job board'
 focus_area_id: animal-welfare

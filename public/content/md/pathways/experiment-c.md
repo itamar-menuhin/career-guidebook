@@ -1,7 +1,5 @@
 # GENERATED FROM VAULT — DO NOT EDIT. Source of truth: /vault
 
-# Experiment C
+Build a small artifact or join a mentored project to get real feedback and momentum.
 
-Experiments A–D (overview → longer exposure → project pathway → job-board exploration)
-
-Experiment C — project pathway: hands-on; proof-of-fit; motivation-from-action; also good for people needing a push / impostor syndrome
+Use this for hands-on momentum: a project pathway that creates proof of fit.

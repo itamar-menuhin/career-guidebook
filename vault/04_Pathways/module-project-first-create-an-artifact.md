@@ -1,5 +1,5 @@
 ---
-kind: pathway
+kind: archived
 id: module-project-first-create-an-artifact
 title: Project-first (create an artifact)
 group: Orthogonal modules

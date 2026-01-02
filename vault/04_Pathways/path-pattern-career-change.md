@@ -2,10 +2,8 @@
 kind: pathway
 id: path-pattern-career-change
 title: Career change
-order: 4
 group: Path patterns
+order: 4
 ---
 
-# Career change
-
-Use these when you don’t have deep domain answers, or cause area isn’t clear yet:
+A bigger pivot into a new field or role family, usually via deliberate exploration and skill-building steps.

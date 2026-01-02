@@ -1,5 +1,5 @@
 ---
-kind: focus_area_bucket
+kind: archived
 focus_area_id: aixanimals
 bucket: deeper-dive
 title: Deeper dive (2–6 hours)

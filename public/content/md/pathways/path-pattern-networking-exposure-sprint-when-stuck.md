@@ -1,5 +1,3 @@
 # GENERATED FROM VAULT — DO NOT EDIT. Source of truth: /vault
 
-# Networking/exposure sprint (when stuck)
-
-Use these when you don’t have deep domain answers, or cause area isn’t clear yet:
+A short, intensive burst of conversations and exposure to break through uncertainty and generate options.

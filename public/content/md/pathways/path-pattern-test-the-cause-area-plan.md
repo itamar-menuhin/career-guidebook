@@ -1,5 +1,3 @@
 # GENERATED FROM VAULT — DO NOT EDIT. Source of truth: /vault
 
-# “Test the cause area” plan
-
-Use these when you don’t have deep domain answers, or cause area isn’t clear yet:
+Run low-cost tests to learn whether a cause area fits before committing to a big switch.

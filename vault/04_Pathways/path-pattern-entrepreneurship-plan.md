@@ -2,10 +2,8 @@
 kind: pathway
 id: path-pattern-entrepreneurship-plan
 title: Entrepreneurship plan
-order: 10
 group: Path patterns
+order: 10
 ---
 
-# Entrepreneurship plan
-
-Use these when you don’t have deep domain answers, or cause area isn’t clear yet:
+Explore founding or building something new, starting with small experiments before big commitment.

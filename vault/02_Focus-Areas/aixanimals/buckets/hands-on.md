@@ -1,5 +1,5 @@
 ---
-kind: focus_area_bucket
+kind: archived
 focus_area_id: aixanimals
 bucket: hands-on
 title: Hands-on trial

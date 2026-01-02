@@ -1,5 +1,5 @@
 ---
-kind: card
+kind: archived
 id: givewell-gwwc-youtube-givewell-finds-highly-cost-effective-charities-heres-how
 title: 'GiveWell/GWWC YouTube: “GiveWell finds highly cost-effective charities — here’s
   how”'

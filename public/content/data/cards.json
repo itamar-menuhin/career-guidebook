@@ -1,1590 +1,708 @@
 [
   {
-    "id": "80-000-hours-ai-safety-researcher-career-review",
-    "title": "80,000 Hours: AI safety researcher career review",
-    "oneLiner": "80,000 Hours: AI safety researcher career review",
+    "id": "ai-safety-card-03",
+    "title": "80,000 Hours — AI safety researcher career review",
+    "oneLiner": "A canonical EA-style “should I do this?” overview, with concrete role shapes and realities.",
     "whenToSuggest": "Use when it aligns with the focus area goals.",
     "whenNotToSuggest": "Skip if it does not match the person's constraints or interests.",
     "tags": {
-      "topic": "reading",
+      "topic": "course",
       "type": "quick-taste",
-      "commitment": "low",
-      "goodFitIf": [
-        "Open"
-      ]
+      "commitment": "Tiny–Light",
+      "goodFitIf": []
     },
     "firstSmallStep": "Review the linked resources.",
     "nextStep": "Take the next action that feels most valuable.",
-    "links": [],
+    "links": [
+      {
+        "label": "https://80000hours.org/career-reviews/ai-safety-researcher/",
+        "url": "https://80000hours.org/career-reviews/ai-safety-researcher/"
+      }
+    ],
     "peopleToTalkTo": [],
     "focusAreaIds": [
       "ai-safety"
     ]
   },
   {
-    "id": "80-000-hours-job-board",
+    "id": "ai-safety-card-08",
     "title": "80,000 Hours Job Board",
-    "oneLiner": "80,000 Hours Job Board",
+    "oneLiner": "A high-signal job board with many EA-aligned roles; good for building intuition and spotting real orgs/roles.",
     "whenToSuggest": "Use when it aligns with the focus area goals.",
     "whenNotToSuggest": "Skip if it does not match the person's constraints or interests.",
     "tags": {
       "topic": "reading",
-      "type": "quick-taste",
-      "commitment": "low",
-      "goodFitIf": [
-        "Open"
-      ]
+      "type": "job-board",
+      "commitment": "Tiny",
+      "goodFitIf": []
     },
     "firstSmallStep": "Review the linked resources.",
     "nextStep": "Take the next action that feels most valuable.",
-    "links": [],
+    "links": [
+      {
+        "label": "https://jobs.80000hours.org/",
+        "url": "https://jobs.80000hours.org/"
+      }
+    ],
     "peopleToTalkTo": [],
     "focusAreaIds": [
       "ai-safety"
     ]
   },
   {
-    "id": "agi-safety-fundamentals-aisf",
+    "id": "ai-safety-card-04",
     "title": "AGI Safety Fundamentals (AISF)",
-    "oneLiner": "AGI Safety Fundamentals (AISF)",
+    "oneLiner": "An 8-week reading-group-style on-ramp used widely in the community: concepts, discussion, and a project component.",
     "whenToSuggest": "Use when it aligns with the focus area goals.",
     "whenNotToSuggest": "Skip if it does not match the person's constraints or interests.",
     "tags": {
-      "topic": "reading",
-      "type": "quick-taste",
-      "commitment": "low",
-      "goodFitIf": [
-        "Open"
-      ]
+      "topic": "course",
+      "type": "deeper-dive",
+      "commitment": "Medium (5–15h/wk) (or set to Light if your cohorts are lighter; adjust later)",
+      "goodFitIf": []
     },
     "firstSmallStep": "Review the linked resources.",
     "nextStep": "Take the next action that feels most valuable.",
-    "links": [],
+    "links": [
+      {
+        "label": "https://www.alignmentforum.org/posts/Zmwkz2BMvuFFR8bi3/agi-safety-fundamentals-curriculum-and-application",
+        "url": "https://www.alignmentforum.org/posts/Zmwkz2BMvuFFR8bi3/agi-safety-fundamentals-curriculum-and-application"
+      }
+    ],
     "peopleToTalkTo": [],
     "focusAreaIds": [
       "ai-safety"
     ]
   },
   {
-    "id": "aisafety-com-jobs",
+    "id": "ai-safety-card-09",
     "title": "AISafety.com Jobs",
-    "oneLiner": "AISafety.com Jobs",
+    "oneLiner": "AI-safety-specific curated jobs list; great for quickly seeing the org ecosystem.",
     "whenToSuggest": "Use when it aligns with the focus area goals.",
     "whenNotToSuggest": "Skip if it does not match the person's constraints or interests.",
     "tags": {
       "topic": "reading",
-      "type": "quick-taste",
-      "commitment": "low",
-      "goodFitIf": [
-        "Open"
-      ]
+      "type": "job-board",
+      "commitment": "Tiny",
+      "goodFitIf": []
     },
     "firstSmallStep": "Review the linked resources.",
     "nextStep": "Take the next action that feels most valuable.",
-    "links": [],
+    "links": [
+      {
+        "label": "https://www.aisafety.com/jobs",
+        "url": "https://www.aisafety.com/jobs"
+      }
+    ],
     "peopleToTalkTo": [],
     "focusAreaIds": [
       "ai-safety"
     ]
   },
   {
-    "id": "bluedot-impact-ai-safety-ai-governance-courses",
-    "title": "BlueDot Impact: AI Safety / AI Governance courses",
-    "oneLiner": "BlueDot Impact: AI Safety / AI Governance courses",
+    "id": "ai-safety-card-05",
+    "title": "BlueDot Impact — AI courses (AI Safety / AI Governance tracks)",
+    "oneLiner": "Cohort-based courses that help people understand the field and meet peers; good default “structured exposure.”",
     "whenToSuggest": "Use when it aligns with the focus area goals.",
     "whenNotToSuggest": "Skip if it does not match the person's constraints or interests.",
     "tags": {
-      "topic": "reading",
-      "type": "quick-taste",
-      "commitment": "low",
-      "goodFitIf": [
-        "Open"
-      ]
+      "topic": "course",
+      "type": "deeper-dive",
+      "commitment": "Medium",
+      "goodFitIf": []
     },
     "firstSmallStep": "Review the linked resources.",
     "nextStep": "Take the next action that feels most valuable.",
-    "links": [],
+    "links": [
+      {
+        "label": "https://bluedot.org/courses",
+        "url": "https://bluedot.org/courses"
+      }
+    ],
     "peopleToTalkTo": [],
     "focusAreaIds": [
       "ai-safety"
     ]
   },
   {
-    "id": "deepmind-agi-safety-course-playlist",
-    "title": "DeepMind: “AGI Safety Course” (playlist)",
-    "oneLiner": "DeepMind: “AGI Safety Course” (playlist)",
+    "id": "ai-safety-card-02",
+    "title": "DeepMind — AGI Safety Course (YouTube playlist)",
+    "oneLiner": "A short, structured intro from DeepMind; good for people who prefer a “course vibe” over an explainer video.",
     "whenToSuggest": "Use when it aligns with the focus area goals.",
     "whenNotToSuggest": "Skip if it does not match the person's constraints or interests.",
     "tags": {
-      "topic": "reading",
+      "topic": "course",
       "type": "quick-taste",
-      "commitment": "low",
-      "goodFitIf": [
-        "Open"
-      ]
+      "commitment": "Tiny (≤1h)",
+      "goodFitIf": []
     },
     "firstSmallStep": "Review the linked resources.",
     "nextStep": "Take the next action that feels most valuable.",
-    "links": [],
+    "links": [
+      {
+        "label": "https://www.youtube.com/playlist?list=PLw9kjlF6lD5UqaZvMTbhJB8sV-yuXu5eW",
+        "url": "https://www.youtube.com/playlist?list=PLw9kjlF6lD5UqaZvMTbhJB8sV-yuXu5eW"
+      }
+    ],
     "peopleToTalkTo": [],
     "focusAreaIds": [
       "ai-safety"
     ]
   },
   {
-    "id": "ea-opportunities-board",
+    "id": "ai-safety-card-10",
     "title": "EA Opportunities Board",
-    "oneLiner": "EA Opportunities Board",
-    "whenToSuggest": "Use when it aligns with the focus area goals.",
-    "whenNotToSuggest": "Skip if it does not match the person's constraints or interests.",
-    "tags": {
-      "topic": "reading",
-      "type": "quick-taste",
-      "commitment": "low",
-      "goodFitIf": [
-        "Open"
-      ]
-    },
-    "firstSmallStep": "Review the linked resources.",
-    "nextStep": "Take the next action that feels most valuable.",
-    "links": [],
-    "peopleToTalkTo": [],
-    "focusAreaIds": [
-      "ai-safety"
-    ]
-  },
-  {
-    "id": "mats-mentored-ai-safety-training",
-    "title": "MATS (Mentored AI Safety Training)",
-    "oneLiner": "MATS (Mentored AI Safety Training)",
-    "whenToSuggest": "Use when it aligns with the focus area goals.",
-    "whenNotToSuggest": "Skip if it does not match the person's constraints or interests.",
-    "tags": {
-      "topic": "reading",
-      "type": "quick-taste",
-      "commitment": "low",
-      "goodFitIf": [
-        "Open"
-      ]
-    },
-    "firstSmallStep": "Review the linked resources.",
-    "nextStep": "Take the next action that feels most valuable.",
-    "links": [],
-    "peopleToTalkTo": [],
-    "focusAreaIds": [
-      "ai-safety"
-    ]
-  },
-  {
-    "id": "robert-miles-intro-to-ai-safety-remastered",
-    "title": "Robert Miles: “Intro to AI Safety, Remastered”",
-    "oneLiner": "Robert Miles: “Intro to AI Safety, Remastered”",
-    "whenToSuggest": "Use when it aligns with the focus area goals.",
-    "whenNotToSuggest": "Skip if it does not match the person's constraints or interests.",
-    "tags": {
-      "topic": "reading",
-      "type": "quick-taste",
-      "commitment": "low",
-      "goodFitIf": [
-        "Open"
-      ]
-    },
-    "firstSmallStep": "Review the linked resources.",
-    "nextStep": "Take the next action that feels most valuable.",
-    "links": [],
-    "peopleToTalkTo": [],
-    "focusAreaIds": [
-      "ai-safety"
-    ]
-  },
-  {
-    "id": "spar-supervised-program-for-alignment-research",
-    "title": "SPAR (Supervised Program for Alignment Research)",
-    "oneLiner": "SPAR (Supervised Program for Alignment Research)",
-    "whenToSuggest": "Use when it aligns with the focus area goals.",
-    "whenNotToSuggest": "Skip if it does not match the person's constraints or interests.",
-    "tags": {
-      "topic": "reading",
-      "type": "quick-taste",
-      "commitment": "low",
-      "goodFitIf": [
-        "Open"
-      ]
-    },
-    "firstSmallStep": "Review the linked resources.",
-    "nextStep": "Take the next action that feels most valuable.",
-    "links": [],
-    "peopleToTalkTo": [],
-    "focusAreaIds": [
-      "ai-safety"
-    ]
-  },
-  {
-    "id": "80-000-hours-climate-change-problem-profile",
-    "title": "80,000 Hours: Climate change problem profile",
-    "oneLiner": "## First small step read “best ways of working” + note 2 levers you’d be willing to explore. 80,000 Hours",
-    "whenToSuggest": "Use when it aligns with the focus area goals.",
-    "whenNotToSuggest": "Skip if it does not match the person's constraints or interests.",
-    "tags": {
-      "topic": "course",
-      "type": "quick-taste",
-      "commitment": "low",
-      "goodFitIf": [
-        "Open"
-      ]
-    },
-    "firstSmallStep": "read “best ways of working” + note 2 levers you’d be willing to explore. 80,000 Hours",
-    "nextStep": "Take the next action that feels most valuable.",
-    "links": [],
-    "peopleToTalkTo": [],
-    "focusAreaIds": [
-      "aixanimals"
-    ]
-  },
-  {
-    "id": "80-000-hours-job-board-adjacent-roles-lens",
-    "title": "80,000 Hours job board (adjacent roles lens)",
-    "oneLiner": "80,000 Hours job board (adjacent roles lens)",
-    "whenToSuggest": "Use when it aligns with the focus area goals.",
-    "whenNotToSuggest": "Skip if it does not match the person's constraints or interests.",
-    "tags": {
-      "topic": "reading",
-      "type": "quick-taste",
-      "commitment": "low",
-      "goodFitIf": [
-        "Open"
-      ]
-    },
-    "firstSmallStep": "Review the linked resources.",
-    "nextStep": "Take the next action that feels most valuable.",
-    "links": [],
-    "peopleToTalkTo": [],
-    "focusAreaIds": [
-      "aixanimals"
-    ]
-  },
-  {
-    "id": "ace-the-impacts-of-ai-on-animal-advocacy",
-    "title": "ACE: “The impacts of AI on animal advocacy”",
-    "oneLiner": "ACE: “The impacts of AI on animal advocacy”",
-    "whenToSuggest": "Use when it aligns with the focus area goals.",
-    "whenNotToSuggest": "Skip if it does not match the person's constraints or interests.",
-    "tags": {
-      "topic": "reading",
-      "type": "quick-taste",
-      "commitment": "low",
-      "goodFitIf": [
-        "Open"
-      ]
-    },
-    "firstSmallStep": "Review the linked resources.",
-    "nextStep": "Take the next action that feels most valuable.",
-    "links": [],
-    "peopleToTalkTo": [],
-    "focusAreaIds": [
-      "aixanimals"
-    ]
-  },
-  {
-    "id": "ai-animals-fellowship-8-week-remote",
-    "title": "AI×Animals Fellowship (8-week, remote)",
-    "oneLiner": "AI×Animals Fellowship (8-week, remote)",
-    "whenToSuggest": "Use when it aligns with the focus area goals.",
-    "whenNotToSuggest": "Skip if it does not match the person's constraints or interests.",
-    "tags": {
-      "topic": "reading",
-      "type": "quick-taste",
-      "commitment": "low",
-      "goodFitIf": [
-        "Open"
-      ]
-    },
-    "firstSmallStep": "Review the linked resources.",
-    "nextStep": "Take the next action that feels most valuable.",
-    "links": [],
-    "peopleToTalkTo": [],
-    "focusAreaIds": [
-      "aixanimals"
-    ]
-  },
-  {
-    "id": "animal-advocacy-careers-job-board-data-tech-roles-org-landscape",
-    "title": "Animal Advocacy Careers job board (data/tech roles + org landscape)",
-    "oneLiner": "Animal Advocacy Careers job board (data/tech roles + org landscape)",
-    "whenToSuggest": "Use when it aligns with the focus area goals.",
-    "whenNotToSuggest": "Skip if it does not match the person's constraints or interests.",
-    "tags": {
-      "topic": "reading",
-      "type": "quick-taste",
-      "commitment": "low",
-      "goodFitIf": [
-        "Open"
-      ]
-    },
-    "firstSmallStep": "Review the linked resources.",
-    "nextStep": "Take the next action that feels most valuable.",
-    "links": [],
-    "peopleToTalkTo": [],
-    "focusAreaIds": [
-      "aixanimals"
-    ]
-  },
-  {
-    "id": "charity-entrepreneurship-incubation-program",
-    "title": "Charity Entrepreneurship Incubation Program",
-    "oneLiner": "## First small step read the program flow + apply if it fits your timeline. (CE) people who need action early, want quick proof-of-fit, or…",
-    "whenToSuggest": "Use when it aligns with the focus area goals.",
-    "whenNotToSuggest": "Skip if it does not match the person's constraints or interests.",
-    "tags": {
-      "topic": "program",
-      "type": "quick-taste",
-      "commitment": "high",
-      "goodFitIf": [
-        "Selective + requires relocation (at least some in-person component)"
-      ]
-    },
-    "firstSmallStep": "read the program flow + apply if it fits your timeline. (CE)\npeople who need action early, want quick proof-of-fit, or need help bridging theory → concrete.",
-    "nextStep": "Take the next action that feels most valuable.",
-    "links": [],
-    "peopleToTalkTo": [],
-    "focusAreaIds": [
-      "aixanimals"
-    ]
-  },
-  {
-    "id": "ea-opportunities-fellowships-programs-projects-that-arent-jobs",
-    "title": "EA Opportunities (fellowships/programs/projects that aren’t “jobs”)",
-    "oneLiner": "## First small step people who need action to stay motivated, want quick proof-of-fit, or need a push past impostor syndrome.",
-    "whenToSuggest": "Use when it aligns with the focus area goals.",
-    "whenNotToSuggest": "Skip if it does not match the person's constraints or interests.",
-    "tags": {
-      "topic": "reading",
-      "type": "quick-taste",
-      "commitment": "low",
-      "goodFitIf": [
-        "Open"
-      ]
-    },
-    "firstSmallStep": "\npeople who need action to stay motivated, want quick proof-of-fit, or need a push past impostor syndrome.",
-    "nextStep": "Take the next action that feels most valuable.",
-    "links": [],
-    "peopleToTalkTo": [],
-    "focusAreaIds": [
-      "aixanimals"
-    ]
-  },
-  {
-    "id": "faunalytics-ai-and-animal-advocacy-survey-style",
-    "title": "Faunalytics: “AI and Animal Advocacy” (survey-style)",
-    "oneLiner": "Faunalytics: “AI and Animal Advocacy” (survey-style)",
-    "whenToSuggest": "Use when it aligns with the focus area goals.",
-    "whenNotToSuggest": "Skip if it does not match the person's constraints or interests.",
-    "tags": {
-      "topic": "reading",
-      "type": "quick-taste",
-      "commitment": "low",
-      "goodFitIf": [
-        "Open"
-      ]
-    },
-    "firstSmallStep": "Review the linked resources.",
-    "nextStep": "Take the next action that feels most valuable.",
-    "links": [],
-    "peopleToTalkTo": [],
-    "focusAreaIds": [
-      "aixanimals"
-    ]
-  },
-  {
-    "id": "faunalytics-volunteering-ai-tooling-research-support-lane",
-    "title": "Faunalytics volunteering (AI/tooling/research support lane)",
-    "oneLiner": "Faunalytics volunteering (AI/tooling/research support lane)",
-    "whenToSuggest": "Use when it aligns with the focus area goals.",
-    "whenNotToSuggest": "Skip if it does not match the person's constraints or interests.",
-    "tags": {
-      "topic": "reading",
-      "type": "quick-taste",
-      "commitment": "low",
-      "goodFitIf": [
-        "Open"
-      ]
-    },
-    "firstSmallStep": "Review the linked resources.",
-    "nextStep": "Take the next action that feels most valuable.",
-    "links": [],
-    "peopleToTalkTo": [],
-    "focusAreaIds": [
-      "aixanimals"
-    ]
-  },
-  {
-    "id": "felidae-conservation-fund-volunteer-ai-ml-specialist-camera-imagery",
-    "title": "Felidae Conservation Fund: Volunteer AI/ML specialist (camera imagery)",
-    "oneLiner": "Felidae Conservation Fund: Volunteer AI/ML specialist (camera imagery)",
-    "whenToSuggest": "Use when it aligns with the focus area goals.",
-    "whenNotToSuggest": "Skip if it does not match the person's constraints or interests.",
-    "tags": {
-      "topic": "reading",
-      "type": "quick-taste",
-      "commitment": "low",
-      "goodFitIf": [
-        "Open"
-      ]
-    },
-    "firstSmallStep": "Review the linked resources.",
-    "nextStep": "Take the next action that feels most valuable.",
-    "links": [],
-    "peopleToTalkTo": [],
-    "focusAreaIds": [
-      "aixanimals"
-    ]
-  },
-  {
-    "id": "founders-pledge-climate-fund-climate-change-fund-via-gwwc-page",
-    "title": "Founders Pledge Climate Fund / Climate Change Fund (via GWWC page)",
-    "oneLiner": "## First small step skim the executive summary + decide whether “giving” is a satisfying lever for them. Founders Pledge+2Giving What We…",
-    "whenToSuggest": "Use when it aligns with the focus area goals.",
-    "whenNotToSuggest": "Skip if it does not match the person's constraints or interests.",
-    "tags": {
-      "topic": "project",
-      "type": "quick-taste",
-      "commitment": "low",
-      "goodFitIf": [
-        "Open"
-      ]
-    },
-    "firstSmallStep": "skim the executive summary + decide whether “giving” is a satisfying lever for them. Founders Pledge+2Giving What We Can+2",
-    "nextStep": "Take the next action that feels most valuable.",
-    "links": [],
-    "peopleToTalkTo": [],
-    "focusAreaIds": [
-      "aixanimals"
-    ]
-  },
-  {
-    "id": "futurekind-ai-fellowship-12-week",
-    "title": "Futurekind AI Fellowship (12-week)",
-    "oneLiner": "Futurekind AI Fellowship (12-week)",
-    "whenToSuggest": "Use when it aligns with the focus area goals.",
-    "whenNotToSuggest": "Skip if it does not match the person's constraints or interests.",
-    "tags": {
-      "topic": "reading",
-      "type": "quick-taste",
-      "commitment": "low",
-      "goodFitIf": [
-        "Open"
-      ]
-    },
-    "firstSmallStep": "Review the linked resources.",
-    "nextStep": "Take the next action that feels most valuable.",
-    "links": [],
-    "peopleToTalkTo": [],
-    "focusAreaIds": [
-      "aixanimals"
-    ]
-  },
-  {
-    "id": "givewell-top-charities-top-charities-fund",
-    "title": "GiveWell top charities / Top Charities Fund",
-    "oneLiner": "## First small step read the top charities page; donate to Top Charities Fund or pick a charity. (GiveWell)",
-    "whenToSuggest": "Use when it aligns with the focus area goals.",
-    "whenNotToSuggest": "Skip if it does not match the person's constraints or interests.",
-    "tags": {
-      "topic": "project",
-      "type": "quick-taste",
-      "commitment": "low",
-      "goodFitIf": [
-        "Open"
-      ]
-    },
-    "firstSmallStep": "read the top charities page; donate to Top Charities Fund or pick a charity. (GiveWell)",
-    "nextStep": "Take the next action that feels most valuable.",
-    "links": [],
-    "peopleToTalkTo": [],
-    "focusAreaIds": [
-      "aixanimals"
-    ]
-  },
-  {
-    "id": "giving-green-effective-climate-giving",
-    "title": "Giving Green (effective climate giving)",
-    "oneLiner": "## First small step read the current “Top Climate Nonprofits” page; donate if that’s part of their plan. Giving Green+1",
-    "whenToSuggest": "Use when it aligns with the focus area goals.",
-    "whenNotToSuggest": "Skip if it does not match the person's constraints or interests.",
-    "tags": {
-      "topic": "project",
-      "type": "quick-taste",
-      "commitment": "low",
-      "goodFitIf": [
-        "Open"
-      ]
-    },
-    "firstSmallStep": "read the current “Top Climate Nonprofits” page; donate if that’s part of their plan. Giving Green+1",
-    "nextStep": "Take the next action that feels most valuable.",
-    "links": [],
-    "peopleToTalkTo": [],
-    "focusAreaIds": [
-      "aixanimals"
-    ]
-  },
-  {
-    "id": "giving-what-we-can-10-pledge",
-    "title": "Giving What We Can: 10% Pledge",
-    "oneLiner": "## First small step take the pledge (or start with a smaller % if that’s what fits). (Giving What We Can)",
-    "whenToSuggest": "Use when it aligns with the focus area goals.",
-    "whenNotToSuggest": "Skip if it does not match the person's constraints or interests.",
-    "tags": {
-      "topic": "project",
-      "type": "quick-taste",
-      "commitment": "low",
-      "goodFitIf": [
-        "Open"
-      ]
-    },
-    "firstSmallStep": "take the pledge (or start with a smaller % if that’s what fits). (Giving What We Can)",
-    "nextStep": "Take the next action that feels most valuable.",
-    "links": [],
-    "peopleToTalkTo": [],
-    "focusAreaIds": [
-      "aixanimals"
-    ]
-  },
-  {
-    "id": "giving-what-we-can-global-health-wellbeing-fund",
-    "title": "Giving What We Can: Global Health & Wellbeing Fund",
-    "oneLiner": "## First small step donate once; it’s allocated periodically using evaluator input (incl. GiveWell). (Giving What We Can)",
-    "whenToSuggest": "Use when it aligns with the focus area goals.",
-    "whenNotToSuggest": "Skip if it does not match the person's constraints or interests.",
-    "tags": {
-      "topic": "project",
-      "type": "quick-taste",
-      "commitment": "low",
-      "goodFitIf": [
-        "Open"
-      ]
-    },
-    "firstSmallStep": "donate once; it’s allocated periodically using evaluator input (incl. GiveWell). (Giving What We Can)",
-    "nextStep": "Take the next action that feels most valuable.",
-    "links": [],
-    "peopleToTalkTo": [],
-    "focusAreaIds": [
-      "aixanimals"
-    ]
-  },
-  {
-    "id": "org-facing-scoping-note-using-an-rp-ai-for-animals-angle-externally-useful",
-    "title": "“Org-facing scoping note” using an RP AI-for-animals angle (externally useful)",
-    "oneLiner": "“Org-facing scoping note” using an RP AI-for-animals angle (externally useful)",
-    "whenToSuggest": "Use when it aligns with the focus area goals.",
-    "whenNotToSuggest": "Skip if it does not match the person's constraints or interests.",
-    "tags": {
-      "topic": "reading",
-      "type": "quick-taste",
-      "commitment": "low",
-      "goodFitIf": [
-        "Open"
-      ]
-    },
-    "firstSmallStep": "Review the linked resources.",
-    "nextStep": "Take the next action that feels most valuable.",
-    "links": [],
-    "peopleToTalkTo": [],
-    "focusAreaIds": [
-      "aixanimals"
-    ]
-  },
-  {
-    "id": "probably-good-climate-careers-guide",
-    "title": "Probably Good: Climate careers guide",
-    "oneLiner": "## First small step skim the “recommended jobs” list and circle 2 role-shapes to test. Probably Good+1",
-    "whenToSuggest": "Use when it aligns with the focus area goals.",
-    "whenNotToSuggest": "Skip if it does not match the person's constraints or interests.",
-    "tags": {
-      "topic": "course",
-      "type": "quick-taste",
-      "commitment": "low",
-      "goodFitIf": [
-        "Open"
-      ]
-    },
-    "firstSmallStep": "skim the “recommended jobs” list and circle 2 role-shapes to test. Probably Good+1",
-    "nextStep": "Take the next action that feels most valuable.",
-    "links": [],
-    "peopleToTalkTo": [],
-    "focusAreaIds": [
-      "aixanimals"
-    ]
-  },
-  {
-    "id": "rethink-priorities-ai-for-human-wildlife-conflict-mitigations",
-    "title": "Rethink Priorities: AI for human–wildlife conflict mitigations",
-    "oneLiner": "Rethink Priorities: AI for human–wildlife conflict mitigations",
-    "whenToSuggest": "Use when it aligns with the focus area goals.",
-    "whenNotToSuggest": "Skip if it does not match the person's constraints or interests.",
-    "tags": {
-      "topic": "reading",
-      "type": "quick-taste",
-      "commitment": "low",
-      "goodFitIf": [
-        "Open"
-      ]
-    },
-    "firstSmallStep": "Review the linked resources.",
-    "nextStep": "Take the next action that feels most valuable.",
-    "links": [],
-    "peopleToTalkTo": [],
-    "focusAreaIds": [
-      "aixanimals"
-    ]
-  },
-  {
-    "id": "rethink-priorities-how-ai-is-affecting-farmed-aquatic-animals-series",
-    "title": "Rethink Priorities: “How AI is affecting farmed aquatic animals” (series)",
-    "oneLiner": "Rethink Priorities: “How AI is affecting farmed aquatic animals” (series)",
-    "whenToSuggest": "Use when it aligns with the focus area goals.",
-    "whenNotToSuggest": "Skip if it does not match the person's constraints or interests.",
-    "tags": {
-      "topic": "reading",
-      "type": "quick-taste",
-      "commitment": "low",
-      "goodFitIf": [
-        "Open"
-      ]
-    },
-    "firstSmallStep": "Review the linked resources.",
-    "nextStep": "Take the next action that feels most valuable.",
-    "links": [],
-    "peopleToTalkTo": [],
-    "focusAreaIds": [
-      "aixanimals"
-    ]
-  },
-  {
-    "id": "terra-do-fellowship",
-    "title": "Terra.do fellowship",
-    "oneLiner": "## First small step look at syllabus + next cohort timing and see if it fits their timeline. Terra+1",
-    "whenToSuggest": "Use when it aligns with the focus area goals.",
-    "whenNotToSuggest": "Skip if it does not match the person's constraints or interests.",
-    "tags": {
-      "topic": "program",
-      "type": "quick-taste",
-      "commitment": "medium",
-      "goodFitIf": [
-        "Open (but time-consuming)"
-      ]
-    },
-    "firstSmallStep": "look at syllabus + next cohort timing and see if it fits their timeline. Terra+1",
-    "nextStep": "Take the next action that feels most valuable.",
-    "links": [],
-    "peopleToTalkTo": [],
-    "focusAreaIds": [
-      "aixanimals"
-    ]
-  },
-  {
-    "id": "the-life-you-can-save-recommended-charities",
-    "title": "The Life You Can Save: recommended charities",
-    "oneLiner": "## First small step pick one recommended charity and read its “why recommended” page. (The Life You Can Save)",
-    "whenToSuggest": "Use when it aligns with the focus area goals.",
-    "whenNotToSuggest": "Skip if it does not match the person's constraints or interests.",
-    "tags": {
-      "topic": "project",
-      "type": "quick-taste",
-      "commitment": "low",
-      "goodFitIf": [
-        "Open"
-      ]
-    },
-    "firstSmallStep": "pick one recommended charity and read its “why recommended” page. (The Life You Can Save)",
-    "nextStep": "Take the next action that feels most valuable.",
-    "links": [],
-    "peopleToTalkTo": [],
-    "focusAreaIds": [
-      "aixanimals"
-    ]
-  },
-  {
-    "id": "work-on-climate-starter-packs-community",
-    "title": "Work on Climate (Starter Packs + community)",
-    "oneLiner": "## First small step pick one Starter Pack (e.g., climate policy / solutions) and do the first 1–2 items. Work on Climate+1",
+    "oneLiner": "Broader than jobs: fellowships, programs, events, volunteering—useful to find “entry ramps.”",
     "whenToSuggest": "Use when it aligns with the focus area goals.",
     "whenNotToSuggest": "Skip if it does not match the person's constraints or interests.",
     "tags": {
       "topic": "community",
-      "type": "quick-taste",
-      "commitment": "low",
-      "goodFitIf": [
-        "Open"
-      ]
-    },
-    "firstSmallStep": "pick one Starter Pack (e.g., climate policy / solutions) and do the first 1–2 items. Work on Climate+1",
-    "nextStep": "Take the next action that feels most valuable.",
-    "links": [],
-    "peopleToTalkTo": [],
-    "focusAreaIds": [
-      "aixanimals"
-    ]
-  },
-  {
-    "id": "80-000-hours-factory-farming-problem-profile",
-    "title": "80,000 Hours: Factory farming problem profile",
-    "oneLiner": "80,000 Hours: Factory farming problem profile",
-    "whenToSuggest": "Use when it aligns with the focus area goals.",
-    "whenNotToSuggest": "Skip if it does not match the person's constraints or interests.",
-    "tags": {
-      "topic": "reading",
-      "type": "quick-taste",
-      "commitment": "low",
-      "goodFitIf": [
-        "Open"
-      ]
+      "type": "job-board",
+      "commitment": "Tiny",
+      "goodFitIf": []
     },
     "firstSmallStep": "Review the linked resources.",
     "nextStep": "Take the next action that feels most valuable.",
-    "links": [],
+    "links": [
+      {
+        "label": "https://80000hours.org/career-reviews/ai-safety-researcher/",
+        "url": "https://80000hours.org/career-reviews/ai-safety-researcher/"
+      },
+      {
+        "label": "https://bluedot.org/courses",
+        "url": "https://bluedot.org/courses"
+      },
+      {
+        "label": "https://jobs.80000hours.org/",
+        "url": "https://jobs.80000hours.org/"
+      },
+      {
+        "label": "https://matsprogram.org/",
+        "url": "https://matsprogram.org/"
+      },
+      {
+        "label": "https://matsprogram.org/apply",
+        "url": "https://matsprogram.org/apply"
+      },
+      {
+        "label": "https://sparai.org/",
+        "url": "https://sparai.org/"
+      },
+      {
+        "label": "https://sparai.org/projects/sp26/",
+        "url": "https://sparai.org/projects/sp26/"
+      },
+      {
+        "label": "https://www.aisafety.com/jobs",
+        "url": "https://www.aisafety.com/jobs"
+      },
+      {
+        "label": "https://www.alignmentforum.org/posts/Zmwkz2BMvuFFR8bi3/agi-safety-fundamentals-curriculum-and-application",
+        "url": "https://www.alignmentforum.org/posts/Zmwkz2BMvuFFR8bi3/agi-safety-fundamentals-curriculum-and-application"
+      },
+      {
+        "label": "https://www.effectivealtruism.org/opportunities",
+        "url": "https://www.effectivealtruism.org/opportunities"
+      },
+      {
+        "label": "https://www.youtube.com/playlist?list=PLw9kjlF6lD5UqaZvMTbhJB8sV-yuXu5eW",
+        "url": "https://www.youtube.com/playlist?list=PLw9kjlF6lD5UqaZvMTbhJB8sV-yuXu5eW"
+      },
+      {
+        "label": "https://www.youtube.com/watch?v=pYXy-A4siMw",
+        "url": "https://www.youtube.com/watch?v=pYXy-A4siMw"
+      }
+    ],
     "peopleToTalkTo": [],
     "focusAreaIds": [
-      "animal-welfare"
+      "ai-safety"
     ]
   },
   {
-    "id": "80-000-hours-podcast-lewis-bollard-on-factory-farming-advocacy",
-    "title": "80,000 Hours podcast: Lewis Bollard on factory farming advocacy",
-    "oneLiner": "80,000 Hours podcast: Lewis Bollard on factory farming advocacy",
+    "id": "ai-safety-card-07",
+    "title": "MATS Program (Mentored AI Safety Training)",
+    "oneLiner": "Intensive mentored research training; a serious step for people aiming at research entry.",
     "whenToSuggest": "Use when it aligns with the focus area goals.",
     "whenNotToSuggest": "Skip if it does not match the person's constraints or interests.",
     "tags": {
-      "topic": "reading",
-      "type": "quick-taste",
-      "commitment": "low",
-      "goodFitIf": [
-        "Open"
-      ]
+      "topic": "program",
+      "type": "hands-on",
+      "commitment": "Heavy (full-time / relocation)",
+      "goodFitIf": []
     },
     "firstSmallStep": "Review the linked resources.",
     "nextStep": "Take the next action that feels most valuable.",
-    "links": [],
+    "links": [
+      {
+        "label": "https://matsprogram.org/",
+        "url": "https://matsprogram.org/"
+      },
+      {
+        "label": "https://matsprogram.org/apply",
+        "url": "https://matsprogram.org/apply"
+      }
+    ],
     "peopleToTalkTo": [],
     "focusAreaIds": [
-      "animal-welfare"
+      "ai-safety"
     ]
   },
   {
-    "id": "80-000-hours-wild-animal-welfare-problem-profile",
-    "title": "80,000 Hours: Wild animal welfare problem profile",
-    "oneLiner": "80,000 Hours: Wild animal welfare problem profile",
+    "id": "ai-safety-card-01",
+    "title": "Robert Miles — Intro to AI Safety, Remastered (YouTube)",
+    "oneLiner": "A fast, widely-shared introduction that helps someone test whether AI safety is emotionally/intellectually compelling.",
     "whenToSuggest": "Use when it aligns with the focus area goals.",
     "whenNotToSuggest": "Skip if it does not match the person's constraints or interests.",
     "tags": {
-      "topic": "reading",
+      "topic": "course",
       "type": "quick-taste",
-      "commitment": "low",
-      "goodFitIf": [
-        "Open"
-      ]
+      "commitment": "Tiny (≤1h)",
+      "goodFitIf": []
     },
     "firstSmallStep": "Review the linked resources.",
     "nextStep": "Take the next action that feels most valuable.",
-    "links": [],
+    "links": [
+      {
+        "label": "https://www.youtube.com/watch?v=pYXy-A4siMw",
+        "url": "https://www.youtube.com/watch?v=pYXy-A4siMw"
+      }
+    ],
     "peopleToTalkTo": [],
     "focusAreaIds": [
-      "animal-welfare"
+      "ai-safety"
     ]
   },
   {
-    "id": "animal-advocacy-careers-career-advising",
-    "title": "Animal Advocacy Careers: Career advising",
-    "oneLiner": "Animal Advocacy Careers: Career advising",
+    "id": "ai-safety-card-06",
+    "title": "SPAR — Supervised Program for Alignment Research",
+    "oneLiner": "Part-time, remote, mentored projects designed to produce work that contributes to AI alignment/safety—good “measurable-good” project pathway.",
     "whenToSuggest": "Use when it aligns with the focus area goals.",
     "whenNotToSuggest": "Skip if it does not match the person's constraints or interests.",
     "tags": {
-      "topic": "reading",
-      "type": "quick-taste",
-      "commitment": "low",
-      "goodFitIf": [
-        "Open"
-      ]
+      "topic": "program",
+      "type": "hands-on",
+      "commitment": "Light–Medium",
+      "goodFitIf": []
     },
     "firstSmallStep": "Review the linked resources.",
     "nextStep": "Take the next action that feels most valuable.",
-    "links": [],
+    "links": [
+      {
+        "label": "https://sparai.org/",
+        "url": "https://sparai.org/"
+      }
+    ],
     "peopleToTalkTo": [],
     "focusAreaIds": [
-      "animal-welfare"
+      "ai-safety"
     ]
   },
   {
-    "id": "animal-advocacy-careers-intro-to-animal-advocacy-online-course",
-    "title": "Animal Advocacy Careers: Intro to Animal Advocacy Online Course",
-    "oneLiner": "Animal Advocacy Careers: Intro to Animal Advocacy Online Course",
-    "whenToSuggest": "Use when it aligns with the focus area goals.",
-    "whenNotToSuggest": "Skip if it does not match the person's constraints or interests.",
-    "tags": {
-      "topic": "reading",
-      "type": "quick-taste",
-      "commitment": "low",
-      "goodFitIf": [
-        "Open"
-      ]
-    },
-    "firstSmallStep": "Review the linked resources.",
-    "nextStep": "Take the next action that feels most valuable.",
-    "links": [],
-    "peopleToTalkTo": [],
-    "focusAreaIds": [
-      "animal-welfare"
-    ]
-  },
-  {
-    "id": "animal-advocacy-careers-job-board",
-    "title": "Animal Advocacy Careers: Job board",
-    "oneLiner": "Animal Advocacy Careers: Job board",
-    "whenToSuggest": "Use when it aligns with the focus area goals.",
-    "whenNotToSuggest": "Skip if it does not match the person's constraints or interests.",
-    "tags": {
-      "topic": "reading",
-      "type": "quick-taste",
-      "commitment": "low",
-      "goodFitIf": [
-        "Open"
-      ]
-    },
-    "firstSmallStep": "Review the linked resources.",
-    "nextStep": "Take the next action that feels most valuable.",
-    "links": [],
-    "peopleToTalkTo": [],
-    "focusAreaIds": [
-      "animal-welfare"
-    ]
-  },
-  {
-    "id": "animal-advocacy-careers-volunteer-opportunities",
-    "title": "Animal Advocacy Careers: Volunteer opportunities",
-    "oneLiner": "Animal Advocacy Careers: Volunteer opportunities",
-    "whenToSuggest": "Use when it aligns with the focus area goals.",
-    "whenNotToSuggest": "Skip if it does not match the person's constraints or interests.",
-    "tags": {
-      "topic": "reading",
-      "type": "quick-taste",
-      "commitment": "low",
-      "goodFitIf": [
-        "Open"
-      ]
-    },
-    "firstSmallStep": "Review the linked resources.",
-    "nextStep": "Take the next action that feels most valuable.",
-    "links": [],
-    "peopleToTalkTo": [],
-    "focusAreaIds": [
-      "animal-welfare"
-    ]
-  },
-  {
-    "id": "animal-charity-evaluators-giving-recommendations",
-    "title": "Animal Charity Evaluators: Giving recommendations",
-    "oneLiner": "Animal Charity Evaluators: Giving recommendations",
-    "whenToSuggest": "Use when it aligns with the focus area goals.",
-    "whenNotToSuggest": "Skip if it does not match the person's constraints or interests.",
-    "tags": {
-      "topic": "reading",
-      "type": "quick-taste",
-      "commitment": "low",
-      "goodFitIf": [
-        "Open"
-      ]
-    },
-    "firstSmallStep": "Review the linked resources.",
-    "nextStep": "Take the next action that feels most valuable.",
-    "links": [],
-    "peopleToTalkTo": [],
-    "focusAreaIds": [
-      "animal-welfare"
-    ]
-  },
-  {
-    "id": "animal-welfare-80-000-hours-job-board",
-    "title": "80,000 Hours: Job board",
-    "oneLiner": "80,000 Hours: Job board",
-    "whenToSuggest": "Use when it aligns with the focus area goals.",
-    "whenNotToSuggest": "Skip if it does not match the person's constraints or interests.",
-    "tags": {
-      "topic": "reading",
-      "type": "quick-taste",
-      "commitment": "low",
-      "goodFitIf": [
-        "Open"
-      ]
-    },
-    "firstSmallStep": "Review the linked resources.",
-    "nextStep": "Take the next action that feels most valuable.",
-    "links": [],
-    "peopleToTalkTo": [],
-    "focusAreaIds": [
-      "animal-welfare"
-    ]
-  },
-  {
-    "id": "animal-welfare-ea-opportunities-board",
-    "title": "EA Opportunities board",
-    "oneLiner": "EA Opportunities board",
-    "whenToSuggest": "Use when it aligns with the focus area goals.",
-    "whenNotToSuggest": "Skip if it does not match the person's constraints or interests.",
-    "tags": {
-      "topic": "reading",
-      "type": "quick-taste",
-      "commitment": "low",
-      "goodFitIf": [
-        "Open"
-      ]
-    },
-    "firstSmallStep": "Review the linked resources.",
-    "nextStep": "Take the next action that feels most valuable.",
-    "links": [],
-    "peopleToTalkTo": [],
-    "focusAreaIds": [
-      "animal-welfare"
-    ]
-  },
-  {
-    "id": "ea-funds-animal-welfare-fund",
-    "title": "EA Funds: Animal Welfare Fund",
-    "oneLiner": "EA Funds: Animal Welfare Fund",
-    "whenToSuggest": "Use when it aligns with the focus area goals.",
-    "whenNotToSuggest": "Skip if it does not match the person's constraints or interests.",
-    "tags": {
-      "topic": "reading",
-      "type": "quick-taste",
-      "commitment": "low",
-      "goodFitIf": [
-        "Open"
-      ]
-    },
-    "firstSmallStep": "Review the linked resources.",
-    "nextStep": "Take the next action that feels most valuable.",
-    "links": [],
-    "peopleToTalkTo": [],
-    "focusAreaIds": [
-      "animal-welfare"
-    ]
-  },
-  {
-    "id": "faunalytics-volunteering",
-    "title": "Faunalytics volunteering",
-    "oneLiner": "Faunalytics volunteering",
-    "whenToSuggest": "Use when it aligns with the focus area goals.",
-    "whenNotToSuggest": "Skip if it does not match the person's constraints or interests.",
-    "tags": {
-      "topic": "reading",
-      "type": "quick-taste",
-      "commitment": "low",
-      "goodFitIf": [
-        "Open"
-      ]
-    },
-    "firstSmallStep": "Review the linked resources.",
-    "nextStep": "Take the next action that feels most valuable.",
-    "links": [],
-    "peopleToTalkTo": [],
-    "focusAreaIds": [
-      "animal-welfare"
-    ]
-  },
-  {
-    "id": "jacy-reese-intro-to-effective-animal-advocacy-youtube",
-    "title": "Jacy Reese: “Intro to effective animal advocacy” (YouTube)",
-    "oneLiner": "Jacy Reese: “Intro to effective animal advocacy” (YouTube)",
-    "whenToSuggest": "Use when it aligns with the focus area goals.",
-    "whenNotToSuggest": "Skip if it does not match the person's constraints or interests.",
-    "tags": {
-      "topic": "reading",
-      "type": "quick-taste",
-      "commitment": "low",
-      "goodFitIf": [
-        "Open"
-      ]
-    },
-    "firstSmallStep": "Review the linked resources.",
-    "nextStep": "Take the next action that feels most valuable.",
-    "links": [],
-    "peopleToTalkTo": [],
-    "focusAreaIds": [
-      "animal-welfare"
-    ]
-  },
-  {
-    "id": "80-000-hours-biorisk-research-strategy-and-policy-career-review",
-    "title": "80,000 Hours: Biorisk research, strategy, and policy (career review)",
-    "oneLiner": "80,000 Hours: Biorisk research, strategy, and policy (career review)",
-    "whenToSuggest": "Use when it aligns with the focus area goals.",
-    "whenNotToSuggest": "Skip if it does not match the person's constraints or interests.",
-    "tags": {
-      "topic": "reading",
-      "type": "quick-taste",
-      "commitment": "low",
-      "goodFitIf": [
-        "Open"
-      ]
-    },
-    "firstSmallStep": "Review the linked resources.",
-    "nextStep": "Take the next action that feels most valuable.",
-    "links": [],
-    "peopleToTalkTo": [],
-    "focusAreaIds": [
-      "biosecurity"
-    ]
-  },
-  {
-    "id": "80-000-hours-biosecurity-materials-topic-archive-podcasts",
-    "title": "80,000 Hours: Biosecurity materials (topic archive / podcasts)",
-    "oneLiner": "80,000 Hours: Biosecurity materials (topic archive / podcasts)",
-    "whenToSuggest": "Use when it aligns with the focus area goals.",
-    "whenNotToSuggest": "Skip if it does not match the person's constraints or interests.",
-    "tags": {
-      "topic": "reading",
-      "type": "quick-taste",
-      "commitment": "low",
-      "goodFitIf": [
-        "Open"
-      ]
-    },
-    "firstSmallStep": "Review the linked resources.",
-    "nextStep": "Take the next action that feels most valuable.",
-    "links": [],
-    "peopleToTalkTo": [],
-    "focusAreaIds": [
-      "biosecurity"
-    ]
-  },
-  {
-    "id": "80-000-hours-job-board-filter-to-biosecurity-pandemic-preparedness",
-    "title": "80,000 Hours Job Board (filter to biosecurity & pandemic preparedness)",
-    "oneLiner": "80,000 Hours Job Board (filter to biosecurity & pandemic preparedness)",
-    "whenToSuggest": "Use when it aligns with the focus area goals.",
-    "whenNotToSuggest": "Skip if it does not match the person's constraints or interests.",
-    "tags": {
-      "topic": "reading",
-      "type": "quick-taste",
-      "commitment": "low",
-      "goodFitIf": [
-        "Open"
-      ]
-    },
-    "firstSmallStep": "Review the linked resources.",
-    "nextStep": "Take the next action that feels most valuable.",
-    "links": [],
-    "peopleToTalkTo": [],
-    "focusAreaIds": [
-      "biosecurity"
-    ]
-  },
-  {
-    "id": "bluedot-impact-biosecurity-course-30h",
-    "title": "BlueDot Impact: Biosecurity course (~30h)",
-    "oneLiner": "BlueDot Impact: Biosecurity course (~30h)",
-    "whenToSuggest": "Use when it aligns with the focus area goals.",
-    "whenNotToSuggest": "Skip if it does not match the person's constraints or interests.",
-    "tags": {
-      "topic": "reading",
-      "type": "quick-taste",
-      "commitment": "low",
-      "goodFitIf": [
-        "Open"
-      ]
-    },
-    "firstSmallStep": "Review the linked resources.",
-    "nextStep": "Take the next action that feels most valuable.",
-    "links": [],
-    "peopleToTalkTo": [],
-    "focusAreaIds": [
-      "biosecurity"
-    ]
-  },
-  {
-    "id": "ea-opportunities-biosecurity-programs-events-fellowships",
-    "title": "EA Opportunities (biosecurity programs/events/fellowships)",
-    "oneLiner": "EA Opportunities (biosecurity programs/events/fellowships)",
-    "whenToSuggest": "Use when it aligns with the focus area goals.",
-    "whenNotToSuggest": "Skip if it does not match the person's constraints or interests.",
-    "tags": {
-      "topic": "reading",
-      "type": "quick-taste",
-      "commitment": "low",
-      "goodFitIf": [
-        "Open"
-      ]
-    },
-    "firstSmallStep": "Review the linked resources.",
-    "nextStep": "Take the next action that feels most valuable.",
-    "links": [],
-    "peopleToTalkTo": [],
-    "focusAreaIds": [
-      "biosecurity"
-    ]
-  },
-  {
-    "id": "jaime-yassif-reducing-global-catastrophic-biological-risks-youtube",
-    "title": "Jaime Yassif: “Reducing global catastrophic biological risks” (YouTube)",
-    "oneLiner": "Jaime Yassif: “Reducing global catastrophic biological risks” (YouTube)",
-    "whenToSuggest": "Use when it aligns with the focus area goals.",
-    "whenNotToSuggest": "Skip if it does not match the person's constraints or interests.",
-    "tags": {
-      "topic": "reading",
-      "type": "quick-taste",
-      "commitment": "low",
-      "goodFitIf": [
-        "Open"
-      ]
-    },
-    "firstSmallStep": "Review the linked resources.",
-    "nextStep": "Take the next action that feels most valuable.",
-    "links": [],
-    "peopleToTalkTo": [],
-    "focusAreaIds": [
-      "biosecurity"
-    ]
-  },
-  {
-    "id": "oxford-biosecurity-group-obg-remote-part-time-projects",
-    "title": "Oxford Biosecurity Group (OBG): remote part-time projects",
-    "oneLiner": "Oxford Biosecurity Group (OBG): remote part-time projects",
-    "whenToSuggest": "Use when it aligns with the focus area goals.",
-    "whenNotToSuggest": "Skip if it does not match the person's constraints or interests.",
-    "tags": {
-      "topic": "reading",
-      "type": "quick-taste",
-      "commitment": "low",
-      "goodFitIf": [
-        "Open"
-      ]
-    },
-    "firstSmallStep": "Review the linked resources.",
-    "nextStep": "Take the next action that feels most valuable.",
-    "links": [],
-    "peopleToTalkTo": [],
-    "focusAreaIds": [
-      "biosecurity"
-    ]
-  },
-  {
-    "id": "climate-80-000-hours-climate-change-problem-profile",
+    "id": "ai-x-animals-card-02",
     "title": "80,000 Hours: Climate change problem profile",
     "oneLiner": "80,000 Hours: Climate change problem profile",
     "whenToSuggest": "Use when it aligns with the focus area goals.",
     "whenNotToSuggest": "Skip if it does not match the person's constraints or interests.",
     "tags": {
-      "topic": "reading",
+      "topic": "course",
       "type": "quick-taste",
-      "commitment": "low",
-      "goodFitIf": [
-        "Open"
-      ]
+      "commitment": "Tiny–Light",
+      "goodFitIf": []
     },
     "firstSmallStep": "Review the linked resources.",
     "nextStep": "Take the next action that feels most valuable.",
     "links": [],
     "peopleToTalkTo": [],
     "focusAreaIds": [
-      "climate"
+      "ai-x-animals"
     ]
   },
   {
-    "id": "climate-80-000-hours-job-board",
-    "title": "80,000 Hours job board",
-    "oneLiner": "80,000 Hours job board",
+    "id": "ai-x-animals-card-11",
+    "title": "80,000 Hours — Job board",
+    "oneLiner": "Useful second lens: sometimes the best “AI × animals” roles are in adjacent institutions (policy, research orgs, etc.).",
+    "whenToSuggest": "Use when it aligns with the focus area goals.",
+    "whenNotToSuggest": "Skip if it does not match the person's constraints or interests.",
+    "tags": {
+      "topic": "reading",
+      "type": "job-board",
+      "commitment": "Tiny",
+      "goodFitIf": []
+    },
+    "firstSmallStep": "Review the linked resources.",
+    "nextStep": "Take the next action that feels most valuable.",
+    "links": [
+      {
+        "label": "https://jobs.80000hours.org/",
+        "url": "https://jobs.80000hours.org/"
+      }
+    ],
+    "peopleToTalkTo": [],
+    "focusAreaIds": [
+      "ai-x-animals"
+    ]
+  },
+  {
+    "id": "ai-x-animals-card-05",
+    "title": "AI×Animals Fellowship (EA Opportunities) Effective Altruism+1",
+    "oneLiner": "Structured 8-week remote program for careers at the intersection of AI and animal welfare.",
+    "whenToSuggest": "Use when it aligns with the focus area goals.",
+    "whenNotToSuggest": "Skip if it does not match the person's constraints or interests.",
+    "tags": {
+      "topic": "program",
+      "type": "deeper-dive",
+      "commitment": "Medium",
+      "goodFitIf": []
+    },
+    "firstSmallStep": "Review the linked resources.",
+    "nextStep": "Take the next action that feels most valuable.",
+    "links": [
+      {
+        "label": "https://www.effectivealtruism.org/opportunities/recGlnvARNYCIWLxN Effective Altruism",
+        "url": "https://www.effectivealtruism.org/opportunities/recGlnvARNYCIWLxN Effective Altruism"
+      }
+    ],
+    "peopleToTalkTo": [],
+    "focusAreaIds": [
+      "ai-x-animals"
+    ]
+  },
+  {
+    "id": "ai-x-animals-card-10",
+    "title": "Animal Advocacy Careers — Job board Animal Advocacy Careers",
+    "oneLiner": "Best place to see animal-advocacy orgs and spot tech/data roles that could connect to AI-for-animals.",
+    "whenToSuggest": "Use when it aligns with the focus area goals.",
+    "whenNotToSuggest": "Skip if it does not match the person's constraints or interests.",
+    "tags": {
+      "topic": "reading",
+      "type": "job-board",
+      "commitment": "Tiny",
+      "goodFitIf": []
+    },
+    "firstSmallStep": "Review the linked resources.",
+    "nextStep": "Take the next action that feels most valuable.",
+    "links": [
+      {
+        "label": "https://animaladvocacycareers.org/job-board/ Animal Advocacy Careers",
+        "url": "https://animaladvocacycareers.org/job-board/ Animal Advocacy Careers"
+      }
+    ],
+    "peopleToTalkTo": [],
+    "focusAreaIds": [
+      "ai-x-animals"
+    ]
+  },
+  {
+    "id": "ai-x-animals-card-01",
+    "title": "Animal Charity Evaluators — The impacts of AI on animal advocacy Animal Charity Evaluators+1",
+    "oneLiner": "High-level map of where AI can help or harm animal advocacy; a good first “upsides + risks” framing.",
+    "whenToSuggest": "Use when it aligns with the focus area goals.",
+    "whenNotToSuggest": "Skip if it does not match the person's constraints or interests.",
+    "tags": {
+      "topic": "course",
+      "type": "quick-taste",
+      "commitment": "Tiny",
+      "goodFitIf": []
+    },
+    "firstSmallStep": "Review the linked resources.",
+    "nextStep": "Take the next action that feels most valuable.",
+    "links": [
+      {
+        "label": "https://animalcharityevaluators.org/blog/impacts-of-ai-on-animal-advocacy/ Animal Charity Evaluators",
+        "url": "https://animalcharityevaluators.org/blog/impacts-of-ai-on-animal-advocacy/ Animal Charity Evaluators"
+      }
+    ],
+    "peopleToTalkTo": [],
+    "focusAreaIds": [
+      "ai-x-animals"
+    ]
+  },
+  {
+    "id": "ai-x-animals-card-05",
+    "title": "Charity Entrepreneurship Incubation Program",
+    "oneLiner": "## Resources / links - https://80000hours.org/problem-profiles/health-in-poor-countries/ - https://www.charityentrepreneurship.com/ -…",
+    "whenToSuggest": "Use when it aligns with the focus area goals.",
+    "whenNotToSuggest": "Skip if it does not match the person's constraints or interests.",
+    "tags": {
+      "topic": "program",
+      "type": "quick-taste",
+      "commitment": "High",
+      "goodFitIf": []
+    },
+    "firstSmallStep": "Review the linked resources.",
+    "nextStep": "Take the next action that feels most valuable.",
+    "links": [
+      {
+        "label": "https://80000hours.org/problem-profiles/health-in-poor-countries/",
+        "url": "https://80000hours.org/problem-profiles/health-in-poor-countries/"
+      },
+      {
+        "label": "https://www.charityentrepreneurship.com/",
+        "url": "https://www.charityentrepreneurship.com/"
+      },
+      {
+        "label": "https://www.charityentrepreneurship.com/apply",
+        "url": "https://www.charityentrepreneurship.com/apply"
+      },
+      {
+        "label": "https://www.coursera.org/learn/global-health-introduction",
+        "url": "https://www.coursera.org/learn/global-health-introduction"
+      },
+      {
+        "label": "https://www.givewell.org/charities/top-charities",
+        "url": "https://www.givewell.org/charities/top-charities"
+      },
+      {
+        "label": "https://www.givewell.org/how-we-work/our-criteria/cost-effectiveness/cost-effectiveness-models",
+        "url": "https://www.givewell.org/how-we-work/our-criteria/cost-effectiveness/cost-effectiveness-models"
+      },
+      {
+        "label": "https://www.givingwhatwecan.org/charities/global-health-and-wellbeing-fund",
+        "url": "https://www.givingwhatwecan.org/charities/global-health-and-wellbeing-fund"
+      },
+      {
+        "label": "https://www.givingwhatwecan.org/pledge",
+        "url": "https://www.givingwhatwecan.org/pledge"
+      },
+      {
+        "label": "https://www.thelifeyoucansave.org/best-charities/",
+        "url": "https://www.thelifeyoucansave.org/best-charities/"
+      },
+      {
+        "label": "https://www.thelifeyoucansave.org/peter-singers-ted-talk/",
+        "url": "https://www.thelifeyoucansave.org/peter-singers-ted-talk/"
+      },
+      {
+        "label": "https://www.youtube.com/playlist?list=PL8dPuuaLjXtPjQj_LcJ0Zvj-VI3sslJyF",
+        "url": "https://www.youtube.com/playlist?list=PL8dPuuaLjXtPjQj_LcJ0Zvj-VI3sslJyF"
+      },
+      {
+        "label": "https://www.youtube.com/watch?v=_TqabsxdWmo",
+        "url": "https://www.youtube.com/watch?v=_TqabsxdWmo"
+      }
+    ],
+    "peopleToTalkTo": [],
+    "focusAreaIds": [
+      "ai-x-animals"
+    ]
+  },
+  {
+    "id": "ai-x-animals-card-12",
+    "title": "EA Opportunities — browse AI×Animals / animal welfare + AI programs",
+    "oneLiner": "Good for finding programs/projects that are shorter or more structured than a job search.",
+    "whenToSuggest": "Use when it aligns with the focus area goals.",
+    "whenNotToSuggest": "Skip if it does not match the person's constraints or interests.",
+    "tags": {
+      "topic": "community",
+      "type": "job-board",
+      "commitment": "Tiny",
+      "goodFitIf": []
+    },
+    "firstSmallStep": "Review the linked resources.",
+    "nextStep": "Take the next action that feels most valuable.",
+    "links": [
+      {
+        "label": "https://animaladvocacycareers.org/job-board/",
+        "url": "https://animaladvocacycareers.org/job-board/"
+      },
+      {
+        "label": "https://animalcharityevaluators.org/blog/impacts-of-ai-on-animal-advocacy/",
+        "url": "https://animalcharityevaluators.org/blog/impacts-of-ai-on-animal-advocacy/"
+      },
+      {
+        "label": "https://faunalytics.org/ai-and-animal-advocacy/",
+        "url": "https://faunalytics.org/ai-and-animal-advocacy/"
+      },
+      {
+        "label": "https://felidaefund.org/careers",
+        "url": "https://felidaefund.org/careers"
+      },
+      {
+        "label": "https://jobs.80000hours.org/",
+        "url": "https://jobs.80000hours.org/"
+      },
+      {
+        "label": "https://rethinkpriorities.org/research-area/ai-for-human-wildlife-conflict-mitigations/",
+        "url": "https://rethinkpriorities.org/research-area/ai-for-human-wildlife-conflict-mitigations/"
+      },
+      {
+        "label": "https://rethinkpriorities.org/research-area/how-ai-is-affecting-farmed-aquatic-animals-1/",
+        "url": "https://rethinkpriorities.org/research-area/how-ai-is-affecting-farmed-aquatic-animals-1/"
+      },
+      {
+        "label": "https://www.effectivealtruism.org/opportunities",
+        "url": "https://www.effectivealtruism.org/opportunities"
+      },
+      {
+        "label": "https://www.effectivealtruism.org/opportunities/recGlnvARNYCIWLxN",
+        "url": "https://www.effectivealtruism.org/opportunities/recGlnvARNYCIWLxN"
+      },
+      {
+        "label": "https://www.effectivealtruism.org/opportunities/recvMlBPLtTssuEwX",
+        "url": "https://www.effectivealtruism.org/opportunities/recvMlBPLtTssuEwX"
+      },
+      {
+        "label": "https://www.youtube.com/watch?v=rKmKLcYoixs",
+        "url": "https://www.youtube.com/watch?v=rKmKLcYoixs"
+      }
+    ],
+    "peopleToTalkTo": [],
+    "focusAreaIds": [
+      "ai-x-animals"
+    ]
+  },
+  {
+    "id": "ai-x-animals-card-03",
+    "title": "Faunalytics — AI and Animal Advocacy Faunalytics",
+    "oneLiner": "“How advocates already use AI” and what adoption looks like—useful for reality-checking.",
+    "whenToSuggest": "Use when it aligns with the focus area goals.",
+    "whenNotToSuggest": "Skip if it does not match the person's constraints or interests.",
+    "tags": {
+      "topic": "course",
+      "type": "quick-taste",
+      "commitment": "Tiny",
+      "goodFitIf": []
+    },
+    "firstSmallStep": "Review the linked resources.",
+    "nextStep": "Take the next action that feels most valuable.",
+    "links": [
+      {
+        "label": "https://faunalytics.org/ai-and-animal-advocacy/ Faunalytics",
+        "url": "https://faunalytics.org/ai-and-animal-advocacy/ Faunalytics"
+      }
+    ],
+    "peopleToTalkTo": [],
+    "focusAreaIds": [
+      "ai-x-animals"
+    ]
+  },
+  {
+    "id": "ai-x-animals-card-09",
+    "title": "Faunalytics — Volunteer Faunalytics",
+    "oneLiner": "Contribute to work that supports animal advocates; good if your contribution can be directly used (analysis, tooling, research support).",
+    "whenToSuggest": "Use when it aligns with the focus area goals.",
+    "whenNotToSuggest": "Skip if it does not match the person's constraints or interests.",
+    "tags": {
+      "topic": "project",
+      "type": "hands-on",
+      "commitment": "Light–Medium",
+      "goodFitIf": []
+    },
+    "firstSmallStep": "Review the linked resources.",
+    "nextStep": "Take the next action that feels most valuable.",
+    "links": [],
+    "peopleToTalkTo": [],
+    "focusAreaIds": [
+      "ai-x-animals"
+    ]
+  },
+  {
+    "id": "ai-x-animals-card-07",
+    "title": "Felidae Conservation Fund — Volunteer AI/ML specialist (remote) Felidae Conservation Fund+1",
+    "oneLiner": "Clear “measurable-good” project: help process real camera imagery used for animal population research.",
+    "whenToSuggest": "Use when it aligns with the focus area goals.",
+    "whenNotToSuggest": "Skip if it does not match the person's constraints or interests.",
+    "tags": {
+      "topic": "project",
+      "type": "hands-on",
+      "commitment": "Light–Medium",
+      "goodFitIf": []
+    },
+    "firstSmallStep": "Review the linked resources.",
+    "nextStep": "Take the next action that feels most valuable.",
+    "links": [
+      {
+        "label": "https://felidaefund.org/careers Felidae Conservation Fund",
+        "url": "https://felidaefund.org/careers Felidae Conservation Fund"
+      }
+    ],
+    "peopleToTalkTo": [],
+    "focusAreaIds": [
+      "ai-x-animals"
+    ]
+  },
+  {
+    "id": "ai-x-animals-card-05",
+    "title": "Founders Pledge Climate Fund / Climate Change Fund (via GWWC page)",
+    "oneLiner": "Founders Pledge Climate Fund / Climate Change Fund (via GWWC page)",
     "whenToSuggest": "Use when it aligns with the focus area goals.",
     "whenNotToSuggest": "Skip if it does not match the person's constraints or interests.",
     "tags": {
       "topic": "reading",
       "type": "quick-taste",
-      "commitment": "low",
-      "goodFitIf": [
-        "Open"
-      ]
+      "commitment": "Tiny",
+      "goodFitIf": []
     },
     "firstSmallStep": "Review the linked resources.",
     "nextStep": "Take the next action that feels most valuable.",
     "links": [],
     "peopleToTalkTo": [],
     "focusAreaIds": [
-      "climate"
+      "ai-x-animals"
     ]
   },
   {
-    "id": "climate-giving-green-effective-climate-giving",
-    "title": "Giving Green: effective climate giving",
-    "oneLiner": "Giving Green: effective climate giving",
+    "id": "ai-x-animals-card-06",
+    "title": "Futurekind AI Fellowship (EA Opportunities / Electric Sheep) Effective Altruism+2Electric Sheep+2",
+    "oneLiner": "12-week program to build skills and projects around AI for animal protection / environmental impact.",
+    "whenToSuggest": "Use when it aligns with the focus area goals.",
+    "whenNotToSuggest": "Skip if it does not match the person's constraints or interests.",
+    "tags": {
+      "topic": "program",
+      "type": "deeper-dive",
+      "commitment": "Medium",
+      "goodFitIf": []
+    },
+    "firstSmallStep": "Review the linked resources.",
+    "nextStep": "Take the next action that feels most valuable.",
+    "links": [],
+    "peopleToTalkTo": [],
+    "focusAreaIds": [
+      "ai-x-animals"
+    ]
+  },
+  {
+    "id": "ai-x-animals-card-01",
+    "title": "GiveWell top charities / Top Charities Fund",
+    "oneLiner": "GiveWell top charities / Top Charities Fund",
     "whenToSuggest": "Use when it aligns with the focus area goals.",
     "whenNotToSuggest": "Skip if it does not match the person's constraints or interests.",
     "tags": {
       "topic": "reading",
       "type": "quick-taste",
-      "commitment": "low",
-      "goodFitIf": [
-        "Open"
-      ]
+      "commitment": "Tiny",
+      "goodFitIf": []
     },
     "firstSmallStep": "Review the linked resources.",
     "nextStep": "Take the next action that feels most valuable.",
     "links": [],
     "peopleToTalkTo": [],
     "focusAreaIds": [
-      "climate"
+      "ai-x-animals"
     ]
   },
   {
-    "id": "climate-work-on-climate-starter-packs-community",
-    "title": "Work on Climate: Starter Packs + community",
-    "oneLiner": "Work on Climate: Starter Packs + community",
+    "id": "ai-x-animals-card-04",
+    "title": "Giving Green (effective climate giving)",
+    "oneLiner": "Giving Green (effective climate giving)",
     "whenToSuggest": "Use when it aligns with the focus area goals.",
     "whenNotToSuggest": "Skip if it does not match the person's constraints or interests.",
     "tags": {
       "topic": "reading",
       "type": "quick-taste",
-      "commitment": "low",
-      "goodFitIf": [
-        "Open"
-      ]
+      "commitment": "Tiny",
+      "goodFitIf": []
     },
     "firstSmallStep": "Review the linked resources.",
     "nextStep": "Take the next action that feels most valuable.",
     "links": [],
     "peopleToTalkTo": [],
     "focusAreaIds": [
-      "climate"
+      "ai-x-animals"
     ]
   },
   {
-    "id": "climatebase-jobs",
-    "title": "Climatebase jobs",
-    "oneLiner": "Climatebase jobs",
-    "whenToSuggest": "Use when it aligns with the focus area goals.",
-    "whenNotToSuggest": "Skip if it does not match the person's constraints or interests.",
-    "tags": {
-      "topic": "reading",
-      "type": "quick-taste",
-      "commitment": "low",
-      "goodFitIf": [
-        "Open"
-      ]
-    },
-    "firstSmallStep": "Review the linked resources.",
-    "nextStep": "Take the next action that feels most valuable.",
-    "links": [],
-    "peopleToTalkTo": [],
-    "focusAreaIds": [
-      "climate"
-    ]
-  },
-  {
-    "id": "founders-pledge-climate-change-fund-via-gwwc-page",
-    "title": "Founders Pledge: Climate Change Fund (via GWWC page)",
-    "oneLiner": "Founders Pledge: Climate Change Fund (via GWWC page)",
-    "whenToSuggest": "Use when it aligns with the focus area goals.",
-    "whenNotToSuggest": "Skip if it does not match the person's constraints or interests.",
-    "tags": {
-      "topic": "reading",
-      "type": "quick-taste",
-      "commitment": "low",
-      "goodFitIf": [
-        "Open"
-      ]
-    },
-    "firstSmallStep": "Review the linked resources.",
-    "nextStep": "Take the next action that feels most valuable.",
-    "links": [],
-    "peopleToTalkTo": [],
-    "focusAreaIds": [
-      "climate"
-    ]
-  },
-  {
-    "id": "probably-good-climate-change-impact-focused-overview",
-    "title": "Probably Good: Climate Change impact-focused overview",
-    "oneLiner": "Probably Good: Climate Change impact-focused overview",
-    "whenToSuggest": "Use when it aligns with the focus area goals.",
-    "whenNotToSuggest": "Skip if it does not match the person's constraints or interests.",
-    "tags": {
-      "topic": "reading",
-      "type": "quick-taste",
-      "commitment": "low",
-      "goodFitIf": [
-        "Open"
-      ]
-    },
-    "firstSmallStep": "Review the linked resources.",
-    "nextStep": "Take the next action that feels most valuable.",
-    "links": [],
-    "peopleToTalkTo": [],
-    "focusAreaIds": [
-      "climate"
-    ]
-  },
-  {
-    "id": "probably-good-job-board-filtered-to-climate-change",
-    "title": "Probably Good job board (filtered to Climate Change)",
-    "oneLiner": "Probably Good job board (filtered to Climate Change)",
-    "whenToSuggest": "Use when it aligns with the focus area goals.",
-    "whenNotToSuggest": "Skip if it does not match the person's constraints or interests.",
-    "tags": {
-      "topic": "reading",
-      "type": "quick-taste",
-      "commitment": "low",
-      "goodFitIf": [
-        "Open"
-      ]
-    },
-    "firstSmallStep": "Review the linked resources.",
-    "nextStep": "Take the next action that feels most valuable.",
-    "links": [],
-    "peopleToTalkTo": [],
-    "focusAreaIds": [
-      "climate"
-    ]
-  },
-  {
-    "id": "project-drawdown-climate-solutions-101-playlist",
-    "title": "Project Drawdown: Climate Solutions 101 (playlist)",
-    "oneLiner": "Project Drawdown: Climate Solutions 101 (playlist)",
-    "whenToSuggest": "Use when it aligns with the focus area goals.",
-    "whenNotToSuggest": "Skip if it does not match the person's constraints or interests.",
-    "tags": {
-      "topic": "reading",
-      "type": "quick-taste",
-      "commitment": "low",
-      "goodFitIf": [
-        "Open"
-      ]
-    },
-    "firstSmallStep": "Review the linked resources.",
-    "nextStep": "Take the next action that feels most valuable.",
-    "links": [],
-    "peopleToTalkTo": [],
-    "focusAreaIds": [
-      "climate"
-    ]
-  },
-  {
-    "id": "project-giving-drive-informed-by-giving-green",
-    "title": "Project: Giving drive informed by Giving Green",
-    "oneLiner": "Project: Giving drive informed by Giving Green",
-    "whenToSuggest": "Use when it aligns with the focus area goals.",
-    "whenNotToSuggest": "Skip if it does not match the person's constraints or interests.",
-    "tags": {
-      "topic": "reading",
-      "type": "quick-taste",
-      "commitment": "low",
-      "goodFitIf": [
-        "Open"
-      ]
-    },
-    "firstSmallStep": "Review the linked resources.",
-    "nextStep": "Take the next action that feels most valuable.",
-    "links": [],
-    "peopleToTalkTo": [],
-    "focusAreaIds": [
-      "climate"
-    ]
-  },
-  {
-    "id": "terra-do-climate-change-learning-for-action-12-week",
-    "title": "Terra.do: Climate Change — Learning for Action (12-week)",
-    "oneLiner": "Terra.do: Climate Change — Learning for Action (12-week)",
-    "whenToSuggest": "Use when it aligns with the focus area goals.",
-    "whenNotToSuggest": "Skip if it does not match the person's constraints or interests.",
-    "tags": {
-      "topic": "reading",
-      "type": "quick-taste",
-      "commitment": "low",
-      "goodFitIf": [
-        "Open"
-      ]
-    },
-    "firstSmallStep": "Review the linked resources.",
-    "nextStep": "Take the next action that feels most valuable.",
-    "links": [],
-    "peopleToTalkTo": [],
-    "focusAreaIds": [
-      "climate"
-    ]
-  },
-  {
-    "id": "work-on-climate-volunteering",
-    "title": "Work on Climate: Volunteering",
-    "oneLiner": "Work on Climate: Volunteering",
-    "whenToSuggest": "Use when it aligns with the focus area goals.",
-    "whenNotToSuggest": "Skip if it does not match the person's constraints or interests.",
-    "tags": {
-      "topic": "reading",
-      "type": "quick-taste",
-      "commitment": "low",
-      "goodFitIf": [
-        "Open"
-      ]
-    },
-    "firstSmallStep": "Review the linked resources.",
-    "nextStep": "Take the next action that feels most valuable.",
-    "links": [],
-    "peopleToTalkTo": [],
-    "focusAreaIds": [
-      "climate"
-    ]
-  },
-  {
-    "id": "80-000-hours-health-in-poor-countries-problem-profile",
-    "title": "80,000 Hours: Health in poor countries (problem profile)",
-    "oneLiner": "80,000 Hours: Health in poor countries (problem profile)",
-    "whenToSuggest": "Use when it aligns with the focus area goals.",
-    "whenNotToSuggest": "Skip if it does not match the person's constraints or interests.",
-    "tags": {
-      "topic": "reading",
-      "type": "quick-taste",
-      "commitment": "low",
-      "goodFitIf": [
-        "Open"
-      ]
-    },
-    "firstSmallStep": "Review the linked resources.",
-    "nextStep": "Take the next action that feels most valuable.",
-    "links": [],
-    "peopleToTalkTo": [],
-    "focusAreaIds": [
-      "global-health-development"
-    ]
-  },
-  {
-    "id": "aim-entrepreneurship-orientation-video-1h",
-    "title": "AIM: Entrepreneurship orientation video (<1h)",
-    "oneLiner": "AIM: Entrepreneurship orientation video (<1h)",
-    "whenToSuggest": "Use when it aligns with the focus area goals.",
-    "whenNotToSuggest": "Skip if it does not match the person's constraints or interests.",
-    "tags": {
-      "topic": "reading",
-      "type": "quick-taste",
-      "commitment": "low",
-      "goodFitIf": [
-        "Open"
-      ]
-    },
-    "firstSmallStep": "Review the linked resources.",
-    "nextStep": "Take the next action that feels most valuable.",
-    "links": [],
-    "peopleToTalkTo": [],
-    "focusAreaIds": [
-      "global-health-development"
-    ]
-  },
-  {
-    "id": "givewell-gwwc-youtube-givewell-finds-highly-cost-effective-charities-heres-how",
-    "title": "GiveWell/GWWC YouTube: “GiveWell finds highly cost-effective charities — here’s how”",
-    "oneLiner": "GiveWell/GWWC YouTube: “GiveWell finds highly cost-effective charities — here’s how”",
-    "whenToSuggest": "Use when it aligns with the focus area goals.",
-    "whenNotToSuggest": "Skip if it does not match the person's constraints or interests.",
-    "tags": {
-      "topic": "reading",
-      "type": "quick-taste",
-      "commitment": "low",
-      "goodFitIf": [
-        "Open"
-      ]
-    },
-    "firstSmallStep": "Review the linked resources.",
-    "nextStep": "Take the next action that feels most valuable.",
-    "links": [],
-    "peopleToTalkTo": [],
-    "focusAreaIds": [
-      "global-health-development"
-    ]
-  },
-  {
-    "id": "givewell-top-charities-fund",
-    "title": "GiveWell: Top Charities Fund",
-    "oneLiner": "GiveWell: Top Charities Fund",
-    "whenToSuggest": "Use when it aligns with the focus area goals.",
-    "whenNotToSuggest": "Skip if it does not match the person's constraints or interests.",
-    "tags": {
-      "topic": "reading",
-      "type": "quick-taste",
-      "commitment": "low",
-      "goodFitIf": [
-        "Open"
-      ]
-    },
-    "firstSmallStep": "Review the linked resources.",
-    "nextStep": "Take the next action that feels most valuable.",
-    "links": [],
-    "peopleToTalkTo": [],
-    "focusAreaIds": [
-      "global-health-development"
-    ]
-  },
-  {
-    "id": "givewell-top-charities",
-    "title": "GiveWell: Top Charities",
-    "oneLiner": "GiveWell: Top Charities",
-    "whenToSuggest": "Use when it aligns with the focus area goals.",
-    "whenNotToSuggest": "Skip if it does not match the person's constraints or interests.",
-    "tags": {
-      "topic": "reading",
-      "type": "quick-taste",
-      "commitment": "low",
-      "goodFitIf": [
-        "Open"
-      ]
-    },
-    "firstSmallStep": "Review the linked resources.",
-    "nextStep": "Take the next action that feels most valuable.",
-    "links": [],
-    "peopleToTalkTo": [],
-    "focusAreaIds": [
-      "global-health-development"
-    ]
-  },
-  {
-    "id": "global-health-development-80-000-hours-job-board",
-    "title": "80,000 Hours job board",
-    "oneLiner": "80,000 Hours job board",
-    "whenToSuggest": "Use when it aligns with the focus area goals.",
-    "whenNotToSuggest": "Skip if it does not match the person's constraints or interests.",
-    "tags": {
-      "topic": "reading",
-      "type": "quick-taste",
-      "commitment": "low",
-      "goodFitIf": [
-        "Open"
-      ]
-    },
-    "firstSmallStep": "Review the linked resources.",
-    "nextStep": "Take the next action that feels most valuable.",
-    "links": [],
-    "peopleToTalkTo": [],
-    "focusAreaIds": [
-      "global-health-development"
-    ]
-  },
-  {
-    "id": "global-health-development-charity-entrepreneurship-incubation-program",
-    "title": "Charity Entrepreneurship: Incubation Program",
-    "oneLiner": "Charity Entrepreneurship: Incubation Program",
-    "whenToSuggest": "Use when it aligns with the focus area goals.",
-    "whenNotToSuggest": "Skip if it does not match the person's constraints or interests.",
-    "tags": {
-      "topic": "reading",
-      "type": "quick-taste",
-      "commitment": "low",
-      "goodFitIf": [
-        "Open"
-      ]
-    },
-    "firstSmallStep": "Review the linked resources.",
-    "nextStep": "Take the next action that feels most valuable.",
-    "links": [],
-    "peopleToTalkTo": [],
-    "focusAreaIds": [
-      "global-health-development"
-    ]
-  },
-  {
-    "id": "global-health-development-giving-what-we-can-10-pledge",
+    "id": "ai-x-animals-card-02",
     "title": "Giving What We Can: 10% Pledge",
     "oneLiner": "Giving What We Can: 10% Pledge",
     "whenToSuggest": "Use when it aligns with the focus area goals.",
@@ -1592,21 +710,19 @@
     "tags": {
       "topic": "reading",
       "type": "quick-taste",
-      "commitment": "low",
-      "goodFitIf": [
-        "Open"
-      ]
+      "commitment": "Tiny",
+      "goodFitIf": []
     },
     "firstSmallStep": "Review the linked resources.",
     "nextStep": "Take the next action that feels most valuable.",
     "links": [],
     "peopleToTalkTo": [],
     "focusAreaIds": [
-      "global-health-development"
+      "ai-x-animals"
     ]
   },
   {
-    "id": "global-health-development-giving-what-we-can-global-health-wellbeing-fund",
+    "id": "ai-x-animals-card-03",
     "title": "Giving What We Can: Global Health & Wellbeing Fund",
     "oneLiner": "Giving What We Can: Global Health & Wellbeing Fund",
     "whenToSuggest": "Use when it aligns with the focus area goals.",
@@ -1614,102 +730,1527 @@
     "tags": {
       "topic": "reading",
       "type": "quick-taste",
-      "commitment": "low",
-      "goodFitIf": [
-        "Open"
-      ]
+      "commitment": "Tiny",
+      "goodFitIf": []
     },
     "firstSmallStep": "Review the linked resources.",
     "nextStep": "Take the next action that feels most valuable.",
     "links": [],
     "peopleToTalkTo": [],
     "focusAreaIds": [
-      "global-health-development"
+      "ai-x-animals"
     ]
   },
   {
-    "id": "peter-singer-ted-talk-via-the-life-you-can-save",
-    "title": "Peter Singer TED talk (via The Life You Can Save)",
-    "oneLiner": "Peter Singer TED talk (via The Life You Can Save)",
+    "id": "ai-x-animals-card-08",
+    "title": "Org-facing scoping note (AI × animals) — deliverable for an org/funder",
+    "oneLiner": "A small research artifact meant to be used (shared with an org/funder), not a personal exercise.",
     "whenToSuggest": "Use when it aligns with the focus area goals.",
     "whenNotToSuggest": "Skip if it does not match the person's constraints or interests.",
     "tags": {
-      "topic": "reading",
-      "type": "quick-taste",
-      "commitment": "low",
-      "goodFitIf": [
-        "Open"
-      ]
+      "topic": "project",
+      "type": "hands-on",
+      "commitment": "Light",
+      "goodFitIf": []
     },
     "firstSmallStep": "Review the linked resources.",
     "nextStep": "Take the next action that feels most valuable.",
     "links": [],
     "peopleToTalkTo": [],
     "focusAreaIds": [
-      "global-health-development"
+      "ai-x-animals"
     ]
   },
   {
-    "id": "project-givewell-mini-donation-drive-measurable-good",
-    "title": "Project: GiveWell mini donation drive (measurable good)",
-    "oneLiner": "Project: GiveWell mini donation drive (measurable good)",
+    "id": "ai-x-animals-card-01",
+    "title": "Probably Good: Climate careers guide",
+    "oneLiner": "Probably Good: Climate careers guide",
     "whenToSuggest": "Use when it aligns with the focus area goals.",
     "whenNotToSuggest": "Skip if it does not match the person's constraints or interests.",
     "tags": {
-      "topic": "reading",
+      "topic": "course",
       "type": "quick-taste",
-      "commitment": "low",
-      "goodFitIf": [
-        "Open"
-      ]
+      "commitment": "Tiny",
+      "goodFitIf": []
     },
     "firstSmallStep": "Review the linked resources.",
     "nextStep": "Take the next action that feels most valuable.",
     "links": [],
     "peopleToTalkTo": [],
     "focusAreaIds": [
-      "global-health-development"
+      "ai-x-animals"
     ]
   },
   {
-    "id": "project-gwwc-pledge-drive",
-    "title": "Project: GWWC Pledge Drive",
-    "oneLiner": "Project: GWWC Pledge Drive",
+    "id": "ai-x-animals-card-02",
+    "title": "Rethink Priorities — AI for human–wildlife conflict mitigations Rethink Priorities",
+    "oneLiner": "Concrete examples of “AI-for-animals” in the real world; good for making it feel tangible.",
     "whenToSuggest": "Use when it aligns with the focus area goals.",
     "whenNotToSuggest": "Skip if it does not match the person's constraints or interests.",
     "tags": {
-      "topic": "reading",
+      "topic": "course",
       "type": "quick-taste",
-      "commitment": "low",
-      "goodFitIf": [
-        "Open"
-      ]
+      "commitment": "Tiny–Light",
+      "goodFitIf": []
+    },
+    "firstSmallStep": "Review the linked resources.",
+    "nextStep": "Take the next action that feels most valuable.",
+    "links": [
+      {
+        "label": "https://rethinkpriorities.org/research-area/ai-for-human-wildlife-conflict-mitigations/ Rethink Priorities",
+        "url": "https://rethinkpriorities.org/research-area/ai-for-human-wildlife-conflict-mitigations/ Rethink Priorities"
+      }
+    ],
+    "peopleToTalkTo": [],
+    "focusAreaIds": [
+      "ai-x-animals"
+    ]
+  },
+  {
+    "id": "ai-x-animals-card-04",
+    "title": "Rethink Priorities — How AI is affecting farmed aquatic animals (series) Rethink Priorities+1",
+    "oneLiner": "Deep “EA research-y” analysis of innovation → deployment → welfare impacts in aquaculture.",
+    "whenToSuggest": "Use when it aligns with the focus area goals.",
+    "whenNotToSuggest": "Skip if it does not match the person's constraints or interests.",
+    "tags": {
+      "topic": "course",
+      "type": "deeper-dive",
+      "commitment": "Medium",
+      "goodFitIf": []
     },
     "firstSmallStep": "Review the linked resources.",
     "nextStep": "Take the next action that feels most valuable.",
     "links": [],
     "peopleToTalkTo": [],
     "focusAreaIds": [
-      "global-health-development"
+      "ai-x-animals"
     ]
   },
   {
-    "id": "the-life-you-can-save-best-charities",
-    "title": "The Life You Can Save: Best Charities",
-    "oneLiner": "The Life You Can Save: Best Charities",
+    "id": "ai-x-animals-card-06",
+    "title": "Terra.do fellowship",
+    "oneLiner": "## Resources / links - https://80000hours.org/podcast/episodes/johannes-ackva-unfashionable-climate-interventions/ -…",
+    "whenToSuggest": "Use when it aligns with the focus area goals.",
+    "whenNotToSuggest": "Skip if it does not match the person's constraints or interests.",
+    "tags": {
+      "topic": "program",
+      "type": "quick-taste",
+      "commitment": "Medium",
+      "goodFitIf": []
+    },
+    "firstSmallStep": "Review the linked resources.",
+    "nextStep": "Take the next action that feels most valuable.",
+    "links": [
+      {
+        "label": "https://80000hours.org/podcast/episodes/johannes-ackva-unfashionable-climate-interventions/",
+        "url": "https://80000hours.org/podcast/episodes/johannes-ackva-unfashionable-climate-interventions/"
+      },
+      {
+        "label": "https://80000hours.org/problem-profiles/climate-change/",
+        "url": "https://80000hours.org/problem-profiles/climate-change/"
+      },
+      {
+        "label": "https://climatebase.org/jobs",
+        "url": "https://climatebase.org/jobs"
+      },
+      {
+        "label": "https://jobs.80000hours.org/",
+        "url": "https://jobs.80000hours.org/"
+      },
+      {
+        "label": "https://jobs.probablygood.org/?cause=Climate+Change",
+        "url": "https://jobs.probablygood.org/?cause=Climate+Change"
+      },
+      {
+        "label": "https://probablygood.org/cause-areas/climate-change/careers/",
+        "url": "https://probablygood.org/cause-areas/climate-change/careers/"
+      },
+      {
+        "label": "https://probablygood.org/cause-areas/climate-change/overview/",
+        "url": "https://probablygood.org/cause-areas/climate-change/overview/"
+      },
+      {
+        "label": "https://workonclimate.org/",
+        "url": "https://workonclimate.org/"
+      },
+      {
+        "label": "https://workonclimate.org/starter-packs/",
+        "url": "https://workonclimate.org/starter-packs/"
+      },
+      {
+        "label": "https://www.founderspledge.com/funds/climate-fund/about",
+        "url": "https://www.founderspledge.com/funds/climate-fund/about"
+      },
+      {
+        "label": "https://www.founderspledge.com/research/climate-change-executive-summary",
+        "url": "https://www.founderspledge.com/research/climate-change-executive-summary"
+      },
+      {
+        "label": "https://www.givinggreen.earth/top-climate-nonprofits",
+        "url": "https://www.givinggreen.earth/top-climate-nonprofits"
+      },
+      {
+        "label": "https://www.givingwhatwecan.org/charities/founders-pledge-climate-change-fund",
+        "url": "https://www.givingwhatwecan.org/charities/founders-pledge-climate-change-fund"
+      },
+      {
+        "label": "https://www.youtube.com/playlist?list=PLwYnpej4pQF7sB5_ZmS2IjFae5M7MafiF",
+        "url": "https://www.youtube.com/playlist?list=PLwYnpej4pQF7sB5_ZmS2IjFae5M7MafiF"
+      }
+    ],
+    "peopleToTalkTo": [],
+    "focusAreaIds": [
+      "ai-x-animals"
+    ]
+  },
+  {
+    "id": "ai-x-animals-card-04",
+    "title": "The Life You Can Save: recommended charities",
+    "oneLiner": "The Life You Can Save: recommended charities",
     "whenToSuggest": "Use when it aligns with the focus area goals.",
     "whenNotToSuggest": "Skip if it does not match the person's constraints or interests.",
     "tags": {
       "topic": "reading",
       "type": "quick-taste",
-      "commitment": "low",
-      "goodFitIf": [
-        "Open"
-      ]
+      "commitment": "Tiny",
+      "goodFitIf": []
     },
     "firstSmallStep": "Review the linked resources.",
     "nextStep": "Take the next action that feels most valuable.",
     "links": [],
+    "peopleToTalkTo": [],
+    "focusAreaIds": [
+      "ai-x-animals"
+    ]
+  },
+  {
+    "id": "ai-x-animals-card-03",
+    "title": "Work on Climate (Starter Packs + community)",
+    "oneLiner": "Work on Climate (Starter Packs + community)",
+    "whenToSuggest": "Use when it aligns with the focus area goals.",
+    "whenNotToSuggest": "Skip if it does not match the person's constraints or interests.",
+    "tags": {
+      "topic": "community",
+      "type": "quick-taste",
+      "commitment": "Tiny",
+      "goodFitIf": []
+    },
+    "firstSmallStep": "Review the linked resources.",
+    "nextStep": "Take the next action that feels most valuable.",
+    "links": [],
+    "peopleToTalkTo": [],
+    "focusAreaIds": [
+      "ai-x-animals"
+    ]
+  },
+  {
+    "id": "animal-welfare-card-01",
+    "title": "80,000 Hours — Factory farming problem profile",
+    "oneLiner": "Canonical EA-style overview of why farmed animal welfare matters and what levers exist.",
+    "whenToSuggest": "Use when it aligns with the focus area goals.",
+    "whenNotToSuggest": "Skip if it does not match the person's constraints or interests.",
+    "tags": {
+      "topic": "course",
+      "type": "quick-taste",
+      "commitment": "Tiny (≤1h)",
+      "goodFitIf": []
+    },
+    "firstSmallStep": "Review the linked resources.",
+    "nextStep": "Take the next action that feels most valuable.",
+    "links": [
+      {
+        "label": "https://80000hours.org/problem-profiles/factory-farming/",
+        "url": "https://80000hours.org/problem-profiles/factory-farming/"
+      }
+    ],
+    "peopleToTalkTo": [],
+    "focusAreaIds": [
+      "animal-welfare"
+    ]
+  },
+  {
+    "id": "animal-welfare-card-09",
+    "title": "80,000 Hours — Job board",
+    "oneLiner": "EA-filtered job board; good second lens for ops/policy/management roles relevant to animal orgs.",
+    "whenToSuggest": "Use when it aligns with the focus area goals.",
+    "whenNotToSuggest": "Skip if it does not match the person's constraints or interests.",
+    "tags": {
+      "topic": "reading",
+      "type": "job-board",
+      "commitment": "Tiny (≤1h)",
+      "goodFitIf": []
+    },
+    "firstSmallStep": "Review the linked resources.",
+    "nextStep": "Take the next action that feels most valuable.",
+    "links": [
+      {
+        "label": "https://jobs.80000hours.org/",
+        "url": "https://jobs.80000hours.org/"
+      }
+    ],
+    "peopleToTalkTo": [],
+    "focusAreaIds": [
+      "animal-welfare"
+    ]
+  },
+  {
+    "id": "animal-welfare-card-05",
+    "title": "80,000 Hours Podcast — Lewis Bollard on factory farm advocacy gains",
+    "oneLiner": "Practitioner “field texture” for understanding what progress looks like and why tactics work.",
+    "whenToSuggest": "Use when it aligns with the focus area goals.",
+    "whenNotToSuggest": "Skip if it does not match the person's constraints or interests.",
+    "tags": {
+      "topic": "course",
+      "type": "deeper-dive",
+      "commitment": "Light (1–5h/wk)",
+      "goodFitIf": []
+    },
+    "firstSmallStep": "Review the linked resources.",
+    "nextStep": "Take the next action that feels most valuable.",
+    "links": [
+      {
+        "label": "https://80000hours.org/podcast/episodes/lewis-bollard-factory-farm-advocacy-gains/",
+        "url": "https://80000hours.org/podcast/episodes/lewis-bollard-factory-farm-advocacy-gains/"
+      }
+    ],
+    "peopleToTalkTo": [],
+    "focusAreaIds": [
+      "animal-welfare"
+    ]
+  },
+  {
+    "id": "animal-welfare-card-03",
+    "title": "80,000 Hours — Wild animal welfare problem profile",
+    "oneLiner": "Canonical EA overview for people pulled toward wild-animal suffering specifically.",
+    "whenToSuggest": "Use when it aligns with the focus area goals.",
+    "whenNotToSuggest": "Skip if it does not match the person's constraints or interests.",
+    "tags": {
+      "topic": "course",
+      "type": "quick-taste",
+      "commitment": "Tiny (≤1h)",
+      "goodFitIf": []
+    },
+    "firstSmallStep": "Review the linked resources.",
+    "nextStep": "Take the next action that feels most valuable.",
+    "links": [
+      {
+        "label": "https://80000hours.org/problem-profiles/wild-animal-welfare/",
+        "url": "https://80000hours.org/problem-profiles/wild-animal-welfare/"
+      }
+    ],
+    "peopleToTalkTo": [],
+    "focusAreaIds": [
+      "animal-welfare"
+    ]
+  },
+  {
+    "id": "animal-welfare-card-07",
+    "title": "Animal Advocacy Careers — Animal volunteer opportunities",
+    "oneLiner": "A curated way to find volunteer roles where your work is directly used by real orgs.",
+    "whenToSuggest": "Use when it aligns with the focus area goals.",
+    "whenNotToSuggest": "Skip if it does not match the person's constraints or interests.",
+    "tags": {
+      "topic": "project",
+      "type": "hands-on",
+      "commitment": "Light",
+      "goodFitIf": []
+    },
+    "firstSmallStep": "Review the linked resources.",
+    "nextStep": "Take the next action that feels most valuable.",
+    "links": [
+      {
+        "label": "https://animaladvocacycareers.org/animal-volunteer-opportunities/",
+        "url": "https://animaladvocacycareers.org/animal-volunteer-opportunities/"
+      }
+    ],
+    "peopleToTalkTo": [],
+    "focusAreaIds": [
+      "animal-welfare"
+    ]
+  },
+  {
+    "id": "animal-welfare-card-11",
+    "title": "Animal Advocacy Careers — Career advising",
+    "oneLiner": "Tailored guidance for navigating roles/orgs; great when someone feels stuck or uncertain.",
+    "whenToSuggest": "Use when it aligns with the focus area goals.",
+    "whenNotToSuggest": "Skip if it does not match the person's constraints or interests.",
+    "tags": {
+      "topic": "reading",
+      "type": "quick-taste",
+      "commitment": "Tiny (≤1h)",
+      "goodFitIf": []
+    },
+    "firstSmallStep": "Review the linked resources.",
+    "nextStep": "Take the next action that feels most valuable.",
+    "links": [
+      {
+        "label": "https://animaladvocacycareers.org/career-advising/",
+        "url": "https://animaladvocacycareers.org/career-advising/"
+      }
+    ],
+    "peopleToTalkTo": [],
+    "focusAreaIds": [
+      "animal-welfare"
+    ]
+  },
+  {
+    "id": "animal-welfare-card-04",
+    "title": "Animal Advocacy Careers — Introduction to Animal Advocacy Online Course",
+    "oneLiner": "A structured course that maps the field and career options with more granularity.",
+    "whenToSuggest": "Use when it aligns with the focus area goals.",
+    "whenNotToSuggest": "Skip if it does not match the person's constraints or interests.",
+    "tags": {
+      "topic": "course",
+      "type": "deeper-dive",
+      "commitment": "Medium (5–15h/wk)",
+      "goodFitIf": []
+    },
+    "firstSmallStep": "Review the linked resources.",
+    "nextStep": "Take the next action that feels most valuable.",
+    "links": [
+      {
+        "label": "https://www.effectivealtruism.org/courses/introduction-to-animal-advocacy-online-course",
+        "url": "https://www.effectivealtruism.org/courses/introduction-to-animal-advocacy-online-course"
+      }
+    ],
+    "peopleToTalkTo": [],
+    "focusAreaIds": [
+      "animal-welfare"
+    ]
+  },
+  {
+    "id": "animal-welfare-card-08",
+    "title": "Animal Advocacy Careers — Job board",
+    "oneLiner": "The most field-specific way to see orgs/roles in animal advocacy and bridge interest → action.",
+    "whenToSuggest": "Use when it aligns with the focus area goals.",
+    "whenNotToSuggest": "Skip if it does not match the person's constraints or interests.",
+    "tags": {
+      "topic": "reading",
+      "type": "job-board",
+      "commitment": "Tiny (≤1h)",
+      "goodFitIf": []
+    },
+    "firstSmallStep": "Review the linked resources.",
+    "nextStep": "Take the next action that feels most valuable.",
+    "links": [
+      {
+        "label": "https://animaladvocacycareers.org/job-board/",
+        "url": "https://animaladvocacycareers.org/job-board/"
+      }
+    ],
+    "peopleToTalkTo": [],
+    "focusAreaIds": [
+      "animal-welfare"
+    ]
+  },
+  {
+    "id": "animal-welfare-card-12",
+    "title": "Animal Charity Evaluators — Recommended charities / funds",
+    "oneLiner": "Evidence-informed giving recommendations for animal welfare.",
+    "whenToSuggest": "Use when it aligns with the focus area goals.",
+    "whenNotToSuggest": "Skip if it does not match the person's constraints or interests.",
+    "tags": {
+      "topic": "reading",
+      "type": "quick-taste",
+      "commitment": "Tiny (≤1h)",
+      "goodFitIf": []
+    },
+    "firstSmallStep": "Review the linked resources.",
+    "nextStep": "Take the next action that feels most valuable.",
+    "links": [
+      {
+        "label": "https://animalcharityevaluators.org/",
+        "url": "https://animalcharityevaluators.org/"
+      }
+    ],
+    "peopleToTalkTo": [],
+    "focusAreaIds": [
+      "animal-welfare"
+    ]
+  },
+  {
+    "id": "animal-welfare-card-13",
+    "title": "EA Funds — Animal Welfare Fund",
+    "oneLiner": "Expert-managed grantmaking fund; simple default option for effective giving.",
+    "whenToSuggest": "Use when it aligns with the focus area goals.",
+    "whenNotToSuggest": "Skip if it does not match the person's constraints or interests.",
+    "tags": {
+      "topic": "reading",
+      "type": "quick-taste",
+      "commitment": "Tiny (≤1h)",
+      "goodFitIf": []
+    },
+    "firstSmallStep": "Review the linked resources.",
+    "nextStep": "Take the next action that feels most valuable.",
+    "links": [
+      {
+        "label": "https://80000hours.org/podcast/episodes/lewis-bollard-factory-farm-advocacy-gains/",
+        "url": "https://80000hours.org/podcast/episodes/lewis-bollard-factory-farm-advocacy-gains/"
+      },
+      {
+        "label": "https://80000hours.org/problem-profiles/factory-farming/",
+        "url": "https://80000hours.org/problem-profiles/factory-farming/"
+      },
+      {
+        "label": "https://80000hours.org/problem-profiles/wild-animal-welfare/",
+        "url": "https://80000hours.org/problem-profiles/wild-animal-welfare/"
+      },
+      {
+        "label": "https://animaladvocacycareers.org/career-advising/",
+        "url": "https://animaladvocacycareers.org/career-advising/"
+      },
+      {
+        "label": "https://animaladvocacycareers.org/job-board/",
+        "url": "https://animaladvocacycareers.org/job-board/"
+      },
+      {
+        "label": "https://animalcharityevaluators.org/",
+        "url": "https://animalcharityevaluators.org/"
+      },
+      {
+        "label": "https://faunalytics.org/",
+        "url": "https://faunalytics.org/"
+      },
+      {
+        "label": "https://funds.effectivealtruism.org/funds/animal-welfare",
+        "url": "https://funds.effectivealtruism.org/funds/animal-welfare"
+      },
+      {
+        "label": "https://jobs.80000hours.org/",
+        "url": "https://jobs.80000hours.org/"
+      },
+      {
+        "label": "https://www.effectivealtruism.org/courses/introduction-to-animal-advocacy-online-course",
+        "url": "https://www.effectivealtruism.org/courses/introduction-to-animal-advocacy-online-course"
+      },
+      {
+        "label": "https://www.effectivealtruism.org/opportunities",
+        "url": "https://www.effectivealtruism.org/opportunities"
+      },
+      {
+        "label": "https://www.youtube.com/watch?v=5NqphXm-ORw",
+        "url": "https://www.youtube.com/watch?v=5NqphXm-ORw"
+      }
+    ],
+    "peopleToTalkTo": [],
+    "focusAreaIds": [
+      "animal-welfare"
+    ]
+  },
+  {
+    "id": "animal-welfare-card-10",
+    "title": "EA Opportunities — listings",
+    "oneLiner": "Broader than jobs: fellowships/events/short programs; useful as an “entry ramp.”",
+    "whenToSuggest": "Use when it aligns with the focus area goals.",
+    "whenNotToSuggest": "Skip if it does not match the person's constraints or interests.",
+    "tags": {
+      "topic": "community",
+      "type": "job-board",
+      "commitment": "Tiny (≤1h)",
+      "goodFitIf": []
+    },
+    "firstSmallStep": "Review the linked resources.",
+    "nextStep": "Take the next action that feels most valuable.",
+    "links": [
+      {
+        "label": "https://www.effectivealtruism.org/opportunities",
+        "url": "https://www.effectivealtruism.org/opportunities"
+      }
+    ],
+    "peopleToTalkTo": [],
+    "focusAreaIds": [
+      "animal-welfare"
+    ]
+  },
+  {
+    "id": "animal-welfare-card-06",
+    "title": "Faunalytics — Volunteer",
+    "oneLiner": "Do externally useful work that animal advocates use (measurable good; not a portfolio exercise).",
+    "whenToSuggest": "Use when it aligns with the focus area goals.",
+    "whenNotToSuggest": "Skip if it does not match the person's constraints or interests.",
+    "tags": {
+      "topic": "project",
+      "type": "hands-on",
+      "commitment": "Light–Medium",
+      "goodFitIf": []
+    },
+    "firstSmallStep": "Review the linked resources.",
+    "nextStep": "Take the next action that feels most valuable.",
+    "links": [
+      {
+        "label": "https://faunalytics.org/volunteer/",
+        "url": "https://faunalytics.org/volunteer/"
+      }
+    ],
+    "peopleToTalkTo": [],
+    "focusAreaIds": [
+      "animal-welfare"
+    ]
+  },
+  {
+    "id": "animal-welfare-card-02",
+    "title": "Jacy Reese — Intro to effective animal advocacy (EAGxBerkeley talk)",
+    "oneLiner": "A fast, approachable “field picture” overview that tests interest and gives a first map.",
+    "whenToSuggest": "Use when it aligns with the focus area goals.",
+    "whenNotToSuggest": "Skip if it does not match the person's constraints or interests.",
+    "tags": {
+      "topic": "course",
+      "type": "quick-taste",
+      "commitment": "Tiny (≤1h)",
+      "goodFitIf": []
+    },
+    "firstSmallStep": "Review the linked resources.",
+    "nextStep": "Take the next action that feels most valuable.",
+    "links": [
+      {
+        "label": "https://www.youtube.com/watch?v=5NqphXm-ORw",
+        "url": "https://www.youtube.com/watch?v=5NqphXm-ORw"
+      }
+    ],
+    "peopleToTalkTo": [],
+    "focusAreaIds": [
+      "animal-welfare"
+    ]
+  },
+  {
+    "id": "biosecurity-card-01",
+    "title": "80,000 Hours — Biorisk research, strategy, and policy (career review)",
+    "oneLiner": "A canonical EA-aligned overview of what biorisk work is, what roles look like, and how to assess fit. 80,000 Hours",
+    "whenToSuggest": "Use when it aligns with the focus area goals.",
+    "whenNotToSuggest": "Skip if it does not match the person's constraints or interests.",
+    "tags": {
+      "topic": "course",
+      "type": "quick-taste",
+      "commitment": "Tiny (≤1h)",
+      "goodFitIf": []
+    },
+    "firstSmallStep": "Review the linked resources.",
+    "nextStep": "Take the next action that feels most valuable.",
+    "links": [
+      {
+        "label": "https://80000hours.org/career-reviews/biorisk-research/",
+        "url": "https://80000hours.org/career-reviews/biorisk-research/"
+      }
+    ],
+    "peopleToTalkTo": [],
+    "focusAreaIds": [
+      "biosecurity"
+    ]
+  },
+  {
+    "id": "biosecurity-card-04",
+    "title": "80,000 Hours — Biorisk strategy & policy topic archive (podcasts/resources)",
+    "oneLiner": "A curated list of deeper resources (often podcasts) for “field texture” and understanding real constraints/approaches. 80,000 Hours+1",
+    "whenToSuggest": "Use when it aligns with the focus area goals.",
+    "whenNotToSuggest": "Skip if it does not match the person's constraints or interests.",
+    "tags": {
+      "topic": "course",
+      "type": "deeper-dive",
+      "commitment": "Light (1–5h/wk)",
+      "goodFitIf": []
+    },
+    "firstSmallStep": "Review the linked resources.",
+    "nextStep": "Take the next action that feels most valuable.",
+    "links": [
+      {
+        "label": "https://80000hours.org/topic/career-paths/biorisk-strategy-policy-career-paths/",
+        "url": "https://80000hours.org/topic/career-paths/biorisk-strategy-policy-career-paths/"
+      }
+    ],
+    "peopleToTalkTo": [],
+    "focusAreaIds": [
+      "biosecurity"
+    ]
+  },
+  {
+    "id": "biosecurity-card-06",
+    "title": "80,000 Hours Job Board",
+    "oneLiner": "High-signal job board for EA-aligned roles; useful both for job search and for building intuition about real orgs/roles in biosecurity. 80,000 Hours Job Board+1",
+    "whenToSuggest": "Use when it aligns with the focus area goals.",
+    "whenNotToSuggest": "Skip if it does not match the person's constraints or interests.",
+    "tags": {
+      "topic": "reading",
+      "type": "job-board",
+      "commitment": "Tiny (≤1h)",
+      "goodFitIf": []
+    },
+    "firstSmallStep": "Review the linked resources.",
+    "nextStep": "Take the next action that feels most valuable.",
+    "links": [
+      {
+        "label": "https://jobs.80000hours.org/",
+        "url": "https://jobs.80000hours.org/"
+      }
+    ],
+    "peopleToTalkTo": [],
+    "focusAreaIds": [
+      "biosecurity"
+    ]
+  },
+  {
+    "id": "biosecurity-card-03",
+    "title": "BlueDot Impact — Biosecurity course",
+    "oneLiner": "A structured, cohort-based ~30-hour course aimed at understanding prevention/detection/response and identifying where you can contribute. BlueDot+1",
+    "whenToSuggest": "Use when it aligns with the focus area goals.",
+    "whenNotToSuggest": "Skip if it does not match the person's constraints or interests.",
+    "tags": {
+      "topic": "course",
+      "type": "deeper-dive",
+      "commitment": "Medium (5–15h/wk) (as a default; can be tuned)",
+      "goodFitIf": []
+    },
+    "firstSmallStep": "Review the linked resources.",
+    "nextStep": "Take the next action that feels most valuable.",
+    "links": [
+      {
+        "label": "https://bluedot.org/courses/biosecurity?from_site=bsf",
+        "url": "https://bluedot.org/courses/biosecurity?from_site=bsf"
+      }
+    ],
+    "peopleToTalkTo": [],
+    "focusAreaIds": [
+      "biosecurity"
+    ]
+  },
+  {
+    "id": "biosecurity-card-07",
+    "title": "EA Opportunities — Biosecurity listings",
+    "oneLiner": "A broader opportunities surface (programs, fellowships, events) that often includes biosecurity-specific entry ramps beyond “jobs.” Effective Altruism+1",
+    "whenToSuggest": "Use when it aligns with the focus area goals.",
+    "whenNotToSuggest": "Skip if it does not match the person's constraints or interests.",
+    "tags": {
+      "topic": "community",
+      "type": "job-board",
+      "commitment": "Tiny (≤1h)",
+      "goodFitIf": []
+    },
+    "firstSmallStep": "Review the linked resources.",
+    "nextStep": "Take the next action that feels most valuable.",
+    "links": [
+      {
+        "label": "https://80000hours.org/career-reviews/biorisk-research/",
+        "url": "https://80000hours.org/career-reviews/biorisk-research/"
+      },
+      {
+        "label": "https://80000hours.org/topic/career-paths/biorisk-strategy-policy-career-paths/",
+        "url": "https://80000hours.org/topic/career-paths/biorisk-strategy-policy-career-paths/"
+      },
+      {
+        "label": "https://bluedot.org/courses/biosecurity?from_site=bsf",
+        "url": "https://bluedot.org/courses/biosecurity?from_site=bsf"
+      },
+      {
+        "label": "https://jobs.80000hours.org/",
+        "url": "https://jobs.80000hours.org/"
+      },
+      {
+        "label": "https://www.effectivealtruism.org/opportunities",
+        "url": "https://www.effectivealtruism.org/opportunities"
+      },
+      {
+        "label": "https://www.oxfordbiosecuritygroup.com/",
+        "url": "https://www.oxfordbiosecuritygroup.com/"
+      },
+      {
+        "label": "https://www.oxfordbiosecuritygroup.com/projects",
+        "url": "https://www.oxfordbiosecuritygroup.com/projects"
+      },
+      {
+        "label": "https://www.youtube.com/playlist?list=PLwp9xeoX5p8NnmxyXIY_lADJvorgMitVp",
+        "url": "https://www.youtube.com/playlist?list=PLwp9xeoX5p8NnmxyXIY_lADJvorgMitVp"
+      },
+      {
+        "label": "https://www.youtube.com/watch?v=l6yAylvzEXo",
+        "url": "https://www.youtube.com/watch?v=l6yAylvzEXo"
+      }
+    ],
+    "peopleToTalkTo": [],
+    "focusAreaIds": [
+      "biosecurity"
+    ]
+  },
+  {
+    "id": "biosecurity-card-02",
+    "title": "Jaime Yassif — Reducing global catastrophic biological risks (YouTube talk)",
+    "oneLiner": "A strong “field picture” intro from a leading practitioner; good for testing interest and getting intuition fast. YouTube+1",
+    "whenToSuggest": "Use when it aligns with the focus area goals.",
+    "whenNotToSuggest": "Skip if it does not match the person's constraints or interests.",
+    "tags": {
+      "topic": "course",
+      "type": "quick-taste",
+      "commitment": "Tiny (≤1h)",
+      "goodFitIf": []
+    },
+    "firstSmallStep": "Review the linked resources.",
+    "nextStep": "Take the next action that feels most valuable.",
+    "links": [
+      {
+        "label": "https://www.youtube.com/watch?v=l6yAylvzEXo",
+        "url": "https://www.youtube.com/watch?v=l6yAylvzEXo"
+      }
+    ],
+    "peopleToTalkTo": [],
+    "focusAreaIds": [
+      "biosecurity"
+    ]
+  },
+  {
+    "id": "biosecurity-card-05",
+    "title": "Oxford Biosecurity Group — Projects",
+    "oneLiner": "Part-time remote research projects in biosecurity and AI×bio that aim to produce outputs with real downstream use (often with collaborating orgs/initiatives). My Site+2My Site+2",
+    "whenToSuggest": "Use when it aligns with the focus area goals.",
+    "whenNotToSuggest": "Skip if it does not match the person's constraints or interests.",
+    "tags": {
+      "topic": "program",
+      "type": "hands-on",
+      "commitment": "Light–Medium",
+      "goodFitIf": []
+    },
+    "firstSmallStep": "Review the linked resources.",
+    "nextStep": "Take the next action that feels most valuable.",
+    "links": [
+      {
+        "label": "https://www.oxfordbiosecuritygroup.com/projects",
+        "url": "https://www.oxfordbiosecuritygroup.com/projects"
+      }
+    ],
+    "peopleToTalkTo": [],
+    "focusAreaIds": [
+      "biosecurity"
+    ]
+  },
+  {
+    "id": "climate-card-02",
+    "title": "80,000 Hours: Climate change problem profile",
+    "oneLiner": "Canonical EA analysis + “best ways of working” section to translate interest → plausible paths. 80,000 Hours",
+    "whenToSuggest": "Use when it aligns with the focus area goals.",
+    "whenNotToSuggest": "Skip if it does not match the person's constraints or interests.",
+    "tags": {
+      "topic": "course",
+      "type": "quick-taste",
+      "commitment": "Tiny–Light",
+      "goodFitIf": []
+    },
+    "firstSmallStep": "Review the linked resources.",
+    "nextStep": "Take the next action that feels most valuable.",
+    "links": [
+      {
+        "label": "https://80000hours.org/problem-profiles/climate-change/ 80,000 Hours",
+        "url": "https://80000hours.org/problem-profiles/climate-change/ 80,000 Hours"
+      }
+    ],
+    "peopleToTalkTo": [],
+    "focusAreaIds": [
+      "climate"
+    ]
+  },
+  {
+    "id": "climate-card-12",
+    "title": "80,000 Hours job board",
+    "oneLiner": "Fewer climate listings, but often higher “EA filter” and good for adjacent high-impact roles. Climatebase.org",
+    "whenToSuggest": "Use when it aligns with the focus area goals.",
+    "whenNotToSuggest": "Skip if it does not match the person's constraints or interests.",
+    "tags": {
+      "topic": "reading",
+      "type": "job-board",
+      "commitment": "Tiny",
+      "goodFitIf": []
+    },
+    "firstSmallStep": "Review the linked resources.",
+    "nextStep": "Take the next action that feels most valuable.",
+    "links": [
+      {
+        "label": "https://80000hours.org/podcast/episodes/johannes-ackva-unfashionable-climate-interventions/",
+        "url": "https://80000hours.org/podcast/episodes/johannes-ackva-unfashionable-climate-interventions/"
+      },
+      {
+        "label": "https://80000hours.org/problem-profiles/climate-change/",
+        "url": "https://80000hours.org/problem-profiles/climate-change/"
+      },
+      {
+        "label": "https://climatebase.org/jobs",
+        "url": "https://climatebase.org/jobs"
+      },
+      {
+        "label": "https://jobs.80000hours.org/",
+        "url": "https://jobs.80000hours.org/"
+      },
+      {
+        "label": "https://jobs.probablygood.org/?cause=Climate+Change",
+        "url": "https://jobs.probablygood.org/?cause=Climate+Change"
+      },
+      {
+        "label": "https://probablygood.org/cause-areas/climate-change/careers/",
+        "url": "https://probablygood.org/cause-areas/climate-change/careers/"
+      },
+      {
+        "label": "https://probablygood.org/cause-areas/climate-change/overview/",
+        "url": "https://probablygood.org/cause-areas/climate-change/overview/"
+      },
+      {
+        "label": "https://workonclimate.org/",
+        "url": "https://workonclimate.org/"
+      },
+      {
+        "label": "https://workonclimate.org/starter-packs/",
+        "url": "https://workonclimate.org/starter-packs/"
+      },
+      {
+        "label": "https://www.founderspledge.com/funds/climate-fund/about",
+        "url": "https://www.founderspledge.com/funds/climate-fund/about"
+      },
+      {
+        "label": "https://www.founderspledge.com/research/climate-change-executive-summary",
+        "url": "https://www.founderspledge.com/research/climate-change-executive-summary"
+      },
+      {
+        "label": "https://www.givinggreen.earth/top-climate-nonprofits",
+        "url": "https://www.givinggreen.earth/top-climate-nonprofits"
+      },
+      {
+        "label": "https://www.givingwhatwecan.org/charities/founders-pledge-climate-change-fund",
+        "url": "https://www.givingwhatwecan.org/charities/founders-pledge-climate-change-fund"
+      },
+      {
+        "label": "https://www.youtube.com/playlist?list=PLwYnpej4pQF7sB5_ZmS2IjFae5M7MafiF",
+        "url": "https://www.youtube.com/playlist?list=PLwYnpej4pQF7sB5_ZmS2IjFae5M7MafiF"
+      }
+    ],
+    "peopleToTalkTo": [],
+    "focusAreaIds": [
+      "climate"
+    ]
+  },
+  {
+    "id": "climate-card-11",
+    "title": "Climatebase jobs",
+    "oneLiner": "Big climate-specific job marketplace; good for breadth + pattern recognition on roles. Climatebase.org+1",
+    "whenToSuggest": "Use when it aligns with the focus area goals.",
+    "whenNotToSuggest": "Skip if it does not match the person's constraints or interests.",
+    "tags": {
+      "topic": "reading",
+      "type": "job-board",
+      "commitment": "Tiny",
+      "goodFitIf": []
+    },
+    "firstSmallStep": "Review the linked resources.",
+    "nextStep": "Take the next action that feels most valuable.",
+    "links": [
+      {
+        "label": "https://climatebase.org/jobs Climatebase.org",
+        "url": "https://climatebase.org/jobs Climatebase.org"
+      }
+    ],
+    "peopleToTalkTo": [],
+    "focusAreaIds": [
+      "climate"
+    ]
+  },
+  {
+    "id": "climate-card-08",
+    "title": "Founders Pledge: Climate Change Fund (via GWWC page)",
+    "oneLiner": "A fund approach aimed at high-impact, evidence-based climate solutions (good for “pooled + research-backed”). Giving What We Can+2Founders Pledge+2",
+    "whenToSuggest": "Use when it aligns with the focus area goals.",
+    "whenNotToSuggest": "Skip if it does not match the person's constraints or interests.",
+    "tags": {
+      "topic": "reading",
+      "type": "quick-taste",
+      "commitment": "Tiny",
+      "goodFitIf": []
+    },
+    "firstSmallStep": "Review the linked resources.",
+    "nextStep": "Take the next action that feels most valuable.",
+    "links": [
+      {
+        "label": "https://www.founderspledge.com/funds/climate-fund/about Founders Pledge",
+        "url": "https://www.founderspledge.com/funds/climate-fund/about Founders Pledge"
+      },
+      {
+        "label": "https://www.givingwhatwecan.org/charities/founders-pledge-climate-change-fund Giving What We Can",
+        "url": "https://www.givingwhatwecan.org/charities/founders-pledge-climate-change-fund Giving What We Can"
+      }
+    ],
+    "peopleToTalkTo": [],
+    "focusAreaIds": [
+      "climate"
+    ]
+  },
+  {
+    "id": "climate-card-06",
+    "title": "Giving Green: effective climate giving",
+    "oneLiner": "EA-principles-style evaluator for climate philanthropy (“where does money do the most?”). Giving Green+2Giving Green+2",
+    "whenToSuggest": "Use when it aligns with the focus area goals.",
+    "whenNotToSuggest": "Skip if it does not match the person's constraints or interests.",
+    "tags": {
+      "topic": "reading",
+      "type": "hands-on",
+      "commitment": "Tiny",
+      "goodFitIf": []
+    },
+    "firstSmallStep": "Review the linked resources.",
+    "nextStep": "Take the next action that feels most valuable.",
+    "links": [
+      {
+        "label": "https://www.givinggreen.earth/top-climate-nonprofits Giving Green",
+        "url": "https://www.givinggreen.earth/top-climate-nonprofits Giving Green"
+      }
+    ],
+    "peopleToTalkTo": [],
+    "focusAreaIds": [
+      "climate"
+    ]
+  },
+  {
+    "id": "climate-card-01",
+    "title": "Probably Good: Climate Change impact-focused overview",
+    "oneLiner": "EA-ish overview that frames climate with an “impact-focused / what to do about it” lens. Probably Good+1",
+    "whenToSuggest": "Use when it aligns with the focus area goals.",
+    "whenNotToSuggest": "Skip if it does not match the person's constraints or interests.",
+    "tags": {
+      "topic": "course",
+      "type": "quick-taste",
+      "commitment": "Tiny",
+      "goodFitIf": []
+    },
+    "firstSmallStep": "Review the linked resources.",
+    "nextStep": "Take the next action that feels most valuable.",
+    "links": [
+      {
+        "label": "https://probablygood.org/cause-areas/climate-change/overview/ Probably Good",
+        "url": "https://probablygood.org/cause-areas/climate-change/overview/ Probably Good"
+      }
+    ],
+    "peopleToTalkTo": [],
+    "focusAreaIds": [
+      "climate"
+    ]
+  },
+  {
+    "id": "climate-card-10",
+    "title": "Probably Good job board (filtered to Climate Change)",
+    "oneLiner": "Curated “high-impact jobs” list with filters; helpful for quickly learning role shapes and org landscape. Probably Good+1",
+    "whenToSuggest": "Use when it aligns with the focus area goals.",
+    "whenNotToSuggest": "Skip if it does not match the person's constraints or interests.",
+    "tags": {
+      "topic": "reading",
+      "type": "job-board",
+      "commitment": "Tiny",
+      "goodFitIf": []
+    },
+    "firstSmallStep": "Review the linked resources.",
+    "nextStep": "Take the next action that feels most valuable.",
+    "links": [
+      {
+        "label": "https://jobs.probablygood.org/?cause=Climate+Change Probably Good",
+        "url": "https://jobs.probablygood.org/?cause=Climate+Change Probably Good"
+      }
+    ],
+    "peopleToTalkTo": [],
+    "focusAreaIds": [
+      "climate"
+    ]
+  },
+  {
+    "id": "climate-card-03",
+    "title": "Project Drawdown: Climate Solutions 101 (playlist)",
+    "oneLiner": "Clear, concrete “what are solutions categories?” explainer; good for candidates who need video intuition fast. YouTube+1",
+    "whenToSuggest": "Use when it aligns with the focus area goals.",
+    "whenNotToSuggest": "Skip if it does not match the person's constraints or interests.",
+    "tags": {
+      "topic": "course",
+      "type": "quick-taste",
+      "commitment": "Tiny (A) or Medium (B)",
+      "goodFitIf": []
+    },
+    "firstSmallStep": "Review the linked resources.",
+    "nextStep": "Take the next action that feels most valuable.",
+    "links": [
+      {
+        "label": "https://www.youtube.com/playlist?list=PLwYnpej4pQF7sB5_ZmS2IjFae5M7MafiF YouTube",
+        "url": "https://www.youtube.com/playlist?list=PLwYnpej4pQF7sB5_ZmS2IjFae5M7MafiF YouTube"
+      }
+    ],
+    "peopleToTalkTo": [],
+    "focusAreaIds": [
+      "climate"
+    ]
+  },
+  {
+    "id": "climate-card-07",
+    "title": "Project: Giving drive informed by Giving Green",
+    "oneLiner": "A measurable-good project for action-first candidates: $ influenced / donated toward vetted opportunities. Giving Green+1",
+    "whenToSuggest": "Use when it aligns with the focus area goals.",
+    "whenNotToSuggest": "Skip if it does not match the person's constraints or interests.",
+    "tags": {
+      "topic": "project",
+      "type": "hands-on",
+      "commitment": "Light",
+      "goodFitIf": []
+    },
+    "firstSmallStep": "Review the linked resources.",
+    "nextStep": "Take the next action that feels most valuable.",
+    "links": [
+      {
+        "label": "https://www.givinggreen.earth/top-climate-nonprofits Giving Green",
+        "url": "https://www.givinggreen.earth/top-climate-nonprofits Giving Green"
+      }
+    ],
+    "peopleToTalkTo": [],
+    "focusAreaIds": [
+      "climate"
+    ]
+  },
+  {
+    "id": "climate-card-09",
+    "title": "Terra.do: Climate Change — Learning for Action (12-week)",
+    "oneLiner": "Structured “map the space + find your role” container; good for people who want guided exploration. Terra",
+    "whenToSuggest": "Use when it aligns with the focus area goals.",
+    "whenNotToSuggest": "Skip if it does not match the person's constraints or interests.",
+    "tags": {
+      "topic": "program",
+      "type": "deeper-dive",
+      "commitment": "Medium",
+      "goodFitIf": []
+    },
+    "firstSmallStep": "Review the linked resources.",
+    "nextStep": "Take the next action that feels most valuable.",
+    "links": [
+      {
+        "label": "https://www.terra.do/climate-fellowship-learning-for-action/ Terra",
+        "url": "https://www.terra.do/climate-fellowship-learning-for-action/ Terra"
+      }
+    ],
+    "peopleToTalkTo": [],
+    "focusAreaIds": [
+      "climate"
+    ]
+  },
+  {
+    "id": "climate-card-05",
+    "title": "Work on Climate: Starter Packs + community",
+    "oneLiner": "A guided way to explore climate sub-areas and see where your skills could fit. Work on Climate",
+    "whenToSuggest": "Use when it aligns with the focus area goals.",
+    "whenNotToSuggest": "Skip if it does not match the person's constraints or interests.",
+    "tags": {
+      "topic": "community",
+      "type": "deeper-dive",
+      "commitment": "Tiny",
+      "goodFitIf": []
+    },
+    "firstSmallStep": "Review the linked resources.",
+    "nextStep": "Take the next action that feels most valuable.",
+    "links": [
+      {
+        "label": "https://workonclimate.org/starter-packs/ Work on Climate",
+        "url": "https://workonclimate.org/starter-packs/ Work on Climate"
+      }
+    ],
+    "peopleToTalkTo": [],
+    "focusAreaIds": [
+      "climate"
+    ]
+  },
+  {
+    "id": "climate-card-04",
+    "title": "Work on Climate: Volunteering",
+    "oneLiner": "A structured way to get momentum via real volunteering across functions (including research/data analytics). Work on Climate+1",
+    "whenToSuggest": "Use when it aligns with the focus area goals.",
+    "whenNotToSuggest": "Skip if it does not match the person's constraints or interests.",
+    "tags": {
+      "topic": "project",
+      "type": "hands-on",
+      "commitment": "Light–Medium",
+      "goodFitIf": []
+    },
+    "firstSmallStep": "Review the linked resources.",
+    "nextStep": "Take the next action that feels most valuable.",
+    "links": [
+      {
+        "label": "https://workonclimate.org/careers/ Work on Climate",
+        "url": "https://workonclimate.org/careers/ Work on Climate"
+      }
+    ],
+    "peopleToTalkTo": [],
+    "focusAreaIds": [
+      "climate"
+    ]
+  },
+  {
+    "id": "global-health-development-card-01",
+    "title": "80,000 Hours — Health in poor countries",
+    "oneLiner": "Canonical EA-style overview of global health: why it matters and what high-leverage work looks like. 80,000 Hours",
+    "whenToSuggest": "Use when it aligns with the focus area goals.",
+    "whenNotToSuggest": "Skip if it does not match the person's constraints or interests.",
+    "tags": {
+      "topic": "course",
+      "type": "quick-taste",
+      "commitment": "Tiny (≤1h)",
+      "goodFitIf": []
+    },
+    "firstSmallStep": "Review the linked resources.",
+    "nextStep": "Take the next action that feels most valuable.",
+    "links": [
+      {
+        "label": "https://80000hours.org/problem-profiles/health-in-poor-countries/ 80,000 Hours",
+        "url": "https://80000hours.org/problem-profiles/health-in-poor-countries/ 80,000 Hours"
+      }
+    ],
+    "peopleToTalkTo": [],
+    "focusAreaIds": [
+      "global-health-development"
+    ]
+  },
+  {
+    "id": "global-health-development-card-13",
+    "title": "80,000 Hours — Job board",
+    "oneLiner": "EA-filtered job board; good for mapping orgs/role types and turning interest into a direction to test.",
+    "whenToSuggest": "Use when it aligns with the focus area goals.",
+    "whenNotToSuggest": "Skip if it does not match the person's constraints or interests.",
+    "tags": {
+      "topic": "reading",
+      "type": "job-board",
+      "commitment": "Tiny",
+      "goodFitIf": []
+    },
+    "firstSmallStep": "Review the linked resources.",
+    "nextStep": "Take the next action that feels most valuable.",
+    "links": [
+      {
+        "label": "https://80000hours.org/problem-profiles/health-in-poor-countries/",
+        "url": "https://80000hours.org/problem-profiles/health-in-poor-countries/"
+      },
+      {
+        "label": "https://jobs.80000hours.org/",
+        "url": "https://jobs.80000hours.org/"
+      },
+      {
+        "label": "https://www.charityentrepreneurship.com/",
+        "url": "https://www.charityentrepreneurship.com/"
+      },
+      {
+        "label": "https://www.charityentrepreneurship.com/apply",
+        "url": "https://www.charityentrepreneurship.com/apply"
+      },
+      {
+        "label": "https://www.coursera.org/learn/global-health-introduction",
+        "url": "https://www.coursera.org/learn/global-health-introduction"
+      },
+      {
+        "label": "https://www.givewell.org/charities/top-charities",
+        "url": "https://www.givewell.org/charities/top-charities"
+      },
+      {
+        "label": "https://www.givewell.org/how-we-work/our-criteria/cost-effectiveness/cost-effectiveness-models",
+        "url": "https://www.givewell.org/how-we-work/our-criteria/cost-effectiveness/cost-effectiveness-models"
+      },
+      {
+        "label": "https://www.givingwhatwecan.org/charities/global-health-and-wellbeing-fund",
+        "url": "https://www.givingwhatwecan.org/charities/global-health-and-wellbeing-fund"
+      },
+      {
+        "label": "https://www.givingwhatwecan.org/pledge",
+        "url": "https://www.givingwhatwecan.org/pledge"
+      },
+      {
+        "label": "https://www.thelifeyoucansave.org/best-charities/",
+        "url": "https://www.thelifeyoucansave.org/best-charities/"
+      },
+      {
+        "label": "https://www.thelifeyoucansave.org/peter-singers-ted-talk/",
+        "url": "https://www.thelifeyoucansave.org/peter-singers-ted-talk/"
+      },
+      {
+        "label": "https://www.youtube.com/playlist?list=PL8dPuuaLjXtPjQj_LcJ0Zvj-VI3sslJyF",
+        "url": "https://www.youtube.com/playlist?list=PL8dPuuaLjXtPjQj_LcJ0Zvj-VI3sslJyF"
+      },
+      {
+        "label": "https://www.youtube.com/watch?v=_TqabsxdWmo",
+        "url": "https://www.youtube.com/watch?v=_TqabsxdWmo"
+      }
+    ],
+    "peopleToTalkTo": [],
+    "focusAreaIds": [
+      "global-health-development"
+    ]
+  },
+  {
+    "id": "global-health-development-card-04",
+    "title": "AIM — Entrepreneurship orientation (video)",
+    "oneLiner": "EA-endorsed “taste test” for entrepreneurship: helps someone quickly see what entrepreneurship-for-impact could look like, and whether it feels energizing.",
+    "whenToSuggest": "Use when it aligns with the focus area goals.",
+    "whenNotToSuggest": "Skip if it does not match the person's constraints or interests.",
+    "tags": {
+      "topic": "course",
+      "type": "quick-taste",
+      "commitment": "Tiny (≤1h)",
+      "goodFitIf": []
+    },
+    "firstSmallStep": "Review the linked resources.",
+    "nextStep": "Take the next action that feels most valuable.",
+    "links": [
+      {
+        "label": "https://www.youtube.com/watch?v=rKmKLcYoixs",
+        "url": "https://www.youtube.com/watch?v=rKmKLcYoixs"
+      }
+    ],
+    "peopleToTalkTo": [],
+    "focusAreaIds": [
+      "global-health-development"
+    ]
+  },
+  {
+    "id": "global-health-development-card-12",
+    "title": "Charity Entrepreneurship — Incubation Program",
+    "oneLiner": "EA-aligned, high-commitment path to founding a cost-effective charity with training, research, and network. CE+1",
+    "whenToSuggest": "Use when it aligns with the focus area goals.",
+    "whenNotToSuggest": "Skip if it does not match the person's constraints or interests.",
+    "tags": {
+      "topic": "program",
+      "type": "quick-taste",
+      "commitment": "High",
+      "goodFitIf": []
+    },
+    "firstSmallStep": "Review the linked resources.",
+    "nextStep": "Take the next action that feels most valuable.",
+    "links": [
+      {
+        "label": "https://www.charityentrepreneurship.com/ CE",
+        "url": "https://www.charityentrepreneurship.com/ CE"
+      },
+      {
+        "label": "https://www.charityentrepreneurship.com/apply CE",
+        "url": "https://www.charityentrepreneurship.com/apply CE"
+      }
+    ],
+    "peopleToTalkTo": [],
+    "focusAreaIds": [
+      "global-health-development"
+    ]
+  },
+  {
+    "id": "global-health-development-card-05",
+    "title": "GiveWell — Our Top Charities",
+    "oneLiner": "Canonical evaluator for cost-effective global health giving; also a map of interventions that work now. GiveWell",
+    "whenToSuggest": "Use when it aligns with the focus area goals.",
+    "whenNotToSuggest": "Skip if it does not match the person's constraints or interests.",
+    "tags": {
+      "topic": "reading",
+      "type": "quick-taste",
+      "commitment": "Tiny",
+      "goodFitIf": []
+    },
+    "firstSmallStep": "Review the linked resources.",
+    "nextStep": "Take the next action that feels most valuable.",
+    "links": [
+      {
+        "label": "https://www.givewell.org/charities/top-charities GiveWell",
+        "url": "https://www.givewell.org/charities/top-charities GiveWell"
+      }
+    ],
+    "peopleToTalkTo": [],
+    "focusAreaIds": [
+      "global-health-development"
+    ]
+  },
+  {
+    "id": "global-health-development-card-06",
+    "title": "GiveWell — Top Charities Fund",
+    "oneLiner": "Low-friction “default option” for giving to GiveWell’s highest-priority funding needs. GiveWell+1",
+    "whenToSuggest": "Use when it aligns with the focus area goals.",
+    "whenNotToSuggest": "Skip if it does not match the person's constraints or interests.",
+    "tags": {
+      "topic": "reading",
+      "type": "quick-taste",
+      "commitment": "Tiny",
+      "goodFitIf": []
+    },
+    "firstSmallStep": "Review the linked resources.",
+    "nextStep": "Take the next action that feels most valuable.",
+    "links": [
+      {
+        "label": "https://www.givewell.org/top-charities-fund GiveWell",
+        "url": "https://www.givewell.org/top-charities-fund GiveWell"
+      }
+    ],
+    "peopleToTalkTo": [],
+    "focusAreaIds": [
+      "global-health-development"
+    ]
+  },
+  {
+    "id": "global-health-development-card-10",
+    "title": "Giving What We Can — Pledge Drive",
+    "oneLiner": "Measurable-good community action: pledges taken / giving committed. Giving What We Can",
+    "whenToSuggest": "Use when it aligns with the focus area goals.",
+    "whenNotToSuggest": "Skip if it does not match the person's constraints or interests.",
+    "tags": {
+      "topic": "project",
+      "type": "hands-on",
+      "commitment": "Light",
+      "goodFitIf": []
+    },
+    "firstSmallStep": "Review the linked resources.",
+    "nextStep": "Take the next action that feels most valuable.",
+    "links": [
+      {
+        "label": "https://www.givingwhatwecan.org/events/pledge-drive Giving What We Can",
+        "url": "https://www.givingwhatwecan.org/events/pledge-drive Giving What We Can"
+      }
+    ],
+    "peopleToTalkTo": [],
+    "focusAreaIds": [
+      "global-health-development"
+    ]
+  },
+  {
+    "id": "global-health-development-card-08",
+    "title": "Giving What We Can — Pledge",
+    "oneLiner": "A commitment mechanism for people who want giving to be a stable part of life. Wikipedia",
+    "whenToSuggest": "Use when it aligns with the focus area goals.",
+    "whenNotToSuggest": "Skip if it does not match the person's constraints or interests.",
+    "tags": {
+      "topic": "reading",
+      "type": "quick-taste",
+      "commitment": "Tiny",
+      "goodFitIf": []
+    },
+    "firstSmallStep": "Review the linked resources.",
+    "nextStep": "Take the next action that feels most valuable.",
+    "links": [
+      {
+        "label": "https://www.givingwhatwecan.org/pledge",
+        "url": "https://www.givingwhatwecan.org/pledge"
+      }
+    ],
+    "peopleToTalkTo": [],
+    "focusAreaIds": [
+      "global-health-development"
+    ]
+  },
+  {
+    "id": "global-health-development-card-02",
+    "title": "Giving What We Can YouTube — GiveWell explainer",
+    "oneLiner": "A short, EA-aligned explainer of the evidence mindset behind GiveWell-style giving. YouTube+1",
+    "whenToSuggest": "Use when it aligns with the focus area goals.",
+    "whenNotToSuggest": "Skip if it does not match the person's constraints or interests.",
+    "tags": {
+      "topic": "course",
+      "type": "quick-taste",
+      "commitment": "Tiny (≤1h)",
+      "goodFitIf": []
+    },
+    "firstSmallStep": "Review the linked resources.",
+    "nextStep": "Take the next action that feels most valuable.",
+    "links": [
+      {
+        "label": "https://www.youtube.com/watch?v=_TqabsxdWmo YouTube",
+        "url": "https://www.youtube.com/watch?v=_TqabsxdWmo YouTube"
+      }
+    ],
+    "peopleToTalkTo": [],
+    "focusAreaIds": [
+      "global-health-development"
+    ]
+  },
+  {
+    "id": "global-health-development-card-07",
+    "title": "GWWC — Global Health and Wellbeing Fund",
+    "oneLiner": "Pooled giving allocated periodically using evaluator input (explicitly consults GiveWell). Giving What We Can",
+    "whenToSuggest": "Use when it aligns with the focus area goals.",
+    "whenNotToSuggest": "Skip if it does not match the person's constraints or interests.",
+    "tags": {
+      "topic": "reading",
+      "type": "quick-taste",
+      "commitment": "Tiny",
+      "goodFitIf": []
+    },
+    "firstSmallStep": "Review the linked resources.",
+    "nextStep": "Take the next action that feels most valuable.",
+    "links": [
+      {
+        "label": "https://www.givingwhatwecan.org/charities/global-health-and-wellbeing-fund Giving What We Can",
+        "url": "https://www.givingwhatwecan.org/charities/global-health-and-wellbeing-fund Giving What We Can"
+      }
+    ],
+    "peopleToTalkTo": [],
+    "focusAreaIds": [
+      "global-health-development"
+    ]
+  },
+  {
+    "id": "global-health-development-card-09",
+    "title": "Small donation drive → GiveWell Top Charities / Top Charities Fund",
+    "oneLiner": "Measurable-good project: money moved to highly cost-effective programs. GiveWell+1",
+    "whenToSuggest": "Use when it aligns with the focus area goals.",
+    "whenNotToSuggest": "Skip if it does not match the person's constraints or interests.",
+    "tags": {
+      "topic": "project",
+      "type": "hands-on",
+      "commitment": "Light",
+      "goodFitIf": []
+    },
+    "firstSmallStep": "Review the linked resources.",
+    "nextStep": "Take the next action that feels most valuable.",
+    "links": [
+      {
+        "label": "https://www.givewell.org/charities/top-charities GiveWell",
+        "url": "https://www.givewell.org/charities/top-charities GiveWell"
+      },
+      {
+        "label": "https://www.givewell.org/top-charities-fund GiveWell",
+        "url": "https://www.givewell.org/top-charities-fund GiveWell"
+      }
+    ],
+    "peopleToTalkTo": [],
+    "focusAreaIds": [
+      "global-health-development"
+    ]
+  },
+  {
+    "id": "global-health-development-card-11",
+    "title": "The Life You Can Save — Best Charities",
+    "oneLiner": "EA-adjacent, evidence-backed recommended charity list with accessible explanations. The Life You Can Save+1",
+    "whenToSuggest": "Use when it aligns with the focus area goals.",
+    "whenNotToSuggest": "Skip if it does not match the person's constraints or interests.",
+    "tags": {
+      "topic": "reading",
+      "type": "quick-taste",
+      "commitment": "Tiny",
+      "goodFitIf": []
+    },
+    "firstSmallStep": "Review the linked resources.",
+    "nextStep": "Take the next action that feels most valuable.",
+    "links": [
+      {
+        "label": "https://www.thelifeyoucansave.org/best-charities/ The Life You Can Save",
+        "url": "https://www.thelifeyoucansave.org/best-charities/ The Life You Can Save"
+      }
+    ],
+    "peopleToTalkTo": [],
+    "focusAreaIds": [
+      "global-health-development"
+    ]
+  },
+  {
+    "id": "global-health-development-card-03",
+    "title": "The Life You Can Save — Peter Singer TED talk",
+    "oneLiner": "A values-first, EA-adjacent intro to “why and how to give” for people who resonate more with moral framing. The Life You Can Save",
+    "whenToSuggest": "Use when it aligns with the focus area goals.",
+    "whenNotToSuggest": "Skip if it does not match the person's constraints or interests.",
+    "tags": {
+      "topic": "course",
+      "type": "quick-taste",
+      "commitment": "Tiny (≤1h)",
+      "goodFitIf": []
+    },
+    "firstSmallStep": "Review the linked resources.",
+    "nextStep": "Take the next action that feels most valuable.",
+    "links": [
+      {
+        "label": "https://www.thelifeyoucansave.org/peter-singers-ted-talk/ The Life You Can Save",
+        "url": "https://www.thelifeyoucansave.org/peter-singers-ted-talk/ The Life You Can Save"
+      }
+    ],
     "peopleToTalkTo": [],
     "focusAreaIds": [
       "global-health-development"

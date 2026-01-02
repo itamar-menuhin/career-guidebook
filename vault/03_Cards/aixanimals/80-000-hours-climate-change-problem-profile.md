@@ -1,5 +1,5 @@
 ---
-kind: card
+kind: archived
 id: 80-000-hours-climate-change-problem-profile
 title: '80,000 Hours: Climate change problem profile'
 focus_area_id: aixanimals

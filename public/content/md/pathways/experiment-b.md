@@ -1,7 +1,5 @@
 # GENERATED FROM VAULT — DO NOT EDIT. Source of truth: /vault
 
-# Experiment B
+A longer, structured exposure to understand the field and build context.
 
-Experiments A–D (overview → longer exposure → project pathway → job-board exploration)
-
-Experiment B — longer exposure: course/fellowship/series; field granularity (1–2 options)
+Use this for longer exposure via a course, fellowship, or series.

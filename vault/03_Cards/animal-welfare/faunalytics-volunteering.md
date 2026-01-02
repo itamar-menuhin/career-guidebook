@@ -1,5 +1,5 @@
 ---
-kind: card
+kind: archived
 id: faunalytics-volunteering
 title: Faunalytics volunteering
 focus_area_id: animal-welfare

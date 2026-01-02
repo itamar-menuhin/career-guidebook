@@ -1,5 +1,5 @@
 ---
-kind: card
+kind: archived
 id: animal-charity-evaluators-giving-recommendations
 title: 'Animal Charity Evaluators: Giving recommendations'
 focus_area_id: animal-welfare

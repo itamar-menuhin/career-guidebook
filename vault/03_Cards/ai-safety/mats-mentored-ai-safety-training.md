@@ -1,5 +1,5 @@
 ---
-kind: card
+kind: archived
 id: mats-mentored-ai-safety-training
 title: MATS (Mentored AI Safety Training)
 focus_area_id: ai-safety

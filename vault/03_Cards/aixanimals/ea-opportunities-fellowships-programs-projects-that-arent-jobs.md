@@ -1,5 +1,5 @@
 ---
-kind: card
+kind: archived
 id: ea-opportunities-fellowships-programs-projects-that-arent-jobs
 title: EA Opportunities (fellowships/programs/projects that aren’t “jobs”)
 focus_area_id: aixanimals

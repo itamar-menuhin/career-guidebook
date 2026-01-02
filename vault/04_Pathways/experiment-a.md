@@ -1,12 +1,11 @@
 ---
 kind: pathway
 id: experiment-a
-title: Experiment A
-group: Experiments
+title: Quick taste (≈1 hour)
+group: How to explore (A–D)
+order: 0
 ---
 
-# Experiment A
+A fast way to get oriented and test interest without commitment.
 
-Experiments A–D (overview → longer exposure → project pathway → job-board exploration)
-
-Experiment A — 1-hour overview: broad overview + interest test; canonical intro resource/video (1–2 options)
+Use this as an overview + interest test; pick one canonical intro resource/video.

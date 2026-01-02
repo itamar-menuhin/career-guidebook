@@ -2,10 +2,8 @@
 kind: pathway
 id: path-pattern-stay-in-role-but-reshape-it
 title: Stay in role but reshape it
-order: 1
 group: Path patterns
+order: 1
 ---
 
-# Stay in role but reshape it
-
-Use these when you don’t have deep domain answers, or cause area isn’t clear yet:
+Keep your current role, but adjust the scope, projects, or responsibilities to better match your strengths and constraints.

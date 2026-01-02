@@ -1,5 +1,5 @@
 ---
-kind: pathway
+kind: archived
 id: module-entrepreneurship-founding
 title: Entrepreneurship / founding
 group: Orthogonal modules

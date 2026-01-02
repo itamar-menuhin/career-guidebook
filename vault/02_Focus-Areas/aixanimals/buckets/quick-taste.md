@@ -1,5 +1,5 @@
 ---
-kind: focus_area_bucket
+kind: archived
 focus_area_id: aixanimals
 bucket: quick-taste
 title: Quick taste (≈1 hour)

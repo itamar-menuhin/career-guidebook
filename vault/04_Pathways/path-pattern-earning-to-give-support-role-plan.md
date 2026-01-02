@@ -2,10 +2,8 @@
 kind: pathway
 id: path-pattern-earning-to-give-support-role-plan
 title: Earning-to-give/support role plan
-order: 11
 group: Path patterns
+order: 11
 ---
 
-# Earning-to-give/support role plan
-
-Use these when you don’t have deep domain answers, or cause area isn’t clear yet:
+Stay or move into roles that enable significant giving or support high-impact work indirectly.

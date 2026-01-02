@@ -2,10 +2,8 @@
 kind: pathway
 id: path-pattern-switch-org-team-within-same-field
 title: Switch org/team within same field
-order: 2
 group: Path patterns
+order: 2
 ---
 
-# Switch org/team within same field
-
-Use these when you don’t have deep domain answers, or cause area isn’t clear yet:
+Move to a different team or organization while staying in the same general domain to improve fit, learning, or impact.

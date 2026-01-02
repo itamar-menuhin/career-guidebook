@@ -1,5 +1,5 @@
 ---
-kind: card
+kind: archived
 id: the-life-you-can-save-recommended-charities
 title: 'The Life You Can Save: recommended charities'
 focus_area_id: aixanimals

@@ -1,5 +1,5 @@
 ---
-kind: card
+kind: archived
 id: aim-entrepreneurship-orientation-video-1h
 title: 'AIM: Entrepreneurship orientation video (<1h)'
 focus_area_id: global-health-development

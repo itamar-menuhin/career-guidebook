@@ -1,123 +1,542 @@
 [
   {
-    "id": "aixanimals",
-    "name": "Animal × AI quick-start (v1)",
-    "overviewPath": "content/md/focus-areas/aixanimals/overview.md",
-    "overviewExcerpt": "Use AI to reduce animal suffering (farmed and wild) by improving how we measure welfare, prevent harms, target advocacy, and design interventions — while also being careful about ways AI deployment can accidentally increase suffering (e.g., scale effects, mismeasurement, perverse incentives). (Animal Charity Evaluators)",
+    "id": "biosecurity",
+    "name": "Biosecurity / Pandemic preparedness quick-start (v1)",
+    "overviewPath": "content/md/focus-areas/biosecurity/overview.md",
+    "overviewExcerpt": "Reduce catastrophic biological risks (natural outbreaks and engineered pathogens) by improving prevention, detection, response, and policy—so society is far less vulnerable to extreme pandemics. 80,000 Hours+1",
     "roleShapes": [
-      "Applied ML for wild animal welfare: human–wildlife conflict mitigation, monitoring welfare indicators (e.g., vocalizations), detection/early warning systems. (Rethink Priorities)",
-      "AI in farmed animal systems: how AI in agriculture/aquaculture changes welfare (sometimes better, sometimes worse), plus interventions to steer it. (Rethink Priorities)",
-      "AI for animal advocacy orgs: LLM-enabled research workflows, message testing, supporter comms, grantwriting support, ops automation (done carefully). (Faunalytics)",
-      "Research & strategy at think tanks (what AI applications are promising, where are risks/unknowns). (Rethink Priorities)",
-      "Programs / community / hackathons for building tools and pipelines for animal protection. (Electric Sheep)"
+      "Public health security / policy / strategy",
+      "Technical work (biosurveillance, diagnostics, PPE/engineering controls, forecasting)",
+      "Research & analysis (risk assessment, program evaluation, modeling)",
+      "Ops/programs (running initiatives, coordination, funding ops)",
+      "AI-bio risk work (when relevant) 80,000 Hours"
     ],
     "fitSignals": [
-      "You like concrete technical leverage (data/ML) and you’re motivated by animals.",
-      "You’re comfortable with “applied + messy” domains (datasets, field conditions, imperfect metrics).",
-      "You can hold a balanced stance: “AI can help” and “AI can harm if used carelessly.” (Animal Charity Evaluators)"
+      "Motivated by preparedness + systems thinking (institutions, incentives, coordination)",
+      "Comfortable with policy/bureaucracy and/or technical public health work",
+      "Often benefits from “make it concrete” steps (projects, job-board scan), because the space can feel abstract"
     ],
     "buckets": {
       "quickTaste": {
         "title": "Quick taste (≈1 hour)",
-        "description": "Experiment A — 1-hour overview (choose 1) Canonical picks Animal Charity Evaluators — “The impacts of AI on animal advocacy” (high-level framing of upsides/risks; good first map). (Animal Charity Evaluators) Rethink…",
+        "description": "## Quick taste — 1-hour overview (choose 1) - 80,000 Hours Biorisk research, strategy & policy career review (read/skim as an overview entry point). 80,000 Hours - YouTube talk (EA-context): Jaime Yassif (biosecurity /…",
         "cardIds": [
-          "80-000-hours-climate-change-problem-profile",
-          "80-000-hours-job-board-adjacent-roles-lens",
-          "ace-the-impacts-of-ai-on-animal-advocacy",
-          "ai-animals-fellowship-8-week-remote",
-          "animal-advocacy-careers-job-board-data-tech-roles-org-landscape",
-          "charity-entrepreneurship-incubation-program",
-          "ea-opportunities-fellowships-programs-projects-that-arent-jobs",
-          "faunalytics-ai-and-animal-advocacy-survey-style",
-          "faunalytics-volunteering-ai-tooling-research-support-lane",
-          "felidae-conservation-fund-volunteer-ai-ml-specialist-camera-imagery",
-          "founders-pledge-climate-fund-climate-change-fund-via-gwwc-page",
-          "futurekind-ai-fellowship-12-week",
-          "givewell-top-charities-top-charities-fund",
-          "giving-green-effective-climate-giving",
-          "giving-what-we-can-10-pledge",
-          "giving-what-we-can-global-health-wellbeing-fund",
-          "org-facing-scoping-note-using-an-rp-ai-for-animals-angle-externally-useful",
-          "probably-good-climate-careers-guide",
-          "rethink-priorities-ai-for-human-wildlife-conflict-mitigations",
-          "rethink-priorities-how-ai-is-affecting-farmed-aquatic-animals-series",
-          "terra-do-fellowship",
-          "the-life-you-can-save-recommended-charities",
-          "work-on-climate-starter-packs-community"
+          "biosecurity-card-01",
+          "biosecurity-card-02"
         ],
-        "inlineGuidancePath": "content/md/focus-areas/aixanimals/buckets/quick-taste.md",
+        "inlineGuidancePath": "content/md/focus-areas/biosecurity/buckets/quick-taste.md",
         "curatedCardIds": [
-          "80-000-hours-climate-change-problem-profile",
-          "80-000-hours-job-board-adjacent-roles-lens",
-          "ace-the-impacts-of-ai-on-animal-advocacy",
-          "ai-animals-fellowship-8-week-remote",
-          "animal-advocacy-careers-job-board-data-tech-roles-org-landscape",
-          "charity-entrepreneurship-incubation-program",
-          "ea-opportunities-fellowships-programs-projects-that-arent-jobs",
-          "faunalytics-ai-and-animal-advocacy-survey-style",
-          "faunalytics-volunteering-ai-tooling-research-support-lane",
-          "felidae-conservation-fund-volunteer-ai-ml-specialist-camera-imagery",
-          "founders-pledge-climate-fund-climate-change-fund-via-gwwc-page",
-          "futurekind-ai-fellowship-12-week",
-          "givewell-top-charities-top-charities-fund",
-          "giving-green-effective-climate-giving",
-          "giving-what-we-can-10-pledge",
-          "giving-what-we-can-global-health-wellbeing-fund",
-          "org-facing-scoping-note-using-an-rp-ai-for-animals-angle-externally-useful",
-          "probably-good-climate-careers-guide",
-          "rethink-priorities-ai-for-human-wildlife-conflict-mitigations",
-          "rethink-priorities-how-ai-is-affecting-farmed-aquatic-animals-series",
-          "terra-do-fellowship",
-          "the-life-you-can-save-recommended-charities",
-          "work-on-climate-starter-packs-community"
+          "biosecurity-card-01",
+          "biosecurity-card-02"
         ]
       },
       "deeperDive": {
         "title": "Deeper dive (2–6 hours)",
-        "description": "Experiment B — longer exposure (choose 1) Canonical pick (evidence/field grounding) Rethink Priorities series: “How AI is affecting farmed aquatic animals” (deep dive on innovation → deployment → welfare effects; very…",
+        "description": "## Deeper dive — longer exposure (choose 1) - BlueDot Impact — Biosecurity course (structured ~30h exposure). BlueDot+1 - Optional alt: pick 1–2 episodes/articles from 80,000 Hours’ biosecurity materials for deeper…",
+        "cardIds": [
+          "biosecurity-card-04",
+          "biosecurity-card-03"
+        ],
+        "inlineGuidancePath": "content/md/focus-areas/biosecurity/buckets/deeper-dive.md",
+        "curatedCardIds": [
+          "biosecurity-card-04",
+          "biosecurity-card-03"
+        ]
+      },
+      "handsOn": {
+        "title": "Hands-on trial",
+        "description": "## Hands-on project — project pathway (make it concrete) - Canonical pick: Oxford Biosecurity Group (OBG) projects (part-time remote research projects; biosecurity + AI-bio intersection). My Site+1 - Toe-in-the-water…",
+        "cardIds": [
+          "biosecurity-card-05"
+        ],
+        "inlineGuidancePath": "content/md/focus-areas/biosecurity/buckets/hands-on.md",
+        "curatedCardIds": [
+          "biosecurity-card-05"
+        ]
+      },
+      "jobBoard": {
+        "title": "Job board scan (real roles)",
+        "description": "## Job-board scan — job-board exploration (choose 1–2) - 80,000 Hours job board (filter toward biosecurity/pandemic preparedness roles). 80,000 Hours Job Board+1 - Optional alt: EA Opportunities for…",
+        "cardIds": [
+          "biosecurity-card-06",
+          "biosecurity-card-07"
+        ],
+        "inlineGuidancePath": "content/md/focus-areas/biosecurity/buckets/job-board.md",
+        "curatedCardIds": [
+          "biosecurity-card-06",
+          "biosecurity-card-07"
+        ]
+      }
+    },
+    "curatedCardIds": [
+      "biosecurity-card-01",
+      "biosecurity-card-02",
+      "biosecurity-card-04",
+      "biosecurity-card-03",
+      "biosecurity-card-05",
+      "biosecurity-card-06",
+      "biosecurity-card-07"
+    ],
+    "peopleToTalkToPrompts": [],
+    "commonConfusions": []
+  },
+  {
+    "id": "ai-x-animals",
+    "name": "Cause area: Animal × AI quick-start (v1)",
+    "overviewPath": "content/md/focus-areas/ai-x-animals/overview.md",
+    "overviewExcerpt": "## What it’s trying to achieve (plain language) ## What kinds of work exist here ## What a good fit often looks like (signals)",
+    "roleShapes": [],
+    "fitSignals": [],
+    "buckets": {
+      "quickTaste": {
+        "title": "Quick taste (≈1 hour)",
+        "description": "Quick taste (≈1 hour)",
+        "cardIds": [
+          "ai-x-animals-card-02",
+          "ai-x-animals-card-01",
+          "ai-x-animals-card-05",
+          "ai-x-animals-card-03",
+          "ai-x-animals-card-05",
+          "ai-x-animals-card-01",
+          "ai-x-animals-card-04",
+          "ai-x-animals-card-02",
+          "ai-x-animals-card-03",
+          "ai-x-animals-card-01",
+          "ai-x-animals-card-02",
+          "ai-x-animals-card-06",
+          "ai-x-animals-card-04",
+          "ai-x-animals-card-03"
+        ],
+        "inlineGuidancePath": "content/md/focus-areas/ai-x-animals/buckets/quick-taste.md",
+        "curatedCardIds": [
+          "ai-x-animals-card-02",
+          "ai-x-animals-card-01",
+          "ai-x-animals-card-05",
+          "ai-x-animals-card-03",
+          "ai-x-animals-card-05",
+          "ai-x-animals-card-01",
+          "ai-x-animals-card-04",
+          "ai-x-animals-card-02",
+          "ai-x-animals-card-03",
+          "ai-x-animals-card-01",
+          "ai-x-animals-card-02",
+          "ai-x-animals-card-06",
+          "ai-x-animals-card-04",
+          "ai-x-animals-card-03"
+        ]
+      },
+      "deeperDive": {
+        "title": "Deeper dive (2–6 hours)",
+        "description": "Deeper dive (2–6 hours)",
+        "cardIds": [
+          "ai-x-animals-card-05",
+          "ai-x-animals-card-06",
+          "ai-x-animals-card-04"
+        ],
+        "inlineGuidancePath": "content/md/focus-areas/ai-x-animals/buckets/deeper-dive.md",
+        "curatedCardIds": [
+          "ai-x-animals-card-05",
+          "ai-x-animals-card-06",
+          "ai-x-animals-card-04"
+        ]
+      },
+      "handsOn": {
+        "title": "Hands-on trial",
+        "description": "Hands-on trial",
+        "cardIds": [
+          "ai-x-animals-card-09",
+          "ai-x-animals-card-07",
+          "ai-x-animals-card-08"
+        ],
+        "inlineGuidancePath": "content/md/focus-areas/ai-x-animals/buckets/hands-on.md",
+        "curatedCardIds": [
+          "ai-x-animals-card-09",
+          "ai-x-animals-card-07",
+          "ai-x-animals-card-08"
+        ]
+      },
+      "jobBoard": {
+        "title": "Job board scan (real roles)",
+        "description": "Job board scan (real roles)",
+        "cardIds": [
+          "ai-x-animals-card-11",
+          "ai-x-animals-card-10",
+          "ai-x-animals-card-12"
+        ],
+        "inlineGuidancePath": "content/md/focus-areas/ai-x-animals/buckets/job-board.md",
+        "curatedCardIds": [
+          "ai-x-animals-card-11",
+          "ai-x-animals-card-10",
+          "ai-x-animals-card-12"
+        ]
+      }
+    },
+    "curatedCardIds": [
+      "ai-x-animals-card-02",
+      "ai-x-animals-card-01",
+      "ai-x-animals-card-05",
+      "ai-x-animals-card-03",
+      "ai-x-animals-card-04",
+      "ai-x-animals-card-06",
+      "ai-x-animals-card-09",
+      "ai-x-animals-card-07",
+      "ai-x-animals-card-08",
+      "ai-x-animals-card-11",
+      "ai-x-animals-card-10",
+      "ai-x-animals-card-12"
+    ],
+    "peopleToTalkToPrompts": [],
+    "commonConfusions": []
+  },
+  {
+    "id": "animal-welfare",
+    "name": "Cause area: Animal Welfare quick-start (v1)",
+    "overviewPath": "content/md/focus-areas/animal-welfare/overview.md",
+    "overviewExcerpt": "## What it’s trying to achieve (plain language) ## What kinds of work exist here ## What a good fit often looks like (signals)",
+    "roleShapes": [],
+    "fitSignals": [],
+    "buckets": {
+      "quickTaste": {
+        "title": "Quick taste (≈1 hour)",
+        "description": "Quick taste (≈1 hour)",
+        "cardIds": [
+          "animal-welfare-card-01",
+          "animal-welfare-card-03",
+          "animal-welfare-card-11",
+          "animal-welfare-card-12",
+          "animal-welfare-card-13",
+          "animal-welfare-card-02"
+        ],
+        "inlineGuidancePath": "content/md/focus-areas/animal-welfare/buckets/quick-taste.md",
+        "curatedCardIds": [
+          "animal-welfare-card-01",
+          "animal-welfare-card-03",
+          "animal-welfare-card-11",
+          "animal-welfare-card-12",
+          "animal-welfare-card-13",
+          "animal-welfare-card-02"
+        ]
+      },
+      "deeperDive": {
+        "title": "Deeper dive (2–6 hours)",
+        "description": "Deeper dive (2–6 hours)",
+        "cardIds": [
+          "animal-welfare-card-05",
+          "animal-welfare-card-04"
+        ],
+        "inlineGuidancePath": "content/md/focus-areas/animal-welfare/buckets/deeper-dive.md",
+        "curatedCardIds": [
+          "animal-welfare-card-05",
+          "animal-welfare-card-04"
+        ]
+      },
+      "handsOn": {
+        "title": "Hands-on trial",
+        "description": "Hands-on trial",
+        "cardIds": [
+          "animal-welfare-card-07",
+          "animal-welfare-card-06"
+        ],
+        "inlineGuidancePath": "content/md/focus-areas/animal-welfare/buckets/hands-on.md",
+        "curatedCardIds": [
+          "animal-welfare-card-07",
+          "animal-welfare-card-06"
+        ]
+      },
+      "jobBoard": {
+        "title": "Job board scan (real roles)",
+        "description": "Job board scan (real roles)",
+        "cardIds": [
+          "animal-welfare-card-09",
+          "animal-welfare-card-08",
+          "animal-welfare-card-10"
+        ],
+        "inlineGuidancePath": "content/md/focus-areas/animal-welfare/buckets/job-board.md",
+        "curatedCardIds": [
+          "animal-welfare-card-09",
+          "animal-welfare-card-08",
+          "animal-welfare-card-10"
+        ]
+      }
+    },
+    "curatedCardIds": [
+      "animal-welfare-card-01",
+      "animal-welfare-card-03",
+      "animal-welfare-card-11",
+      "animal-welfare-card-12",
+      "animal-welfare-card-13",
+      "animal-welfare-card-02",
+      "animal-welfare-card-05",
+      "animal-welfare-card-04",
+      "animal-welfare-card-07",
+      "animal-welfare-card-06",
+      "animal-welfare-card-09",
+      "animal-welfare-card-08",
+      "animal-welfare-card-10"
+    ],
+    "peopleToTalkToPrompts": [],
+    "commonConfusions": []
+  },
+  {
+    "id": "climate",
+    "name": "Cause area: Climate quick-start (v1)",
+    "overviewPath": "content/md/focus-areas/climate/overview.md",
+    "overviewExcerpt": "## What it’s trying to achieve (plain language) ## What kinds of work exist here ## What a good fit often looks like (signals)",
+    "roleShapes": [],
+    "fitSignals": [],
+    "buckets": {
+      "quickTaste": {
+        "title": "Quick taste (≈1 hour)",
+        "description": "Quick taste (≈1 hour)",
+        "cardIds": [
+          "climate-card-02",
+          "climate-card-08",
+          "climate-card-01",
+          "climate-card-03"
+        ],
+        "inlineGuidancePath": "content/md/focus-areas/climate/buckets/quick-taste.md",
+        "curatedCardIds": [
+          "climate-card-02",
+          "climate-card-08",
+          "climate-card-01",
+          "climate-card-03"
+        ]
+      },
+      "deeperDive": {
+        "title": "Deeper dive (2–6 hours)",
+        "description": "Deeper dive (2–6 hours)",
+        "cardIds": [
+          "climate-card-09",
+          "climate-card-05"
+        ],
+        "inlineGuidancePath": "content/md/focus-areas/climate/buckets/deeper-dive.md",
+        "curatedCardIds": [
+          "climate-card-09",
+          "climate-card-05"
+        ]
+      },
+      "handsOn": {
+        "title": "Hands-on trial",
+        "description": "Hands-on trial",
+        "cardIds": [
+          "climate-card-06",
+          "climate-card-07",
+          "climate-card-04"
+        ],
+        "inlineGuidancePath": "content/md/focus-areas/climate/buckets/hands-on.md",
+        "curatedCardIds": [
+          "climate-card-06",
+          "climate-card-07",
+          "climate-card-04"
+        ]
+      },
+      "jobBoard": {
+        "title": "Job board scan (real roles)",
+        "description": "Job board scan (real roles)",
+        "cardIds": [
+          "climate-card-12",
+          "climate-card-11",
+          "climate-card-10"
+        ],
+        "inlineGuidancePath": "content/md/focus-areas/climate/buckets/job-board.md",
+        "curatedCardIds": [
+          "climate-card-12",
+          "climate-card-11",
+          "climate-card-10"
+        ]
+      }
+    },
+    "curatedCardIds": [
+      "climate-card-02",
+      "climate-card-08",
+      "climate-card-01",
+      "climate-card-03",
+      "climate-card-09",
+      "climate-card-05",
+      "climate-card-06",
+      "climate-card-07",
+      "climate-card-04",
+      "climate-card-12",
+      "climate-card-11",
+      "climate-card-10"
+    ],
+    "peopleToTalkToPrompts": [],
+    "commonConfusions": []
+  },
+  {
+    "id": "global-health-development",
+    "name": "Cause area: Global Health & Development quick-start (v1)",
+    "overviewPath": "content/md/focus-areas/global-health-development/overview.md",
+    "overviewExcerpt": "## What it’s trying to achieve (plain language) ## What kinds of work exist here ## What a good fit often looks like (signals)",
+    "roleShapes": [],
+    "fitSignals": [],
+    "buckets": {
+      "quickTaste": {
+        "title": "Quick taste (≈1 hour)",
+        "description": "Quick taste (≈1 hour)",
+        "cardIds": [
+          "global-health-development-card-01",
+          "global-health-development-card-04",
+          "global-health-development-card-12",
+          "global-health-development-card-05",
+          "global-health-development-card-06",
+          "global-health-development-card-08",
+          "global-health-development-card-02",
+          "global-health-development-card-07",
+          "global-health-development-card-11",
+          "global-health-development-card-03"
+        ],
+        "inlineGuidancePath": "content/md/focus-areas/global-health-development/buckets/quick-taste.md",
+        "curatedCardIds": [
+          "global-health-development-card-01",
+          "global-health-development-card-04",
+          "global-health-development-card-12",
+          "global-health-development-card-05",
+          "global-health-development-card-06",
+          "global-health-development-card-08",
+          "global-health-development-card-02",
+          "global-health-development-card-07",
+          "global-health-development-card-11",
+          "global-health-development-card-03"
+        ]
+      },
+      "deeperDive": {
+        "title": "Deeper dive (2–6 hours)",
+        "description": "Deeper dive (2–6 hours)",
         "cardIds": [],
-        "inlineGuidancePath": "content/md/focus-areas/aixanimals/buckets/deeper-dive.md",
+        "inlineGuidancePath": "content/md/focus-areas/global-health-development/buckets/deeper-dive.md",
         "curatedCardIds": []
       },
       "handsOn": {
         "title": "Hands-on trial",
-        "description": "Experiment C — project pathway (make it concrete; good for “I need a push”) Canonical pick (low barrier, EA-aligned research contribution) Use a Rethink Priorities “AI for animals” angle to produce a small artifact: 1–2…",
-        "cardIds": [],
-        "inlineGuidancePath": "content/md/focus-areas/aixanimals/buckets/hands-on.md",
-        "curatedCardIds": []
+        "description": "Hands-on trial",
+        "cardIds": [
+          "global-health-development-card-10",
+          "global-health-development-card-09"
+        ],
+        "inlineGuidancePath": "content/md/focus-areas/global-health-development/buckets/hands-on.md",
+        "curatedCardIds": [
+          "global-health-development-card-10",
+          "global-health-development-card-09"
+        ]
       },
       "jobBoard": {
         "title": "Job board scan (real roles)",
-        "description": "Experiment D — job-board exploration (bridge theory → action) Canonical picks (choose 1–2) 80,000 Hours job board (filter for animal welfare, or AI/data roles in adjacent orgs). Animal Advocacy Careers job board (search…",
-        "cardIds": [],
-        "inlineGuidancePath": "content/md/focus-areas/aixanimals/buckets/job-board.md",
-        "curatedCardIds": []
+        "description": "Job board scan (real roles)",
+        "cardIds": [
+          "global-health-development-card-13"
+        ],
+        "inlineGuidancePath": "content/md/focus-areas/global-health-development/buckets/job-board.md",
+        "curatedCardIds": [
+          "global-health-development-card-13"
+        ]
       }
     },
     "curatedCardIds": [
-      "80-000-hours-climate-change-problem-profile",
-      "80-000-hours-job-board-adjacent-roles-lens",
-      "ace-the-impacts-of-ai-on-animal-advocacy",
-      "ai-animals-fellowship-8-week-remote",
-      "animal-advocacy-careers-job-board-data-tech-roles-org-landscape",
-      "charity-entrepreneurship-incubation-program",
-      "ea-opportunities-fellowships-programs-projects-that-arent-jobs",
-      "faunalytics-ai-and-animal-advocacy-survey-style",
-      "faunalytics-volunteering-ai-tooling-research-support-lane",
-      "felidae-conservation-fund-volunteer-ai-ml-specialist-camera-imagery",
-      "founders-pledge-climate-fund-climate-change-fund-via-gwwc-page",
-      "futurekind-ai-fellowship-12-week",
-      "givewell-top-charities-top-charities-fund",
-      "giving-green-effective-climate-giving",
-      "giving-what-we-can-10-pledge",
-      "giving-what-we-can-global-health-wellbeing-fund",
-      "org-facing-scoping-note-using-an-rp-ai-for-animals-angle-externally-useful",
-      "probably-good-climate-careers-guide",
-      "rethink-priorities-ai-for-human-wildlife-conflict-mitigations",
-      "rethink-priorities-how-ai-is-affecting-farmed-aquatic-animals-series",
-      "terra-do-fellowship",
-      "the-life-you-can-save-recommended-charities",
-      "work-on-climate-starter-packs-community"
+      "global-health-development-card-01",
+      "global-health-development-card-04",
+      "global-health-development-card-12",
+      "global-health-development-card-05",
+      "global-health-development-card-06",
+      "global-health-development-card-08",
+      "global-health-development-card-02",
+      "global-health-development-card-07",
+      "global-health-development-card-11",
+      "global-health-development-card-03",
+      "global-health-development-card-10",
+      "global-health-development-card-09",
+      "global-health-development-card-13"
+    ],
+    "peopleToTalkToPrompts": [],
+    "commonConfusions": []
+  },
+  {
+    "id": "ai-safety",
+    "name": "Cause-area quick-start page template (locked)",
+    "overviewPath": "content/md/focus-areas/ai-safety/overview.md",
+    "overviewExcerpt": "Help ensure advanced AI systems don’t cause catastrophic harm, by improving how we build/evaluate/govern/deploy powerful AI (technical safety + governance/policy).",
+    "roleShapes": [
+      "Technical research (alignment, interpretability, evals, robustness)",
+      "Research engineering (tools, eval pipelines, infra for safety)",
+      "Governance / policy / strategy",
+      "Security / preparedness / model risk",
+      "Ops / programs / field-building",
+      "Communications / writing"
+    ],
+    "fitSignals": [
+      "Motivated by high-stakes downside risk + can tolerate uncertainty/debate",
+      "Drawn to either: technical challenge, governance complexity, or enabling infrastructure/community",
+      "OK with long feedback loops (or choose Experiment C to make it concrete fast)"
+    ],
+    "buckets": {
+      "quickTaste": {
+        "title": "Quick taste (≈1 hour)",
+        "description": "## Quick taste — 1-hour overview (choose 1) - Robert Miles — “Intro to AI Safety, Remastered” (video) - DeepMind — “AGI Safety Course” playlist (video course) - Optional alt if they prefer reading: 80,000 Hours AI safety…",
+        "cardIds": [
+          "ai-safety-card-03",
+          "ai-safety-card-02",
+          "ai-safety-card-01"
+        ],
+        "inlineGuidancePath": "content/md/focus-areas/ai-safety/buckets/quick-taste.md",
+        "curatedCardIds": [
+          "ai-safety-card-03",
+          "ai-safety-card-02",
+          "ai-safety-card-01"
+        ]
+      },
+      "deeperDive": {
+        "title": "Deeper dive (2–6 hours)",
+        "description": "## Deeper dive — longer exposure (choose 1) - AGI Safety Fundamentals (reading group + discussion + project) - BlueDot Impact AI courses (technical safety / governance)",
+        "cardIds": [
+          "ai-safety-card-04",
+          "ai-safety-card-05"
+        ],
+        "inlineGuidancePath": "content/md/focus-areas/ai-safety/buckets/deeper-dive.md",
+        "curatedCardIds": [
+          "ai-safety-card-04",
+          "ai-safety-card-05"
+        ]
+      },
+      "handsOn": {
+        "title": "Hands-on trial",
+        "description": "## Hands-on project — project pathway - SPAR — a part-time remote program explicitly structured around impactful research projects with mentors in AI safety/policy. - Optional alt (bigger commitment): MATS (intensive…",
+        "cardIds": [
+          "ai-safety-card-07",
+          "ai-safety-card-06"
+        ],
+        "inlineGuidancePath": "content/md/focus-areas/ai-safety/buckets/hands-on.md",
+        "curatedCardIds": [
+          "ai-safety-card-07",
+          "ai-safety-card-06"
+        ]
+      },
+      "jobBoard": {
+        "title": "Job board scan (real roles)",
+        "description": "## Job-board scan — job-board exploration (choose 1–2) - 80,000 Hours job board - AISafety.com jobs - Optional alt: EA Opportunities board - Tiny scanning method (10–25 min): collect 8–12 interesting roles → label…",
+        "cardIds": [
+          "ai-safety-card-08",
+          "ai-safety-card-09",
+          "ai-safety-card-10"
+        ],
+        "inlineGuidancePath": "content/md/focus-areas/ai-safety/buckets/job-board.md",
+        "curatedCardIds": [
+          "ai-safety-card-08",
+          "ai-safety-card-09",
+          "ai-safety-card-10"
+        ]
+      }
+    },
+    "curatedCardIds": [
+      "ai-safety-card-03",
+      "ai-safety-card-02",
+      "ai-safety-card-01",
+      "ai-safety-card-04",
+      "ai-safety-card-05",
+      "ai-safety-card-07",
+      "ai-safety-card-06",
+      "ai-safety-card-08",
+      "ai-safety-card-09",
+      "ai-safety-card-10"
     ],
     "peopleToTalkToPrompts": [],
     "commonConfusions": []

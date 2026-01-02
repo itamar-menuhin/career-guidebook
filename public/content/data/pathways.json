@@ -1,63 +1,31 @@
 [
   {
     "id": "experiment-a",
-    "name": "Experiment A",
+    "name": "Quick taste (≈1 hour)",
     "contentPath": "content/md/pathways/experiment-a.md",
-    "group": "Experiments"
+    "order": 0,
+    "group": "How to explore (A–D)"
   },
   {
     "id": "experiment-b",
-    "name": "Experiment B",
+    "name": "Deeper dive (course / fellowship)",
     "contentPath": "content/md/pathways/experiment-b.md",
-    "group": "Experiments"
+    "order": 0,
+    "group": "How to explore (A–D)"
   },
   {
     "id": "experiment-c",
-    "name": "Experiment C",
+    "name": "Hands-on project (proof of fit)",
     "contentPath": "content/md/pathways/experiment-c.md",
-    "group": "Experiments"
+    "order": 0,
+    "group": "How to explore (A–D)"
   },
   {
     "id": "experiment-d",
-    "name": "Experiment D",
+    "name": "Job-board scan (make roles concrete)",
     "contentPath": "content/md/pathways/experiment-d.md",
-    "group": "Experiments"
-  },
-  {
-    "id": "module-effective-giving",
-    "name": "Effective giving",
-    "contentPath": "content/md/pathways/module-effective-giving.md",
-    "group": "Orthogonal modules"
-  },
-  {
-    "id": "module-entrepreneurship-founding",
-    "name": "Entrepreneurship / founding",
-    "contentPath": "content/md/pathways/module-entrepreneurship-founding.md",
-    "group": "Orthogonal modules"
-  },
-  {
-    "id": "module-job-search-networking-sprint",
-    "name": "Job search / networking sprint",
-    "contentPath": "content/md/pathways/module-job-search-networking-sprint.md",
-    "group": "Orthogonal modules"
-  },
-  {
-    "id": "module-project-first-create-an-artifact",
-    "name": "Project-first (create an artifact)",
-    "contentPath": "content/md/pathways/module-project-first-create-an-artifact.md",
-    "group": "Orthogonal modules"
-  },
-  {
-    "id": "module-skill-building-career-capital",
-    "name": "Skill-building / career capital",
-    "contentPath": "content/md/pathways/module-skill-building-career-capital.md",
-    "group": "Orthogonal modules"
-  },
-  {
-    "id": "module-volunteering-community-building",
-    "name": "Volunteering/community building",
-    "contentPath": "content/md/pathways/module-volunteering-community-building.md",
-    "group": "Orthogonal modules"
+    "order": 0,
+    "group": "How to explore (A–D)"
   },
   {
     "id": "path-pattern-stay-in-role-but-reshape-it",
@@ -96,7 +64,7 @@
   },
   {
     "id": "path-pattern-test-the-cause-area-plan",
-    "name": "\"Test the cause area\" plan",
+    "name": "“Test the cause area” plan",
     "contentPath": "content/md/pathways/path-pattern-test-the-cause-area-plan.md",
     "order": 6,
     "group": "Path patterns"

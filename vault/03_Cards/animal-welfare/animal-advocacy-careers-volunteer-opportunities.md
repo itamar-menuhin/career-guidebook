@@ -1,5 +1,5 @@
 ---
-kind: card
+kind: archived
 id: animal-advocacy-careers-volunteer-opportunities
 title: 'Animal Advocacy Careers: Volunteer opportunities'
 focus_area_id: animal-welfare

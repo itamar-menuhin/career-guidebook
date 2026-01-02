@@ -1,5 +1,5 @@
 ---
-kind: card
+kind: archived
 id: 80-000-hours-job-board-filter-to-biosecurity-pandemic-preparedness
 title: 80,000 Hours Job Board (filter to biosecurity & pandemic preparedness)
 focus_area_id: biosecurity

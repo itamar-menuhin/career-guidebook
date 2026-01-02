@@ -1,5 +1,5 @@
 ---
-kind: pathway
+kind: archived
 id: module-volunteering-community-building
 title: Volunteering/community building
 group: Orthogonal modules

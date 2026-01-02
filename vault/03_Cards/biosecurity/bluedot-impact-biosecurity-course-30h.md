@@ -1,5 +1,5 @@
 ---
-kind: card
+kind: archived
 id: bluedot-impact-biosecurity-course-30h
 title: 'BlueDot Impact: Biosecurity course (~30h)'
 focus_area_id: biosecurity

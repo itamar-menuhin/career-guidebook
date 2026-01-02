@@ -1,5 +1,5 @@
 ---
-kind: card
+kind: archived
 id: rethink-priorities-how-ai-is-affecting-farmed-aquatic-animals-series
 title: 'Rethink Priorities: “How AI is affecting farmed aquatic animals” (series)'
 focus_area_id: aixanimals

@@ -1,5 +1,5 @@
 ---
-kind: card
+kind: archived
 id: charity-entrepreneurship-incubation-program
 title: Charity Entrepreneurship Incubation Program
 focus_area_id: aixanimals

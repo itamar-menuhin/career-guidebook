@@ -1,5 +1,5 @@
 ---
-kind: focus_area
+kind: archived
 id: aixanimals
 title: Animal × AI quick-start (v1)
 summary: Use AI to reduce animal suffering (farmed and wild) by improving how we measure

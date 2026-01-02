@@ -1,5 +1,5 @@
 ---
-kind: card
+kind: archived
 id: project-gwwc-pledge-drive
 title: 'Project: GWWC Pledge Drive'
 focus_area_id: global-health-development

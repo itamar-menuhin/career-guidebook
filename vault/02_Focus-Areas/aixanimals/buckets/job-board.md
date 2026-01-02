@@ -1,5 +1,5 @@
 ---
-kind: focus_area_bucket
+kind: archived
 focus_area_id: aixanimals
 bucket: job-board
 title: Job board scan (real roles)

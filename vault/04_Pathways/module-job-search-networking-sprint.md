@@ -1,5 +1,5 @@
 ---
-kind: pathway
+kind: archived
 id: module-job-search-networking-sprint
 title: Job search / networking sprint
 group: Orthogonal modules

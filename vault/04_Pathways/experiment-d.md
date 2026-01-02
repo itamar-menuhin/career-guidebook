@@ -1,12 +1,11 @@
 ---
 kind: pathway
 id: experiment-d
-title: Experiment D
-group: Experiments
+title: Job-board scan (make roles concrete)
+group: How to explore (A–D)
+order: 0
 ---
 
-# Experiment D
+Scan real roles to make the space concrete and identify skill gaps.
 
-Experiments A–D (overview → longer exposure → project pathway → job-board exploration)
-
-Experiment D — job-board exploration: make roles/orgs concrete + bridge theory→action (boards + quick scan method)
+Use this to explore job boards to make roles/orgs concrete and bridge theory → action.

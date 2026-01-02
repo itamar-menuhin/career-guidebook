@@ -1,5 +1,5 @@
 ---
-kind: card
+kind: archived
 id: rethink-priorities-ai-for-human-wildlife-conflict-mitigations
 title: 'Rethink Priorities: AI for human–wildlife conflict mitigations'
 focus_area_id: aixanimals
