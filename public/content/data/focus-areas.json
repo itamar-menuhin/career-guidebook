@@ -1,0 +1,595 @@
+[
+  {
+    "id": "ai-safety",
+    "name": "AI Safety",
+    "overviewPath": "content/md/focus-areas/ai-safety/overview.md",
+    "overviewExcerpt": "Help ensure advanced AI systems don't cause catastrophic harm, by improving how we build/evaluate/govern/deploy powerful AI (technical safety + governance/policy).",
+    "roleShapes": [
+      "Technical research (alignment, interpretability, evals, robustness)",
+      "Research engineering (tools, eval pipelines, infra for safety)",
+      "Governance / policy / strategy"
+    ],
+    "fitSignals": [
+      "Motivated by catastrophic risk (high-stakes failure modes)",
+      "Strong technical / conceptual / strategic skills",
+      "Comfortable with significant uncertainty and high abstraction"
+    ],
+    "buckets": {
+      "quickTaste": {
+        "title": "Quick taste (≈1 hour)",
+        "description": "## Quick taste — 1-hour overview (choose 1) - Robert Miles — “Intro to AI Safety, Remastered” (video) - DeepMind — “AGI Safety Course” playlist (video course) - Optional alt if they prefer reading: 80,000 Hours AI safety…",
+        "cardIds": [
+          "ai-safety-card-03",
+          "ai-safety-card-02",
+          "ai-safety-card-01"
+        ],
+        "inlineGuidancePath": "content/md/focus-areas/ai-safety/buckets/quick-taste.md",
+        "curatedCardIds": [
+          "ai-safety-card-03",
+          "ai-safety-card-02",
+          "ai-safety-card-01"
+        ]
+      },
+      "deeperDive": {
+        "title": "Deeper dive (2–6 hours)",
+        "description": "## Deeper dive — longer exposure (choose 1) - AGI Safety Fundamentals (reading group + discussion + project) - BlueDot Impact AI courses (technical safety / governance)",
+        "cardIds": [
+          "ai-safety-card-04",
+          "ai-safety-card-05"
+        ],
+        "inlineGuidancePath": "content/md/focus-areas/ai-safety/buckets/deeper-dive.md",
+        "curatedCardIds": [
+          "ai-safety-card-04",
+          "ai-safety-card-05"
+        ]
+      },
+      "handsOn": {
+        "title": "Hands-on trial",
+        "description": "## Hands-on project — project pathway - SPAR — a part-time remote program explicitly structured around impactful research projects with mentors in AI safety/policy. - Optional alt (bigger commitment): MATS (intensive…",
+        "cardIds": [
+          "ai-safety-card-07",
+          "ai-safety-card-06"
+        ],
+        "inlineGuidancePath": "content/md/focus-areas/ai-safety/buckets/hands-on.md",
+        "curatedCardIds": [
+          "ai-safety-card-07",
+          "ai-safety-card-06"
+        ]
+      },
+      "jobBoard": {
+        "title": "Job board scan (real roles)",
+        "description": "## Job-board scan — job-board exploration (choose 1–2) - 80,000 Hours job board - AISafety.com jobs - Optional alt: EA Opportunities board - Tiny scanning method (10–25 min): collect 8–12 interesting roles → label…",
+        "cardIds": [
+          "ai-safety-card-08",
+          "ai-safety-card-09",
+          "ai-safety-card-10"
+        ],
+        "inlineGuidancePath": "content/md/focus-areas/ai-safety/buckets/job-board.md",
+        "curatedCardIds": [
+          "ai-safety-card-08",
+          "ai-safety-card-09",
+          "ai-safety-card-10"
+        ]
+      }
+    },
+    "curatedCardIds": [
+      "ai-safety-card-03",
+      "ai-safety-card-02",
+      "ai-safety-card-01",
+      "ai-safety-card-04",
+      "ai-safety-card-05",
+      "ai-safety-card-07",
+      "ai-safety-card-06",
+      "ai-safety-card-08",
+      "ai-safety-card-09",
+      "ai-safety-card-10"
+    ],
+    "peopleToTalkToPrompts": [],
+    "commonConfusions": [
+      "Add common confusion here..."
+    ]
+  },
+  {
+    "id": "animal-welfare",
+    "name": "Animal Welfare",
+    "overviewPath": "content/md/focus-areas/animal-welfare/overview.md",
+    "overviewExcerpt": "Help reduce the suffering of billions of animals (farmed and wild) by improving welfare standards, scaling meat alternatives, and advancing advocacy for animals in institutions and the legal system.",
+    "roleShapes": [
+      "Advocacy & movement building: legal, policy, and field-building roles.",
+      "Meat alternatives (R&D / ops / strategy / venture): scaling plant-based / cultivated meat to displace factory farming.",
+      "Research & analysis: identifying neglected interventions, welfare metrics, or field strategy.",
+      "Government & institution-facing work (lobbying, procurement, standards)."
+    ],
+    "fitSignals": [
+      "Motivated by a strong moral desire to reduce suffering at scale (esp. billions of farmed animals).",
+      "Comfortable with some moral / tactical trade-offs (e.g., 'corporate engagement vs total abolition').",
+      "You value evidence and cost-effectiveness (which interventions do the most good per $ or hour)."
+    ],
+    "buckets": {
+      "quickTaste": {
+        "title": "Quick taste (≈1 hour)",
+        "description": "Quick taste (≈1 hour)",
+        "cardIds": [
+          "aw-card-01",
+          "aw-card-03",
+          "aw-card-02"
+        ],
+        "inlineGuidancePath": "content/md/focus-areas/animal-welfare/buckets/quick-taste.md",
+        "curatedCardIds": [
+          "aw-card-01",
+          "aw-card-03",
+          "aw-card-02"
+        ]
+      },
+      "deeperDive": {
+        "title": "Deeper dive (2–6 hours)",
+        "description": "Deeper dive (2–6 hours)",
+        "cardIds": [
+          "aw-card-05",
+          "aw-card-11",
+          "aw-card-04"
+        ],
+        "inlineGuidancePath": "content/md/focus-areas/animal-welfare/buckets/deeper-dive.md",
+        "curatedCardIds": [
+          "aw-card-05",
+          "aw-card-11",
+          "aw-card-04"
+        ]
+      },
+      "handsOn": {
+        "title": "Hands-on trial",
+        "description": "Hands-on trial",
+        "cardIds": [
+          "aw-card-07",
+          "aw-card-12",
+          "aw-card-13",
+          "aw-card-06"
+        ],
+        "inlineGuidancePath": "content/md/focus-areas/animal-welfare/buckets/hands-on.md",
+        "curatedCardIds": [
+          "aw-card-07",
+          "aw-card-12",
+          "aw-card-13",
+          "aw-card-06"
+        ]
+      },
+      "jobBoard": {
+        "title": "Job board scan (real roles)",
+        "description": "Job board scan (real roles)",
+        "cardIds": [
+          "aw-card-09",
+          "aw-card-08",
+          "aw-card-10"
+        ],
+        "inlineGuidancePath": "content/md/focus-areas/animal-welfare/buckets/job-board.md",
+        "curatedCardIds": [
+          "aw-card-09",
+          "aw-card-08",
+          "aw-card-10"
+        ]
+      }
+    },
+    "curatedCardIds": [
+      "aw-card-01",
+      "aw-card-03",
+      "aw-card-02",
+      "aw-card-05",
+      "aw-card-11",
+      "aw-card-04",
+      "aw-card-07",
+      "aw-card-12",
+      "aw-card-13",
+      "aw-card-06",
+      "aw-card-09",
+      "aw-card-08",
+      "aw-card-10"
+    ],
+    "peopleToTalkToPrompts": [],
+    "commonConfusions": [
+      "Add common confusion here..."
+    ]
+  },
+  {
+    "id": "ai-x-animals",
+    "name": "Animal x AI",
+    "overviewPath": "content/md/focus-areas/ai-x-animals/overview.md",
+    "overviewExcerpt": "Use AI to reduce animal suffering (farmed and wild) by improving how we measure welfare, prevent harms, target advocacy, and design interventions — while also being careful about ways AI deployment can accidentally increase suffering (e.g., scale effects, mismeasurement, perverse incentives).",
+    "roleShapes": [
+      "Applied ML for wild animal welfare: human–wildlife conflict mitigation, monitoring welfare indicators (e.g., vocalizations), detection/early warning systems.",
+      "AI in farmed animal systems: how AI in agriculture/aquaculture changes welfare (sometimes better, sometimes worse), plus interventions to steer it.",
+      "AI for animal advocacy orgs: LLM-enabled research workflows, message testing, supporter comms, grantwriting support, ops automation (done carefully).",
+      "Research & strategy at think tanks (what AI applications are promising, where are risks/unknowns).",
+      "Programs / community / hackathons for building tools and pipelines for animal protection."
+    ],
+    "fitSignals": [
+      "You like concrete technical leverage (data/ML) and you're motivated by animals.",
+      "You're comfortable with 'applied + messy' domains (datasets, field conditions, imperfect metrics).",
+      "You can hold a balanced stance: 'AI can help' and 'AI can harm if used carelessly.'"
+    ],
+    "buckets": {
+      "quickTaste": {
+        "title": "Quick taste (≈1 hour)",
+        "description": "Quick taste (≈1 hour)",
+        "cardIds": [
+          "ai-x-animals-card-02",
+          "aixa-card-01",
+          "ai-x-animals-card-05",
+          "aixa-card-03",
+          "ai-x-animals-card-05",
+          "ai-x-animals-card-01",
+          "ai-x-animals-card-04",
+          "ai-x-animals-card-02",
+          "ai-x-animals-card-03",
+          "ai-x-animals-card-01",
+          "aixa-card-02",
+          "ai-x-animals-card-06",
+          "ai-x-animals-card-04",
+          "ai-x-animals-card-03"
+        ],
+        "inlineGuidancePath": "content/md/focus-areas/ai-x-animals/buckets/quick-taste.md",
+        "curatedCardIds": [
+          "ai-x-animals-card-02",
+          "aixa-card-01",
+          "ai-x-animals-card-05",
+          "aixa-card-03",
+          "ai-x-animals-card-05",
+          "ai-x-animals-card-01",
+          "ai-x-animals-card-04",
+          "ai-x-animals-card-02",
+          "ai-x-animals-card-03",
+          "ai-x-animals-card-01",
+          "aixa-card-02",
+          "ai-x-animals-card-06",
+          "ai-x-animals-card-04",
+          "ai-x-animals-card-03"
+        ]
+      },
+      "deeperDive": {
+        "title": "Deeper dive (2–6 hours)",
+        "description": "Deeper dive (2–6 hours)",
+        "cardIds": [
+          "ai-x-animals-card-05",
+          "ai-x-animals-card-06",
+          "aixa-card-04"
+        ],
+        "inlineGuidancePath": "content/md/focus-areas/ai-x-animals/buckets/deeper-dive.md",
+        "curatedCardIds": [
+          "ai-x-animals-card-05",
+          "ai-x-animals-card-06",
+          "aixa-card-04"
+        ]
+      },
+      "handsOn": {
+        "title": "Hands-on trial",
+        "description": "Hands-on trial",
+        "cardIds": [
+          "aixa-card-06",
+          "aixa-card-05",
+          "ai-x-animals-card-08"
+        ],
+        "inlineGuidancePath": "content/md/focus-areas/ai-x-animals/buckets/hands-on.md",
+        "curatedCardIds": [
+          "aixa-card-06",
+          "aixa-card-05",
+          "ai-x-animals-card-08"
+        ]
+      },
+      "jobBoard": {
+        "title": "Job board scan (real roles)",
+        "description": "Job board scan (real roles)",
+        "cardIds": [
+          "aixa-card-07",
+          "aixa-card-08",
+          "aixa-card-09"
+        ],
+        "inlineGuidancePath": "content/md/focus-areas/ai-x-animals/buckets/job-board.md",
+        "curatedCardIds": [
+          "aixa-card-07",
+          "aixa-card-08",
+          "aixa-card-09"
+        ]
+      }
+    },
+    "curatedCardIds": [
+      "ai-x-animals-card-02",
+      "aixa-card-01",
+      "ai-x-animals-card-05",
+      "aixa-card-03",
+      "ai-x-animals-card-01",
+      "ai-x-animals-card-04",
+      "ai-x-animals-card-03",
+      "aixa-card-02",
+      "ai-x-animals-card-06",
+      "aixa-card-04",
+      "aixa-card-06",
+      "aixa-card-05",
+      "ai-x-animals-card-08",
+      "aixa-card-07",
+      "aixa-card-08",
+      "aixa-card-09"
+    ],
+    "peopleToTalkToPrompts": [],
+    "commonConfusions": []
+  },
+  {
+    "id": "biosecurity",
+    "name": "Biosecurity / Pandemic preparedness",
+    "overviewPath": "content/md/focus-areas/biosecurity/overview.md",
+    "overviewExcerpt": "Reduce catastrophic biological risks (natural outbreaks and engineered pathogens) by improving prevention, detection, response, and policy—so society is far less vulnerable to extreme pandemics.",
+    "roleShapes": [
+      "Public health security / policy / strategy",
+      "Technical work (biosurveillance, diagnostics, PPE/engineering controls, forecasting)",
+      "Research & analysis (risk assessment, program evaluation, modeling)",
+      "Ops/programs (running initiatives, coordination, funding ops)",
+      "AI-bio risk work (when relevant)"
+    ],
+    "fitSignals": [
+      "Motivated by preparedness + systems thinking (institutions, incentives, coordination)",
+      "Comfortable with policy/bureaucracy and/or technical public health work",
+      "Often benefits from 'make it concrete' steps (projects, job-board scan), because the space can feel abstract"
+    ],
+    "buckets": {
+      "quickTaste": {
+        "title": "Quick taste (≈1 hour)",
+        "description": "## Quick taste — 1-hour overview (choose 1) - 80,000 Hours Biorisk research, strategy & policy career review (read/skim as an overview entry point). 80,000 Hours - YouTube talk (EA-context): Jaime Yassif (biosecurity /…",
+        "cardIds": [
+          "biosec-card-01",
+          "biosec-card-02"
+        ],
+        "inlineGuidancePath": "content/md/focus-areas/biosecurity/buckets/quick-taste.md",
+        "curatedCardIds": [
+          "biosec-card-01",
+          "biosec-card-02"
+        ]
+      },
+      "deeperDive": {
+        "title": "Deeper dive (2–6 hours)",
+        "description": "## Deeper dive — longer exposure (choose 1) - BlueDot Impact — Biosecurity course (structured ~30h exposure). BlueDot+1 - Optional alt: pick 1–2 episodes/articles from 80,000 Hours’ biosecurity materials for deeper…",
+        "cardIds": [
+          "biosec-card-04",
+          "biosec-card-03"
+        ],
+        "inlineGuidancePath": "content/md/focus-areas/biosecurity/buckets/deeper-dive.md",
+        "curatedCardIds": [
+          "biosec-card-04",
+          "biosec-card-03"
+        ]
+      },
+      "handsOn": {
+        "title": "Hands-on trial",
+        "description": "## Hands-on project — project pathway (make it concrete) - Canonical pick: Oxford Biosecurity Group (OBG) projects (part-time remote research projects; biosecurity + AI-bio intersection). My Site+1 - Toe-in-the-water…",
+        "cardIds": [
+          "biosec-card-05"
+        ],
+        "inlineGuidancePath": "content/md/focus-areas/biosecurity/buckets/hands-on.md",
+        "curatedCardIds": [
+          "biosec-card-05"
+        ]
+      },
+      "jobBoard": {
+        "title": "Job board scan (real roles)",
+        "description": "## Job-board scan — job-board exploration (choose 1–2) - 80,000 Hours job board (filter toward biosecurity/pandemic preparedness roles). 80,000 Hours Job Board+1 - Optional alt: EA Opportunities for…",
+        "cardIds": [
+          "biosec-card-06",
+          "biosec-card-07"
+        ],
+        "inlineGuidancePath": "content/md/focus-areas/biosecurity/buckets/job-board.md",
+        "curatedCardIds": [
+          "biosec-card-06",
+          "biosec-card-07"
+        ]
+      }
+    },
+    "curatedCardIds": [
+      "biosec-card-01",
+      "biosec-card-02",
+      "biosec-card-04",
+      "biosec-card-03",
+      "biosec-card-05",
+      "biosec-card-06",
+      "biosec-card-07"
+    ],
+    "peopleToTalkToPrompts": [],
+    "commonConfusions": [
+      "Add common confusion here..."
+    ]
+  },
+  {
+    "id": "climate",
+    "name": "Climate",
+    "overviewPath": "content/md/focus-areas/climate/overview.md",
+    "overviewExcerpt": "Rapidly reduce greenhouse gas emissions (and support adaptation where it's most valuable) by pushing on the highest-leverage bottlenecks: policy, clean energy deployment, targeted innovation, and (in some cases) carbon removal.",
+    "roleShapes": [
+      "Policy / government / regulation (often very leveraged; hard to attribute impact, but can be huge).",
+      "Climate-focused engineering / tech (clean power, industrial decarbonization, storage, etc.).",
+      "Research (climate science, modelling, carbon removal R&D, or 'what actually works' analysis).",
+      "Advocacy / communications (especially around 'neglected-but-effective' interventions).",
+      "Climate finance / impact investing (moving large sums can matter; also easy to do 'busy work,' so select carefully).",
+      "Community / field-building (helping others enter or coordinate effectively)."
+    ],
+    "fitSignals": [
+      "You're willing to be a bit strategic (choosing which slice of climate to push on, not just 'anything climate').",
+      "You can tolerate imperfect feedback loops (policy + systems change can be slow and hard to measure).",
+      "You like high-leverage work: 'one decision / one institution -> very large downstream effects.'"
+    ],
+    "buckets": {
+      "quickTaste": {
+        "title": "Quick taste (≈1 hour)",
+        "description": "Quick taste (≈1 hour)",
+        "cardIds": [
+          "climate-card-02",
+          "climate-card-01",
+          "climate-card-03"
+        ],
+        "inlineGuidancePath": "content/md/focus-areas/climate/buckets/quick-taste.md",
+        "curatedCardIds": [
+          "climate-card-02",
+          "climate-card-01",
+          "climate-card-03"
+        ]
+      },
+      "deeperDive": {
+        "title": "Deeper dive (2–6 hours)",
+        "description": "Deeper dive (2–6 hours)",
+        "cardIds": [
+          "climate-card-09",
+          "climate-card-05"
+        ],
+        "inlineGuidancePath": "content/md/focus-areas/climate/buckets/deeper-dive.md",
+        "curatedCardIds": [
+          "climate-card-09",
+          "climate-card-05"
+        ]
+      },
+      "handsOn": {
+        "title": "Hands-on trial",
+        "description": "Hands-on trial",
+        "cardIds": [
+          "climate-card-08",
+          "climate-card-06",
+          "climate-card-07",
+          "climate-card-04"
+        ],
+        "inlineGuidancePath": "content/md/focus-areas/climate/buckets/hands-on.md",
+        "curatedCardIds": [
+          "climate-card-08",
+          "climate-card-06",
+          "climate-card-07",
+          "climate-card-04"
+        ]
+      },
+      "jobBoard": {
+        "title": "Job board scan (real roles)",
+        "description": "Job board scan (real roles)",
+        "cardIds": [
+          "climate-card-12",
+          "climate-card-11",
+          "climate-card-10"
+        ],
+        "inlineGuidancePath": "content/md/focus-areas/climate/buckets/job-board.md",
+        "curatedCardIds": [
+          "climate-card-12",
+          "climate-card-11",
+          "climate-card-10"
+        ]
+      }
+    },
+    "curatedCardIds": [
+      "climate-card-02",
+      "climate-card-01",
+      "climate-card-03",
+      "climate-card-09",
+      "climate-card-05",
+      "climate-card-08",
+      "climate-card-06",
+      "climate-card-07",
+      "climate-card-04",
+      "climate-card-12",
+      "climate-card-11",
+      "climate-card-10"
+    ],
+    "peopleToTalkToPrompts": [],
+    "commonConfusions": [
+      "Add common confusion here..."
+    ]
+  },
+  {
+    "id": "global-health-development",
+    "name": "Global Health & Development",
+    "overviewPath": "content/md/focus-areas/global-health-development/overview.md",
+    "overviewExcerpt": "Reduce large-scale suffering and premature death by scaling interventions that are cheap, evidence-backed, and logistically feasible (e.g., malaria prevention/treatment, vaccinations, nutrition).",
+    "roleShapes": [
+      "Program implementation & field ops (distribution, logistics, monitoring)",
+      "Research & evaluation (development econ, epidemiology, cost-effectiveness, RCTs)",
+      "Grantmaking / philanthropy (moving money well; vetting)",
+      "Policy and government implementation (health systems, procurement, public finance)",
+      "Entrepreneurship / founding new orgs (esp. 'evidence-to-scale' nonprofits)"
+    ],
+    "fitSignals": [
+      "You're motivated by measurable impact and are OK with 'unsexy' operational realities (supply chains, compliance, systems)",
+      "You like working with messy real-world constraints and still making steady progress",
+      "You enjoy evidence and tradeoffs (not only 'what's morally urgent' but also 'what works')"
+    ],
+    "buckets": {
+      "quickTaste": {
+        "title": "Quick taste (≈1 hour)",
+        "description": "Quick taste (≈1 hour)",
+        "cardIds": [
+          "ghd-card-01",
+          "ghd-card-04",
+          "ghd-card-02",
+          "ghd-card-03"
+        ],
+        "inlineGuidancePath": "content/md/focus-areas/global-health-development/buckets/quick-taste.md",
+        "curatedCardIds": [
+          "ghd-card-01",
+          "ghd-card-04",
+          "ghd-card-02",
+          "ghd-card-03"
+        ]
+      },
+      "deeperDive": {
+        "title": "Deeper dive (2–6 hours)",
+        "description": "Deeper dive (2–6 hours)",
+        "cardIds": [],
+        "inlineGuidancePath": "content/md/focus-areas/global-health-development/buckets/deeper-dive.md",
+        "curatedCardIds": []
+      },
+      "handsOn": {
+        "title": "Hands-on trial",
+        "description": "Hands-on trial",
+        "cardIds": [
+          "ghd-card-10",
+          "ghd-card-05",
+          "ghd-card-06",
+          "global-health-development-card-10",
+          "ghd-card-08",
+          "ghd-card-07",
+          "ghd-card-09",
+          "ghd-card-12"
+        ],
+        "inlineGuidancePath": "content/md/focus-areas/global-health-development/buckets/hands-on.md",
+        "curatedCardIds": [
+          "ghd-card-10",
+          "ghd-card-05",
+          "ghd-card-06",
+          "global-health-development-card-10",
+          "ghd-card-08",
+          "ghd-card-07",
+          "ghd-card-09",
+          "ghd-card-12"
+        ]
+      },
+      "jobBoard": {
+        "title": "Job board scan (real roles)",
+        "description": "Job board scan (real roles)",
+        "cardIds": [
+          "ghd-card-11"
+        ],
+        "inlineGuidancePath": "content/md/focus-areas/global-health-development/buckets/job-board.md",
+        "curatedCardIds": [
+          "ghd-card-11"
+        ]
+      }
+    },
+    "curatedCardIds": [
+      "ghd-card-01",
+      "ghd-card-04",
+      "ghd-card-02",
+      "ghd-card-03",
+      "ghd-card-10",
+      "ghd-card-05",
+      "ghd-card-06",
+      "global-health-development-card-10",
+      "ghd-card-08",
+      "ghd-card-07",
+      "ghd-card-09",
+      "ghd-card-12",
+      "ghd-card-11"
+    ],
+    "peopleToTalkToPrompts": [],
+    "commonConfusions": [
+      "Add common confusion here..."
+    ]
+  }
+]

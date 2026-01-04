@@ -1,0 +1,452 @@
+Cause area: Climate quick-start (v1)
+
+1) What it’s trying to achieve (plain language)
+
+Rapidly reduce greenhouse gas emissions (and support adaptation where it’s most valuable) by pushing on the highest-leverage bottlenecks: policy, clean energy deployment, targeted innovation, and (in some cases) carbon removal. Both 80,000 Hours and Probably Good emphasize that career choice tends to matter more than personal footprint, and that some climate actions are much more effective than others. 80,000 Hours+1
+
+2) What kinds of work exist here (role shapes)
+
+A useful “menu” (not a checklist):
+
+Policy / government / regulation (often very leveraged; hard to attribute impact, but can be huge). Probably Good+1
+
+Climate-focused engineering / tech (clean power, industrial decarbonization, storage, etc.). Probably Good+1
+
+Research (climate science, modelling, carbon removal R&D, or “what actually works” analysis). 80,000 Hours+1
+
+Advocacy / communications (especially around “neglected-but-effective” interventions). 80,000 Hours+1
+
+Climate finance / impact investing (moving large sums can matter; also easy to do “busy work,” so select carefully). Probably Good+1
+
+Community / field-building (helping others enter or coordinate effectively). Work on Climate+1
+
+3) What “good fit” often looks like (signals)
+
+You’re willing to be a bit strategic (choosing which slice of climate to push on, not just “anything climate”). Probably Good+1
+
+You can tolerate imperfect feedback loops (policy + systems change can be slow and hard to measure). Probably Good+1
+
+You like high-leverage work: “one decision / one institution → very large downstream effects.”
+
+
+
+4) Experiments (A–D)
+
+Experiment A — introductory (< 1 hour): broad overview + test interest
+
+Pick 1:
+
+Probably Good — Climate Change: Impact-Focused Overview (EA-ish framing + “what to do about it”). Probably Good
+
+80,000 Hours — Climate change problem profile (skim summary + “best ways of working” sections). 80,000 Hours
+
+Optional YouTube (good-enough, non-EA but clear):
+
+Project Drawdown — Climate Solutions 101 (watch 1 episode that matches their curiosity). YouTube
+
+Experiment B — longer exposure (course/fellowship/series)
+
+Pick 1:
+
+Terra.do — “Climate Change: Learning for Action” (structured 12-week “map the space + find your role” style). Terra+1
+
+Project Drawdown — Climate Solutions 101 playlist (self-paced series, broad but concrete). YouTube
+
+Experiment C — pathway to doing a project (proof-of-fit + momentum)
+
+Best for: people who need action early, want quick proof-of-fit, or need help bridging theory → concrete.
+
+Canonical pick
+
+Work on Climate volunteering — explicitly recruits volunteers across functions (incl. research/data analytics), with the goal of mobilizing professionals into climate work. Work on Climate+1
+
+Optional alt
+
+If the person is giving-inclined: a giving drive informed by Giving Green research (measurable: $ influenced / donated). Giving Green+1
+
+Experiment D — job-board exploration (intuition + bridge to action)
+
+Pick 1–2:
+
+Probably Good job board (filtered to Climate Change) jobs.probablygood.org
+
+Climatebase jobs Climatebase.org
+
+80,000 Hours job board (fewer climate roles, but often higher “EA filter”). 80,000 Hours
+
+
+
+
+
+Climate — Recommendation Cards 
+
+Card 1 — Probably Good: Climate Change impact-focused overview
+
+Fits Experiment: ATopic: ClimateType: CourseCommitment: TinyFit gate: OpenOne-line pitch: EA-ish overview that frames climate with an “impact-focused / what to do about it” lens. Probably Good+1
+
+When to suggest (trigger criteria):
+
+Candidate wants a broad, EA-style orientation to climate as a cause area
+
+Candidate is deciding whether climate is “their thing” at all
+
+When not to (contraindications):
+
+Candidate already knows they’re climate-committed and wants immediate action (jump to Work on Climate / job boards)
+
+Toe in the water step (≤60 min):
+
+Skim the overview and write 5 bullets: “which levers seem highest impact + which feel personally plausible.”
+
+Resources / links (send only if relevant to their chosen next step):
+
+https://probablygood.org/cause-areas/climate-change/overview/ Probably Good
+
+
+
+Card 2 — 80,000 Hours: Climate change problem profile
+
+Fits Experiment: ATopic: ClimateType: CourseCommitment: Tiny–LightFit gate: OpenOne-line pitch: Canonical EA analysis + “best ways of working” section to translate interest → plausible paths. 80,000 Hours
+
+When to suggest (trigger criteria):
+
+Candidate wants “EA canonical view” and career-relevant framing
+
+Candidate likes structured, analytic writeups
+
+When not to (contraindications):
+
+Candidate strongly prefers video (use Drawdown as the optional video path)
+
+Toe in the water step (≤60 min):
+
+Read “best ways of working” and note 2 levers you’d be willing to explore.
+
+Resources / links:
+
+https://80000hours.org/problem-profiles/climate-change/ 80,000 Hours
+
+
+
+Card 3 — Project Drawdown: Climate Solutions 101 (playlist)
+
+Fits Experiment: A or B (optional, non-EA but EA-principles-compatible)Topic: ClimateType: CourseCommitment: Tiny (A) or Medium (B)Fit gate: OpenOne-line pitch: Clear, concrete “what are solutions categories?” explainer; good for candidates who need video intuition fast. YouTube+1
+
+When to suggest (trigger criteria):
+
+Candidate prefers YouTube learning and wants a practical solutions map
+
+Candidate is early and needs an accessible entry point
+
+When not to (contraindications):
+
+Candidate is trying to optimize for EA-prioritized levers only (then keep to Probably Good / 80k and use Drawdown purely as intuition-building)
+
+Toe in the water step (≤60 min):
+
+Watch 1 episode that matches their curiosity and write 5 bullets: “what lever this is + what seems hard/neglected.”
+
+Resources / links:
+
+https://www.youtube.com/playlist?list=PLwYnpej4pQF7sB5_ZmS2IjFae5M7MafiF YouTube
+
+
+
+Card 4 — Work on Climate: Volunteering
+
+Fits Experiment: C (canonical)Topic: ClimateType: Community / ProjectCommitment: Light–MediumFit gate: OpenOne-line pitch: A structured way to get momentum via real volunteering across functions (including research/data analytics). Work on Climate+1
+
+When to suggest (trigger criteria):
+
+Candidate needs action early / wants proof-of-fit / wants a push
+
+Candidate wants a community container to stay motivated
+
+When not to (contraindications):
+
+Candidate is already overloaded and volunteering would add stress (then do a job-board scan first)
+
+Toe in the water step (≤60 min):
+
+Read the volunteering page and identify 1–2 roles you could plausibly do; draft a 5-line “how I can help” note.
+
+Resources / links:
+
+https://workonclimate.org/careers/ Work on Climate
+
+(Starter packs live separately; see next card)
+
+
+
+Card 5 — Work on Climate: Starter Packs + community
+
+Fits Experiment: B (longer exposure) or “supporting resource” for CTopic: ClimateType: CommunityCommitment: TinyFit gate: OpenOne-line pitch: A guided way to explore climate sub-areas and see where your skills could fit. Work on Climate
+
+When to suggest (trigger criteria):
+
+Candidate wants “map the space” without committing to a long course
+
+Candidate is unsure which climate lane to test first
+
+When not to (contraindications):
+
+Candidate already has a specific lane and just needs next actions (use job board / volunteering / giving)
+
+Toe in the water step (≤60 min):
+
+Pick one Starter Pack and do the first 1–2 items.
+
+Resources / links:
+
+https://workonclimate.org/starter-packs/ Work on Climate
+
+
+
+Card 6 — Giving Green: effective climate giving
+
+Fits Experiment: (Giving lever) + supports C (giving drive)Topic: ClimateType: GivingCommitment: TinyFit gate: OpenOne-line pitch: EA-principles-style evaluator for climate philanthropy (“where does money do the most?”). Giving Green+2Giving Green+2
+
+When to suggest (trigger criteria):
+
+Candidate is giving-inclined and wants a credible way to do it well
+
+Candidate wants a concrete lever while exploring careers
+
+When not to (contraindications):
+
+Candidate feels pressured by giving (offer as one option, not a default)
+
+Toe in the water step (≤60 min):
+
+Read the current “Top Climate Nonprofits” page; donate if giving is part of their plan.
+
+Resources / links:
+
+https://www.givinggreen.earth/top-climate-nonprofits Giving Green
+
+
+
+Card 7 — Project: Giving drive informed by Giving Green
+
+Fits Experiment: C (optional alt; measurable-good project)Topic: ClimateType: Project / GivingCommitment: LightFit gate: OpenOne-line pitch: A measurable-good project for action-first candidates: $ influenced / donated toward vetted opportunities. Giving Green+1
+
+When to suggest (trigger criteria):
+
+Candidate needs action to stay motivated or wants quick proof-of-fit
+
+Candidate is comfortable doing a small outreach or workplace match
+
+When not to (contraindications):
+
+Candidate is uncomfortable asking others (then suggest direct giving or job-board scanning)
+
+Toe in the water step (≤60 min):
+
+Draft one short message + send to 5–10 people with a clear donation endpoint and a small target.
+
+Resources / links:
+
+https://www.givinggreen.earth/top-climate-nonprofits Giving Green
+
+
+
+Card 8 — Founders Pledge: Climate Change Fund (via GWWC page)
+
+Fits Experiment: (Giving lever)Topic: ClimateType: GivingCommitment: TinyFit gate: OpenOne-line pitch: A fund approach aimed at high-impact, evidence-based climate solutions (good for “pooled + research-backed”). Giving What We Can+2Founders Pledge+2
+
+When to suggest (trigger criteria):
+
+Candidate wants a fund route rather than picking orgs
+
+Candidate wants “EA-ish climate giving” that’s portfolio-based
+
+When not to (contraindications):
+
+Candidate strongly prefers donating to a single named org they’ve researched deeply
+
+Toe in the water step (≤60 min):
+
+Skim the summary and decide whether “giving” feels like a satisfying lever.
+
+Resources / links:
+
+https://www.givingwhatwecan.org/charities/founders-pledge-climate-change-fund Giving What We Can
+
+https://www.founderspledge.com/funds/climate-fund/about Founders Pledge
+
+
+
+Card 9 — Terra.do: Climate Change — Learning for Action (12-week)
+
+Fits Experiment: B (non-EA but EA-principles-compatible)Topic: ClimateType: ProgramCommitment: MediumFit gate: Open (time-consuming)One-line pitch: Structured “map the space + find your role” container; good for people who want guided exploration. Terra
+
+When to suggest (trigger criteria):
+
+Candidate likes cohorts and structure
+
+Candidate has bandwidth for a medium commitment exploration phase
+
+When not to (contraindications):
+
+Candidate needs immediate action and tends to over-learn (use Work on Climate or job boards)
+
+Toe in the water step (≤60 min):
+
+Look at syllabus + next cohort timing and see if it fits their timeline.
+
+Resources / links:
+
+https://www.terra.do/climate-fellowship-learning-for-action/ Terra
+
+
+
+Card 10 — Probably Good job board (filtered to Climate Change)
+
+Fits Experiment: DTopic: ClimateType: Move jobCommitment: TinyFit gate: OpenOne-line pitch: Curated “high-impact jobs” list with filters; helpful for quickly learning role shapes and org landscape. Probably Good+1
+
+When to suggest (trigger criteria):
+
+Candidate wants concrete roles fast
+
+Candidate gets motivated by seeing real options
+
+When not to (contraindications):
+
+Candidate is easily overwhelmed by listings (do A first)
+
+Toe in the water step (≤60 min):
+
+Use the tiny scanning method (8–12 roles → label → circle 3 roles + 2 skill gaps → 1 direction + 1 next step).
+
+Resources / links:
+
+https://jobs.probablygood.org/?cause=Climate+Change Probably Good
+
+
+
+Card 11 — Climatebase jobs
+
+Fits Experiment: DTopic: ClimateType: Move jobCommitment: TinyFit gate: OpenOne-line pitch: Big climate-specific job marketplace; good for breadth + pattern recognition on roles. Climatebase.org+1
+
+When to suggest (trigger criteria):
+
+Candidate wants a broad set of climate roles (tech/nonprofit/etc.)
+
+Candidate is exploring “where could I fit?”
+
+When not to (contraindications):
+
+Candidate wants more EA-filtered roles first (use 80k job board)
+
+Toe in the water step (≤60 min):
+
+Save 10 roles; label role-types and extract 2 recurring skill gaps.
+
+Resources / links:
+
+https://climatebase.org/jobs Climatebase.org
+
+
+
+Card 12 — 80,000 Hours job board
+
+Fits Experiment: DTopic: ClimateType: Move jobCommitment: TinyFit gate: OpenOne-line pitch: Fewer climate listings, but often higher “EA filter” and good for adjacent high-impact roles. Climatebase.org
+
+When to suggest (trigger criteria):
+
+Candidate wants high-signal roles and is open to adjacent paths
+
+When not to (contraindications):
+
+Candidate wants climate-only breadth first (use Climatebase)
+
+Toe in the water step (≤60 min):
+
+Scan 8–12 roles → label → circle 3 roles + 2 repeating skill gaps → convert to 1 direction + 1 next step.
+
+Resources / links:
+
+https://jobs.80000hours.org/
+
+
+
+
+
+6) Copy-paste links (raw URLs)
+
+Probably Good – Climate overview:
+
+https://probablygood.org/cause-areas/climate-change/overview/
+
+
+
+Probably Good – Climate careers:
+
+https://probablygood.org/cause-areas/climate-change/careers/
+
+
+
+80,000 Hours – Climate problem profile:
+
+https://80000hours.org/problem-profiles/climate-change/
+
+
+
+80,000 Hours podcast (#148) – Johannes Ackva:
+
+https://80000hours.org/podcast/episodes/johannes-ackva-unfashionable-climate-interventions/
+
+
+
+Work on Climate (community):
+
+https://workonclimate.org/
+
+Work on Climate – Starter Packs:
+
+https://workonclimate.org/starter-packs/
+
+
+
+Giving Green – Top Climate Nonprofits (2025–2026):
+
+https://www.givinggreen.earth/top-climate-nonprofits
+
+
+
+Founders Pledge – Climate Change executive summary:
+
+https://www.founderspledge.com/research/climate-change-executive-summary
+
+Giving What We Can – Founders Pledge Climate Change Fund page:
+
+https://www.givingwhatwecan.org/charities/founders-pledge-climate-change-fund
+
+Founders Pledge – Climate Fund:
+
+https://www.founderspledge.com/funds/climate-fund/about
+
+
+
+Job boards:
+
+Probably Good climate filter:
+
+https://jobs.probablygood.org/?cause=Climate+Change
+
+Climatebase jobs:
+
+https://climatebase.org/jobs
+
+80,000 Hours jobs:
+
+https://jobs.80000hours.org/
+
+
+
+YouTube – Project Drawdown “Climate Solutions 101” playlist:
+
+https://www.youtube.com/playlist?list=PLwYnpej4pQF7sB5_ZmS2IjFae5M7MafiF
+
+
+

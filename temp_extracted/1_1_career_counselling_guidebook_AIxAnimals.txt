@@ -1,0 +1,958 @@
+Cause area: Animal × AI quick-start (v1)
+
+1) What it’s trying to achieve (plain language)
+
+Use AI to reduce animal suffering (farmed and wild) by improving how we measure welfare, prevent harms, target advocacy, and design interventions — while also being careful about ways AI deployment can accidentally increase suffering (e.g., scale effects, mismeasurement, perverse incentives). (Animal Charity Evaluators)
+
+2) What kinds of work exist here (role shapes)
+
+Applied ML for wild animal welfare: human–wildlife conflict mitigation, monitoring welfare indicators (e.g., vocalizations), detection/early warning systems. (Rethink Priorities)
+
+AI in farmed animal systems: how AI in agriculture/aquaculture changes welfare (sometimes better, sometimes worse), plus interventions to steer it. (Rethink Priorities)
+
+AI for animal advocacy orgs: LLM-enabled research workflows, message testing, supporter comms, grantwriting support, ops automation (done carefully). (Faunalytics)
+
+Research & strategy at think tanks (what AI applications are promising, where are risks/unknowns). (Rethink Priorities)
+
+Programs / community / hackathons for building tools and pipelines for animal protection. (Electric Sheep)
+
+3) What a “good fit” often looks like (signals)
+
+You like concrete technical leverage (data/ML) and you’re motivated by animals.
+
+You’re comfortable with “applied + messy” domains (datasets, field conditions, imperfect metrics).
+
+You can hold a balanced stance: “AI can help” and “AI can harm if used carelessly.” (Animal Charity Evaluators)
+
+
+
+4) Experiments (canonical picks + optional alt)
+
+Experiment A — 1-hour overview (choose 1)
+
+Canonical picks
+
+Animal Charity Evaluators — “The impacts of AI on animal advocacy” (high-level framing of upsides/risks; good first map). (Animal Charity Evaluators)
+
+Rethink Priorities — AI for human–wildlife conflict mitigations (concrete examples; “here’s what AI-for-animals can look like”). (Rethink Priorities)
+
+Optional alt (if they want “how advocates already use AI”)
+
+Faunalytics — “AI and Animal Advocacy” (survey-style view of current usage patterns). (Faunalytics)
+
+Experiment B — longer exposure (choose 1)
+
+Canonical pick (evidence/field grounding)
+
+Rethink Priorities series: “How AI is affecting farmed aquatic animals” (deep dive on innovation → deployment → welfare effects; very “EA research-y”). (Rethink Priorities)
+
+Optional alt (structured program)
+
+AI×Animals Fellowship (8-week remote program focused on AI × animal welfare careers). (Effective Altruism)
+
+Futurekind AI Fellowship (12-week program on using AI for animal protection & environment; listed on EA Opportunities). (Effective Altruism)(These structured programs are newer; I’m including them because they’re explicitly advertised in EA channels, but they’re not as long-established as core 80k/AAC resources.) (Effective Altruism)
+
+Experiment C — project pathway (make it concrete; good for “I need a push”)
+
+Canonical pick (low barrier, EA-aligned research contribution)
+
+Use a Rethink Priorities “AI for animals” angle to produce a small artifact:
+
+1–2 page scoping note (“which AI application + what welfare mechanism + what uncertainties?”)
+
+or a lightweight literature/landscape map that could be shared with an org/funder. (Rethink Priorities)
+
+Canonical pick (concrete + clearly external)
+
+Felidae Fund — volunteer AI/ML specialist processing camera imagery for animal population research (explicit volunteer role with real use). Felidae Conservation Fund+1
+
+Optional alt
+
+Faunalytics volunteering (if the person’s contribution is in the “research tooling / analysis” lane that directly supports advocates). Faunalytics
+
+Toe-in-the-water next step (≤60 min)
+
+Pick one subdomain (e.g., “wildlife conflict detection,” “aquaculture AI welfare risks,” “LLM research tooling for advocates”).
+
+Find one anchor piece (from Experiment A/B), then write 10 bullets: “promising application → mechanism → biggest risk/unknown → what a small project could be.”
+
+Experiment D — job-board exploration (bridge theory → action)
+
+Canonical picks (choose 1–2)
+
+80,000 Hours job board (filter for animal welfare, or AI/data roles in adjacent orgs).
+
+Animal Advocacy Careers job board (search for data/tech roles; also helps you learn org landscape). (Animal Advocacy Careers)
+
+Optional alt
+
+EA Opportunities (often has fellowships/programs/projects that aren’t “jobs”). (Effective Altruism)
+
+Tiny scanning method (10–25 min)Collect 8–12 roles → label role type (ML / research / ops / policy) → circle 3 roles + 2 repeating skill gaps → turn that into a direction + next step.
+
+
+
+
+
+Animal × AI — Recommendation Cards 
+
+Card 1 — ACE: “The impacts of AI on animal advocacy”
+
+Fits Experiment: ARecommendation name: Animal Charity Evaluators — The impacts of AI on animal advocacy Animal Charity Evaluators+1One-line pitch: High-level map of where AI can help or harm animal advocacy; a good first “upsides + risks” framing.
+
+When to suggest (trigger criteria):
+
+Candidate wants a quick map and a balanced view (opportunities + failure modes)
+
+Candidate is unsure whether “AI × animals” is a real thing vs hype
+
+When not to (contraindications):
+
+Candidate wants concrete examples first (use RP human–wildlife conflict piece)
+
+Topic: AnimalsType: CourseCommitment: TinyFit gate: Open
+
+Toe in the water step (≤60 min):
+
+Read and note 3 use-cases + 3 failure modes.
+
+Resources / links to support the next steps:
+
+https://animalcharityevaluators.org/blog/impacts-of-ai-on-animal-advocacy/ Animal Charity Evaluators
+
+(EA Forum cross-post if useful) https://forum.effectivealtruism.org/posts/7yzupQyiS7arFzvZR/the-impacts-of-ai-on-animal-advocacy Effective Altruism Forum
+
+
+
+Card 2 — Rethink Priorities: AI for human–wildlife conflict mitigations
+
+Fits Experiment: ARecommendation name: Rethink Priorities — AI for human–wildlife conflict mitigations Rethink PrioritiesOne-line pitch: Concrete examples of “AI-for-animals” in the real world; good for making it feel tangible.
+
+When to suggest (trigger criteria):
+
+Candidate wants examples and mechanisms (not just “AI will change everything”)
+
+Candidate is pulled toward wild animals / conservation-adjacent routes
+
+When not to (contraindications):
+
+Candidate is primarily interested in farmed animals / food systems (use aquatic series)
+
+Topic: AnimalsType: CourseCommitment: Tiny–LightFit gate: Open
+
+Toe in the water step (≤60 min):
+
+Pick one mitigation example and write a 1-page: “how AI could help + what could go wrong + what evidence would change my mind.”
+
+Resources / links to support the next steps:
+
+https://rethinkpriorities.org/research-area/ai-for-human-wildlife-conflict-mitigations/ Rethink Priorities
+
+
+
+Card 3 — Faunalytics: “AI and Animal Advocacy” (survey-style)
+
+Fits Experiment: A (optional alt)Recommendation name: Faunalytics — AI and Animal Advocacy FaunalyticsOne-line pitch: “How advocates already use AI” and what adoption looks like—useful for reality-checking.
+
+When to suggest (trigger criteria):
+
+Candidate wants a practical “what’s happening now in the field?”
+
+Candidate is interested in tooling, workflows, comms, research support
+
+When not to (contraindications):
+
+Candidate wants deep technical + strategic analysis rather than usage patterns (use RP series)
+
+Topic: AnimalsType: CourseCommitment: TinyFit gate: Open
+
+Toe in the water step (≤60 min):
+
+Extract 5 adoption bottlenecks and 3 “high-value” AI tasks advocates could use.
+
+Resources / links to support the next steps:
+
+https://faunalytics.org/ai-and-animal-advocacy/ Faunalytics
+
+
+
+Card 4 — Rethink Priorities: “How AI is affecting farmed aquatic animals” (series)
+
+Fits Experiment: BRecommendation name: Rethink Priorities — How AI is affecting farmed aquatic animals (series) Rethink Priorities+1One-line pitch: Deep “EA research-y” analysis of innovation → deployment → welfare impacts in aquaculture.
+
+When to suggest (trigger criteria):
+
+Candidate likes research depth and wants to understand mechanisms and intervention hooks
+
+Candidate is interested in farmed animals / food systems + technology
+
+When not to (contraindications):
+
+Candidate needs a structured cohort and peers rather than self-study (use fellowships)
+
+Topic: AnimalsType: CourseCommitment: MediumFit gate: Open
+
+Toe in the water step (≤60 min):
+
+Read the intro/summary sections and extract 5 “intervention hooks” (places where advocacy/policy/tech could matter).
+
+Resources / links to support the next steps:
+
+Part 1 (Innovation): https://rethinkpriorities.org/research-area/how-ai-is-affecting-farmed-aquatic-animals-1/ Rethink Priorities
+
+
+
+Card 5 — AI×Animals Fellowship (8-week, remote)
+
+Fits Experiment: B (optional alt)Recommendation name: AI×Animals Fellowship (EA Opportunities) Effective Altruism+1One-line pitch: Structured 8-week remote program for careers at the intersection of AI and animal welfare.
+
+When to suggest (trigger criteria):
+
+Candidate wants structure, community, and a curated pathway
+
+Candidate is exploring “future-facing animal welfare” and wants a coherent map
+
+When not to (contraindications):
+
+Candidate prefers independent exploration and gets stressed by cohort commitments
+
+Topic: AnimalsType: ProgramCommitment: MediumFit gate: Selective
+
+Toe in the water step (≤60 min):
+
+Check curriculum/requirements and decide whether you’d apply this cycle (timeline/bandwidth fit).
+
+Resources / links to support the next steps:
+
+https://www.effectivealtruism.org/opportunities/recGlnvARNYCIWLxN Effective Altruism
+
+
+
+Card 6 — Futurekind AI Fellowship (12-week)
+
+Fits Experiment: B (optional alt)Recommendation name: Futurekind AI Fellowship (EA Opportunities / Electric Sheep) Effective Altruism+2Electric Sheep+2One-line pitch: 12-week program to build skills and projects around AI for animal protection / environmental impact.
+
+When to suggest (trigger criteria):
+
+Candidate wants a longer, project-forward structured program
+
+Candidate wants to build or research in this space with mentorship/community
+
+When not to (contraindications):
+
+Candidate can’t commit to 12 weeks; use AI×Animals (8 weeks) or Experiment A first
+
+Topic: AnimalsType: ProgramCommitment: MediumFit gate: Selective
+
+Toe in the water step (≤60 min):
+
+Read the description and decide if you’d apply; sanity-check time/weekly rhythm.
+
+Resources / links to support the next steps:
+
+EA Opportunities listing: https://www.effectivealtruism.org/opportunities/recvMlBPLtTssuEwX Effective Altruism
+
+Program home: https://www.electricsheep.is/futurekind Electric Sheep
+
+
+
+Card 7 — Felidae Conservation Fund: Volunteer AI/ML specialist (camera imagery)
+
+Fits Experiment: CRecommendation name: Felidae Conservation Fund — Volunteer AI/ML specialist (remote) Felidae Conservation Fund+1One-line pitch: Clear “measurable-good” project: help process real camera imagery used for animal population research.
+
+When to suggest (trigger criteria):
+
+Candidate wants immediate hands-on contribution with real external users
+
+Candidate has ML deployment/testing skills (or is close) and wants a concrete task
+
+When not to (contraindications):
+
+Candidate is very junior in ML and would be blocked by deployment requirements
+
+Topic: AnimalsType: ProjectCommitment: Light–MediumFit gate: Selective (strong experience expected)
+
+Toe in the water step (≤60 min):
+
+Read the role description and draft a short pitch: what you can deliver in 2–4 weeks (e.g., evaluation plan, baseline model test, pipeline improvements).
+
+Resources / links to support the next steps:
+
+https://felidaefund.org/careers Felidae Conservation Fund
+
+Volunteer page (general): https://felidaefund.org/take-action/volunteer Felidae Conservation Fund
+
+
+
+Card 8 — “Org-facing scoping note” using an RP AI-for-animals angle (externally useful)
+
+Fits Experiment: CRecommendation name: Org-facing scoping note (AI × animals) — deliverable for an org/funderOne-line pitch: A small research artifact meant to be used (shared with an org/funder), not a personal exercise.
+
+When to suggest (trigger criteria):
+
+Candidate needs action to stay motivated / wants proof-of-fit quickly
+
+Candidate can write clearly and wants a “bridge” from reading → doing impact
+
+Candidate has impostor syndrome and benefits from a bounded contribution
+
+When not to (contraindications):
+
+Candidate won’t share outputs externally (then it risks becoming a personal learning project)
+
+Topic: AnimalsType: ProjectCommitment: LightFit gate: Open
+
+Toe in the water step (≤60 min):
+
+Pick one subdomain (e.g., wildlife conflict detection / aquaculture welfare risks / research tooling for advocates).
+
+Choose one anchor piece (ACE / RP / Faunalytics).
+
+Write 10 bullets: “application → welfare mechanism → biggest risk/unknown → what a small externally useful project could be.”
+
+Then select one recipient (org, researcher, or funder) you’ll actually send it to.
+
+Resources / links to support the next steps:
+
+Use one anchor:
+
+ACE impacts post Animal Charity Evaluators
+
+RP HWC mitigations Rethink Priorities
+
+RP aquaculture series Rethink Priorities
+
+Faunalytics survey Faunalytics
+
+
+
+Card 9 — Faunalytics volunteering (AI/tooling/research support lane)
+
+Fits Experiment: C (optional alt)Recommendation name: Faunalytics — Volunteer FaunalyticsOne-line pitch: Contribute to work that supports animal advocates; good if your contribution can be directly used (analysis, tooling, research support).
+
+When to suggest (trigger criteria):
+
+Candidate wants a real-world contribution but doesn’t have specialized ML deployment skills
+
+Candidate can support research/tooling/analysis
+
+When not to (contraindications):
+
+Candidate can’t commit to any deadlines or deliverables
+
+Topic: AnimalsType: ProjectCommitment: Light–MediumFit gate: Selective
+
+Toe in the water step (≤60 min):
+
+Draft a concrete deliverable you can ship in 2–4 weeks and apply.
+
+Resources / links to support the next steps:
+
+Volunteer page: https://faunalytics.org/volunteer/ (same org; still the right entry point)
+
+
+
+Card 10 — Animal Advocacy Careers job board (data/tech roles + org landscape)
+
+Fits Experiment: DRecommendation name: Animal Advocacy Careers — Job board Animal Advocacy CareersOne-line pitch: Best place to see animal-advocacy orgs and spot tech/data roles that could connect to AI-for-animals.
+
+When to suggest (trigger criteria):
+
+Candidate wants to translate interest into “what roles exist?”
+
+Candidate wants to learn org landscape fast
+
+When not to (contraindications):
+
+Candidate gets overwhelmed by job boards (use A/B first)
+
+Topic: AnimalsType: Move jobCommitment: TinyFit gate: Open
+
+Toe in the water step (≤60 min):
+
+Do the scan: 8–12 roles → label role type (ML/research/ops/policy) → circle 3 roles + 2 repeating skill gaps → convert into 1 direction + 1 next step.
+
+Resources / links to support the next steps:
+
+https://animaladvocacycareers.org/job-board/ Animal Advocacy Careers
+
+
+
+Card 11 — 80,000 Hours job board (adjacent roles lens)
+
+Fits Experiment: DRecommendation name: 80,000 Hours — Job boardOne-line pitch: Useful second lens: sometimes the best “AI × animals” roles are in adjacent institutions (policy, research orgs, etc.).
+
+When to suggest (trigger criteria):
+
+Candidate is open to adjacent roles that still connect to animals
+
+Candidate wants higher-signal org discovery
+
+When not to (contraindications):
+
+Candidate is not ready to look at jobs at all (use A/B/C)
+
+Topic: AnimalsType: Move jobCommitment: TinyFit gate: Open
+
+Toe in the water step (≤60 min):
+
+Same scan method; tag any roles that could plausibly connect to animals (directly or via AI governance/tech).
+
+Resources / links to support the next steps:
+
+https://jobs.80000hours.org/
+
+
+
+Card 12 — EA Opportunities (fellowships/programs/projects that aren’t “jobs”)
+
+Fits Experiment: D (optional alt)Recommendation name: EA Opportunities — browse AI×Animals / animal welfare + AI programsOne-line pitch: Good for finding programs/projects that are shorter or more structured than a job search.
+
+When to suggest (trigger criteria):
+
+Candidate wants programs/fellowships more than job boards
+
+Candidate is earlier-stage and wants “entry ramps”
+
+When not to (contraindications):
+
+Candidate is overwhelmed by breadth; use one specific program card instead
+
+Topic: AnimalsType: CommunityCommitment: TinyFit gate: Open
+
+Toe in the water step (≤60 min):
+
+Search “AI animals” and save 3 opportunities that match timeline/bandwidth.
+
+Resources / links to support the next steps:
+
+https://www.effectivealtruism.org/opportunities
+
+
+
+Copy-paste links (raw URLs)
+
+ACE – The impacts of AI on animal advocacy:
+
+https://animalcharityevaluators.org/blog/impacts-of-ai-on-animal-advocacy/
+
+
+
+Rethink Priorities – AI for human–wildlife conflict mitigations:
+
+https://rethinkpriorities.org/research-area/ai-for-human-wildlife-conflict-mitigations/
+
+
+
+Faunalytics – AI and Animal Advocacy:
+
+https://faunalytics.org/ai-and-animal-advocacy/
+
+
+
+Rethink Priorities – How AI is affecting farmed aquatic animals (Part 1):
+
+https://rethinkpriorities.org/research-area/how-ai-is-affecting-farmed-aquatic-animals-1/
+
+
+
+AI×Animals Fellowship (EA Opportunities):
+
+https://www.effectivealtruism.org/opportunities/recGlnvARNYCIWLxN
+
+
+
+Futurekind AI Fellowship (EA Opportunities):
+
+https://www.effectivealtruism.org/opportunities/recvMlBPLtTssuEwX
+
+
+
+Felidae Fund – volunteer AI/ML specialist:
+
+https://felidaefund.org/careers
+
+
+
+80,000 Hours job board:
+
+https://jobs.80000hours.org/
+
+
+
+Animal Advocacy Careers job board:
+
+https://animaladvocacycareers.org/job-board/
+
+
+
+EA Opportunities board:
+
+https://www.effectivealtruism.org/opportunities
+
+
+
+
+
+
+
+
+
+Cause area: Global Health & Development quick-start (v1)
+
+1) What it’s trying to achieve (plain language)
+
+Reduce large-scale suffering and premature death by scaling interventions that are cheap, evidence-backed, and logistically feasible (e.g., malaria prevention/treatment, vaccinations, nutrition). (80,000 Hours)
+
+2) What kinds of work exist here (role shapes)
+
+Program implementation & field ops (distribution, logistics, monitoring)
+
+Research & evaluation (development econ, epidemiology, cost-effectiveness, RCTs)
+
+Grantmaking / philanthropy (moving money well; vetting)
+
+Policy and government implementation (health systems, procurement, public finance)
+
+Entrepreneurship / founding new orgs (esp. “evidence-to-scale” nonprofits) (80,000 Hours)
+
+3) What a “good fit” often looks like (signals)
+
+You’re motivated by measurable impact and are OK with “unsexy” operational realities (supply chains, compliance, systems)
+
+You like working with messy real-world constraints and still making steady progress
+
+You enjoy evidence and tradeoffs (not only “what’s morally urgent” but also “what works”) (80,000 Hours)
+
+
+
+4) Experiments (A–D)
+
+Experiment A — introductory resource (< 1 hour): wide overview + test interest
+
+Choose 1:
+
+80,000 Hours problem profile: Health in poor countries (Global health) (read/skim) (80,000 Hours)
+
+YouTube: GiveWell finds highly cost-effective charities — here’s how (good for the “why evidence?” mindset) (YouTube)Optional alt (more “why give effectively” than GH-specific): Peter Singer TED talk (via The Life You Can Save) (The Life You Can Save)
+
+Entrepreneurship orientation video (<1h)https://www.youtube.com/watch?v=rKmKLcYoixs
+
+Experiment B — longer exposure: understand the field with more granularity
+
+Choose 1:
+
+(Non-EA but solid grounding) Coursera: An Introduction to Global Health (structured modules; builds vocabulary + systems map) (Coursera)
+
+Crash Course playlist: Public Health (lighter but sticky; good for people who prefer video series) (YouTube)
+
+Experiment C — pathway to doing a project (for proof-of-fit + momentum)
+
+Best for: people who need action to stay motivated, want quick proof-of-fit, or need a push past impostor syndrome.
+
+Here “measurable good” is often easiest via moving money effectively or creating a real-world mobilization, since many top orgs don’t offer easy small volunteer tasks.
+
+Canonical pick
+
+Run a small fundraising/donation drive for GiveWell Top Charities / Top Charities FundMeasurable outcome: $ donated (or matched) + number of donors. GiveWell explicitly routes donations to its recommended opportunities. GiveWell+2GiveWell+2
+
+Optional alt
+
+GWWC Pledge Drive as a community action experiment (measurable: pledges taken + giving committed). Giving What We Can+1
+
+
+
+
+
+Experiment D — explore specific job boards (intuition + bridge to action)
+
+Pick 1–2:
+
+80,000 Hours job board (good EA filter for high-impact roles) (80,000 Hours)
+
+ReliefWeb jobs (humanitarian + development roles; good breadth) (ReliefWeb)
+
+Devex job search (global development-focused job board) (Devex)
+
+Impactpool (UN + international orgs; public health roles) (Impactpool)
+
+Tiny scanning method (10–25 min): collect 8–12 roles → label role-types → circle 3 roles + 2 repeating skill gaps → turn into one “direction to test” + one next step.
+
+
+
+5) Go-to recommendations (cards)
+
+Card 1 — GiveWell top charities / Top Charities Fund
+
+Topic: Global Health & Development
+
+Type: Giving
+
+Commitment: Tiny
+
+Fit gate: Open
+
+Toe in the water: read the top charities page; donate to Top Charities Fund or pick a charity. (GiveWell)
+
+Card 2 — Giving What We Can: 10% Pledge
+
+Topic: Global Health & Development
+
+Type: Giving
+
+Commitment: Tiny
+
+Fit gate: Open
+
+Toe in the water: take the pledge (or start with a smaller % if that’s what fits). (Giving What We Can)
+
+Card 3 — Giving What We Can: Global Health & Wellbeing Fund
+
+Topic: Global Health & Development
+
+Type: Giving
+
+Commitment: Tiny
+
+Fit gate: Open
+
+Toe in the water: donate once; it’s allocated periodically using evaluator input (incl. GiveWell). (Giving What We Can)
+
+Card 4 — The Life You Can Save: recommended charities
+
+Topic: Global Health & Development
+
+Type: Giving
+
+Commitment: Tiny
+
+Fit gate: Open
+
+Toe in the water: pick one recommended charity and read its “why recommended” page. (The Life You Can Save)
+
+Card 5 — Charity Entrepreneurship Incubation Program
+
+Topic: Global Health & Development
+
+Type: Program / Project
+
+Commitment: High
+
+Fit gate: Selective + requires relocation (at least some in-person component)
+
+Toe in the water: read the program flow + apply if it fits your timeline. (CE)
+
+
+
+Copy-paste links (raw URLs)
+
+80,000 Hours – Global health (health in poor countries) problem profile:
+
+https://80000hours.org/problem-profiles/health-in-poor-countries/
+
+
+
+GiveWell – Our Top Charities (updated Sep 2025):
+
+https://www.givewell.org/charities/top-charities
+
+
+
+GiveWell – Cost-effectiveness models:
+
+https://www.givewell.org/how-we-work/our-criteria/cost-effectiveness/cost-effectiveness-models
+
+
+
+YouTube – GiveWell explainer (“here’s how they do it”):
+
+https://www.youtube.com/watch?v=_TqabsxdWmo
+
+
+
+The Life You Can Save – Best charities:
+
+https://www.thelifeyoucansave.org/best-charities/
+
+Peter Singer TED talk (via TLCS):
+
+https://www.thelifeyoucansave.org/peter-singers-ted-talk/
+
+
+
+Giving What We Can – 10% Pledge:
+
+https://www.givingwhatwecan.org/pledge
+
+Giving What We Can – Global Health & Wellbeing Fund:
+
+https://www.givingwhatwecan.org/charities/global-health-and-wellbeing-fund
+
+
+
+Charity Entrepreneurship – Incubation program:
+
+https://www.charityentrepreneurship.com/
+
+Apply page:
+
+https://www.charityentrepreneurship.com/apply
+
+
+
+Coursera – An Introduction to Global Health:
+
+https://www.coursera.org/learn/global-health-introduction
+
+Crash Course – Public Health playlist:
+
+https://www.youtube.com/playlist?list=PL8dPuuaLjXtPjQj_LcJ0Zvj-VI3sslJyF
+
+
+
+Job boards:
+
+ReliefWeb Jobs: https://reliefweb.int/jobs
+
+Devex jobs: https://www.devex.com/jobs/search
+
+Impactpool (public health filter): https://www.impactpool.org/search?jf%5B%5D=58
+
+80,000 Hours jobs: https://jobs.80000hours.org/
+
+
+
+
+
+Cause area: Climate quick-start (v1)
+
+1) What it’s trying to achieve (plain language)
+
+Rapidly reduce greenhouse gas emissions (and support adaptation where it’s most valuable) by pushing on the highest-leverage bottlenecks: policy, clean energy deployment, targeted innovation, and (in some cases) carbon removal. Both 80,000 Hours and Probably Good emphasize that career choice tends to matter more than personal footprint, and that some climate actions are much more effective than others. 80,000 Hours+1
+
+2) What kinds of work exist here (role shapes)
+
+A useful “menu” (not a checklist):
+
+Policy / government / regulation (often very leveraged; hard to attribute impact, but can be huge). Probably Good+1
+
+Climate-focused engineering / tech (clean power, industrial decarbonization, storage, etc.). Probably Good+1
+
+Research (climate science, modelling, carbon removal R&D, or “what actually works” analysis). 80,000 Hours+1
+
+Advocacy / communications (especially around “neglected-but-effective” interventions). 80,000 Hours+1
+
+Climate finance / impact investing (moving large sums can matter; also easy to do “busy work,” so select carefully). Probably Good+1
+
+Community / field-building (helping others enter or coordinate effectively). Work on Climate+1
+
+3) What “good fit” often looks like (signals)
+
+You’re willing to be a bit strategic (choosing which slice of climate to push on, not just “anything climate”). Probably Good+1
+
+You can tolerate imperfect feedback loops (policy + systems change can be slow and hard to measure). Probably Good+1
+
+You like high-leverage work: “one decision / one institution → very large downstream effects.”
+
+
+
+4) Experiments (A–D)
+
+Experiment A — introductory (< 1 hour): broad overview + test interest
+
+Pick 1:
+
+Probably Good — Climate Change: Impact-Focused Overview (EA-ish framing + “what to do about it”). Probably Good
+
+80,000 Hours — Climate change problem profile (skim summary + “best ways of working” sections). 80,000 Hours
+
+Optional YouTube (good-enough, non-EA but clear):
+
+Project Drawdown — Climate Solutions 101 (watch 1 episode that matches their curiosity). YouTube
+
+Experiment B — longer exposure (course/fellowship/series)
+
+Pick 1:
+
+Terra.do — “Climate Change: Learning for Action” (structured 12-week “map the space + find your role” style). Terra+1
+
+Project Drawdown — Climate Solutions 101 playlist (self-paced series, broad but concrete). YouTube
+
+Experiment C — pathway to doing a project (proof-of-fit + momentum)
+
+Best for: people who need action early, want quick proof-of-fit, or need help bridging theory → concrete.
+
+Canonical pick
+
+Work on Climate volunteering — explicitly recruits volunteers across functions (incl. research/data analytics), with the goal of mobilizing professionals into climate work. Work on Climate+1
+
+Optional alt
+
+If the person is giving-inclined: a giving drive informed by Giving Green research (measurable: $ influenced / donated). Giving Green+1
+
+Experiment D — job-board exploration (intuition + bridge to action)
+
+Pick 1–2:
+
+Probably Good job board (filtered to Climate Change) jobs.probablygood.org
+
+Climatebase jobs Climatebase.org
+
+80,000 Hours job board (fewer climate roles, but often higher “EA filter”). 80,000 Hours
+
+
+
+5) Go-to recommendations (cards)
+
+Card 1 — Probably Good: Climate careers guide
+
+Topic: Climate
+
+Type: Course
+
+Commitment: Tiny
+
+Fit gate: Open
+
+Toe in the water: skim the “recommended jobs” list and circle 2 role-shapes to test. Probably Good+1
+
+Card 2 — 80,000 Hours: Climate change problem profile
+
+Topic: Climate
+
+Type: Course
+
+Commitment: Tiny–Light
+
+Fit gate: Open
+
+Toe in the water: read “best ways of working” + note 2 levers you’d be willing to explore. 80,000 Hours
+
+Card 3 — Work on Climate (Starter Packs + community)
+
+Topic: Climate
+
+Type: Community
+
+Commitment: Tiny
+
+Fit gate: Open
+
+Toe in the water: pick one Starter Pack (e.g., climate policy / solutions) and do the first 1–2 items. Work on Climate+1
+
+Card 4 — Giving Green (effective climate giving)
+
+Topic: Climate
+
+Type: Giving
+
+Commitment: Tiny
+
+Fit gate: Open
+
+Toe in the water: read the current “Top Climate Nonprofits” page; donate if that’s part of their plan. Giving Green+1
+
+Card 5 — Founders Pledge Climate Fund / Climate Change Fund (via GWWC page)
+
+Topic: Climate
+
+Type: Giving
+
+Commitment: Tiny
+
+Fit gate: Open
+
+Toe in the water: skim the executive summary + decide whether “giving” is a satisfying lever for them. Founders Pledge+2Giving What We Can+2
+
+Card 6 — Terra.do fellowship
+
+Topic: Climate
+
+Type: Program
+
+Commitment: Medium
+
+Fit gate: Open (but time-consuming)
+
+Toe in the water: look at syllabus + next cohort timing and see if it fits their timeline. Terra+1
+
+
+
+6) Copy-paste links (raw URLs)
+
+Probably Good – Climate overview:
+
+https://probablygood.org/cause-areas/climate-change/overview/
+
+
+
+Probably Good – Climate careers:
+
+https://probablygood.org/cause-areas/climate-change/careers/
+
+
+
+80,000 Hours – Climate problem profile:
+
+https://80000hours.org/problem-profiles/climate-change/
+
+
+
+80,000 Hours podcast (#148) – Johannes Ackva:
+
+https://80000hours.org/podcast/episodes/johannes-ackva-unfashionable-climate-interventions/
+
+
+
+Work on Climate (community):
+
+https://workonclimate.org/
+
+Work on Climate – Starter Packs:
+
+https://workonclimate.org/starter-packs/
+
+
+
+Giving Green – Top Climate Nonprofits (2025–2026):
+
+https://www.givinggreen.earth/top-climate-nonprofits
+
+
+
+Founders Pledge – Climate Change executive summary:
+
+https://www.founderspledge.com/research/climate-change-executive-summary
+
+Giving What We Can – Founders Pledge Climate Change Fund page:
+
+https://www.givingwhatwecan.org/charities/founders-pledge-climate-change-fund
+
+Founders Pledge – Climate Fund:
+
+https://www.founderspledge.com/funds/climate-fund/about
+
+
+
+Job boards:
+
+Probably Good climate filter:
+
+https://jobs.probablygood.org/?cause=Climate+Change
+
+Climatebase jobs:
+
+https://climatebase.org/jobs
+
+80,000 Hours jobs:
+
+https://jobs.80000hours.org/
+
+
+
+YouTube – Project Drawdown “Climate Solutions 101” playlist:
+
+https://www.youtube.com/playlist?list=PLwYnpej4pQF7sB5_ZmS2IjFae5M7MafiF
+
+
+

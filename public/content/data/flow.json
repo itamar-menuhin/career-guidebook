@@ -1,0 +1,11 @@
+[
+  {
+    "id": "flow-overview",
+    "title": "Session Guide",
+    "shortTitle": "Session Guide",
+    "summary": "A structured process for running effective 60–90 minute career counseling sessions.",
+    "color": "step-flow-overview",
+    "contentPath": "content/md/flow/flow-overview.md",
+    "order": 0
+  }
+]

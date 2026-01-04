@@ -1,0 +1,542 @@
+Cause area: Global Health & Development quick-start (v1)
+
+1) What it’s trying to achieve (plain language)
+
+Reduce large-scale suffering and premature death by scaling interventions that are cheap, evidence-backed, and logistically feasible (e.g., malaria prevention/treatment, vaccinations, nutrition). (80,000 Hours)
+
+2) What kinds of work exist here (role shapes)
+
+Program implementation & field ops (distribution, logistics, monitoring)
+
+Research & evaluation (development econ, epidemiology, cost-effectiveness, RCTs)
+
+Grantmaking / philanthropy (moving money well; vetting)
+
+Policy and government implementation (health systems, procurement, public finance)
+
+Entrepreneurship / founding new orgs (esp. “evidence-to-scale” nonprofits) (80,000 Hours)
+
+3) What a “good fit” often looks like (signals)
+
+You’re motivated by measurable impact and are OK with “unsexy” operational realities (supply chains, compliance, systems)
+
+You like working with messy real-world constraints and still making steady progress
+
+You enjoy evidence and tradeoffs (not only “what’s morally urgent” but also “what works”) (80,000 Hours)
+
+
+
+4) Experiments (A–D)
+
+Experiment A — introductory resource (< 1 hour): wide overview + test interest
+
+Choose 1:
+
+80,000 Hours problem profile: Health in poor countries (Global health) (read/skim) (80,000 Hours)
+
+YouTube: GiveWell finds highly cost-effective charities — here’s how (good for the “why evidence?” mindset) (YouTube)Optional alt (more “why give effectively” than GH-specific): Peter Singer TED talk (via The Life You Can Save) (The Life You Can Save)
+
+Entrepreneurship orientation video (<1h)https://www.youtube.com/watch?v=rKmKLcYoixs
+
+Experiment B — longer exposure: understand the field with more granularity
+
+Choose 1:
+
+(Non-EA but solid grounding) Coursera: An Introduction to Global Health (structured modules; builds vocabulary + systems map) (Coursera)
+
+Crash Course playlist: Public Health (lighter but sticky; good for people who prefer video series) (YouTube)
+
+Experiment C — pathway to doing a project (for proof-of-fit + momentum)
+
+Best for: people who need action to stay motivated, want quick proof-of-fit, or need a push past impostor syndrome.
+
+Here “measurable good” is often easiest via moving money effectively or creating a real-world mobilization, since many top orgs don’t offer easy small volunteer tasks.
+
+Canonical pick
+
+Run a small fundraising/donation drive for GiveWell Top Charities / Top Charities FundMeasurable outcome: $ donated (or matched) + number of donors. GiveWell explicitly routes donations to its recommended opportunities. GiveWell+2GiveWell+2
+
+Optional alt
+
+GWWC Pledge Drive as a community action experiment (measurable: pledges taken + giving committed). Giving What We Can+1
+
+
+
+
+
+Experiment D — explore specific job boards (intuition + bridge to action)
+
+Pick 1–2:
+
+80,000 Hours job board (good EA filter for high-impact roles) (80,000 Hours)
+
+ReliefWeb jobs (humanitarian + development roles; good breadth) (ReliefWeb)
+
+Devex job search (global development-focused job board) (Devex)
+
+Impactpool (UN + international orgs; public health roles) (Impactpool)
+
+Tiny scanning method (10–25 min): collect 8–12 roles → label role-types → circle 3 roles + 2 repeating skill gaps → turn into one “direction to test” + one next step.
+
+
+
+
+
+Global Health & Development — Recommendation Cards (EA-endorsed / EA-adjacent only)
+
+Card 1 — 80,000 Hours: Health in poor countries (problem profile)
+
+Fits Experiment: ARecommendation name: 80,000 Hours — Health in poor countriesOne-line pitch: Canonical EA-style overview of global health: why it matters and what high-leverage work looks like. 80,000 Hours
+
+When to suggest (trigger criteria):
+
+Candidate wants an EA “map + why + how to help”
+
+Candidate likes structured reading
+
+When not to (contraindications):
+
+Candidate wants video first (use GiveWell/GWWC explainer or Singer talk)
+
+Topic: Global Health & DevelopmentType: CourseCommitment: Tiny (≤1h)Fit gate: Open
+
+Toe in the water step (≤60 min):
+
+Skim intro + “what can you do?” and write 5 bullets: “most exciting levers / biggest uncertainties.”
+
+Resources / links to support the next steps:
+
+https://80000hours.org/problem-profiles/health-in-poor-countries/ 80,000 Hours
+
+
+
+Card 2 — GiveWell/GWWC YouTube: “GiveWell finds highly cost-effective charities — here’s how”
+
+Fits Experiment: ARecommendation name: Giving What We Can YouTube — GiveWell explainerOne-line pitch: A short, EA-aligned explainer of the evidence mindset behind GiveWell-style giving. YouTube+1
+
+When to suggest (trigger criteria):
+
+Candidate is new to evidence-based charity evaluation
+
+Candidate prefers video
+
+When not to (contraindications):
+
+Candidate already “gets” the idea and wants action (use Giving cards or Project C)
+
+Topic: Global Health & DevelopmentType: CourseCommitment: Tiny (≤1h)Fit gate: Open
+
+Toe in the water step (≤60 min):
+
+Watch and write 3 bullets: “what convinced me / what didn’t / one question I want to investigate.”
+
+Resources / links to support the next steps:
+
+https://www.youtube.com/watch?v=_TqabsxdWmo YouTube
+
+
+
+Card 3 — Peter Singer TED talk (via The Life You Can Save)
+
+Fits Experiment: A (optional alt)Recommendation name: The Life You Can Save — Peter Singer TED talkOne-line pitch: A values-first, EA-adjacent intro to “why and how to give” for people who resonate more with moral framing. The Life You Can Save
+
+When to suggest (trigger criteria):
+
+Candidate is values-motivated and wants the “why care?” framing
+
+Candidate is new to effective giving
+
+When not to (contraindications):
+
+Candidate wants concrete “what’s effective?” evidence details (use GiveWell)
+
+Topic: Global Health & DevelopmentType: CourseCommitment: Tiny (≤1h)Fit gate: Open
+
+Toe in the water step (≤60 min):
+
+Watch and write: “1 thing I agree with / 1 thing I’m unsure about / 1 action this suggests.”
+
+Resources / links to support the next steps:
+
+https://www.thelifeyoucansave.org/peter-singers-ted-talk/ The Life You Can Save
+
+
+
+Card 4 — AIM: Entrepreneurship orientation video (<1h)
+
+Fits Experiment: A (when entrepreneurship is being tested)Recommendation name: AIM — Entrepreneurship orientation (video)One-line pitch: EA-endorsed “taste test” for entrepreneurship: helps someone quickly see what entrepreneurship-for-impact could look like, and whether it feels energizing.
+
+When to suggest (trigger criteria):
+
+Candidate is open to entrepreneurship (for-profit or nonprofit), even as a “maybe”
+
+Candidate wants a low-cost way to test fit without committing to a program
+
+Candidate is considering routes like “start a project,” “build a product,” or “launch an org”
+
+When not to (contraindications):
+
+Candidate has clearly said they don’t want entrepreneurship
+
+Candidate is currently overloaded and even a small new direction would feel stressful (then keep it as a later option)
+
+Topic: Global Health & DevelopmentType: CourseCommitment: Tiny (≤1h)Fit gate: Open
+
+Toe in the water step (≤60 min):
+
+Watch and write 3 bullets:
+
+what part felt exciting
+
+what part felt aversive / draining
+
+one constraint that would block entrepreneurship for you right now
+
+Resources / links to support the next steps:
+
+https://www.youtube.com/watch?v=rKmKLcYoixs
+
+Notes (your internal):
+
+This works well as the “Experiment A” for entrepreneurship because it can advocate better than you can and gives the candidate a shared reference point before you explore heavier options (e.g., Charity Entrepreneurship).
+
+
+
+Card 5 — GiveWell: Top Charities
+
+Fits Experiment: (supports A; also supports C)Recommendation name: GiveWell — Our Top CharitiesOne-line pitch: Canonical evaluator for cost-effective global health giving; also a map of interventions that work now. GiveWell
+
+When to suggest (trigger criteria):
+
+Candidate wants concrete “what works?”
+
+Candidate likes evidence and cost-effectiveness
+
+When not to (contraindications):
+
+Candidate feels pressured by giving (present as optional)
+
+Topic: Global Health & DevelopmentType: GivingCommitment: TinyFit gate: Open
+
+Toe in the water step (≤60 min):
+
+Read top charities page; choose either Top Charities Fund or one charity.
+
+Resources / links to support the next steps:
+
+https://www.givewell.org/charities/top-charities GiveWell
+
+
+
+Card 6 — GiveWell: Top Charities Fund
+
+Fits Experiment: (supports A/C; orthogonal module: Giving)Recommendation name: GiveWell — Top Charities FundOne-line pitch: Low-friction “default option” for giving to GiveWell’s highest-priority funding needs. GiveWell+1
+
+When to suggest (trigger criteria):
+
+Candidate wants a default giving option without picking a single org
+
+When not to (contraindications):
+
+Candidate wants to choose the org themselves
+
+Topic: Global Health & DevelopmentType: GivingCommitment: TinyFit gate: Open
+
+Toe in the water step (≤60 min):
+
+Make a one-time donation (any amount) or set a small recurring donation.
+
+Resources / links to support the next steps:
+
+https://www.givewell.org/top-charities-fund GiveWell
+
+
+
+Card 7 — Giving What We Can: Global Health & Wellbeing Fund
+
+Fits Experiment: (orthogonal module: Giving)Recommendation name: GWWC — Global Health and Wellbeing FundOne-line pitch: Pooled giving allocated periodically using evaluator input (explicitly consults GiveWell). Giving What We Can
+
+When to suggest (trigger criteria):
+
+Candidate likes pooled funds and evaluator-guided allocation
+
+When not to (contraindications):
+
+Candidate wants to pick specific charities
+
+Topic: Global Health & DevelopmentType: GivingCommitment: TinyFit gate: Open
+
+Toe in the water step (≤60 min):
+
+Donate once (even small) and see if it feels satisfying.
+
+Resources / links to support the next steps:
+
+https://www.givingwhatwecan.org/charities/global-health-and-wellbeing-fund Giving What We Can
+
+
+
+Card 8 — Giving What We Can: 10% Pledge
+
+Fits Experiment: (orthogonal module: Giving)Recommendation name: Giving What We Can — PledgeOne-line pitch: A commitment mechanism for people who want giving to be a stable part of life. Wikipedia
+
+When to suggest (trigger criteria):
+
+Candidate explicitly likes commitment devices and is financially comfortable
+
+When not to (contraindications):
+
+Candidate is stressed by commitments or finances are uncertain
+
+Topic: Global Health & DevelopmentType: GivingCommitment: TinyFit gate: Open
+
+Toe in the water step (≤60 min):
+
+Read pledge options and decide whether a smaller % / trial pledge fits better.
+
+Resources / links to support the next steps:
+
+https://www.givingwhatwecan.org/pledge
+
+
+
+Card 9 — Project: GiveWell mini donation drive (measurable good)
+
+Fits Experiment: C (canonical)Recommendation name: Small donation drive → GiveWell Top Charities / Top Charities FundOne-line pitch: Measurable-good project: money moved to highly cost-effective programs. GiveWell+1
+
+When to suggest (trigger criteria):
+
+Candidate needs action to stay motivated / wants proof-of-fit fast
+
+Candidate is donation-positive and can do small outreach
+
+When not to (contraindications):
+
+Candidate is very uncomfortable asking others for money
+
+Topic: Global Health & DevelopmentType: ProjectCommitment: LightFit gate: Open
+
+Toe in the water step (≤60 min):
+
+Draft one short message and send to 5–10 people with a clear donation endpoint.
+
+Resources / links to support the next steps:
+
+https://www.givewell.org/charities/top-charities GiveWell
+
+https://www.givewell.org/top-charities-fund GiveWell
+
+
+
+Card 10 — Project: GWWC Pledge Drive
+
+Fits Experiment: C (optional alt)Recommendation name: Giving What We Can — Pledge DriveOne-line pitch: Measurable-good community action: pledges taken / giving committed. Giving What We Can
+
+When to suggest (trigger criteria):
+
+Candidate likes community action and structured campaigns
+
+When not to (contraindications):
+
+Candidate is pledge-averse or feels pressure around commitments
+
+Topic: Global Health & DevelopmentType: ProjectCommitment: LightFit gate: Open
+
+Toe in the water step (≤60 min):
+
+Read the event page and decide on a small participation/promotion target.
+
+Resources / links to support the next steps:
+
+https://www.givingwhatwecan.org/events/pledge-drive Giving What We Can
+
+
+
+Card 11 — The Life You Can Save: Best Charities
+
+Fits Experiment: (orthogonal module: Giving)Recommendation name: The Life You Can Save — Best CharitiesOne-line pitch: EA-adjacent, evidence-backed recommended charity list with accessible explanations. The Life You Can Save+1
+
+When to suggest (trigger criteria):
+
+Candidate wants an approachable curated list and narratives
+
+When not to (contraindications):
+
+Candidate wants strictly “GiveWell-only” style
+
+Topic: Global Health & DevelopmentType: GivingCommitment: TinyFit gate: Open
+
+Toe in the water step (≤60 min):
+
+Pick one charity and read its “why recommended” page.
+
+Resources / links to support the next steps:
+
+https://www.thelifeyoucansave.org/best-charities/ The Life You Can Save
+
+
+
+Card 12 — Charity Entrepreneurship: Incubation Program
+
+Fits Experiment: (entrepreneurship direction; complements A)Recommendation name: Charity Entrepreneurship — Incubation ProgramOne-line pitch: EA-aligned, high-commitment path to founding a cost-effective charity with training, research, and network. CE+1
+
+When to suggest (trigger criteria):
+
+Candidate is genuinely excited by founding
+
+Candidate can handle an intensive period + in-person component
+
+When not to (contraindications):
+
+Candidate is not open to relocation / high intensity
+
+Topic: Global Health & DevelopmentType: ProgramCommitment: HighFit gate: Selective + requires relocation (some in-person component) CE
+
+Toe in the water step (≤60 min):
+
+Take the short quiz and skim the application flow.
+
+Resources / links to support the next steps:
+
+https://www.charityentrepreneurship.com/ CE
+
+https://www.charityentrepreneurship.com/apply CE
+
+
+
+Card 13 — 80,000 Hours job board
+
+Fits Experiment: DRecommendation name: 80,000 Hours — Job boardOne-line pitch: EA-filtered job board; good for mapping orgs/role types and turning interest into a direction to test.
+
+When to suggest (trigger criteria):
+
+Candidate wants “what roles exist?” and recurring skill patterns
+
+When not to (contraindications):
+
+Candidate gets overwhelmed by job boards (start with A)
+
+Topic: Global Health & DevelopmentType: Move jobCommitment: TinyFit gate: Open
+
+Toe in the water step (≤60 min):
+
+Scan 8–12 roles → label role types → circle 3 roles + 2 skill gaps → convert into 1 direction + 1 next step.
+
+Resources / links to support the next steps:
+
+https://jobs.80000hours.org/
+
+
+
+Global Health & Development (orgs by type)
+
+Evaluators / evidence-driven prioritization
+
+GiveWell — https://www.givewell.org/ GiveWell
+
+GiveWell Top Charities (reference page) — https://www.givewell.org/charities/top-charities GiveWell
+
+Implementers (program delivery)
+
+Evidence Action — https://www.evidenceaction.org/ Founders Pledge
+
+Against Malaria Foundation — https://www.againstmalaria.com/ Work on Climate
+
+Malaria Consortium — https://www.malariaconsortium.org/ Malaria Consortium
+
+GiveDirectly — https://www.givedirectly.org/ GiveDirectly
+
+Research & policy (impact evaluation, what-works, scaling evidence)
+
+J-PAL — https://www.povertyactionlab.org/ J-PAL
+
+Innovations for Poverty Action (IPA) — https://poverty-action.org/ Innovations for Poverty Action
+
+Incubation / charity creation
+
+Charity Entrepreneurship — https://www.charityentrepreneurship.com/ Wild Animal Initiative
+
+Funders / donor vehicles
+
+EA Global Health & Development Fund (EA Funds home lists it) — https://funds.effectivealtruism.org/ Effective Altruism Funds
+
+
+
+
+
+Copy-paste links (raw URLs)
+
+80,000 Hours – Global health (health in poor countries) problem profile:
+
+https://80000hours.org/problem-profiles/health-in-poor-countries/
+
+
+
+GiveWell – Our Top Charities (updated Sep 2025):
+
+https://www.givewell.org/charities/top-charities
+
+
+
+GiveWell – Cost-effectiveness models:
+
+https://www.givewell.org/how-we-work/our-criteria/cost-effectiveness/cost-effectiveness-models
+
+
+
+YouTube – GiveWell explainer (“here’s how they do it”):
+
+https://www.youtube.com/watch?v=_TqabsxdWmo
+
+
+
+The Life You Can Save – Best charities:
+
+https://www.thelifeyoucansave.org/best-charities/
+
+Peter Singer TED talk (via TLCS):
+
+https://www.thelifeyoucansave.org/peter-singers-ted-talk/
+
+
+
+Giving What We Can – 10% Pledge:
+
+https://www.givingwhatwecan.org/pledge
+
+Giving What We Can – Global Health & Wellbeing Fund:
+
+https://www.givingwhatwecan.org/charities/global-health-and-wellbeing-fund
+
+
+
+Charity Entrepreneurship – Incubation program:
+
+https://www.charityentrepreneurship.com/
+
+Apply page:
+
+https://www.charityentrepreneurship.com/apply
+
+
+
+Coursera – An Introduction to Global Health:
+
+https://www.coursera.org/learn/global-health-introduction
+
+Crash Course – Public Health playlist:
+
+https://www.youtube.com/playlist?list=PL8dPuuaLjXtPjQj_LcJ0Zvj-VI3sslJyF
+
+
+
+Job boards:
+
+ReliefWeb Jobs: https://reliefweb.int/jobs
+
+Devex jobs: https://www.devex.com/jobs/search
+
+Impactpool (public health filter): https://www.impactpool.org/search?jf%5B%5D=58
+
+80,000 Hours jobs: https://jobs.80000hours.org/
+

@@ -1,0 +1,114 @@
+[
+  {
+    "id": "experiment-a",
+    "name": "Quick taste (≈1 hour)",
+    "contentPath": "content/md/pathways/experiment-a.md",
+    "order": 0,
+    "group": "How to explore (A–D)"
+  },
+  {
+    "id": "experiment-b",
+    "name": "Deeper dive (course / fellowship)",
+    "contentPath": "content/md/pathways/experiment-b.md",
+    "order": 0,
+    "group": "How to explore (A–D)"
+  },
+  {
+    "id": "experiment-c",
+    "name": "Hands-on project (proof of fit)",
+    "contentPath": "content/md/pathways/experiment-c.md",
+    "order": 0,
+    "group": "How to explore (A–D)"
+  },
+  {
+    "id": "experiment-d",
+    "name": "Job-board scan (make roles concrete)",
+    "contentPath": "content/md/pathways/experiment-d.md",
+    "order": 0,
+    "group": "How to explore (A–D)"
+  },
+  {
+    "id": "path-pattern-stay-in-role-but-reshape-it",
+    "name": "Stay in role but reshape it",
+    "contentPath": "content/md/pathways/path-pattern-stay-in-role-but-reshape-it.md",
+    "order": 1,
+    "group": "Path patterns"
+  },
+  {
+    "id": "path-pattern-switch-org-team-within-same-field",
+    "name": "Switch org/team within same field",
+    "contentPath": "content/md/pathways/path-pattern-switch-org-team-within-same-field.md",
+    "order": 2,
+    "group": "Path patterns"
+  },
+  {
+    "id": "path-pattern-adjacent-function-shift",
+    "name": "Adjacent function shift",
+    "contentPath": "content/md/pathways/path-pattern-adjacent-function-shift.md",
+    "order": 3,
+    "group": "Path patterns"
+  },
+  {
+    "id": "path-pattern-career-change",
+    "name": "Career change",
+    "contentPath": "content/md/pathways/path-pattern-career-change.md",
+    "order": 4,
+    "group": "Path patterns"
+  },
+  {
+    "id": "path-pattern-skill-building-plan-career-capital",
+    "name": "Skill-building plan (career capital)",
+    "contentPath": "content/md/pathways/path-pattern-skill-building-plan-career-capital.md",
+    "order": 5,
+    "group": "Path patterns"
+  },
+  {
+    "id": "path-pattern-test-the-cause-area-plan",
+    "name": "“Test the cause area” plan",
+    "contentPath": "content/md/pathways/path-pattern-test-the-cause-area-plan.md",
+    "order": 6,
+    "group": "Path patterns"
+  },
+  {
+    "id": "path-pattern-credentials-pipeline-plan",
+    "name": "Credentials/pipeline plan",
+    "contentPath": "content/md/pathways/path-pattern-credentials-pipeline-plan.md",
+    "order": 7,
+    "group": "Path patterns"
+  },
+  {
+    "id": "path-pattern-project-first-plan",
+    "name": "Project-first plan",
+    "contentPath": "content/md/pathways/path-pattern-project-first-plan.md",
+    "order": 8,
+    "group": "Path patterns"
+  },
+  {
+    "id": "path-pattern-volunteering-community-plan",
+    "name": "Volunteering/community plan",
+    "contentPath": "content/md/pathways/path-pattern-volunteering-community-plan.md",
+    "order": 9,
+    "group": "Path patterns"
+  },
+  {
+    "id": "path-pattern-entrepreneurship-plan",
+    "name": "Entrepreneurship plan",
+    "contentPath": "content/md/pathways/path-pattern-entrepreneurship-plan.md",
+    "order": 10,
+    "group": "Path patterns"
+  },
+  {
+    "id": "path-pattern-earning-to-give-support-role-plan",
+    "name": "Earning-to-give/support role plan",
+    "contentPath": "content/md/pathways/path-pattern-earning-to-give-support-role-plan.md",
+    "order": 11,
+    "group": "Path patterns"
+  },
+  {
+    "id": "path-pattern-networking-exposure-sprint-when-stuck",
+    "name": "Networking/exposure sprint (when stuck)",
+    "contentPath": "content/md/pathways/path-pattern-networking-exposure-sprint-when-stuck.md",
+    "order": 12,
+    "group": "Path patterns"
+  }
+]
