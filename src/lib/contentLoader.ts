@@ -73,6 +73,20 @@ async function loadContentFile<T>(key: ContentKey): Promise<T> {
       throw error;
     }
 
+    // Check content-type to catch HTML fallback responses
+    const contentType = response.headers.get('content-type') || '';
+    if (!contentType.includes('application/json')) {
+      const error = new ContentLoadError(
+        `Expected JSON but got ${contentType} for ${key}. The content file may be missing or the server returned an HTML fallback.`,
+        'missing-file',
+        { contentType, path: contentPaths[key] }
+      );
+      if (import.meta.env?.DEV) {
+        console.error(error.message);
+      }
+      throw error;
+    }
+
     let jsonData: unknown;
     try {
       jsonData = await response.json();
