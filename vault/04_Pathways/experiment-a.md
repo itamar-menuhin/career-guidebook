@@ -9,6 +9,7 @@ order: 0
 **Goal:** Test interest in a new field with minimal commitment (<1 hour).
 
 **When to suggest:**
+
 - They are curious about a field but have low certainty.
 - They are overwhelmed and don't know where to start.
 - You want to see if the "logic" of a cause area clicks with them.

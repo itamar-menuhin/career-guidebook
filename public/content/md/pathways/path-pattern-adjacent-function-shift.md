@@ -3,6 +3,7 @@
 **Goal:** Use your knowledge of the field to solve a different type of problem.
 
 **When to suggest:**
+
 - They understand the "context" well but don't enjoy their current specific day-to-day role (e.g., a researcher who prefers coordinating).
 - They see a gap in the field (e.g., "Great research, but no one is communicating it") that matches their natural strengths.
 

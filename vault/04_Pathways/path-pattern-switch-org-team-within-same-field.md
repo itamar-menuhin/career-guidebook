@@ -9,6 +9,7 @@ order: 2
 **Goal:** Deploy **existing skills "as is"** but in a higher-impact environment.
 
 **When to suggest:**
+
 - They are already good at what they do (e.g. Researcher, Ops) but are in a low-impact organization.
 - They have the "career capital" to qualify for a priority organization immediately.
 - "Right skills, wrong place."

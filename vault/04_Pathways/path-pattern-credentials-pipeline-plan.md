@@ -9,6 +9,7 @@ order: 7
 **Goal:** Get the "badge" needed to enter a gated field.
 
 **When to suggest:**
+
 - They want to enter a field with hard gates (e.g. Bio-labs, Policy, Academia).
 - They are missing a formal qualification that is non-negotiable (e.g. PhD, Security Clearance).
 - They are willing to play the "long game" (2-5 years).

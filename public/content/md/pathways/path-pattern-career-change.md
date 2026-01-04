@@ -3,6 +3,7 @@
 **Goal:** Deeply re-orienting their career toward a high-priority problem.
 
 **When to suggest:**
+
 - Their current path doesn't have a direct route to the impact they want (dead end).
 - They are willing to invest time in learning new skills (bootcamps, degrees, self-study).
 - They are early in their career OR have skills that translate well (e.g. coding, data, writing).

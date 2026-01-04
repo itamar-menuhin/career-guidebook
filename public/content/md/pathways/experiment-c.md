@@ -3,6 +3,7 @@
 **Goal:** Test "fit" and feel direct impact by actually doing the work.
 
 **When to suggest:**
+
 - They have high interest but low certainty of skill-fit.
 - They need a "proof of work" artifact for their portfolio/CV.
 - They are motivated by seeing immediate, tangible results.

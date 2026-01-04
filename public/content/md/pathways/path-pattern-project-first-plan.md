@@ -3,6 +3,7 @@
 **Goal:** Build a "Proof of Work" portfolio to signal high agency and creativity.
 
 **When to suggest:**
+
 - They learn best by building, not reading.
 - They have a "cold start" (no network/credentials) but need to stand out from the crowd.
 - **Signaling:** They want to prove they have the drive to work independently and generate novel solutions.

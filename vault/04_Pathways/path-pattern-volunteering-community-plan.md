@@ -9,6 +9,7 @@ order: 9
 **Goal:** Build specific career capital (foot in the door) and maintain motivation through direct impact.
 
 **When to suggest:**
+
 - They want to work at a specific organization but aren't qualified for a full-time role yet.
 - They need connection to the cause to stay motivated (feeling the "positive impact" loop).
 - They want to test "culture fit" with a specific team while building a network.

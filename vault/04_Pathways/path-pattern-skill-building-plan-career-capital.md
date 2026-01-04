@@ -9,6 +9,7 @@ order: 5
 **Goal:** Focus on acquiring a "missing piece" to unlock future options.
 
 **When to suggest:**
+
 - They know *what* they want to do but lack a specific hard skill (e.g. "I want to do bio-risk but don't know biology").
 - They are "undecided" on a cause but want to be generally useful (flexible career capital).
 - They are currently in a "study phase" (university) and want to optimize their electives/thesis.

@@ -9,6 +9,7 @@ order: 1
 **Goal:** Optimize for impact/learning without the friction of a pivot.
 
 **When to suggest:**
+
 - The candidate has high "social capital" in their current org.
 - There is a clear "impact gap" they can fill (e.g., starting an implementation group).
 - Personal constraints (e.g. visa, financial, location) make a pivot risky right now.

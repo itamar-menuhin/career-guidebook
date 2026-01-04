@@ -3,6 +3,7 @@
 **Goal:** Ground theory in reality by seeing actual job requirements and organizational "shapes".
 
 **When to suggest:**
+
 - They are in the "Research" phase but have a fuzzy idea of what roles actually look like.
 - They want to identify "skill gaps" by comparing their CV to a real job description.
 - They feel like a field is "unreachable"—seeing the actual requirements can often demystify it.

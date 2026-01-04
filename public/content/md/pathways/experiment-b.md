@@ -3,6 +3,7 @@
 **Goal:** Build structured mental models and context through serious study.
 
 **When to suggest:**
+
 - The "Quick taste" piqued their interest.
 - They want a systematic overview of the field's arguments.
 - They would benefit from a cohort/community (fellowships).
