@@ -14,4 +14,4 @@ fit_signals:
 common_confusions: []
 ---
 
-Help ensure advanced AI systems don't cause catastrophic harm, by improving how we build/evaluate/govern/deploy powerful AI (technical safety + governance/policy).
+Mitigate catastrophic risks from advanced AI systems by working on technical alignment, governance, or strategy.

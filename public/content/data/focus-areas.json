@@ -5,9 +5,9 @@
     "overviewPath": "content/md/focus-areas/ai-safety/overview.md",
     "overviewExcerpt": "Mitigate catastrophic risks from advanced AI systems by working on technical alignment, governance, or strategy.",
     "roleShapes": [
-      "**Technical Research:** Theory, Interpretability, Model Evals. (Focus: *Understanding* systems).",
-      "**Safety Engineering:** Secure Infrastructure, Reliability, Red Teaming. (Focus: *Building* robust systems).",
-      "**Governance & Strategy:** Policy analysis, Compute Governance, International Coordination. (Focus: *Governing* deployment)."
+      "Technical Research: Theory, Interpretability, Model Evals. (Focus: Understanding systems).",
+      "Safety Engineering: Secure Infrastructure, Reliability, Red Teaming. (Focus: Building robust systems).",
+      "Governance & Strategy: Policy analysis, Compute Governance, International Coordination. (Focus: Governing deployment)."
     ],
     "fitSignals": [
       "Motivated by catastrophic risk (high-stakes failure modes)",
