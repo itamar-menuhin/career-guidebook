@@ -98,17 +98,24 @@
     "group": "Path patterns"
   },
   {
-    "id": "path-pattern-earning-to-give-support-role-plan",
-    "name": "Earning-to-give/support role plan",
-    "contentPath": "content/md/pathways/path-pattern-earning-to-give-support-role-plan.md",
+    "id": "path-pattern-earning-to-give-plan",
+    "name": "Earning-to-give plan",
+    "contentPath": "content/md/pathways/path-pattern-earning-to-give-plan.md",
     "order": 11,
+    "group": "Path patterns"
+  },
+  {
+    "id": "path-pattern-support-ops-plan",
+    "name": "Support / Operations role plan",
+    "contentPath": "content/md/pathways/path-pattern-support-ops-plan.md",
+    "order": 12,
     "group": "Path patterns"
   },
   {
     "id": "path-pattern-networking-exposure-sprint-when-stuck",
     "name": "Networking/exposure sprint (when stuck)",
     "contentPath": "content/md/pathways/path-pattern-networking-exposure-sprint-when-stuck.md",
-    "order": 12,
+    "order": 13,
     "group": "Path patterns"
   }
 ]

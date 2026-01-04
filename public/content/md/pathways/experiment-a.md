@@ -1,5 +1,12 @@
 # GENERATED FROM VAULT — DO NOT EDIT. Source of truth: /vault
 
-A fast way to get oriented and test interest without commitment.
+**Goal:** Test interest in a new field with minimal commitment (<1 hour).
 
-Use this as an overview + interest test; pick one canonical intro resource/video.
+**When to suggest:**
+- They are curious about a field but have low certainty.
+- They are overwhelmed and don't know where to start.
+- You want to see if the "logic" of a cause area clicks with them.
+
+**The Move:** Help them pick **one** canonical piece of media. Avoid general lists; instead, send a specific Problem Profile or high-signal introduction.
+
+**First Small Step:** Send the link and ask: "Does the logic of this problem feel like something you want to spend more time on?"
