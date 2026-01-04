@@ -306,13 +306,12 @@
     "id": "biosecurity",
     "name": "Biosecurity / Pandemic preparedness",
     "overviewPath": "content/md/focus-areas/biosecurity/overview.md",
-    "overviewExcerpt": "Reduce catastrophic biological risks (natural outbreaks and engineered pathogens) by improving prevention, detection, response, and policy—so society is far less vulnerable to extreme pandemics.",
+    "overviewExcerpt": "Prevent catastrophic pandemics—natural or engineered—through better early detection, safer biotechnology, and stronger policy.",
     "roleShapes": [
-      "Public health security / policy / strategy",
-      "Technical work (biosurveillance, diagnostics, PPE/engineering controls, forecasting)",
-      "Research & analysis (risk assessment, program evaluation, modeling)",
-      "Ops/programs (running initiatives, coordination, funding ops)",
-      "AI-bio risk work (when relevant)"
+      "Public health security & policy: strategy, regulation, and international coordination.",
+      "Technical work: biosurveillance, diagnostics, PPE, and far-UVC engineering.",
+      "Research & analysis: risk assessment, program evaluation, epidemiology modeling.",
+      "Ops & programs: running biosecurity initiatives, coordination, grantmaking ops."
     ],
     "fitSignals": [
       "Motivated by preparedness + systems thinking (institutions, incentives, coordination)",
@@ -348,18 +347,20 @@
       },
       "handsOn": {
         "title": "Hands-on trial",
-        "description": "## Hands-on project — project pathway (make it concrete) - Canonical pick: Oxford Biosecurity Group (OBG) projects (part-time remote research projects; biosecurity + AI-bio intersection). My Site+1 - Toe-in-the-water…",
+        "description": "## Hands-on project — proof of fit - Volunteer (projects): Oxford Biosecurity Group. - Volunteer (hunt): Find roles on EA Opps Board.",
         "cardIds": [
-          "biosec-card-05"
+          "biosec-card-05",
+          "biosec-card-08"
         ],
         "inlineGuidancePath": "content/md/focus-areas/biosecurity/buckets/hands-on.md",
         "curatedCardIds": [
-          "biosec-card-05"
+          "biosec-card-05",
+          "biosec-card-08"
         ]
       },
       "jobBoard": {
         "title": "Job board scan (real roles)",
-        "description": "## Job-board scan — job-board exploration (choose 1–2) - 80,000 Hours job board (filter toward biosecurity/pandemic preparedness roles). 80,000 Hours Job Board+1 - Optional alt: EA Opportunities for…",
+        "description": "## Job-board scan — make it concrete - Scan: 80,000 Hours or EA Opps. - Exercise: Role Clustering (Tech vs Policy vs Ops).",
         "cardIds": [
           "biosec-card-06",
           "biosec-card-07"

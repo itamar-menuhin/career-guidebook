@@ -1,5 +1,34 @@
 [
   {
+    "id": "biosec-card-08",
+    "title": "Biosecurity Volunteering Hunt",
+    "oneLiner": "Search for live project or volunteering needs on the central EA opportunties board.",
+    "whenToSuggest": "Candidate wants to contribute time but isn't ready for a full job; Candidate wants to find a 'real' project.",
+    "whenNotToSuggest": "Candidate is looking for reading material only.",
+    "tags": {
+      "topic": "project",
+      "type": "hands-on",
+      "commitment": "low",
+      "goodFitIf": [
+        "Wants to contribute time",
+        "Looking for real projects",
+        "Flexible with project types"
+      ]
+    },
+    "firstSmallStep": "Search 'Biosecurity' on the board and bookmark 3 potential volunteer roles.",
+    "nextStep": "Apply to the one that fits your skills best.",
+    "links": [
+      {
+        "label": "https://www.effectivealtruism.org/opportunities?causeArea=biosecurity",
+        "url": "https://www.effectivealtruism.org/opportunities?causeArea=biosecurity"
+      }
+    ],
+    "peopleToTalkTo": [],
+    "focusAreaIds": [
+      "biosecurity"
+    ]
+  },
+  {
     "id": "ai-safety-card-03",
     "title": "80,000 Hours — AI safety researcher career review",
     "oneLiner": "A canonical EA-style 'should I do this?' overview, with concrete role shapes and realities.",
