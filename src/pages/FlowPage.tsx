@@ -258,7 +258,7 @@ const SidebarNavItem = ({
 export default function FlowPage() {
   const { flowSteps, loading, refresh } = useContent();
   const overviewStep = useMemo(
-    () => flowSteps.find(s => s.id === 'flow-overview'),
+    () => flowSteps.find(s => s.id === 'session-guide'),
     [flowSteps]
   );
   const overviewSections = useMemo(

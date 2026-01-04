@@ -63,7 +63,7 @@ export function MobileNav() {
   const { flowSteps } = useContent();
 
   const overviewStep = useMemo(
-    () => flowSteps.find(s => s.id === 'flow-overview'),
+    () => flowSteps.find(s => s.id === 'session-guide'),
     [flowSteps]
   );
 
