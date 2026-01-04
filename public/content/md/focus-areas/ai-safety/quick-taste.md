@@ -1,8 +1,4 @@
----
-kind: focus_area_bucket
-focus_area_id: ai-safety
-bucket: quick-taste
----
+# GENERATED FROM VAULT — DO NOT EDIT. Source of truth: /vault
 
 ## Quick taste — 1-hour overview (choose 1)
 - **Rob Miles** — “Intro to AI Safety, Remastered” (video) - *Best starting point.*

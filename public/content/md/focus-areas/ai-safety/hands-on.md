@@ -1,8 +1,4 @@
----
-kind: focus_area_bucket
-focus_area_id: ai-safety
-bucket: hands-on
----
+# GENERATED FROM VAULT — DO NOT EDIT. Source of truth: /vault
 
 ## Hands-on project — proof of fit
 - **Distill a Paper:** Read one seminal paper (e.g. *Constitutional AI* or *RLHF*) and write a 1-page plain-English summary.

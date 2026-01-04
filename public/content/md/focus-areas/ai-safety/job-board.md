@@ -1,8 +1,4 @@
----
-kind: focus_area_bucket
-focus_area_id: ai-safety
-bucket: job-board
----
+# GENERATED FROM VAULT — DO NOT EDIT. Source of truth: /vault
 
 ## Job-board scan — make it concrete
 - **Scan:** 80,000 Hours job board OR AISafety.com.
