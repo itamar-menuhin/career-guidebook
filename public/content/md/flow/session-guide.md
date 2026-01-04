@@ -1,6 +1,6 @@
 ---
 kind: flow_step
-id: flow-overview
+id: session-guide
 title: Session overview
 order: 0
 ---
