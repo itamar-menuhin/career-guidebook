@@ -2272,5 +2272,87 @@
     "focusAreaIds": [
       "global-health-development"
     ]
+  },
+  {
+    "id": "ai-safety-card-11",
+    "title": "Preventing an AI-related catastrophe (80,000 Hours)",
+    "oneLiner": "The big strategic picture: why AI risk matters and what key interventions look like.",
+    "whenToSuggest": "Candidate wants the '10,000 foot view' before diving into technical details.",
+    "whenNotToSuggest": "Candidate is already familiar with the basic arguments.",
+    "tags": {
+      "topic": "reading",
+      "type": "quick-taste",
+      "commitment": "low",
+      "goodFitIf": [
+        "Wants big strategic picture",
+        "Prefers reading",
+        "New to the field"
+      ]
+    },
+    "firstSmallStep": "Read the summary and the 'What you can do' section.",
+    "nextStep": "Pick one intervention path that appeals to you to explore further.",
+    "links": [
+      {
+        "label": "https://80000hours.org/problem-profiles/artificial-intelligence/",
+        "url": "https://80000hours.org/problem-profiles/artificial-intelligence/"
+      }
+    ],
+    "peopleToTalkTo": [],
+    "focusAreaIds": [
+      "ai-safety"
+    ]
+  },
+  {
+    "id": "ai-safety-card-12",
+    "title": "Distill a Paper",
+    "oneLiner": "Read one seminal paper (e.g. Constitutional AI or RLHF) and write a 1-page plain-English summary.",
+    "whenToSuggest": "Candidate learns by explaining; Candidate wants to test their technical comprehension.",
+    "whenNotToSuggest": "Candidate has zero technical background (start with videos instead).",
+    "tags": {
+      "topic": "project",
+      "type": "hands-on",
+      "commitment": "low",
+      "goodFitIf": [
+        "Learns by explaining",
+        "Wants to test technical comprehension",
+        "Likes writing/synthesis"
+      ]
+    },
+    "firstSmallStep": "Pick a paper (e.g. form Anthropic/DeepMind safety teams) and set a 2-hour timer to read and summarize.",
+    "nextStep": "Share your summary with a friend or on a forum.",
+    "links": [],
+    "peopleToTalkTo": [],
+    "focusAreaIds": [
+      "ai-safety"
+    ]
+  },
+  {
+    "id": "ai-safety-card-13",
+    "title": "The 'Jailbreak' Test (Red Teaming)",
+    "oneLiner": "Use a red-teaming interface to try and bypass safety guardrails. Understand *how* they fail.",
+    "whenToSuggest": "Candidate likes 'breaking things'; Candidate is interested in safety engineering/security.",
+    "whenNotToSuggest": "Candidate is looking for high-level strategy.",
+    "tags": {
+      "topic": "project",
+      "type": "hands-on",
+      "commitment": "low",
+      "goodFitIf": [
+        "Likes breaking things",
+        "Interested in safety engineering/security",
+        "Fun/gamified approach"
+      ]
+    },
+    "firstSmallStep": "Try a game like Gandalf.lakera.ai or just try to jailbreak ChatGPT to say something it shouldn't.",
+    "nextStep": "Read a paper on 'Adversarial Attacks' to understand the theory behind your jailbreak.",
+    "links": [
+      {
+        "label": "https://gandalf.lakera.ai/",
+        "url": "https://gandalf.lakera.ai/"
+      }
+    ],
+    "peopleToTalkTo": [],
+    "focusAreaIds": [
+      "ai-safety"
+    ]
   }
 ]
