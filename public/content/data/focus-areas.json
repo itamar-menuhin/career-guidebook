@@ -460,13 +460,12 @@
     "id": "global-health-development",
     "name": "Global Health & Development",
     "overviewPath": "content/md/focus-areas/global-health-development/overview.md",
-    "overviewExcerpt": "Reduce large-scale suffering and premature death by scaling interventions that are cheap, evidence-backed, and logistically feasible (e.g., malaria prevention/treatment, vaccinations, nutrition).",
+    "overviewExcerpt": "Save lives and improve well-being at scale by deploying cost-effective, evidence-backed interventions (e.g., malaria prevention, vaccines, nutrition) in the world's poorest regions.",
     "roleShapes": [
-      "Program implementation & field ops (distribution, logistics, monitoring)",
-      "Research & evaluation (development econ, epidemiology, cost-effectiveness, RCTs)",
-      "Grantmaking / philanthropy (moving money well; vetting)",
-      "Policy and government implementation (health systems, procurement, public finance)",
-      "Entrepreneurship / founding new orgs (esp. 'evidence-to-scale' nonprofits)"
+      "Program Implementation & Ops (logistics, distribution, and monitoring).",
+      "Research & Evaluation (epidemiology, development economics, RCTs).",
+      "Grantmaking & Policy (directing large-scale funding and shaping health systems).",
+      "Entrepreneurship (founding scalable nonprofits for neglected interventions)."
     ],
     "fitSignals": [
       "You're motivated by measurable impact and are OK with 'unsexy' operational realities (supply chains, compliance, systems)",
@@ -476,38 +475,38 @@
     "buckets": {
       "quickTaste": {
         "title": "Quick taste (≈1 hour)",
-        "description": "Quick taste (≈1 hour)",
+        "description": "Start with key concepts: cost-effectiveness, evidence, and the moral case for action.",
         "cardIds": [
           "ghd-card-01",
-          "ghd-card-04",
+          "ghd-card-03",
           "ghd-card-02",
-          "ghd-card-03"
+          "ghd-card-04"
         ],
         "inlineGuidancePath": "content/md/focus-areas/global-health-development/buckets/quick-taste.md",
         "curatedCardIds": [
           "ghd-card-01",
-          "ghd-card-04",
+          "ghd-card-03",
           "ghd-card-02",
-          "ghd-card-03"
+          "ghd-card-04"
         ]
       },
       "deeperDive": {
         "title": "Deeper dive (2–6 hours)",
-        "description": "Deeper dive (2–6 hours)",
+        "description": "Deepen your understanding of specific interventions or methodologies.",
         "cardIds": [],
         "inlineGuidancePath": "content/md/focus-areas/global-health-development/buckets/deeper-dive.md",
         "curatedCardIds": []
       },
       "handsOn": {
         "title": "Hands-on trial",
-        "description": "Hands-on trial",
+        "description": "Donations, pledges, and entrepreneurship—moving resources to where they are needed most.",
         "cardIds": [
           "ghd-card-10",
           "ghd-card-05",
           "ghd-card-06",
-          "global-health-development-card-10",
-          "ghd-card-08",
           "ghd-card-07",
+          "ghd-card-13",
+          "ghd-card-08",
           "ghd-card-09",
           "ghd-card-12"
         ],
@@ -516,16 +515,16 @@
           "ghd-card-10",
           "ghd-card-05",
           "ghd-card-06",
-          "global-health-development-card-10",
-          "ghd-card-08",
           "ghd-card-07",
+          "ghd-card-13",
+          "ghd-card-08",
           "ghd-card-09",
           "ghd-card-12"
         ]
       },
       "jobBoard": {
         "title": "Job board scan (real roles)",
-        "description": "Job board scan (real roles)",
+        "description": "Explore real roles in the sector.",
         "cardIds": [
           "ghd-card-11"
         ],
@@ -537,15 +536,15 @@
     },
     "curatedCardIds": [
       "ghd-card-01",
-      "ghd-card-04",
-      "ghd-card-02",
       "ghd-card-03",
+      "ghd-card-02",
+      "ghd-card-04",
       "ghd-card-10",
       "ghd-card-05",
       "ghd-card-06",
-      "global-health-development-card-10",
-      "ghd-card-08",
       "ghd-card-07",
+      "ghd-card-13",
+      "ghd-card-08",
       "ghd-card-09",
       "ghd-card-12",
       "ghd-card-11"

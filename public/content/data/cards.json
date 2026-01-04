@@ -1774,9 +1774,9 @@
     ]
   },
   {
-    "id": "global-health-development-card-10",
+    "id": "ghd-card-13",
     "title": "Giving What We Can — Pledge Drive",
-    "oneLiner": "Measurable-good community action: pledges taken / giving committed. Giving What We Can",
+    "oneLiner": "Measurable-good community action: pledges taken / giving committed.",
     "whenToSuggest": "Use when it aligns with the focus area goals.",
     "whenNotToSuggest": "Skip if it does not match the person's constraints or interests.",
     "tags": {

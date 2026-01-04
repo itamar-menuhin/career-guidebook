@@ -1,3 +1,1 @@
-# GENERATED FROM VAULT — DO NOT EDIT. Source of truth: /vault
-
-
+Explore real roles in the sector.
