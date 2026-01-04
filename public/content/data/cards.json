@@ -2354,5 +2354,34 @@
     "focusAreaIds": [
       "ai-safety"
     ]
+  },
+  {
+    "id": "aw-card-14",
+    "title": "The 'Donation Pitch'",
+    "oneLiner": "Pick a recommendation from Animal Charity Evaluators and write a 1-page brief on *why* it's effective.",
+    "whenToSuggest": "Candidate wants to test their ability to analyze intervention effectiveness; Candidate likes writing/communication.",
+    "whenNotToSuggest": "Candidate just wants to volunteer hands-on.",
+    "tags": {
+      "topic": "project",
+      "type": "hands-on",
+      "commitment": "low",
+      "goodFitIf": [
+        "Likes analyzing effectiveness",
+        "Enjoys persuasive writing",
+        "Wants a quick <2hr project"
+      ]
+    },
+    "firstSmallStep": "Read the 'Top Charities' page on Animal Charity Evaluators and pick one to analyze.",
+    "nextStep": "Draft your 1-page brief and share it with a friend who isn't in EA.",
+    "links": [
+      {
+        "label": "https://animalcharityevaluators.org/donation-advice/recommended-charities/",
+        "url": "https://animalcharityevaluators.org/donation-advice/recommended-charities/"
+      }
+    ],
+    "peopleToTalkTo": [],
+    "focusAreaIds": [
+      "animal-welfare"
+    ]
   }
 ]

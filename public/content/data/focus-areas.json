@@ -94,12 +94,12 @@
     "id": "animal-welfare",
     "name": "Animal Welfare",
     "overviewPath": "content/md/focus-areas/animal-welfare/overview.md",
-    "overviewExcerpt": "Help reduce the suffering of billions of animals (farmed and wild) by improving welfare standards, scaling meat alternatives, and advancing advocacy for animals in institutions and the legal system.",
+    "overviewExcerpt": "Reduce suffering at scale by reforming factory farming, developing alternative proteins, and advancing legal protections.",
     "roleShapes": [
       "Advocacy & movement building: legal, policy, and field-building roles.",
-      "Meat alternatives (R&D / ops / strategy / venture): scaling plant-based / cultivated meat to displace factory farming.",
-      "Research & analysis: identifying neglected interventions, welfare metrics, or field strategy.",
-      "Government & institution-facing work (lobbying, procurement, standards)."
+      "Meat alternatives: R&D, ops, strategy to displace factory farming.",
+      "Research & analysis: identifying neglected interventions and welfare metrics.",
+      "Government & institution-facing work: lobbying, procurements, standards."
     ],
     "fitSignals": [
       "Motivated by a strong moral desire to reduce suffering at scale (esp. billions of farmed animals).",
@@ -109,64 +109,54 @@
     "buckets": {
       "quickTaste": {
         "title": "Quick taste (≈1 hour)",
-        "description": "Quick taste (≈1 hour)",
+        "description": "## Quick taste — 1-hour overview (choose 1) - 80,000 Hours — Factory farming problem profile (skim; strong EA-style overview) - “Intro to effective animal advocacy” — Jacy Reese (video)",
         "cardIds": [
           "aw-card-01",
-          "aw-card-03",
           "aw-card-02"
         ],
         "inlineGuidancePath": "content/md/focus-areas/animal-welfare/buckets/quick-taste.md",
         "curatedCardIds": [
           "aw-card-01",
-          "aw-card-03",
           "aw-card-02"
         ]
       },
       "deeperDive": {
         "title": "Deeper dive (2–6 hours)",
-        "description": "Deeper dive (2–6 hours)",
+        "description": "## Deeper dive — longer exposure (choose 1) - Animal Advocacy Careers — Intro Course. - 80,000 Hours podcast (e.g. Lewis Bollard).",
         "cardIds": [
-          "aw-card-05",
-          "aw-card-11",
-          "aw-card-04"
+          "aw-card-04",
+          "aw-card-05"
         ],
         "inlineGuidancePath": "content/md/focus-areas/animal-welfare/buckets/deeper-dive.md",
         "curatedCardIds": [
-          "aw-card-05",
-          "aw-card-11",
-          "aw-card-04"
+          "aw-card-04",
+          "aw-card-05"
         ]
       },
       "handsOn": {
         "title": "Hands-on trial",
-        "description": "Hands-on trial",
+        "description": "## Hands-on project — proof of fit - Volunteer: Faunalytics / Animal Advocacy Careers (2-5h/week). - The Donation Pitch: Write a 1-page effectiveness brief.",
         "cardIds": [
-          "aw-card-07",
-          "aw-card-12",
-          "aw-card-13",
-          "aw-card-06"
+          "aw-card-06",
+          "aw-card-14"
         ],
         "inlineGuidancePath": "content/md/focus-areas/animal-welfare/buckets/hands-on.md",
         "curatedCardIds": [
-          "aw-card-07",
-          "aw-card-12",
-          "aw-card-13",
-          "aw-card-06"
+          "aw-card-06",
+          "aw-card-14"
         ]
       },
       "jobBoard": {
         "title": "Job board scan (real roles)",
-        "description": "Job board scan (real roles)",
+        "description": "## Job-board scan — make it concrete - Scan: Animal Advocacy Careers or 80,000 Hours. - Exercise: Role Clustering (Building vs Strategy).",
         "cardIds": [
-          "aw-card-09",
           "aw-card-08",
-          "aw-card-10"
+          "aw-card-09"
         ],
         "inlineGuidancePath": "content/md/focus-areas/animal-welfare/buckets/job-board.md",
         "curatedCardIds": [
-          "aw-card-09",
           "aw-card-08",
-          "aw-card-10"
+          "aw-card-09"
         ]
       }
     },
