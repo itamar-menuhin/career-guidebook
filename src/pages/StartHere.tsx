@@ -19,15 +19,15 @@ export default function StartHere() {
         <div className="container max-w-4xl relative">
           <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-primary/10 text-primary text-sm font-medium mb-6 animate-fade-up">
             <Sparkles className="h-4 w-4" />
-            <span>Your companion for impactful career conversations</span>
+            <span>Helping others do the most good</span>
           </div>
 
           <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-medium tracking-tight mb-6 animate-fade-up stagger-1">
-            <span className="text-gradient">Career Guidebook</span>
+            <span className="text-gradient">High-Impact Career Advising</span>
           </h1>
 
           <p className="text-lg md:text-xl text-muted-foreground mb-10 max-w-2xl leading-relaxed animate-fade-up stagger-2">
-            A practical toolkit for running impactful career conversations. A structured session guide, curated recommendations, and expert guidance — all in one place.
+            A toolkit for guiding talent toward the world's most pressing problems. Navigate uncertainty, identify high-leverage paths, and help others maximize their counterfactual impact.
           </p>
 
           <div className="flex flex-wrap gap-4 animate-fade-up stagger-3">
@@ -52,8 +52,8 @@ export default function StartHere() {
         <div className="absolute inset-0 gradient-subtle" />
         <div className="container max-w-5xl relative">
           <div className="text-center mb-12">
-            <h2 className="font-display text-2xl md:text-3xl font-medium mb-3">What Good Looks Like</h2>
-            <p className="text-muted-foreground">The principles behind effective career conversations</p>
+            <h2 className="font-display text-2xl md:text-3xl font-medium mb-3">A Partnership for Impact</h2>
+            <p className="text-muted-foreground">How we show up matters as much as what we know</p>
           </div>
 
           <div className="grid md:grid-cols-3 gap-6">
@@ -62,8 +62,8 @@ export default function StartHere() {
                 icon: Users,
                 iconColor: 'text-primary',
                 bgColor: 'bg-primary/10',
-                title: 'Mutual Think Tank',
-                description: "You're collaborators, not advisor and advisee. Explore together with genuine curiosity.",
+                title: 'Side-by-Side Discovery',
+                description: "We don't have all the answers. We facilitate a process of discovery with the candidate.",
               },
               {
                 icon: Lightbulb,
@@ -76,8 +76,8 @@ export default function StartHere() {
                 icon: BookOpen,
                 iconColor: 'text-bucket-deep',
                 bgColor: 'bg-bucket-deep/10',
-                title: 'Tailored Resources',
-                description: "Match recommendations to the person's situation, not a generic list.",
+                title: 'Personalized Context',
+                description: "Every career is unique. Tailor evidence-based advice to their specific constraints and edge.",
               },
             ].map((item, index) => (
               <Card
@@ -103,8 +103,8 @@ export default function StartHere() {
       <section className="py-20 px-4">
         <div className="container max-w-4xl">
           <div className="text-center mb-12">
-            <h2 className="font-display text-2xl md:text-3xl font-medium mb-3">Quick Navigation</h2>
-            <p className="text-muted-foreground">Jump right into what you need</p>
+            <h2 className="font-display text-2xl md:text-3xl font-medium mb-3">Advisor Toolkit</h2>
+            <p className="text-muted-foreground">Everything you need to build a high-impact plan</p>
           </div>
 
           <div className="grid md:grid-cols-2 gap-4">
@@ -113,28 +113,28 @@ export default function StartHere() {
                 to: '/flow',
                 icon: PlayCircle,
                 title: 'Session Guide',
-                desc: 'Structured process for 60-90 min sessions',
+                desc: 'Step-by-step flow for the 1:1',
                 accent: 'group-hover:bg-primary/10 group-hover:text-primary',
               },
               {
                 to: '/pathways',
                 icon: Map,
-                title: 'Common Pathways',
-                desc: 'Focus-area-agnostic starting points',
+                title: 'Common Approaches',
+                desc: "Archetypes like 'Career Change' or 'Skill Building'",
                 accent: 'group-hover:bg-bucket-hands/10 group-hover:text-bucket-hands',
               },
               {
                 to: '/focus-areas',
                 icon: Target,
-                title: 'Focus Areas',
-                desc: 'Deep dives into specific career paths',
+                title: 'Problem Profiles',
+                desc: 'Deep dives into top cause areas (AI, Bio, etc)',
                 accent: 'group-hover:bg-bucket-deep/10 group-hover:text-bucket-deep',
               },
               {
                 to: '/cards',
                 icon: LayoutGrid,
-                title: 'Recommendation Cards',
-                desc: 'Filterable catalog of resources',
+                title: 'Resource Database',
+                desc: 'Library of high-value opportunities',
                 accent: 'group-hover:bg-bucket-jobs/10 group-hover:text-bucket-jobs',
               },
             ].map((item, index) => (
