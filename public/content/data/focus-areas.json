@@ -184,13 +184,12 @@
     "id": "ai-x-animals",
     "name": "Animal x AI",
     "overviewPath": "content/md/focus-areas/ai-x-animals/overview.md",
-    "overviewExcerpt": "Use AI to reduce animal suffering (farmed and wild) by improving how we measure welfare, prevent harms, target advocacy, and design interventions — while also being careful about ways AI deployment can accidentally increase suffering (e.g., scale effects, mismeasurement, perverse incentives).",
+    "overviewExcerpt": "Leverage AI to reduce animal suffering at scale—from monitoring wild populations to optimizing advocacy—while mitigating risks like automated factory farming.",
     "roleShapes": [
-      "Applied ML for wild animal welfare: human–wildlife conflict mitigation, monitoring welfare indicators (e.g., vocalizations), detection/early warning systems.",
-      "AI in farmed animal systems: how AI in agriculture/aquaculture changes welfare (sometimes better, sometimes worse), plus interventions to steer it.",
-      "AI for animal advocacy orgs: LLM-enabled research workflows, message testing, supporter comms, grantwriting support, ops automation (done carefully).",
-      "Research & strategy at think tanks (what AI applications are promising, where are risks/unknowns).",
-      "Programs / community / hackathons for building tools and pipelines for animal protection."
+      "Applied ML for Wild Animals: Monitoring populations, acoustic detection, and conflict mitigation.",
+      "AI in Farmed Systems: Interventions in agriculture/aquaculture to ensure AI improves welfare.",
+      "Advocacy Tech: LLM workflows, message testing, and ops automation for animal organizations.",
+      "Research & Strategy: Mapping risks and identifying high-leverage AI applications."
     ],
     "fitSignals": [
       "You like concrete technical leverage (data/ML) and you're motivated by animals.",
