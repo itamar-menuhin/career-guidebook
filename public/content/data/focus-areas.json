@@ -200,103 +200,77 @@
     "buckets": {
       "quickTaste": {
         "title": "Quick taste (≈1 hour)",
-        "description": "Quick taste (≈1 hour)",
+        "description": "## Quick taste — 1-hour overview (choose 1) - ACE: “Impacts of AI on animal advocacy” (strategic overview). - Rethink Priorities: “AI for human–wildlife conflict” (concrete example). - Faunalytics: “AI and Animal Advocacy” (adoption status).",
         "cardIds": [
-          "ai-x-animals-card-02",
           "aixa-card-01",
-          "ai-x-animals-card-05",
-          "aixa-card-03",
-          "ai-x-animals-card-05",
-          "ai-x-animals-card-01",
-          "ai-x-animals-card-04",
-          "ai-x-animals-card-02",
-          "ai-x-animals-card-03",
-          "ai-x-animals-card-01",
           "aixa-card-02",
-          "ai-x-animals-card-06",
-          "ai-x-animals-card-04",
-          "ai-x-animals-card-03"
+          "aixa-card-03"
         ],
         "inlineGuidancePath": "content/md/focus-areas/ai-x-animals/buckets/quick-taste.md",
         "curatedCardIds": [
-          "ai-x-animals-card-02",
           "aixa-card-01",
-          "ai-x-animals-card-05",
-          "aixa-card-03",
-          "ai-x-animals-card-05",
-          "ai-x-animals-card-01",
-          "ai-x-animals-card-04",
-          "ai-x-animals-card-02",
-          "ai-x-animals-card-03",
-          "ai-x-animals-card-01",
           "aixa-card-02",
-          "ai-x-animals-card-06",
-          "ai-x-animals-card-04",
-          "ai-x-animals-card-03"
+          "aixa-card-03"
         ]
       },
       "deeperDive": {
         "title": "Deeper dive (2–6 hours)",
-        "description": "Deeper dive (2–6 hours)",
+        "description": "## Deeper dive — longer exposure (choose 1) - Fellowships: AI×Animals (Standard) or Futurekind (Project-based). - Research Series: Rethink Priorities (Aquatic Animals).",
         "cardIds": [
-          "ai-x-animals-card-05",
-          "ai-x-animals-card-06",
+          "aixa-card-10",
+          "aixa-card-12",
           "aixa-card-04"
         ],
         "inlineGuidancePath": "content/md/focus-areas/ai-x-animals/buckets/deeper-dive.md",
         "curatedCardIds": [
-          "ai-x-animals-card-05",
-          "ai-x-animals-card-06",
+          "aixa-card-10",
+          "aixa-card-12",
           "aixa-card-04"
         ]
       },
       "handsOn": {
         "title": "Hands-on trial",
-        "description": "Hands-on trial",
+        "description": "## Hands-on project — proof of fit - Volunteer: Felidae (ML for conservation) or Faunalytics (Research tooling). - Scoping Note: Write a deliverable for an org.",
         "cardIds": [
-          "aixa-card-06",
           "aixa-card-05",
-          "ai-x-animals-card-08"
+          "aixa-card-06",
+          "aixa-card-11"
         ],
         "inlineGuidancePath": "content/md/focus-areas/ai-x-animals/buckets/hands-on.md",
         "curatedCardIds": [
-          "aixa-card-06",
           "aixa-card-05",
-          "ai-x-animals-card-08"
+          "aixa-card-06",
+          "aixa-card-11"
         ]
       },
       "jobBoard": {
         "title": "Job board scan (real roles)",
-        "description": "Job board scan (real roles)",
+        "description": "## Job-board scan — make it concrete - Scan: Animal Advocacy Careers (field-specific) or 80k. - Exercise: Role Clustering.",
         "cardIds": [
-          "aixa-card-07",
           "aixa-card-08",
+          "aixa-card-07",
           "aixa-card-09"
         ],
         "inlineGuidancePath": "content/md/focus-areas/ai-x-animals/buckets/job-board.md",
         "curatedCardIds": [
-          "aixa-card-07",
           "aixa-card-08",
+          "aixa-card-07",
           "aixa-card-09"
         ]
       }
     },
     "curatedCardIds": [
-      "ai-x-animals-card-02",
       "aixa-card-01",
-      "ai-x-animals-card-05",
-      "aixa-card-03",
-      "ai-x-animals-card-01",
-      "ai-x-animals-card-04",
-      "ai-x-animals-card-03",
       "aixa-card-02",
-      "ai-x-animals-card-06",
+      "aixa-card-03",
+      "aixa-card-10",
+      "aixa-card-12",
       "aixa-card-04",
-      "aixa-card-06",
       "aixa-card-05",
-      "ai-x-animals-card-08",
-      "aixa-card-07",
+      "aixa-card-06",
+      "aixa-card-11",
       "aixa-card-08",
+      "aixa-card-07",
       "aixa-card-09"
     ],
     "peopleToTalkToPrompts": [],

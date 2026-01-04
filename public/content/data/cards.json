@@ -377,7 +377,7 @@
     ]
   },
   {
-    "id": "ai-x-animals-card-05",
+    "id": "aixa-card-10",
     "title": "AI×Animals Fellowship (EA Opportunities) Effective Altruism+1",
     "oneLiner": "Structured 8-week remote program for careers at the intersection of AI and animal welfare.",
     "whenToSuggest": "Use when it aligns with the focus area goals.",
@@ -649,27 +649,7 @@
     ]
   },
   {
-    "id": "ai-x-animals-card-05",
-    "title": "Founders Pledge Climate Fund / Climate Change Fund (via GWWC page)",
-    "oneLiner": "Founders Pledge Climate Fund / Climate Change Fund (via GWWC page)",
-    "whenToSuggest": "Use when it aligns with the focus area goals.",
-    "whenNotToSuggest": "Skip if it does not match the person's constraints or interests.",
-    "tags": {
-      "topic": "reading",
-      "type": "quick-taste",
-      "commitment": "low",
-      "goodFitIf": []
-    },
-    "firstSmallStep": "Review the linked resources.",
-    "nextStep": "Take the next action that feels most valuable.",
-    "links": [],
-    "peopleToTalkTo": [],
-    "focusAreaIds": [
-      "ai-x-animals"
-    ]
-  },
-  {
-    "id": "ai-x-animals-card-06",
+    "id": "aixa-card-12",
     "title": "Futurekind AI Fellowship (EA Opportunities / Electric Sheep) Effective Altruism+2Electric Sheep+2",
     "oneLiner": "12-week program to build skills and projects around AI for animal protection / environmental impact.",
     "whenToSuggest": "Use when it aligns with the focus area goals.",
@@ -689,87 +669,7 @@
     ]
   },
   {
-    "id": "ai-x-animals-card-01",
-    "title": "GiveWell top charities / Top Charities Fund",
-    "oneLiner": "GiveWell top charities / Top Charities Fund",
-    "whenToSuggest": "Use when it aligns with the focus area goals.",
-    "whenNotToSuggest": "Skip if it does not match the person's constraints or interests.",
-    "tags": {
-      "topic": "reading",
-      "type": "quick-taste",
-      "commitment": "low",
-      "goodFitIf": []
-    },
-    "firstSmallStep": "Review the linked resources.",
-    "nextStep": "Take the next action that feels most valuable.",
-    "links": [],
-    "peopleToTalkTo": [],
-    "focusAreaIds": [
-      "ai-x-animals"
-    ]
-  },
-  {
-    "id": "ai-x-animals-card-04",
-    "title": "Giving Green (effective climate giving)",
-    "oneLiner": "Giving Green (effective climate giving)",
-    "whenToSuggest": "Use when it aligns with the focus area goals.",
-    "whenNotToSuggest": "Skip if it does not match the person's constraints or interests.",
-    "tags": {
-      "topic": "reading",
-      "type": "quick-taste",
-      "commitment": "low",
-      "goodFitIf": []
-    },
-    "firstSmallStep": "Review the linked resources.",
-    "nextStep": "Take the next action that feels most valuable.",
-    "links": [],
-    "peopleToTalkTo": [],
-    "focusAreaIds": [
-      "ai-x-animals"
-    ]
-  },
-  {
-    "id": "ai-x-animals-card-02",
-    "title": "Giving What We Can: 10% Pledge",
-    "oneLiner": "Giving What We Can: 10% Pledge",
-    "whenToSuggest": "Use when it aligns with the focus area goals.",
-    "whenNotToSuggest": "Skip if it does not match the person's constraints or interests.",
-    "tags": {
-      "topic": "reading",
-      "type": "quick-taste",
-      "commitment": "low",
-      "goodFitIf": []
-    },
-    "firstSmallStep": "Review the linked resources.",
-    "nextStep": "Take the next action that feels most valuable.",
-    "links": [],
-    "peopleToTalkTo": [],
-    "focusAreaIds": [
-      "ai-x-animals"
-    ]
-  },
-  {
-    "id": "ai-x-animals-card-03",
-    "title": "Giving What We Can: Global Health & Wellbeing Fund",
-    "oneLiner": "Giving What We Can: Global Health & Wellbeing Fund",
-    "whenToSuggest": "Use when it aligns with the focus area goals.",
-    "whenNotToSuggest": "Skip if it does not match the person's constraints or interests.",
-    "tags": {
-      "topic": "reading",
-      "type": "quick-taste",
-      "commitment": "low",
-      "goodFitIf": []
-    },
-    "firstSmallStep": "Review the linked resources.",
-    "nextStep": "Take the next action that feels most valuable.",
-    "links": [],
-    "peopleToTalkTo": [],
-    "focusAreaIds": [
-      "ai-x-animals"
-    ]
-  },
-  {
-    "id": "ai-x-animals-card-08",
+    "id": "aixa-card-11",
     "title": "Org-facing scoping note (AI × animals) — deliverable for an org/funder",
     "oneLiner": "A small research artifact meant to be used (shared with an org/funder), not a personal exercise.",
     "whenToSuggest": "Use when it aligns with the focus area goals.",
@@ -777,26 +677,6 @@
     "tags": {
       "topic": "project",
       "type": "hands-on",
-      "commitment": "low",
-      "goodFitIf": []
-    },
-    "firstSmallStep": "Review the linked resources.",
-    "nextStep": "Take the next action that feels most valuable.",
-    "links": [],
-    "peopleToTalkTo": [],
-    "focusAreaIds": [
-      "ai-x-animals"
-    ]
-  },
-  {
-    "id": "ai-x-animals-card-01",
-    "title": "Probably Good: Climate careers guide",
-    "oneLiner": "Probably Good: Climate careers guide",
-    "whenToSuggest": "Use when it aligns with the focus area goals.",
-    "whenNotToSuggest": "Skip if it does not match the person's constraints or interests.",
-    "tags": {
-      "topic": "course",
-      "type": "quick-taste",
       "commitment": "low",
       "goodFitIf": []
     },
@@ -938,46 +818,6 @@
         "url": "https://www.youtube.com/playlist?list=PLwYnpej4pQF7sB5_ZmS2IjFae5M7MafiF"
       }
     ],
-    "peopleToTalkTo": [],
-    "focusAreaIds": [
-      "ai-x-animals"
-    ]
-  },
-  {
-    "id": "ai-x-animals-card-04",
-    "title": "The Life You Can Save: recommended charities",
-    "oneLiner": "The Life You Can Save: recommended charities",
-    "whenToSuggest": "Use when it aligns with the focus area goals.",
-    "whenNotToSuggest": "Skip if it does not match the person's constraints or interests.",
-    "tags": {
-      "topic": "reading",
-      "type": "quick-taste",
-      "commitment": "low",
-      "goodFitIf": []
-    },
-    "firstSmallStep": "Review the linked resources.",
-    "nextStep": "Take the next action that feels most valuable.",
-    "links": [],
-    "peopleToTalkTo": [],
-    "focusAreaIds": [
-      "ai-x-animals"
-    ]
-  },
-  {
-    "id": "ai-x-animals-card-03",
-    "title": "Work on Climate (Starter Packs + community)",
-    "oneLiner": "Work on Climate (Starter Packs + community)",
-    "whenToSuggest": "Use when it aligns with the focus area goals.",
-    "whenNotToSuggest": "Skip if it does not match the person's constraints or interests.",
-    "tags": {
-      "topic": "community",
-      "type": "quick-taste",
-      "commitment": "low",
-      "goodFitIf": []
-    },
-    "firstSmallStep": "Review the linked resources.",
-    "nextStep": "Take the next action that feels most valuable.",
-    "links": [],
     "peopleToTalkTo": [],
     "focusAreaIds": [
       "ai-x-animals"
