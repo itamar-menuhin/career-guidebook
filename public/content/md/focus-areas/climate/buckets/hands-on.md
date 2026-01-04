@@ -1,3 +1,1 @@
-# GENERATED FROM VAULT — DO NOT EDIT. Source of truth: /vault
-
-
+Concrete ways to test your fit, from volunteering to organizing a giving drive.

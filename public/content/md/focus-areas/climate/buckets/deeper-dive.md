@@ -1,3 +1,1 @@
-# GENERATED FROM VAULT — DO NOT EDIT. Source of truth: /vault
-
-
+More substantial content (fellowships, starter packs) to deepen your understanding.

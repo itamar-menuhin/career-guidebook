@@ -363,14 +363,12 @@
     "id": "climate",
     "name": "Climate",
     "overviewPath": "content/md/focus-areas/climate/overview.md",
-    "overviewExcerpt": "Rapidly reduce greenhouse gas emissions (and support adaptation where it's most valuable) by pushing on the highest-leverage bottlenecks: policy, clean energy deployment, targeted innovation, and (in some cases) carbon removal.",
+    "overviewExcerpt": "Mitigate climate change by targeting high-leverage bottlenecks—from policy and clean energy deployment to neglected technologies like carbon removal.",
     "roleShapes": [
-      "Policy / government / regulation (often very leveraged; hard to attribute impact, but can be huge).",
-      "Climate-focused engineering / tech (clean power, industrial decarbonization, storage, etc.).",
-      "Research (climate science, modelling, carbon removal R&D, or 'what actually works' analysis).",
-      "Advocacy / communications (especially around 'neglected-but-effective' interventions).",
-      "Climate finance / impact investing (moving large sums can matter; also easy to do 'busy work,' so select carefully).",
-      "Community / field-building (helping others enter or coordinate effectively)."
+      "Policy & Regulation (government, strategy, and international coordination).",
+      "Climate Tech & Engineering (clean power, industrial decarbonization, storage).",
+      "Research & Innovation (carbon removal R&D, modeling, effective intervention analysis).",
+      "Finance & Impact Investing (directing capital toward high-impact, neglected solutions)."
     ],
     "fitSignals": [
       "You're willing to be a bit strategic (choosing which slice of climate to push on, not just 'anything climate').",
@@ -380,7 +378,7 @@
     "buckets": {
       "quickTaste": {
         "title": "Quick taste (≈1 hour)",
-        "description": "Quick taste (≈1 hour)",
+        "description": "Start with a 10-20 minute overview to orient yourself to the landscape.",
         "cardIds": [
           "climate-card-02",
           "climate-card-01",
@@ -395,7 +393,7 @@
       },
       "deeperDive": {
         "title": "Deeper dive (2–6 hours)",
-        "description": "Deeper dive (2–6 hours)",
+        "description": "More substantial content (fellowships, starter packs) to deepen your understanding.",
         "cardIds": [
           "climate-card-09",
           "climate-card-05"
@@ -408,7 +406,7 @@
       },
       "handsOn": {
         "title": "Hands-on trial",
-        "description": "Hands-on trial",
+        "description": "Concrete ways to test your fit, from volunteering to organizing a giving drive.",
         "cardIds": [
           "climate-card-08",
           "climate-card-06",
@@ -425,7 +423,7 @@
       },
       "jobBoard": {
         "title": "Job board scan (real roles)",
-        "description": "Job board scan (real roles)",
+        "description": "See what real roles look like. Don't just browse—do the Role Clustering exercise.",
         "cardIds": [
           "climate-card-12",
           "climate-card-11",
