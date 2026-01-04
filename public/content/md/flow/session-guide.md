@@ -147,36 +147,20 @@ List 8 items total, with at least 2 in each category:
 **Outcome**:
 - By the end, you usually have **2–4 promising directions**, each with **1–2 small next steps** already identified during testing.
 
-#### Wrap + written summary (~10 minutes)
+#### The Wrap (Closing the Loop)
 
-##### During the wrap (live)
+**Goal**: Leave no ambiguity. They should see their own thoughts organized and actionable.
 
-- “Let me summarize what we have so far — stop me if I misrepresent anything.”
-- Write it down together (you type while you talk).
-- **Door open**: “If questions come up after you digest this, feel free to message.” (Optional: “If it would help, we can do a check-in later.”)
+**1. The Readback (Candidate Writes)**
+- *The Move:* "To make sure we captured everything, can you open a doc and type out the summary while saying it aloud? I'll catch anything we miss."
+- *Why:* When *they* write it, they own it. Speaking aloud allows you to course-correct ("Oh, don't forget the intro to Sarah").
 
-##### Written summary details
+**2. The Artifact (The Written Summary)**
+- **The Snapshot**: One paragraph on their current edge & intrinsic drivers.
+- **The Plan**: 2–4 Directions. For each, list:
+    - *The Hypothesis:* Why this path?
+    - *The Tests:* 2–3 concrete steps (e.g. read X, talk to Y, draft Z).
 
-**Snapshot**
-- Current situation
-- What you’re aiming for (near-term)
-- Must-haves (what good work needs to include)
-- Constraints (timeline/bandwidth/location/financial stability)
-- Promising directions (2–4)
-
-**For each direction**:
-- Direction (1 sentence)
-- Why it might fit (1–2 bullets)
-- Next steps (1–2 low-cost steps)
-
-**Resources / links to support the next steps**
-- Go through the next steps and list any relevant links/resources you should send (no fixed limit).
-- Rule of thumb: links exist to make next steps easier, not as extra reading.
-
-**People to talk to / intros (if any)**
-
-**People to talk to / intros (if any)**
-
-### After the meeting
-
-If anything wasn't written during the wrap: send the summary + links/resources + intros.
+**3. Clear Follow-ups**
+- **Your Homework**: Explicitly state what *you* owe them (Links to specific resources, Intros to specific people).
+- **The Next Loop**: Set a trigger. "Should we put a 15-min check-in on the calendar for 6 weeks from now?"
