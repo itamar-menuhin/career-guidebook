@@ -73,7 +73,7 @@ async function loadContentFile<T>(key: ContentKey): Promise<T> {
       throw error;
     }
 
-    // Check content-type to catch HTML fallback responses (v2)
+    // Check content-type to catch HTML fallback responses
     const contentType = response.headers.get('content-type') || '';
     if (!contentType.includes('application/json')) {
       const error = new ContentLoadError(
