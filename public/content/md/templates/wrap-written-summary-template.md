@@ -7,12 +7,11 @@
 - Write it down together (you type while you talk).
 
 ## Snapshot
-- Current situation
-- What you're aiming for (near-term)
-- Must-haves (what good work needs to include)
-- Constraints (timeline/bandwidth/location/financial stability)
+- Key drivers & Engagement sources
+- Operating parameters (Timeline/Bandwidth/Location)
+- Risk profile & Constraints
 
-## Promising directions (2–4)
+## Promising directions (3–6)
 **Direction name (1 sentence)**
 
 - Why it might fit (1–2 bullets)

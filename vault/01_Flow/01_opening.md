@@ -1,14 +1,21 @@
 EA Israel – 1:1 Career Counselling Guidebook (v0.3)
 ## 1) What “good” looks like (outcomes)
 **By the end of the session, the person leaves with:**
-- Clarity on 2–4 plausible directions (not 1)
-- Energy (felt sense: “this is doable”)
-- Concrete next steps: 1–2 low-cost experiments per direction
-- A written summary + links + intros/contacts as relevant
-## 2) Core stance (tone + approach)
-- “Mutual think tank,” not “advisor with answers”
-- You’re building career hypotheses and testing plans, not making a forever decision.
-- You’re allowed to say “I’m not sure” and pivot to: who to ask / what to test / what to read next.
+- Clarity on 3–6 plausible directions (not 1)
+- A bias for action (testing, not just thinking)
+
+## The Stance
+**"We are scientists, not judges."**
+
+You are not here to tell them what to do. You are here to design experiments.
+- If they say "I want to start a nonprofit," you don't say "That sounds hard."
+- You say: "Great hypothesis. What's the cheapest way we can test if you'd actually enjoy the day-to-day of a founder?"
+
+## The "Win" Condition
+The session is a success if they:
+1. Feel **heard** (Validation).
+2. Have **3–6 promising directions** (Options).
+3. Have **concrete next steps** for each (Momentum).
 ## 3) Standard operating flow (60–90 minutes)
 Prework (optional, 5–10 min)
 Short intake form to save time and reduce blank-page stress.

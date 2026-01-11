@@ -1,20 +1,21 @@
 ---
 kind: pathway
 id: path-pattern-skill-building-plan-career-capital
-title: Skill-building plan (career capital)
-group: Path patterns
-order: 5
+title: Skills & Career Capital
+group: Additional paths
+order: 14
 ---
 
-**Goal:** Focus on acquiring a "missing piece" to unlock future options.
+**Goal:** Build expertise/credibility now to enable larger impact later.
 
-**When to suggest:**
+**When to use:**
 
-- They know *what* they want to do but lack a specific hard skill (e.g. "I want to do bio-risk but don't know biology").
-- They are "undecided" on a cause but want to be generally useful (flexible career capital).
-- They are currently in a "study phase" (university) and want to optimize their electives/thesis.
+- Early career or missing relevant skills.
+- Willing to delay direct impact for long-term contribution.
+- Aiming for roles requiring deep knowledge.
 
-**The Move:** Treat the skill acquisition as the primary job. Identify the "gold standard" credential or portfolio piece for that skill.
-*   *Examples:* Learning ML engineering; Improving writing/communication; Management experience.
+**The Move:** Invest in environments that develop "hard-to-get" skills or credibility.
 
-**First Small Step:** Find a syllabus or a "roadmap" for this skill (e.g. "What does a junior ML engineer need to know?") and map their current gaps.
+**Examples:** Relevant degree; Organization known for human capital growth.
+
+**Small First Step:** Identify one skill/certificate that opens doors. Build a self-study plan.

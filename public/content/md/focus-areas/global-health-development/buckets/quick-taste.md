@@ -1,1 +1,3 @@
-Start with key concepts: cost-effectiveness, evidence, and the moral case for action.
+# GENERATED FROM VAULT — DO NOT EDIT. Source of truth: /vault
+
+

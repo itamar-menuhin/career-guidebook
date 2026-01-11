@@ -1,9 +1,4 @@
----
-kind: flow_step
-id: opening
-title: Opening & goal
-order: 1
----
+# GENERATED FROM VAULT — DO NOT EDIT. Source of truth: /vault
 
 ## Prompts
 

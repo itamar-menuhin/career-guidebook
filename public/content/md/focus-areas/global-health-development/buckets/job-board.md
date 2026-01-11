@@ -1,1 +1,3 @@
-Explore real roles in the sector.
+# GENERATED FROM VAULT — DO NOT EDIT. Source of truth: /vault
+
+

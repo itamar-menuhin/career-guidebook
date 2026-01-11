@@ -23,14 +23,14 @@ const queryClient = new QueryClient();
 
 const ScrollToHashHandler = () => {
   const location = useLocation();
-  
+
   // Disable global scroll-to-hash for pages that manage their own scrolling
   const hasCustomScrolling = ['/flow', '/focus-areas/', '/pathways'].some(
     path => location.pathname.startsWith(path)
   );
-  
+
   useScrollToHash(hasCustomScrolling);
-  
+
   return null;
 };
 
@@ -38,7 +38,7 @@ const AppShell = () => {
   const { error, refresh } = useContent();
 
   if (error) {
-    return <ContentError onRetry={refresh} message={error.message} />;
+    return <ContentError onRetry={refresh} message={error.message} details={(error as any).details} />;
   }
 
   return (

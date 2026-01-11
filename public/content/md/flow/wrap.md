@@ -1,9 +1,4 @@
----
-kind: flow_step
-id: wrap
-title: Wrap & written summary
-order: 6
----
+# GENERATED FROM VAULT — DO NOT EDIT. Source of truth: /vault
 
 ## During the wrap (live)
 - “Let me summarize what we have so far — stop me if I misrepresent anything.”

@@ -1,8 +1,17 @@
 [
   {
+    "id": "worksheet-template",
+    "name": "Career Path Worksheet",
+    "description": "Full interactive worksheet to clarify your path, map strengths, and plan next steps.",
+    "category": "tool",
+    "locked": false,
+    "pdfUrl": "/content/files/worksheet.pdf",
+    "contentPath": "content/md/templates/worksheet.md"
+  },
+  {
     "id": "cause-area-quick-start-template",
     "name": "Cause-area quick-start page template",
-    "description": "# Cause-area quick-start page template ## Cause area name - What this area is trying to achieve (2–4 lines, plain language) - What kinds of work exist here (role shapes, not org names) - What a “good fit” often looks…",
+    "description": "Template for creating a one-page overview of a cause area, including goal, roles, and fit.",
     "category": "other",
     "locked": true,
     "contentPath": "content/md/templates/cause-area-quick-start-template.md"
@@ -10,7 +19,7 @@
   {
     "id": "recommendation-card-template",
     "name": "Recommendation Card template",
-    "description": "# Recommendation Card template ## Recommendation name ## One-line pitch ## When to suggest (trigger criteria) ## When not to (contraindications) ## Tags (metadata) - Topic: AI / Biosecurity / Animals / GlobalHealth /…",
+    "description": "Structure for a standard recommendation card, including one-liner, criteria, and tags.",
     "category": "other",
     "locked": true,
     "contentPath": "content/md/templates/recommendation-card-template.md"
@@ -18,7 +27,7 @@
   {
     "id": "wrap-written-summary-template",
     "name": "Wrap + written summary template",
-    "description": "# Wrap + written summary template ## During the wrap (live) - \"Let me summarize what we have so far — stop me if I misrepresent anything.\" - Write it down together (you type while you talk). ## Snapshot - Current…",
+    "description": "Guide for summarizing a session and documenting key takeaways collaboratively.",
     "category": "other",
     "locked": true,
     "contentPath": "content/md/templates/wrap-written-summary-template.md"

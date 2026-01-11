@@ -1,3 +1,3 @@
-# Leverage AI to reduce animal suffering at scale
+# GENERATED FROM VAULT — DO NOT EDIT. Source of truth: /vault
 
-Use advanced technologies to monitor wild populations, optimize advocacy campaigns, and ensure that AI deployment in agriculture improves rather than harms animal welfare. This field combines technical ML skills with biological and strategic insight.
+Use AI to reduce animal suffering (farmed and wild) by improving how we measure welfare, prevent harms, target advocacy, and design interventions — while also being careful about ways AI deployment can accidentally increase suffering (e.g., scale effects, mismeasurement, perverse incentives).

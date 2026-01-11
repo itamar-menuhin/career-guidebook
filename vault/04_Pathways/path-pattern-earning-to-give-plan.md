@@ -1,20 +1,21 @@
 ---
 kind: pathway
 id: path-pattern-earning-to-give-plan
-title: Earning-to-give plan
-group: Path patterns
-order: 11
+title: Earning to Give
+group: Additional paths
+order: 13
 ---
 
-**Goal:** Maximize impact through funding the most effective work.
+**Goal:** Use earning power to fund high-impact work done by others.
 
-**When to suggest:**
+**When to use:**
 
-- They have high earning potential (Quant, Tech, Law) but maybe lower "fit" for direct research/policy work.
-- They prefer a career with clear metrics and stability over the ambiguity of direct impact roles.
-- They want to contribute heavily but "keep their career their own".
+- High-income track.
+- Can't work directly on the problem but want to support it.
+- Motivated by financial freedom/flexibility.
 
-**The Move:** Optimize for **Counterfactual Impact** and build **Giving Literacy**.
-*   Don't just earn; learn *where* to give. Engage with organizations like "Giving What We Can".
+**The Move:** Choose a path to increase income and commit to donating a percentage.
 
-**First Small Step:** Take a "Trial Pledge" (e.g. 1% for a month) or research one specific high-impact fund to understand exactly where the money goes.
+**Examples:** Tech/Finance/Consulting + pledge 10-20%; Join Giving What We Can.
+
+**Small First Step:** Run a "commitment pilot" (e.g., 1% / month). Research one effective fund/org.

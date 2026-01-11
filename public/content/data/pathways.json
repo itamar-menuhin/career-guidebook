@@ -1,121 +1,107 @@
 [
   {
     "id": "experiment-a",
-    "name": "Quick taste (≈1 hour)",
+    "name": "Quick Taste (Up to 1 hour)",
     "contentPath": "content/md/pathways/experiment-a.md",
-    "order": 0,
-    "group": "How to explore (A–D)"
+    "order": 1,
+    "group": "Explore and learn"
   },
   {
     "id": "experiment-b",
-    "name": "Deeper dive (course / fellowship)",
+    "name": "Deep Dive (Course/Program)",
     "contentPath": "content/md/pathways/experiment-b.md",
-    "order": 0,
-    "group": "How to explore (A–D)"
-  },
-  {
-    "id": "experiment-c",
-    "name": "Hands-on project (proof of fit)",
-    "contentPath": "content/md/pathways/experiment-c.md",
-    "order": 0,
-    "group": "How to explore (A–D)"
+    "order": 2,
+    "group": "Explore and learn"
   },
   {
     "id": "experiment-d",
-    "name": "Job-board scan (make roles concrete)",
+    "name": "Scan Job Boards",
     "contentPath": "content/md/pathways/experiment-d.md",
-    "order": 0,
-    "group": "How to explore (A–D)"
-  },
-  {
-    "id": "path-pattern-stay-in-role-but-reshape-it",
-    "name": "Stay in role but reshape it",
-    "contentPath": "content/md/pathways/path-pattern-stay-in-role-but-reshape-it.md",
-    "order": 1,
-    "group": "Path patterns"
-  },
-  {
-    "id": "path-pattern-switch-org-team-within-same-field",
-    "name": "Switch org/team within same field",
-    "contentPath": "content/md/pathways/path-pattern-switch-org-team-within-same-field.md",
-    "order": 2,
-    "group": "Path patterns"
-  },
-  {
-    "id": "path-pattern-adjacent-function-shift",
-    "name": "Adjacent function shift",
-    "contentPath": "content/md/pathways/path-pattern-adjacent-function-shift.md",
     "order": 3,
-    "group": "Path patterns"
+    "group": "Explore and learn"
   },
   {
-    "id": "path-pattern-career-change",
-    "name": "Career change",
-    "contentPath": "content/md/pathways/path-pattern-career-change.md",
+    "id": "investigate-via-people",
+    "name": "Investigate via People",
+    "contentPath": "content/md/pathways/investigate-via-people.md",
     "order": 4,
-    "group": "Path patterns"
+    "group": "Explore and learn"
   },
   {
-    "id": "path-pattern-skill-building-plan-career-capital",
-    "name": "Skill-building plan (career capital)",
-    "contentPath": "content/md/pathways/path-pattern-skill-building-plan-career-capital.md",
+    "id": "experiment-c",
+    "name": "Practical Project",
+    "contentPath": "content/md/pathways/experiment-c.md",
     "order": 5,
-    "group": "Path patterns"
-  },
-  {
-    "id": "path-pattern-test-the-cause-area-plan",
-    "name": "“Test the cause area” plan",
-    "contentPath": "content/md/pathways/path-pattern-test-the-cause-area-plan.md",
-    "order": 6,
-    "group": "Path patterns"
-  },
-  {
-    "id": "path-pattern-credentials-pipeline-plan",
-    "name": "Credentials/pipeline plan",
-    "contentPath": "content/md/pathways/path-pattern-credentials-pipeline-plan.md",
-    "order": 7,
-    "group": "Path patterns"
-  },
-  {
-    "id": "path-pattern-project-first-plan",
-    "name": "Project-first plan",
-    "contentPath": "content/md/pathways/path-pattern-project-first-plan.md",
-    "order": 8,
-    "group": "Path patterns"
+    "group": "Explore and learn"
   },
   {
     "id": "path-pattern-volunteering-community-plan",
-    "name": "Volunteering/community plan",
+    "name": "Volunteering",
     "contentPath": "content/md/pathways/path-pattern-volunteering-community-plan.md",
-    "order": 9,
-    "group": "Path patterns"
+    "order": 6,
+    "group": "Projects and doing"
+  },
+  {
+    "id": "path-pattern-project-first-plan",
+    "name": "Start a Project",
+    "contentPath": "content/md/pathways/path-pattern-project-first-plan.md",
+    "order": 7,
+    "group": "Projects and doing"
   },
   {
     "id": "path-pattern-entrepreneurship-plan",
-    "name": "Entrepreneurship plan",
+    "name": "Entrepreneurship Path",
     "contentPath": "content/md/pathways/path-pattern-entrepreneurship-plan.md",
+    "order": 8,
+    "group": "Projects and doing"
+  },
+  {
+    "id": "path-pattern-stay-in-role-but-reshape-it",
+    "name": "Stay & Craft (Job Crafting)",
+    "contentPath": "content/md/pathways/path-pattern-stay-in-role-but-reshape-it.md",
+    "order": 9,
+    "group": "Role change"
+  },
+  {
+    "id": "path-pattern-switch-org-team-within-same-field",
+    "name": "Switch Team/Org",
+    "contentPath": "content/md/pathways/path-pattern-switch-org-team-within-same-field.md",
     "order": 10,
-    "group": "Path patterns"
+    "group": "Role change"
+  },
+  {
+    "id": "path-pattern-adjacent-function-shift",
+    "name": "Adjacent Switch",
+    "contentPath": "content/md/pathways/path-pattern-adjacent-function-shift.md",
+    "order": 11,
+    "group": "Role change"
+  },
+  {
+    "id": "path-pattern-career-change",
+    "name": "Full Career Switch",
+    "contentPath": "content/md/pathways/path-pattern-career-change.md",
+    "order": 12,
+    "group": "Role change"
   },
   {
     "id": "path-pattern-earning-to-give-plan",
-    "name": "Earning-to-give plan",
+    "name": "Earning to Give",
     "contentPath": "content/md/pathways/path-pattern-earning-to-give-plan.md",
-    "order": 11,
-    "group": "Path patterns"
-  },
-  {
-    "id": "path-pattern-support-ops-plan",
-    "name": "Support / Operations role plan",
-    "contentPath": "content/md/pathways/path-pattern-support-ops-plan.md",
-    "order": 12,
-    "group": "Path patterns"
-  },
-  {
-    "id": "path-pattern-networking-exposure-sprint-when-stuck",
-    "name": "Networking/exposure sprint (when stuck)",
-    "contentPath": "content/md/pathways/path-pattern-networking-exposure-sprint-when-stuck.md",
     "order": 13,
-    "group": "Path patterns"
+    "group": "Additional paths"
+  },
+  {
+    "id": "path-pattern-skill-building-plan-career-capital",
+    "name": "Skills & Career Capital",
+    "contentPath": "content/md/pathways/path-pattern-skill-building-plan-career-capital.md",
+    "order": 14,
+    "group": "Additional paths"
+  },
+  {
+    "id": "get-to-know-ea",
+    "name": "Get to know EA",
+    "contentPath": "content/md/pathways/get-to-know-ea.md",
+    "order": 15,
+    "group": "Additional paths"
   }
 ]

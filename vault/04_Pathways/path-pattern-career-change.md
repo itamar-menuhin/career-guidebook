@@ -1,21 +1,19 @@
 ---
 kind: pathway
 id: path-pattern-career-change
-title: Career change
-group: Path patterns
-order: 4
+title: Full Career Switch
+group: Role change
+order: 12
 ---
 
-**Goal:** Deeply re-orienting their career toward a high-priority problem.
+**Goal:** Start a new path in a field better suited to your values.
 
-**When to suggest:**
+**When to use:**
 
-- Their current path doesn't have a direct route to the impact they want (dead end).
-- They are willing to invest time in learning new skills (bootcamps, degrees, self-study).
-- They are early in their career OR have skills that translate well (e.g. coding, data, writing).
+- Strong mismatch between current work and values.
+- You feel it's right to "start fresh".
+- You have stability/runway.
 
-**The Move:** Identify the entry point.
-*   *Transitional Skills:* Using existing hard skills in a new domain (e.g. Cybersecurity → InfoSec; Data Science → Policy Analysis).
-*   *Junior Entry:* Entering a field where general capacity/grit matters more than specific experience (e.g. Operations, Generalist roles).
+**The Move:** Choose a new direction and start building foundations (skills, experience, network).
 
-**First Small Step:** Pick one "Quick Taste" activity (read an article, watch a talk) for the *new* field. Verify the interest is real before planning the big switch.
+**Small First Step:** Identify 2–3 roles in the new field. What skills are needed? Make a learning plan. **Bonus:** Talk to someone who switched "from zero".

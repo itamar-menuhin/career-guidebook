@@ -1,1 +1,3 @@
-Concrete ways to test your fit, from volunteering to organizing a giving drive.
+# GENERATED FROM VAULT — DO NOT EDIT. Source of truth: /vault
+
+

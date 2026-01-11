@@ -1,9 +1,4 @@
----
-kind: flow_step
-id: happiness
-title: What would make them happy
-order: 3
----
+# GENERATED FROM VAULT — DO NOT EDIT. Source of truth: /vault
 
 ## Prompts
 - Why are you here today — what are you hoping changes after this conversation?

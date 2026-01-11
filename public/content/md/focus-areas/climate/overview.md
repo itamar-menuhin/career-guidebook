@@ -1,3 +1,3 @@
 # GENERATED FROM VAULT — DO NOT EDIT. Source of truth: /vault
 
-Mitigate climate change by targeting high-leverage bottlenecks—from policy and clean energy deployment to neglected technologies like carbon removal.
+Rapidly reduce greenhouse gas emissions (and support adaptation where it's most valuable) by pushing on the highest-leverage bottlenecks: policy, clean energy deployment, targeted innovation, and (in some cases) carbon removal.

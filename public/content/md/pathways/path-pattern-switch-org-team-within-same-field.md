@@ -1,13 +1,13 @@
 # GENERATED FROM VAULT — DO NOT EDIT. Source of truth: /vault
 
-**Goal:** Deploy **existing skills "as is"** but in a higher-impact environment.
+**Goal:** Use same skills/experience, but in a place better aligned with values.
 
-**When to suggest:**
+**When to use:**
 
-- They are already good at what they do (e.g. Researcher, Ops) but are in a low-impact organization.
-- They have the "career capital" to qualify for a priority organization immediately.
-- "Right skills, wrong place."
+- You like your role, but want a meaningful context.
+- You are ready for a job move, but not a career change.
+- You found aligned orgs.
 
-**The Move:** Port their proven track record to a better vehicle (a more effective org or high-priority team) without changing their day-to-day work.
+**The Move:** Apply for the same type of role in an aligned organization/team.
 
-**First Small Step:** Identify the "gap" between their current org and a "target org"—what is the one thing they need to add to their CV to make the jump?
+**Small First Step:** Identify 3 "good" organizations/roles where your current skills are a match.

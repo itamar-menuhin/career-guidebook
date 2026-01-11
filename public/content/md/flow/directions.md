@@ -1,9 +1,4 @@
----
-kind: flow_step
-id: directions
-title: Direction testing
-order: 5
----
+# GENERATED FROM VAULT — DO NOT EDIT. Source of truth: /vault
 
 ## The loop (how directions get tested and narrowed)
 ### For each direction that comes up (yours or theirs):

@@ -70,14 +70,14 @@ export default function StartHere() {
                 iconColor: 'text-accent',
                 bgColor: 'bg-accent/10',
                 title: 'Clear Outcomes',
-                description: 'They leave with clarity on 2–4 directions, a sense of energy, and concrete low-cost experiments.',
+                description: 'They leave with clarity on 3–6 directions, a sense of energy, and concrete low-cost experiments.',
               },
               {
                 icon: BookOpen,
                 iconColor: 'text-bucket-deep',
                 bgColor: 'bg-bucket-deep/10',
                 title: 'Personalized Context',
-                description: "Every career is unique. Tailor evidence-based advice to their specific constraints and edge.",
+                description: "Every career is unique. Tailor evidence-based advice to their specific constraints and profile.",
               },
             ].map((item, index) => (
               <Card

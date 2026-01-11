@@ -1,1 +1,3 @@
-Start with a 10-20 minute overview to orient yourself to the landscape.
+# GENERATED FROM VAULT — DO NOT EDIT. Source of truth: /vault
+
+

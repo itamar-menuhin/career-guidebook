@@ -170,12 +170,27 @@ export default function FocusAreaDetail() {
       <section className="mb-16">
         <h2 className="font-display text-3xl font-semibold mb-8">Role Shapes</h2>
         <ul className="space-y-4">
-          {area.roleShapes.map((r, i) => (
-            <li key={i} className="flex gap-4 text-xl leading-relaxed items-baseline">
-              <span className="text-foreground shrink-0">•</span>
-              <span className="text-muted-foreground">{r}</span>
-            </li>
-          ))}
+          {area.roleShapes.map((r, i) => {
+            // Simple inline bold parser: splits by ** to render bold parts
+            const parts = r.split(/(\*\*.*?\*\*)/g);
+            return (
+              <li key={i} className="flex gap-4 text-xl leading-relaxed items-baseline">
+                <span className="text-foreground shrink-0">•</span>
+                <span className="text-muted-foreground">
+                  {parts.map((part, index) => {
+                    if (part.startsWith('**') && part.endsWith('**')) {
+                      return (
+                        <span key={index} className="font-bold text-foreground/90">
+                          {part.slice(2, -2)}
+                        </span>
+                      );
+                    }
+                    return <span key={index}>{part}</span>;
+                  })}
+                </span>
+              </li>
+            );
+          })}
         </ul>
       </section>
 

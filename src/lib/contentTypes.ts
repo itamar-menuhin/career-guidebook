@@ -97,6 +97,7 @@ export const TemplateSchema = z.object({
   description: z.string().min(1),
   category: z.enum(['wrap', 'focus-area', 'tool', 'other']).default('other'),
   locked: z.boolean().optional().default(false),
+  pdfUrl: z.string().optional(),
   contentPath: z.string().min(1),
 });
 
@@ -130,4 +131,5 @@ export type FlowStep = FlowStepManifest & {
 export type TemplateManifest = z.infer<typeof TemplateSchema>;
 export type Template = TemplateManifest & {
   content: string;
+  pdfUrl?: string;
 };

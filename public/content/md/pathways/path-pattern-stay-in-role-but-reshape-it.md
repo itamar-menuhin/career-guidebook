@@ -1,13 +1,15 @@
 # GENERATED FROM VAULT — DO NOT EDIT. Source of truth: /vault
 
-**Goal:** Optimize for impact/learning without the friction of a pivot.
+**Goal:** Shift current role toward impact without changing jobs.
 
-**When to suggest:**
+**When to use:**
 
-- The candidate has high "social capital" in their current org.
-- There is a clear "impact gap" they can fill (e.g., starting an implementation group).
-- Personal constraints (e.g. visa, financial, location) make a pivot risky right now.
+- You basically like your job but want more impact.
+- You have a reason to stay.
+- You have internal influence.
 
-**The Move:** Look for "levers" within the current org. Can they negotiate 20% of their time toward a specific project? Can they maintain the role but switch focus to a higher-priority problem?
+**The Move:** Identify how to do good via your role (projects, initiatives, influence).
 
-**First Small Step:** Identify the "YES-man"—who in the org has the power to say yes to a project shift, and what do they care about?
+**Examples:** Lead/join an internal project; Propose changes aligned with impact; Use employer resources to do good.
+
+**Small First Step:** Write down one idea for a change/initiative in your current role aligned with your values.

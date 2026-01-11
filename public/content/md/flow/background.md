@@ -1,9 +1,4 @@
----
-kind: flow_step
-id: background
-title: What they bring
-order: 2
----
+# GENERATED FROM VAULT — DO NOT EDIT. Source of truth: /vault
 
 ## Prompts
 - What’s your current role + what do you actually do week to week?

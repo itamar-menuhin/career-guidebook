@@ -1,5 +1,7 @@
 import { Card, CardContent } from '@/components/ui/card';
-import { Target, FileText, Wrench, Sparkles, Lock } from 'lucide-react';
+import { Button } from '@/components/ui/button';
+import { Target, FileText, Wrench, Sparkles, Lock, ChevronDown, Download } from 'lucide-react';
+import { Collapsible, CollapsibleContent, CollapsibleTrigger } from '@/components/ui/collapsible';
 import { useContent } from '@/contexts/ContentContext';
 import { Template } from '@/lib/contentTypes';
 import { MarkdownPage } from '@/components/MarkdownPage';
@@ -65,7 +67,7 @@ function InnerSectionRenderer({ content }: { content: string }) {
 }
 
 // Custom renderer to split markdown into aesthetic sections
-function AestheticTemplateView({ content }: { content: string }) {
+function AestheticTemplateView({ content, showTitle = true }: { content: string; showTitle?: boolean }) {
   const parsed = useMemo(() => {
     // Split by ## (Level 2)
     const rawSections = splitContent(content, '##');
@@ -88,7 +90,7 @@ function AestheticTemplateView({ content }: { content: string }) {
   return (
     <div className="space-y-10 animate-fade-in">
       {/* Centered Main Title */}
-      {parsed.mainTitle && (
+      {showTitle && parsed.mainTitle && (
         <div className="text-center mb-8 px-4">
           <h1 className="font-display text-3xl md:text-4xl text-foreground font-medium decoration-clone">
             {parsed.mainTitle}
@@ -164,21 +166,62 @@ export default function TemplatesPage() {
             const Icon = style.icon;
 
             return (
-              <article key={template.id} className="relative group">
-                {/* Visual Anchor for the Template */}
-                <div className="absolute -left-3 md:-left-12 top-8 md:top-6 flex flex-col items-center gap-2 opacity-50 group-hover:opacity-100 transition-opacity">
-                  <div className={`w-8 h-8 rounded-full ${style.bg} flex items-center justify-center shadow-sm`}>
-                    <Icon className={`h-4 w-4 ${style.iconColor}`} />
-                  </div>
-                  {template.locked && <Lock className="h-3 w-3 text-muted-foreground/60" />}
-                </div>
+              <Collapsible key={template.id} className="group">
+                <article className="relative">
+                  {/* Collapsible Trigger / Header */}
+                  <CollapsibleTrigger className="w-full flex items-start gap-4 p-4 md:p-6 rounded-2xl bg-card border border-border/60 hover:border-primary/40 hover:bg-muted/30 transition-all text-left group-data-[state=open]:rounded-b-none group-data-[state=open]:border-b-0">
+                    {/* Icon */}
+                    <div className={`shrink-0 w-12 h-12 rounded-full ${style.bg} flex items-center justify-center shadow-sm mt-1`}>
+                      <Icon className={`h-6 w-6 ${style.iconColor}`} />
+                    </div>
 
-                <Card className="shadow-card border-none bg-card/50 backdrop-blur-sm overflow-hidden ring-1 ring-border/50">
-                  <CardContent className="p-6 md:p-10">
-                    <AestheticTemplateView content={template.content} />
-                  </CardContent>
-                </Card>
-              </article>
+                    {/* Text Content */}
+                    <div className="flex-1 space-y-1">
+                      <div className="flex items-center gap-2">
+                        <h2 className="font-display text-2xl font-medium text-foreground">{template.name}</h2>
+                        {template.locked && <Lock className="h-4 w-4 text-muted-foreground/60" />}
+                        {template.pdfUrl && (
+                          <Button
+                            variant="outline"
+                            size="sm"
+                            className="gap-2 h-7 px-3 ml-2 text-xs"
+                            asChild
+                            onClick={(e) => e.stopPropagation()}
+                          >
+                            <a href={template.pdfUrl} download target="_blank" rel="noopener noreferrer">
+                              <Download className="h-3 w-3" />
+                              <span className="hidden sm:inline">PDF</span>
+                            </a>
+                          </Button>
+                        )}
+                      </div>
+                      <p className="text-muted-foreground text-lg leading-relaxed">{template.description}</p>
+                    </div>
+
+                    {/* Expand Icon */}
+                    <ChevronDown className="h-6 w-6 text-muted-foreground shrink-0 transition-transform duration-300 group-data-[state=open]:rotate-180 mt-2" />
+                  </CollapsibleTrigger>
+
+                  {/* Collapsible Content */}
+                  <CollapsibleContent>
+                    <Card className="shadow-none border-x border-b border-t-0 rounded-t-none rounded-b-2xl bg-card/50 backdrop-blur-sm overflow-hidden border-border/60">
+                      <CardContent className="p-6 md:p-10 pt-4">
+                        {template.pdfUrl ? (
+                          <div className="w-full aspect-[3/4] md:aspect-[4/3] min-h-[600px]">
+                            <iframe
+                              src={`${template.pdfUrl}#toolbar=0&view=FitH`}
+                              className="w-full h-full rounded-xl border border-border/60 bg-white"
+                              title={`${template.name} PDF`}
+                            />
+                          </div>
+                        ) : (
+                          <AestheticTemplateView content={template.content} showTitle={false} />
+                        )}
+                      </CardContent>
+                    </Card>
+                  </CollapsibleContent>
+                </article>
+              </Collapsible>
             );
           })}
         </div>

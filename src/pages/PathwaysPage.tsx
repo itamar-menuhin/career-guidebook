@@ -51,28 +51,59 @@ export default function PathwaysPage() {
         </div>
       ) : (
         <div className="space-y-8">
-          {/* Bubble Tabs */}
-          <div className="flex flex-wrap gap-3">
-            {pathways.map(pathway => {
-              const isActive = selectedPathwayId === pathway.id;
-              return (
-                <button
-                  key={pathway.id}
-                  onClick={() => {
-                    setSelectedPathwayId(pathway.id);
-                    window.history.replaceState(null, '', `#${buildPathwayAnchor(pathway.id)}`);
-                  }}
-                  className={cn(
-                    "px-4 py-2 rounded-full text-base font-medium transition-all duration-300 border",
-                    isActive
-                      ? "bg-primary text-primary-foreground border-primary shadow-md transform scale-105"
-                      : "bg-background text-muted-foreground border-border/60 hover:border-primary/40 hover:bg-muted/30"
-                  )}
-                >
-                  {pathway.name}
-                </button>
-              );
-            })}
+          {/* Grouped Pathways */}
+          <div className="space-y-10">
+            {(() => {
+              const groupOrder = [
+                "Explore and learn",
+                "Projects and doing",
+                "Role change",
+                "Additional paths"
+              ];
+
+              const grouped = pathways.reduce((acc, pathway) => {
+                const group = pathway.group || "Other";
+                if (!acc[group]) acc[group] = [];
+                acc[group].push(pathway);
+                return acc;
+              }, {} as Record<string, typeof pathways>);
+
+              // Get all groups, ensuring defined order comes first
+              const allGroups = [
+                ...groupOrder.filter(g => grouped[g]),
+                ...Object.keys(grouped).filter(g => !groupOrder.includes(g))
+              ];
+
+              return allGroups.map(groupName => (
+                <div key={groupName} className="space-y-4">
+                  <h3 className="text-2xl font-semibold text-foreground/80 border-b pb-2 border-border/40">
+                    {groupName}
+                  </h3>
+                  <div className="flex flex-wrap gap-3">
+                    {grouped[groupName].map(pathway => {
+                      const isActive = selectedPathwayId === pathway.id;
+                      return (
+                        <button
+                          key={pathway.id}
+                          onClick={() => {
+                            setSelectedPathwayId(pathway.id);
+                            window.history.replaceState(null, '', `#${buildPathwayAnchor(pathway.id)}`);
+                          }}
+                          className={cn(
+                            "px-4 py-2 rounded-full text-base font-medium transition-all duration-300 border",
+                            isActive
+                              ? "bg-primary text-primary-foreground border-primary shadow-md transform scale-105"
+                              : "bg-background text-muted-foreground border-border/60 hover:border-primary/40 hover:bg-muted/30"
+                          )}
+                        >
+                          {pathway.name}
+                        </button>
+                      );
+                    })}
+                  </div>
+                </div>
+              ));
+            })()}
           </div>
 
           {/* Active Content Area */}

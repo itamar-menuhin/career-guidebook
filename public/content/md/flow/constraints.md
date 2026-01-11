@@ -1,9 +1,4 @@
----
-kind: flow_step
-id: constraints
-title: Constraints & degrees of freedom
-order: 4
----
+# GENERATED FROM VAULT — DO NOT EDIT. Source of truth: /vault
 
 ## Prompts with gentle option scaffolding
 - What kind of change is on the table right now (staying put / switching org same lane / shifting function / bigger field change)?

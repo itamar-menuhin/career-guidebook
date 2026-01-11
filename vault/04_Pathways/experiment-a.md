@@ -1,19 +1,18 @@
 ---
 kind: pathway
 id: experiment-a
-title: Quick taste (≈1 hour)
-group: How to explore (A–D)
-order: 0
+title: Quick Taste (Up to 1 hour)
+group: Explore and learn
+order: 1
 ---
 
-**Goal:** Test interest in a new field with minimal commitment (<1 hour).
+**Goal:** Check if a field/problem interests you with minimal investment.
 
-**When to suggest:**
+**When to use:**
 
-- They are curious about a field but have low certainty.
-- They are overwhelmed and don't know where to start.
-- You want to see if the "logic" of a cause area clicks with them.
+- You are curious but unsure if it's worth going deep.
+- You feel overwhelmed/don't know where to start.
 
-**The Move:** Help them pick **one** canonical piece of media. Avoid general lists; instead, send a specific Problem Profile or high-signal introduction.
+**The Move:** Select one strong intro—article, video, or problem description—and consume it with focus.
 
-**First Small Step:** Send the link and ask: "Does the logic of this problem feel like something you want to spend more time on?"
+**Small First Step:** Find one strong intro resource. Watch/Read it. Ask yourself: "Do I want more of this?"
