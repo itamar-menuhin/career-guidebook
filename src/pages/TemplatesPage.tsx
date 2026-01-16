@@ -208,11 +208,24 @@ export default function TemplatesPage() {
                       <CardContent className="p-6 md:p-10 pt-4">
                         {template.pdfUrl ? (
                           <div className="w-full aspect-[3/4] md:aspect-[4/3] min-h-[600px]">
-                            <iframe
-                              src={`${template.pdfUrl}#toolbar=0&view=FitH`}
-                              className="w-full h-full rounded-xl border border-border/60 bg-white"
-                              title={`${template.name} PDF`}
-                            />
+                            <object
+                              data={`${template.pdfUrl}#toolbar=0&view=FitH`}
+                              type="application/pdf"
+                              className="w-full h-full rounded-xl border border-border/60 bg-background"
+                              aria-label={`${template.name} PDF preview`}
+                            >
+                              <div className="w-full h-full rounded-xl border border-border/60 bg-muted/20 flex flex-col items-center justify-center gap-3 p-6 text-center">
+                                <p className="text-sm text-muted-foreground">
+                                  PDF preview isn’t available in this browser. You can still download it.
+                                </p>
+                                <Button asChild variant="outline" size="sm" className="gap-2">
+                                  <a href={template.pdfUrl} download target="_blank" rel="noopener noreferrer">
+                                    <Download className="h-4 w-4" />
+                                    Download PDF
+                                  </a>
+                                </Button>
+                              </div>
+                            </object>
                           </div>
                         ) : (
                           <AestheticTemplateView content={template.content} showTitle={false} />
