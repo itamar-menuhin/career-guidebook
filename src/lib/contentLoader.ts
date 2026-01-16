@@ -282,10 +282,25 @@ export async function getTemplates(): Promise<Template[]> {
   const templates = await loadContentFile<TemplateManifest[]>('templates');
 
   return Promise.all(
-    templates.map(async template => ({
-      ...template,
-      content: await loadMarkdown(template.contentPath, 'templates'),
-    }))
+    templates.map(async template => {
+      const content = await loadMarkdown(template.contentPath, 'templates');
+      
+      // Extract PDF URL from markdown content if not already set
+      let pdfUrl = template.pdfUrl;
+      if (!pdfUrl) {
+        // Look for PDF download links in the content: [📥 Download...](/content/files/xxx.pdf)
+        const pdfMatch = content.match(/\[.*?\]\((\/content\/files\/[^)]+\.pdf)\)/i);
+        if (pdfMatch) {
+          pdfUrl = pdfMatch[1];
+        }
+      }
+      
+      return {
+        ...template,
+        content,
+        pdfUrl,
+      };
+    })
   );
 }
 
