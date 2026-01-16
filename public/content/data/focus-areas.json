@@ -192,10 +192,10 @@
     "overviewExcerpt": "Use AI to reduce animal suffering (farmed and wild) by improving how we measure welfare, prevent harms, target advocacy, and design interventions — while also being careful about ways AI deployment can accidentally increase suffering (e.g., scale effects, mismeasurement, perverse incentives).",
     "roleShapes": [
       "**Applied ML for wild animal welfare:** human–wildlife conflict mitigation, monitoring welfare indicators (e.g., vocalizations), detection/early warning systems.",
-      "**AI in farmed animal systems:** how AI in agriculture/aquaculture changes welfare (sometimes better, sometimes worse), plus interventions to steer it.",
-      "**AI for animal advocacy orgs:** LLM-enabled research workflows, message testing, supporter comms, grantwriting support, ops automation (done carefully).",
-      "**Research & strategy at think tanks:** (what AI applications are promising, where are risks/unknowns).",
-      "**Programs / community / hackathons:** for building tools and pipelines for animal protection."
+      "**AI in farmed animal systems:** how AI in agriculture/aquaculture affects welfare (sometimes better, sometimes worse), plus interventions.",
+      "**AI for animal advocacy orgs:** LLM-enabled research workflows, chatbot outreach, supporter comms, grantwriting support, ops automation.",
+      "**Research & strategy at think tanks:** (what AI applications to prioritize/fund; risks/unknowns).",
+      "Programs / community / hackathons for building tools and pipelines for animal protection."
     ],
     "fitSignals": [
       "You like concrete technical leverage (data/ML) and you're motivated by animals.",
@@ -487,16 +487,66 @@
     ]
   },
   {
+    "id": "communications",
+    "name": "Communications",
+    "overviewPath": "content/md/focus-areas/communications/overview.md",
+    "overviewExcerpt": "Amplifying impact by storytelling, fundraising, and persuading decision-makers.",
+    "roleShapes": [
+      "**Marketing / Brand:** Growing audience and awareness.",
+      "**Fundraising / Development:** Securing resources for the mission.",
+      "**Media / PR:** Managing public narrative and press.",
+      "**Content Creation:** Writing, video, and educational materials."
+    ],
+    "fitSignals": [
+      "Excellent writer/communicator across formats.",
+      "Strategic empathy: understanding diverse audiences.",
+      "Resilient when pitching or facing rejection."
+    ],
+    "buckets": {
+      "quickTaste": {
+        "title": "Quick taste (≈1 hour)",
+        "description": "# Quick Taste Placeholder content.",
+        "cardIds": [],
+        "inlineGuidancePath": "content/md/focus-areas/communications/buckets/quick-taste.md",
+        "curatedCardIds": []
+      },
+      "deeperDive": {
+        "title": "Deeper dive (2–6 hours)",
+        "description": "# Deeper Dive Placeholder content.",
+        "cardIds": [],
+        "inlineGuidancePath": "content/md/focus-areas/communications/buckets/deeper-dive.md",
+        "curatedCardIds": []
+      },
+      "handsOn": {
+        "title": "Hands-on trial",
+        "description": "# Hands On Placeholder content.",
+        "cardIds": [],
+        "inlineGuidancePath": "content/md/focus-areas/communications/buckets/hands-on.md",
+        "curatedCardIds": []
+      },
+      "jobBoard": {
+        "title": "Job board scan (real roles)",
+        "description": "# Job Board Placeholder content.",
+        "cardIds": [],
+        "inlineGuidancePath": "content/md/focus-areas/communications/buckets/job-board.md",
+        "curatedCardIds": []
+      }
+    },
+    "curatedCardIds": [],
+    "peopleToTalkToPrompts": [],
+    "commonConfusions": []
+  },
+  {
     "id": "global-health-development",
     "name": "Global Health & Development",
     "overviewPath": "content/md/focus-areas/global-health-development/overview.md",
     "overviewExcerpt": "Reduce large-scale suffering and premature death by scaling interventions that are cheap, evidence-backed, and logistically feasible (e.g., malaria prevention/treatment, vaccinations, nutrition).",
     "roleShapes": [
-      "**Program implementation & field ops:** (distribution, logistics, monitoring)",
-      "**Research & evaluation:** (development econ, epidemiology, cost-effectiveness, RCTs)",
-      "**Grantmaking / philanthropy:** (moving money well; vetting)",
-      "**Policy and government implementation:** (health systems, procurement, public finance)",
-      "**Entrepreneurship / founding new orgs:** (esp. 'evidence-to-scale' nonprofits)"
+      "Program implementation & field ops (distribution, logistics, monitoring)",
+      "Research & evaluation (development econ, epidemiology, cost-effectiveness, RCTs)",
+      "Grantmaking / philanthropy (moving money well; vetting)",
+      "Policy and government implementation (health systems, procurement, public finance)",
+      "Entrepreneurship / founding new orgs (esp. 'evidence-to-scale' nonprofits)"
     ],
     "fitSignals": [
       "You're motivated by measurable impact and are OK with 'unsexy' operational realities (supply chains, compliance, systems)",
@@ -584,5 +634,205 @@
     "commonConfusions": [
       "Add common confusion here..."
     ]
+  },
+  {
+    "id": "information-security",
+    "name": "Information Security",
+    "overviewPath": "content/md/focus-areas/information-security/overview.md",
+    "overviewExcerpt": "Protecting critical infrastructure, AI systems, and bio-labs from catastrophic breaches.",
+    "roleShapes": [
+      "**Security Analyst:** Monitoring and defending networks.",
+      "**Penetration Tester:** Offensive security to find vulnerabilities.",
+      "**Security Architect:** Designing secure systems from the ground up.",
+      "**Governance, Risk, and Compliance (GRC):** Policy and standards enforcement."
+    ],
+    "fitSignals": [
+      "Analytical, meticulous, paranoid (in a good way) about threats.",
+      "Deep interest in how systems break and how to fix them.",
+      "Commitment to protecting high-stakes technologies (AI/Bio)."
+    ],
+    "buckets": {
+      "quickTaste": {
+        "title": "Quick taste (≈1 hour)",
+        "description": "# Quick Taste Placeholder content.",
+        "cardIds": [],
+        "inlineGuidancePath": "content/md/focus-areas/information-security/buckets/quick-taste.md",
+        "curatedCardIds": []
+      },
+      "deeperDive": {
+        "title": "Deeper dive (2–6 hours)",
+        "description": "# Deeper Dive Placeholder content.",
+        "cardIds": [],
+        "inlineGuidancePath": "content/md/focus-areas/information-security/buckets/deeper-dive.md",
+        "curatedCardIds": []
+      },
+      "handsOn": {
+        "title": "Hands-on trial",
+        "description": "# Hands On Placeholder content.",
+        "cardIds": [],
+        "inlineGuidancePath": "content/md/focus-areas/information-security/buckets/hands-on.md",
+        "curatedCardIds": []
+      },
+      "jobBoard": {
+        "title": "Job board scan (real roles)",
+        "description": "# Job Board Placeholder content.",
+        "cardIds": [],
+        "inlineGuidancePath": "content/md/focus-areas/information-security/buckets/job-board.md",
+        "curatedCardIds": []
+      }
+    },
+    "curatedCardIds": [],
+    "peopleToTalkToPrompts": [],
+    "commonConfusions": []
+  },
+  {
+    "id": "operations",
+    "name": "Operations Management",
+    "overviewPath": "content/md/focus-areas/operations/overview.md",
+    "overviewExcerpt": "The backbone of impact: ensuring organizations run efficiently, scale safely, and execute their missions.",
+    "roleShapes": [
+      "**General Operations:** Jack-of-all-trades management.",
+      "**HR and People Ops:** Hiring, culture, retention.",
+      "**Finance:** Budgeting, grants management, compliance.",
+      "**Project Management:** Executing specific initiatives."
+    ],
+    "fitSignals": [
+      "You enjoy problem-solving and unblocking others.",
+      "Organized, reliable, and comfortable with ambiguity.",
+      "Willing to do 'unglamorous' work if it multiplies impact."
+    ],
+    "buckets": {
+      "quickTaste": {
+        "title": "Quick taste (≈1 hour)",
+        "description": "# Quick Taste Placeholder content.",
+        "cardIds": [],
+        "inlineGuidancePath": "content/md/focus-areas/operations/buckets/quick-taste.md",
+        "curatedCardIds": []
+      },
+      "deeperDive": {
+        "title": "Deeper dive (2–6 hours)",
+        "description": "# Deeper Dive Placeholder content.",
+        "cardIds": [],
+        "inlineGuidancePath": "content/md/focus-areas/operations/buckets/deeper-dive.md",
+        "curatedCardIds": []
+      },
+      "handsOn": {
+        "title": "Hands-on trial",
+        "description": "# Hands On Placeholder content.",
+        "cardIds": [],
+        "inlineGuidancePath": "content/md/focus-areas/operations/buckets/hands-on.md",
+        "curatedCardIds": []
+      },
+      "jobBoard": {
+        "title": "Job board scan (real roles)",
+        "description": "# Job Board Placeholder content.",
+        "cardIds": [],
+        "inlineGuidancePath": "content/md/focus-areas/operations/buckets/job-board.md",
+        "curatedCardIds": []
+      }
+    },
+    "curatedCardIds": [],
+    "peopleToTalkToPrompts": [],
+    "commonConfusions": []
+  },
+  {
+    "id": "policy",
+    "name": "Policy & Government",
+    "overviewPath": "content/md/focus-areas/policy/overview.md",
+    "overviewExcerpt": "Shaping the rules and systems that govern society to address global risks.",
+    "roleShapes": [
+      "**Civil Service:** Working directly within government agencies.",
+      "**Think Tanks:** Researching and proposing policy solutions.",
+      "**Advocacy / Lobbying:** Pushing for legislative change.",
+      "**Political Staff:** Advising elected officials."
+    ],
+    "fitSignals": [
+      "Strategic patience (bureaucracy moves slow).",
+      "Strong relationship-building and networking skills.",
+      "Analytical ability to understand complex systems."
+    ],
+    "buckets": {
+      "quickTaste": {
+        "title": "Quick taste (≈1 hour)",
+        "description": "# Quick Taste Placeholder content.",
+        "cardIds": [],
+        "inlineGuidancePath": "content/md/focus-areas/policy/buckets/quick-taste.md",
+        "curatedCardIds": []
+      },
+      "deeperDive": {
+        "title": "Deeper dive (2–6 hours)",
+        "description": "# Deeper Dive Placeholder content.",
+        "cardIds": [],
+        "inlineGuidancePath": "content/md/focus-areas/policy/buckets/deeper-dive.md",
+        "curatedCardIds": []
+      },
+      "handsOn": {
+        "title": "Hands-on trial",
+        "description": "# Hands On Placeholder content.",
+        "cardIds": [],
+        "inlineGuidancePath": "content/md/focus-areas/policy/buckets/hands-on.md",
+        "curatedCardIds": []
+      },
+      "jobBoard": {
+        "title": "Job board scan (real roles)",
+        "description": "# Job Board Placeholder content.",
+        "cardIds": [],
+        "inlineGuidancePath": "content/md/focus-areas/policy/buckets/job-board.md",
+        "curatedCardIds": []
+      }
+    },
+    "curatedCardIds": [],
+    "peopleToTalkToPrompts": [],
+    "commonConfusions": []
+  },
+  {
+    "id": "software-engineering",
+    "name": "Software Engineering",
+    "overviewPath": "content/md/focus-areas/software-engineering/overview.md",
+    "overviewExcerpt": "Design, code, and scale systems that keep high-impact organizations running and safe.",
+    "roleShapes": [
+      "**Full-stack Developer:** Building core products and internal tools.",
+      "**Backend Engineer:** scalable systems, data pipelines, API design.",
+      "**DevOps / SRE:** Infrastructure, reliability, security pipelines.",
+      "**Frontend Developer:** UX-focused work for advocacy or donation platforms."
+    ],
+    "fitSignals": [
+      "Strong technical and coding skills (problem-solving mindset).",
+      "Interest in applying tech to social good, not just for profit.",
+      "Continuous learning to keep up with fast-changing tooling."
+    ],
+    "buckets": {
+      "quickTaste": {
+        "title": "Quick taste (≈1 hour)",
+        "description": "# Quick Taste Placeholder content.",
+        "cardIds": [],
+        "inlineGuidancePath": "content/md/focus-areas/software-engineering/buckets/quick-taste.md",
+        "curatedCardIds": []
+      },
+      "deeperDive": {
+        "title": "Deeper dive (2–6 hours)",
+        "description": "# Deeper Dive Placeholder content.",
+        "cardIds": [],
+        "inlineGuidancePath": "content/md/focus-areas/software-engineering/buckets/deeper-dive.md",
+        "curatedCardIds": []
+      },
+      "handsOn": {
+        "title": "Hands-on trial",
+        "description": "# Hands On Placeholder content.",
+        "cardIds": [],
+        "inlineGuidancePath": "content/md/focus-areas/software-engineering/buckets/hands-on.md",
+        "curatedCardIds": []
+      },
+      "jobBoard": {
+        "title": "Job board scan (real roles)",
+        "description": "# Job Board Placeholder content.",
+        "cardIds": [],
+        "inlineGuidancePath": "content/md/focus-areas/software-engineering/buckets/job-board.md",
+        "curatedCardIds": []
+      }
+    },
+    "curatedCardIds": [],
+    "peopleToTalkToPrompts": [],
+    "commonConfusions": []
   }
 ]

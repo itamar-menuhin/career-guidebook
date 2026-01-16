@@ -2,6 +2,7 @@
 kind: template
 id: cause-area-quick-start-template
 title: Cause-area quick-start page template
+description: Template for creating new focus area pages with goals, role shapes, fit signals, and exploration buckets.
 ---
 
 # Cause-area quick-start page template

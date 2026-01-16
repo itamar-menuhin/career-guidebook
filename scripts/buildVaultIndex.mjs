@@ -281,6 +281,13 @@ async function build() {
   }
   await fs.writeFile(path.join(PUBLIC_DATA_DIR, 'pathways.json'), JSON.stringify(pathwaysManifest, null, 2) + '\n');
 
+  // Sort templates: 'worksheet' first, then alphabetical by title
+  templates.sort((a, b) => {
+    if (a.meta.id === 'worksheet') return -1;
+    if (b.meta.id === 'worksheet') return 1;
+    return (a.meta.title || '').localeCompare(b.meta.title || '');
+  });
+
   const templatesManifest = [];
   for (const tpl of templates) {
     const dest = path.join(PUBLIC_MD_DIR, 'templates', `${tpl.meta.id}.md`);

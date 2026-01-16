@@ -27,15 +27,7 @@
 
 **Goal**: Establish rapport and understand their current reality.
 
-**Prompts**:
-- "What’s been on your mind regarding your career lately?"
-- "What would make this conversation a success for you?"
-- "Where should we focus our energy today?"
-
-
-
 **Facilitator notes**:
-- **Listen for Signal**: Use their opening answer to calibrate—do they need space to vent, or are they ready to problem-solve?
 - **It's Okay to Be Vague**: If they don't have a clear goal yet, that's normal. Discovering the goal *is* the goal of the session.
 - **Check the Clock**: Aim for ~5 minutes here so you have ample time for the deep dive.
 

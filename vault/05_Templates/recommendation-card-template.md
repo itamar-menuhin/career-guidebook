@@ -2,6 +2,7 @@
 kind: template
 id: recommendation-card-template
 title: Recommendation Card template
+description: Template for creating new resource cards with guidance on when to suggest them, commitment level, and next steps.
 ---
 
 # Recommendation Card template

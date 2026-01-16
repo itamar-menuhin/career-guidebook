@@ -8,4 +8,4 @@
 - Read reaction (spark / neutral / no)
 - Adjust / pivot / park it
 - If it’s promising, keep it; if not, drop it without drama
-- By the end you usually have 2–4 promising directions, each with 1–2 small next steps already identified during testing.
+- By the end you usually have 3–6 promising directions, each with 1–2 small next steps already identified during testing.

@@ -2,6 +2,7 @@
 kind: template
 id: wrap-written-summary-template
 title: Wrap + written summary template
+description: Structure for wrapping up a session with a summary, 3–6 promising directions, next steps, and follow-up options.
 ---
 
 # Wrap + written summary template

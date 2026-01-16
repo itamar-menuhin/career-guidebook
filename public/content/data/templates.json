@@ -1,17 +1,16 @@
 [
   {
-    "id": "worksheet-template",
+    "id": "worksheet",
     "name": "Career Path Worksheet",
-    "description": "Full interactive worksheet to clarify your path, map strengths, and plan next steps.",
+    "description": "A structured worksheet guiding career exploration through self-assessment, strengths mapping, preferences, feasibility analysis, and mini-experiments.",
     "category": "tool",
-    "locked": false,
-    "pdfUrl": "/content/files/worksheet.pdf",
+    "locked": true,
     "contentPath": "content/md/templates/worksheet.md"
   },
   {
     "id": "cause-area-quick-start-template",
     "name": "Cause-area quick-start page template",
-    "description": "Template for creating a one-page overview of a cause area, including goal, roles, and fit.",
+    "description": "Template for creating new focus area pages with goals, role shapes, fit signals, and exploration buckets.",
     "category": "other",
     "locked": true,
     "contentPath": "content/md/templates/cause-area-quick-start-template.md"
@@ -19,7 +18,7 @@
   {
     "id": "recommendation-card-template",
     "name": "Recommendation Card template",
-    "description": "Structure for a standard recommendation card, including one-liner, criteria, and tags.",
+    "description": "Template for creating new resource cards with guidance on when to suggest them, commitment level, and next steps.",
     "category": "other",
     "locked": true,
     "contentPath": "content/md/templates/recommendation-card-template.md"
@@ -27,7 +26,7 @@
   {
     "id": "wrap-written-summary-template",
     "name": "Wrap + written summary template",
-    "description": "Guide for summarizing a session and documenting key takeaways collaboratively.",
+    "description": "Structure for wrapping up a session with a summary, 3–6 promising directions, next steps, and follow-up options.",
     "category": "other",
     "locked": true,
     "contentPath": "content/md/templates/wrap-written-summary-template.md"
