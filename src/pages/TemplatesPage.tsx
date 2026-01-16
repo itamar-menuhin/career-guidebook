@@ -1,6 +1,6 @@
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
-import { Target, FileText, Wrench, Sparkles, Lock, ChevronDown, Download } from 'lucide-react';
+import { Target, FileText, Wrench, Sparkles, Lock, ChevronDown, Download, ExternalLink } from 'lucide-react';
 import { Collapsible, CollapsibleContent, CollapsibleTrigger } from '@/components/ui/collapsible';
 import { useContent } from '@/contexts/ContentContext';
 import { Template } from '@/lib/contentTypes';
@@ -207,25 +207,28 @@ export default function TemplatesPage() {
                     <Card className="shadow-none border-x border-b border-t-0 rounded-t-none rounded-b-2xl bg-card/50 backdrop-blur-sm overflow-hidden border-border/60">
                       <CardContent className="p-6 md:p-10 pt-4">
                         {template.pdfUrl ? (
-                          <div className="w-full aspect-[3/4] md:aspect-[4/3] min-h-[600px]">
-                            <object
-                              data={`${template.pdfUrl}#toolbar=0&view=FitH`}
-                              type="application/pdf"
-                              className="w-full h-full rounded-xl border border-border/60 bg-background"
-                              aria-label={`${template.name} PDF preview`}
-                            >
-                              <div className="w-full h-full rounded-xl border border-border/60 bg-muted/20 flex flex-col items-center justify-center gap-3 p-6 text-center">
-                                <p className="text-sm text-muted-foreground">
-                                  PDF preview isn’t available in this browser. You can still download it.
-                                </p>
-                                <Button asChild variant="outline" size="sm" className="gap-2">
-                                  <a href={template.pdfUrl} download target="_blank" rel="noopener noreferrer">
-                                    <Download className="h-4 w-4" />
-                                    Download PDF
-                                  </a>
-                                </Button>
-                              </div>
-                            </object>
+                          <div className="w-full rounded-xl border border-border/60 bg-muted/10 flex flex-col items-center justify-center gap-4 p-10 text-center">
+                            <FileText className="h-16 w-16 text-muted-foreground/50" />
+                            <div>
+                              <h4 className="font-medium text-foreground mb-1">{template.name}</h4>
+                              <p className="text-sm text-muted-foreground mb-4">
+                                A printable worksheet for guided career exploration sessions.
+                              </p>
+                            </div>
+                            <div className="flex gap-3">
+                              <Button asChild variant="default" size="sm" className="gap-2">
+                                <a href={template.pdfUrl} target="_blank" rel="noopener noreferrer">
+                                  <ExternalLink className="h-4 w-4" />
+                                  View PDF
+                                </a>
+                              </Button>
+                              <Button asChild variant="outline" size="sm" className="gap-2">
+                                <a href={template.pdfUrl} download>
+                                  <Download className="h-4 w-4" />
+                                  Download
+                                </a>
+                              </Button>
+                            </div>
                           </div>
                         ) : (
                           <AestheticTemplateView content={template.content} showTitle={false} />
