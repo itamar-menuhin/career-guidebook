@@ -284,7 +284,7 @@ export async function getTemplates(): Promise<Template[]> {
   return Promise.all(
     templates.map(async template => {
       const content = await loadMarkdown(template.contentPath, 'templates');
-      
+
       // Extract PDF URL from markdown content if not already set
       let pdfUrl = template.pdfUrl;
       if (!pdfUrl) {
@@ -294,7 +294,12 @@ export async function getTemplates(): Promise<Template[]> {
           pdfUrl = pdfMatch[1];
         }
       }
-      
+
+      // Normalize: ensure it works under non-root BASE_URL deployments
+      if (pdfUrl && !/^https?:\/\//i.test(pdfUrl)) {
+        pdfUrl = withBase(pdfUrl);
+      }
+
       return {
         ...template,
         content,
